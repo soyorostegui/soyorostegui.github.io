@@ -77,7 +77,14 @@ function clearStateSyncConflict() { stateSyncConflict=null;const panel=document.
 function updateGhCloudStatusUI(text,colorBg,colorText) {
   const token=secretStorage.getItem('po_gh_repo_token')||'',input=document.getElementById('ghRepoTokenInput');if(input&&token&&!input.value)input.value=token;
   const message=text||(token?'Sincronización automática lista':'Guardado en este dispositivo');
-  for(const id of ['ghCloudStatusBadge','globalSyncStatus','ctxDiskSyncStatus']){const badge=document.getElementById(id);if(!badge)continue;badge.textContent=message;if(colorBg)badge.style.background=colorBg;if(colorText)badge.style.color=colorText;}
+  const compact = /incompatibles/.test(message) ? 'Revisar cambios' : /Sin conexión/.test(message) ? 'Sin conexión' :
+    /Sincronizando/.test(message) ? 'Sincronizando…' : /reintent|conservados|Revisa el token|limita consultas/.test(message) ? 'Guardado local · pendiente' :
+    /Sincronizado con GitHub/.test(message) ? 'Guardado' : 'Guardado local';
+  for(const id of ['ghCloudStatusBadge','globalSyncStatus','ctxDiskSyncStatus']){
+    const badge=document.getElementById(id);if(!badge)continue;
+    badge.textContent=id==='ghCloudStatusBadge'?message:compact;badge.title=message;
+    if(id!=='globalSyncStatus'){if(colorBg)badge.style.background=colorBg;if(colorText)badge.style.color=colorText;}
+  }
 }
 function syncCountSummary(state) { return `${state.posts.length} publicaciones, ${state.stories.length} historias y ${state.chatHistory.length} mensajes`; }
 function conflictSignature(conflicts) { return JSON.stringify(canonicalSyncValue(conflicts)); }
