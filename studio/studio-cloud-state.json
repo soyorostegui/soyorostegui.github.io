@@ -1,7 +1,7 @@
 {
   "version": 3,
-  "updatedAt": 1794209914895,
-  "updatedAtISO": "2026-11-09T07:38:34.895Z",
+  "updatedAt": 1794209933835,
+  "updatedAtISO": "2026-11-09T07:38:53.835Z",
   "posts": [
     {
       "id": "post-ig-1",
@@ -225,18 +225,6 @@
       "format": "Foto",
       "status": "Idea",
       "order": 1
-    },
-    {
-      "time": "19:00",
-      "context": "Cierra el día convirtiendo la expectativa en conversación. Sirve además como sondeo previo al lanzamiento: las respuestas anticipan qué proyecto interesa más antes del 20.11.",
-      "formatDetail": "Sticker interactivo",
-      "id": "st-3",
-      "date": "2026-11-09",
-      "name": "Caja de preguntas: «¿Qué se viene?»",
-      "highlightId": "hl-criterio",
-      "format": "Sticker",
-      "status": "Idea",
-      "order": 3
     },
     {
       "time": "09:30",
@@ -607,6 +595,17 @@
       "status": "En Diseño",
       "context": "Foto cenital del cuaderno de bocetos abierto por las últimas páginas, con el ángulo cerrado y la esquina doblada para que solo se intuyan trazos y no se lea ningún proyecto. Se publica a las 19:00, cuando el carrusel de expectativa ya lleva horas en el feed y la audiencia está preguntando qué es. Es la respuesta visual a esa curiosidad sin romper la regla de no spoilers: confirma que el trabajo existe y está en curso.",
       "order": 4
+    },
+    {
+      "id": "st-1794209928386-913",
+      "name": "Las últimas 5 páginas del cuaderno (páginas tapadas a medias)",
+      "date": "2026-11-09",
+      "time": "19:00",
+      "highlightId": "hl-criterio",
+      "format": "Foto",
+      "status": "Idea",
+      "context": "Cuaderno abierto en ángulo sobre la mesa, con las últimas cinco páginas visibles pero parcialmente cubiertas por la mano o por otra hoja. Luz lateral para que se marque el relieve del grafito. Se fotografía el gesto, no la solución: el espectador intuye que hay un proyecto avanzado sin poder leerlo. Cierra la jornada de expectativa después del carrusel de la mañana y del test del 10% del mediodía, y demuestra proceso real sin adelantar el lanzamiento del 20.",
+      "order": 5
     }
   ],
   "highlights": [
@@ -2840,6 +2839,34 @@
       "plainText": "1. no me gusta, no entiendo por qué me asocias con imprenta, imprenta, imprenta. yo no frecuento imprentas y tampoco trabajo en una.\n\n2. me gusta la apruebo.",
       "actionData": null,
       "timestamp": "9/11/2026, 2:38:32 a. m."
+    },
+    {
+      "sender": "ai",
+      "html": "Tienes razón y el error es mío. Metí la imprenta porque el calendario habla de preprensa y artes finales, y confundí el <em>tema</em> de tus publicaciones con tu <em>día a día</em>. Tú no vives en una imprenta: diriges piezas, decides criterio, y la producción física es solo el final del recorrido. Corrijo el enfoque.<br><br><div class=\"ai-md-h\">Aprobado: «Las últimas 5 páginas del cuaderno»</div><br>Va hoy a las 7:00 p.m. en DAILY. Cuaderno abierto en ángulo, páginas tapadas a medias. Se ve el trabajo, no se lee qué es.<br><br><div class=\"ai-md-h\">Reemplazo para el mediodía, sin imprenta</div><br><strong>«Alejarme del monitor: el test del 10%»</strong> — Captura, 12:30 p.m.<br><br>Grabación de pantalla de 6 segundos: alejas el zoom del archivo hasta que la pieza queda pequeña en el lienzo. Si a ese tamaño no se entiende, no está resuelta. Es el gesto que separa a quien mira el diseño de quien lo dirige, y no requiere salir de tu escritorio.<br><br>Además te siembra el post del 16 sobre vallas a 80 km/h: mismo principio, misma lógica de distancia. Quien siga la cuenta verá el hilo.<br><br><strong>Sobre las historias viejas:</strong> borro la caja de preguntas, cuyo reemplazo ya aprobaste. La de la mesa de trabajo la mantengo hasta que digas si este test la sustituye.<div style=\"margin-top:8px;padding-top:6px;border-top:1px dashed #e2e8f0;font-size:11px;color:#475569;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px;\">\n          <span>💳 Costo de este uso: <strong style=\"color:#0369a1;\">$0.00127 USD</strong> (Acumulado sesión: $0.16032 USD)</span>\n          <span style=\"color:#64748b;\">6990 in + 1848 out tokens · deepseek-flash</span>\n        </div>",
+      "plainText": "Tienes razón y el error es mío. Metí la imprenta porque el calendario habla de preprensa y artes finales, y confundí el *tema* de tus publicaciones con tu *día a día*. Tú no vives en una imprenta: diriges piezas, decides criterio, y la producción física es solo el final del recorrido. Corrijo el enfoque.\n\n## Aprobado: «Las últimas 5 páginas del cuaderno»\n\nVa hoy a las 7:00 p.m. en DAILY. Cuaderno abierto en ángulo, páginas tapadas a medias. Se ve el trabajo, no se lee qué es.\n\n## Reemplazo para el mediodía, sin imprenta\n\n**«Alejarme del monitor: el test del 10%»** — Captura, 12:30 p.m.\n\nGrabación de pantalla de 6 segundos: alejas el zoom del archivo hasta que la pieza queda pequeña en el lienzo. Si a ese tamaño no se entiende, no está resuelta. Es el gesto que separa a quien mira el diseño de quien lo dirige, y no requiere salir de tu escritorio.\n\nAdemás te siembra el post del 16 sobre vallas a 80 km/h: mismo principio, misma lógica de distancia. Quien siga la cuenta verá el hilo.\n\n**Sobre las historias viejas:** borro la caja de preguntas, cuyo reemplazo ya aprobaste. La de la mesa de trabajo la mantengo hasta que digas si este test la sustituye.",
+      "actionData": [
+        {
+          "type": "create_story",
+          "name": "Las últimas 5 páginas del cuaderno (páginas tapadas a medias)",
+          "date": "2026-11-09",
+          "time": "19:00",
+          "highlight": "DAILY",
+          "format": "Foto",
+          "status": "Idea",
+          "context": "Cuaderno abierto en ángulo sobre la mesa, con las últimas cinco páginas visibles pero parcialmente cubiertas por la mano o por otra hoja. Luz lateral para que se marque el relieve del grafito. Se fotografía el gesto, no la solución: el espectador intuye que hay un proyecto avanzado sin poder leerlo. Cierra la jornada de expectativa después del carrusel de la mañana y del test del 10% del mediodía, y demuestra proceso real sin adelantar el lanzamiento del 20."
+        },
+        {
+          "type": "delete_items",
+          "entity": "story",
+          "ids": [
+            "st-3"
+          ],
+          "names": [
+            "Caja de preguntas: «¿Qué se viene?»"
+          ]
+        }
+      ],
+      "timestamp": "9/11/2026, 2:38:51 a. m."
     }
   ],
   "importedCustomContextNotes": ""
