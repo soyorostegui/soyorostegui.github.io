@@ -713,7 +713,7 @@
       right: 20px;
       width: 460px;
       max-width: calc(100vw - 32px);
-      height: min(680px, calc(100vh - 100px));
+      height: min(780px, calc(100vh - 100px));
       max-height: calc(100vh - 100px);
       background: var(--bg);
       border: 1px solid #e9d5ff;
@@ -878,7 +878,7 @@
     .ai-typing-dots span:nth-child(2) { animation-delay: 0.15s; }
     .ai-typing-dots span:nth-child(3) { animation-delay: 0.3s; }
     @keyframes aiDot { 0%, 80%, 100% { opacity: 0.25; transform: translateY(0); } 40% { opacity: 1; transform: translateY(-3px); } }
-    textarea.ai-chat-input { resize: none; font-family: inherit; line-height: 1.4; max-height: 120px; overflow-y: auto; }
+    textarea.ai-chat-input { resize: none; font-family: inherit; line-height: 1.4; max-height: 160px; overflow-y: auto; }
     .chat-bubble.ai {
       background: #f5f3ff;
       border: 1px solid #ede9fe;
@@ -952,6 +952,7 @@
       border-top: 1px solid var(--border);
       display: flex;
       gap: 8px;
+      align-items: flex-end;
       background: var(--bg);
     }
     .ai-panel-footer {
@@ -967,6 +968,7 @@
     .ai-chat-input {
       flex: 1;
       padding: 9px 12px;
+      min-height: 64px;
       font-size: 13px;
       border-radius: 6px;
       border: 1px solid var(--border);
@@ -978,6 +980,7 @@
       color: #fff;
       border: none;
       padding: 0 16px;
+      min-height: 42px;
       border-radius: 6px;
       font-size: 13px;
       font-weight: 600;
@@ -2141,7 +2144,7 @@
     </div>
 
     <div class="ai-chat-input-row">
-      <textarea class="ai-chat-input" id="aiChatInput" rows="1" placeholder="Ej: Cambia la fecha de Cemedicar o redacta el copy de... (Shift+Enter = nueva línea)" onkeydown="onAiChatKeyDown(event)" oninput="this.style.height='auto'; this.style.height=Math.min(this.scrollHeight,120)+'px';"></textarea>
+      <textarea class="ai-chat-input" id="aiChatInput" rows="1" placeholder="Ej: Cambia la fecha de Cemedicar o redacta el copy de... (Shift+Enter = nueva línea)" onkeydown="onAiChatKeyDown(event)" oninput="this.style.height='auto'; this.style.height=Math.min(this.scrollHeight,160)+'px';"></textarea>
       <button class="btn-send-ai" id="btnSendAi" onclick="sendAIChat()">Enviar</button>
     </div>
 
