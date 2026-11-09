@@ -1384,7 +1384,11 @@ const AI_PROVIDERS = {
       return (tmp.textContent || tmp.innerText || "").trim();
     }
 
-    function buildContextMarkdown() {
+    function buildContextMarkdown(snapshot = null) {
+      const view = snapshot || buildCloudStateObject();
+      const {posts, stories, highlights, chatHistory, importedCustomContextNotes} = view;
+      const getHighlightById = id => highlights.find(h => h.id === id) || null;
+      const sortedStories = () => stories.slice().sort((a,b) => a.date.localeCompare(b.date) || (a.time || "99:99").localeCompare(b.time || "99:99") || (a.order || 0) - (b.order || 0));
       const nowStr = new Date().toLocaleString("es-CO");
       const counts = {
         Idea: posts.filter(p => p.status === "Idea").length,
@@ -1558,6 +1562,7 @@ const AI_PROVIDERS = {
     function clearChatHistory() {
       if (!confirm("¿Deseas limpiar el historial visual de esta conversación? (Puedes descargar antes el archivo .MD si quieres conservar un respaldo).")) return;
       chatHistory = [];
+      localStorage.setItem("po_ai_chat_reset", globalThis.crypto?.randomUUID?.() || "clear-" + Date.now() + "-" + Math.random());
       importedCustomContextNotes = "";
       localStorage.removeItem("po_ai_chat_history");
       localStorage.removeItem("po_ai_imported_notes");
@@ -1786,6 +1791,8 @@ const AI_PROVIDERS = {
       if (persist) {
         const cleanPlain = plainOverride || stripHtmlToPlain(text.replace(/<div style="margin-top:8px;padding-top:6px;border-top:1px dashed[\s\S]*?<\/div>/i, ""));
         chatHistory.push({
+          id: globalThis.crypto?.randomUUID?.() || "message-" + Date.now() + "-" + Math.random(),
+          createdAt: new Date().toISOString(),
           sender,
           html: sanitizeDisplayHtml(text),
           plainText: cleanPlain,

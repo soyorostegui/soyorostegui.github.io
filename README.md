@@ -33,13 +33,15 @@ No existe recuperación de la contraseña. Si se pierde, las credenciales se deb
 
 Referencias: [Web Crypto AES-GCM](https://developer.mozilla.org/en-US/docs/Web/API/AesGcmParams), [PBKDF2 según OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html), [CryptoKey e IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm).
 
-## Diferencias entre calendarios
+## Sincronización automática entre dispositivos
 
-Al migrar desde la versión anterior, el navegador puede no tener el identificador de la última versión sincronizada. Si el contenido editorial coincide con GitHub, Studio recupera ese identificador automáticamente, sin reemplazar datos ni crear un conflicto por fechas de guardado o formato JSON.
+Al abrir o volver a Studio se consulta GitHub. Los cambios locales se guardan automáticamente tras una pausa breve; también se revisan actualizaciones cada minuto mientras la página está visible. Sin conexión se conserva el trabajo y se reintenta al recuperar la red. No es necesario pulsar Conectar Repo después de la configuración inicial.
 
-Si hay diferencias reales, aparecen las cantidades de publicaciones, historias, destacadas y mensajes de ambas copias. Cantidades iguales no implican textos iguales. «Conservar este dispositivo y subirlo» publica el calendario local; «Usar la copia de GitHub» carga el remoto. Antes de cualquiera de esas opciones se guardan ambas copias en un respaldo descargable. Las credenciales de la bóveda se sincronizan por separado y no cambian al resolver un conflicto de calendario.
+Studio conserva una versión común y combina cambios por campo: editar el texto en un dispositivo y el estado en otro conserva ambos cambios. Las publicaciones nuevas y los mensajes de chat se combinan; las eliminaciones incluyen marcas persistentes para que un dispositivo antiguo no las restaure. El calendario y su contexto Markdown se publican juntos en un único commit, conservando otros archivos del repositorio. Si la rama cambia durante el guardado, se vuelve a consultar y combinar.
 
-Si alguien modifica una copia mientras eliges, Studio vuelve a mostrar las versiones actualizadas y exige una nueva elección; no fuerza una sobrescritura.
+Solo una edición incompatible del mismo campo, o editar una entrada que otro dispositivo eliminó, requiere elegir. El panel conserva un respaldo de ambas copias y aplica la elección únicamente a los conflictos; mantiene los demás cambios combinados. Sin una versión común recuperable, las diferencias ambiguas requieren esa misma revisión. La bóveda cifrada se sincroniza por separado y mantiene su protección frente a cambios simultáneos de credenciales.
+
+Los formularios abiertos posponen la actualización para conservar lo que estás escribiendo. Las pruebas simulan cambios simultáneos, eliminaciones, recuperación de versiones antiguas, conflictos reales, desconexión, cambios durante el guardado y reintentos sin commits innecesarios.
 
 ## Verificación y publicación
 
