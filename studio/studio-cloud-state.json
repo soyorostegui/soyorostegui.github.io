@@ -1,7 +1,7 @@
 {
   "version": 3,
-  "updatedAt": 1794209804335,
-  "updatedAtISO": "2026-11-09T07:36:44.335Z",
+  "updatedAt": 1794209829954,
+  "updatedAtISO": "2026-11-09T07:37:09.954Z",
   "posts": [
     {
       "id": "post-ig-1",
@@ -224,7 +224,7 @@
       "highlightId": "hl-proceso",
       "format": "Foto",
       "status": "Idea",
-      "order": 2
+      "order": 1
     },
     {
       "time": "19:00",
@@ -584,7 +584,29 @@
       "highlightId": "hl-criterio",
       "format": "Foto",
       "status": "En Diseño",
-      "order": 1
+      "order": 0
+    },
+    {
+      "id": "st-1794209826895-352",
+      "name": "La primera prueba que sale mal",
+      "date": "2026-11-09",
+      "time": "12:30",
+      "highlightId": "hl-proceso",
+      "format": "Video",
+      "status": "En Diseño",
+      "context": "Video vertical de 6 segundos: el pliego recién salido de la imprenta con el registro corrido, la mano entra al cuadro, gira la hoja, la revisa y la deja a un lado. Se graba en el taller con luz de ventana, sin trípode ni texto encima. Va a las 12:30 porque es el momento en que estás revisando producción y funciona como puente entre la historia de la mañana y el post de LinkedIn de la tarde: demuestra con materia lo que el copy afirma con palabras, y no adelanta ningún proyecto del portafolio.",
+      "order": 2
+    },
+    {
+      "id": "st-1794209826896-649",
+      "name": "Las últimas 5 páginas del cuaderno",
+      "date": "2026-11-09",
+      "time": "19:00",
+      "highlightId": "hl-criterio",
+      "format": "Foto",
+      "status": "En Diseño",
+      "context": "Foto cenital del cuaderno de bocetos abierto por las últimas páginas, con el ángulo cerrado y la esquina doblada para que solo se intuyan trazos y no se lea ningún proyecto. Se publica a las 19:00, cuando el carrusel de expectativa ya lleva horas en el feed y la audiencia está preguntando qué es. Es la respuesta visual a esa curiosidad sin romper la regla de no spoilers: confirma que el trabajo existe y está en curso.",
+      "order": 4
     }
   ],
   "highlights": [
@@ -2783,6 +2805,34 @@
       "plainText": "No me convencen las historias 2 y 3",
       "actionData": null,
       "timestamp": "9/11/2026, 2:36:41 a. m."
+    },
+    {
+      "sender": "ai",
+      "html": "Entendido. Las dos eran débiles: la mesa de trabajo es el plano más visto de Instagram, y la caja de preguntas «¿qué se viene?» te obliga a responder lo que no quieres contar. Dos reemplazos:<br><br><strong>1. «La primera prueba que sale mal»</strong> — SETUP, 12:30 p.m.<br>Un video de 6 segundos del pliego recién salido de la imprenta, con el registro corrido o el color fuera. Lo giras, lo revisas, lo dejas a un lado. Sin texto. Dice más del rigor que cualquier foto de escritorio ordenado, y no revela el proyecto: solo que hay algo en producción.<br><br><strong>2. «Las últimas 5 páginas del cuaderno»</strong> — DAILY, 7:00 p.m.<br>Foto de bocetos recientes, con el cuaderno abierto en ángulo y las páginas tapadas a medias. Se ve que hay trabajo, no se lee qué es. Es la única forma honesta de enseñar sin spoiler.<br><br>Las dos respetan la regla del 09.11: expectativa sin información.<br><br><strong>Sobre las viejas:</strong> no las borro hasta que me lo digas, para no dejar hueco si estas no te sirven. Si te convencen, en tu siguiente mensaje va el bloque de borrado en lote de <code>st-1</code> y <code>st-3</code>.<div style=\"margin-top:8px;padding-top:6px;border-top:1px dashed #e2e8f0;font-size:11px;color:#475569;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px;\">\n          <span>💳 Costo de este uso: <strong style=\"color:#0369a1;\">$0.00177 USD</strong> (Acumulado sesión: $0.15905 USD)</span>\n          <span style=\"color:#64748b;\">6674 in + 2875 out tokens · deepseek-flash</span>\n        </div>",
+      "plainText": "Entendido. Las dos eran débiles: la mesa de trabajo es el plano más visto de Instagram, y la caja de preguntas «¿qué se viene?» te obliga a responder lo que no quieres contar. Dos reemplazos:\n\n**1. «La primera prueba que sale mal»** — SETUP, 12:30 p.m.\nUn video de 6 segundos del pliego recién salido de la imprenta, con el registro corrido o el color fuera. Lo giras, lo revisas, lo dejas a un lado. Sin texto. Dice más del rigor que cualquier foto de escritorio ordenado, y no revela el proyecto: solo que hay algo en producción.\n\n**2. «Las últimas 5 páginas del cuaderno»** — DAILY, 7:00 p.m.\nFoto de bocetos recientes, con el cuaderno abierto en ángulo y las páginas tapadas a medias. Se ve que hay trabajo, no se lee qué es. Es la única forma honesta de enseñar sin spoiler.\n\nLas dos respetan la regla del 09.11: expectativa sin información.\n\n**Sobre las viejas:** no las borro hasta que me lo digas, para no dejar hueco si estas no te sirven. Si te convencen, en tu siguiente mensaje va el bloque de borrado en lote de `st-1` y `st-3`.",
+      "actionData": [
+        {
+          "type": "create_story",
+          "name": "La primera prueba que sale mal",
+          "date": "2026-11-09",
+          "time": "12:30",
+          "highlight": "SETUP",
+          "format": "Video",
+          "status": "En Diseño",
+          "context": "Video vertical de 6 segundos: el pliego recién salido de la imprenta con el registro corrido, la mano entra al cuadro, gira la hoja, la revisa y la deja a un lado. Se graba en el taller con luz de ventana, sin trípode ni texto encima. Va a las 12:30 porque es el momento en que estás revisando producción y funciona como puente entre la historia de la mañana y el post de LinkedIn de la tarde: demuestra con materia lo que el copy afirma con palabras, y no adelanta ningún proyecto del portafolio."
+        },
+        {
+          "type": "create_story",
+          "name": "Las últimas 5 páginas del cuaderno",
+          "date": "2026-11-09",
+          "time": "19:00",
+          "highlight": "DAILY",
+          "format": "Foto",
+          "status": "En Diseño",
+          "context": "Foto cenital del cuaderno de bocetos abierto por las últimas páginas, con el ángulo cerrado y la esquina doblada para que solo se intuyan trazos y no se lea ningún proyecto. Se publica a las 19:00, cuando el carrusel de expectativa ya lleva horas en el feed y la audiencia está preguntando qué es. Es la respuesta visual a esa curiosidad sin romper la regla de no spoilers: confirma que el trabajo existe y está en curso."
+        }
+      ],
+      "timestamp": "9/11/2026, 2:37:06 a. m."
     }
   ],
   "importedCustomContextNotes": ""
