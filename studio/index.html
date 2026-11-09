@@ -732,6 +732,7 @@
     .ai-copilot-panel.minimized .ai-context-toolbar,
     .ai-copilot-panel.minimized .ai-chat-body,
     .ai-copilot-panel.minimized .ai-quick-prompts,
+    .ai-copilot-panel.minimized .ai-panel-footer,
     .ai-copilot-panel.minimized .ai-chat-input-row {
       display: none !important;
     }
@@ -934,6 +935,16 @@
       display: flex;
       gap: 8px;
       background: var(--bg);
+    }
+    .ai-panel-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 6px 14px;
+      border-top: 1px solid var(--border);
+      background: var(--bg-secondary);
+      flex-shrink: 0;
     }
     .ai-chat-input {
       flex: 1;
@@ -2119,6 +2130,11 @@
     <div class="ai-chat-input-row">
       <textarea class="ai-chat-input" id="aiChatInput" rows="1" placeholder="Ej: Cambia la fecha de Cemedicar o redacta el copy de... (Shift+Enter = nueva línea)" onkeydown="onAiChatKeyDown(event)" oninput="this.style.height='auto'; this.style.height=Math.min(this.scrollHeight,120)+'px';"></textarea>
       <button class="btn-send-ai" id="btnSendAi" onclick="sendAIChat()">Enviar</button>
+    </div>
+
+    <div class="ai-panel-footer">
+      <span style="font-size:11px; color:var(--text-muted);">Piti · asistente editorial</span>
+      <button class="ai-ctx-btn" onclick="toggleMinimizeAICopilot()" title="Minimizar a la esquina inferior derecha">— Minimizar</button>
     </div>
   </div>
 
