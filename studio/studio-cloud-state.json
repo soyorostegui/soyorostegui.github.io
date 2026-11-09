@@ -21,7 +21,7 @@
       "id": "post-li-1",
       "channel": "LinkedIn",
       "title": "El valor de construir en silencio (Por qué no todo se publica en tiempo real)",
-      "date": "2026-11-09",
+      "date": "2026-11-10",
       "status": "En Diseño",
       "phase": "Fase 1: Señal",
       "format": "Reflexiones",
@@ -629,14 +629,6 @@
   ],
   "chatResetId": "legacy",
   "chatHistory": [
-    {
-      "sender": "ai",
-      "html": "Buena observación, Peter. Tienes razón en la cuenta base y te explico exactamente de dónde sale el número que te di.<br><br><strong>El plan original: 19 piezas</strong><br><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong>12 Instagram</strong> → <code>post-ig-1</code> a <code>post-ig-12</code></div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong>6 LinkedIn</strong> → <code>post-li-1</code> a <code>post-li-6</code></div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong>1 Behance</strong> → <code>post-behance-1</code></div><br><strong>La vigésima</strong><br><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <code>post-ai-1794128749201</code> — <em>«Domingo de taller: la hoja que nadie publica (Detalle Macro)»</em>, Instagram, <strong>15.11</strong>.</div><br>Ese post llegó después, generado aparte, y por eso rompe el molde de 12. Lo conté dentro del total porque ya está en el calendario y se va a publicar, pero es honesto decir que es un <strong>bonus</strong> fuera de la estructura original: <strong>13 posts de Instagram, no 12</strong>.<br><br><strong>Y hay un dato que justifica dejarlo</strong><br>El 15 de noviembre estaba vacío en el plan original: <code>post-ig-5</code> cae el 13, <code>post-ig-6</code> el 14, y el siguiente es <code>post-ig-7</code> el 16. Justo el domingo 15 hay un hueco de dos días sin publicación en Instagram. Ese post macro lo llena perfectamente, además con el tono correcto (detalle de oficio, sin spoilers).<br><br><strong>Tres caminos posibles</strong><br><div class=\"ai-md-li\" style=\"padding-left:4px;\"><strong>1.</strong> <strong>Dejarlo como bonus y asumir 13 IG.</strong> Actualizo el conteo mental del tablero y lo integro al flujo. Es el escenario más natural, porque el hueco del 15.11 ya existe.</div><div class=\"ai-md-li\" style=\"padding-left:4px;\"><strong>2.</strong> <strong>Reasignarlo a otra fecha</strong> si prefieres que el 15 quede en silencio y mantener la estructura de 12.</div><div class=\"ai-md-li\" style=\"padding-left:4px;\"><strong>3.</strong> <strong>Absorberlo en otra pieza</strong> — por ejemplo, fusionarlo con <code>post-ig-6</code> (tipografía) o usarlo solo como historia, no como post de feed.</div><br>¿Cuál prefieres? Según lo que decidas, ajusto el calendario y te dejo el conteo cerrado.<div style=\"margin-top:8px;padding-top:6px;border-top:1px dashed #e2e8f0;font-size:11px;color:#475569;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px;\">\n          <span>💳 Costo de este uso: <strong style=\"color:#0369a1;\">$0.00106 USD</strong> (Acumulado sesión: $0.07702 USD)</span>\n          <span style=\"color:#64748b;\">5318 in + 1592 out tokens · deepseek-flash</span>\n        </div>",
-      "plainText": "Buena observación, Peter. Tienes razón en la cuenta base y te explico exactamente de dónde sale el número que te di.\n\n**El plan original: 19 piezas**\n- **12 Instagram** → `post-ig-1` a `post-ig-12`\n- **6 LinkedIn** → `post-li-1` a `post-li-6`\n- **1 Behance** → `post-behance-1`\n\n**La vigésima**\n- `post-ai-1794128749201` — *«Domingo de taller: la hoja que nadie publica (Detalle Macro)»*, Instagram, **15.11**.\n\nEse post llegó después, generado aparte, y por eso rompe el molde de 12. Lo conté dentro del total porque ya está en el calendario y se va a publicar, pero es honesto decir que es un **bonus** fuera de la estructura original: **13 posts de Instagram, no 12**.\n\n**Y hay un dato que justifica dejarlo**\nEl 15 de noviembre estaba vacío en el plan original: `post-ig-5` cae el 13, `post-ig-6` el 14, y el siguiente es `post-ig-7` el 16. Justo el domingo 15 hay un hueco de dos días sin publicación en Instagram. Ese post macro lo llena perfectamente, además con el tono correcto (detalle de oficio, sin spoilers).\n\n**Tres caminos posibles**\n1. **Dejarlo como bonus y asumir 13 IG.** Actualizo el conteo mental del tablero y lo integro al flujo. Es el escenario más natural, porque el hueco del 15.11 ya existe.\n2. **Reasignarlo a otra fecha** si prefieres que el 15 quede en silencio y mantener la estructura de 12.\n3. **Absorberlo en otra pieza** — por ejemplo, fusionarlo con `post-ig-6` (tipografía) o usarlo solo como historia, no como post de feed.\n\n¿Cuál prefieres? Según lo que decidas, ajusto el calendario y te dejo el conteo cerrado.",
-      "actionData": null,
-      "timestamp": "8/11/2026, 10:45:15 p. m.",
-      "id": "legacy-3d929bb5d9dd4667-0"
-    },
     {
       "sender": "user",
       "html": "Debe ser la cantidad que te dije, no tenemos mucho tiempo como para extendernos",
@@ -3026,9 +3018,28 @@
       "plainText": "Mueve linkedin para mañana, hoy solo posteamos en instagram",
       "actionData": null,
       "timestamp": "9/11/2026, 6:39:57 p. m."
+    },
+    {
+      "id": "f819ba72-3618-4b4d-9e56-474893681c1d",
+      "createdAt": "2026-11-09T23:40:02.225Z",
+      "sender": "ai",
+      "html": "Movido: <strong><code>post-li-1</code> pasa al 10.11</strong>. Dejo el estado en <em>En Diseño</em> y el copy intacto, porque no me lo pediste cambiar.<br><br><strong>Un efecto secundario que conviene que veas:</strong> el texto de ese post dice <em>«durante meses preferí hacer lo contrario»</em>, y gana fuerza si sale <strong>después</strong> del carrusel de expectativa, no el mismo día. Al correrlo un día, el orden queda mejor: Instagram abre la promesa hoy, LinkedIn la argumenta mañana con calma. No es un problema, es una mejora.<br><br><strong>Lo que cambia en el calendario:</strong><br><br>| Día | Antes | Ahora |<br>|---|---|---|<br>| 09.11 | IG + LinkedIn | <strong>Solo Instagram</strong> |<br>| 10.11 | Solo el post del papel | Papel (IG) + LinkedIn |<br><br>Así mañana tienes dos piezas en canales distintos, que es mejor que dos el mismo día. Ya no queda ningún día con LinkedIn e Instagram publicando en paralelo hasta el 12.<br><br><strong>Queda pendiente lo de hoy:</strong> la hora del sticker del zoom (12:30) y la del cuaderno (19:00), más el <code>context</code> del zoom con la frase que acordamos. Dime y lo cierro.<div>\n          <span>💳 Costo de este uso: <strong>$0.00102 USD</strong> (Acumulado sesión: $0.16749 USD)</span>\n          <span>15704 in + 478 out tokens · deepseek-flash</span>\n        </div>",
+      "plainText": "Movido: **`post-li-1` pasa al 10.11**. Dejo el estado en *En Diseño* y el copy intacto, porque no me lo pediste cambiar.\n\n**Un efecto secundario que conviene que veas:** el texto de ese post dice *«durante meses preferí hacer lo contrario»*, y gana fuerza si sale **después** del carrusel de expectativa, no el mismo día. Al correrlo un día, el orden queda mejor: Instagram abre la promesa hoy, LinkedIn la argumenta mañana con calma. No es un problema, es una mejora.\n\n**Lo que cambia en el calendario:**\n\n| Día | Antes | Ahora |\n|---|---|---|\n| 09.11 | IG + LinkedIn | **Solo Instagram** |\n| 10.11 | Solo el post del papel | Papel (IG) + LinkedIn |\n\nAsí mañana tienes dos piezas en canales distintos, que es mejor que dos el mismo día. Ya no queda ningún día con LinkedIn e Instagram publicando en paralelo hasta el 12.\n\n**Queda pendiente lo de hoy:** la hora del sticker del zoom (12:30) y la del cuaderno (19:00), más el `context` del zoom con la frase que acordamos. Dime y lo cierro.",
+      "actionData": [
+        {
+          "type": "update_post",
+          "id": "post-li-1",
+          "date": "2026-11-10",
+          "result": {
+            "status": "success",
+            "message": "Publicación actualizada: El valor de construir en silencio (Por qué no todo se publica en tiempo real)."
+          }
+        }
+      ],
+      "timestamp": "9/11/2026, 6:40:02 p. m."
     }
   ],
   "importedCustomContextNotes": "",
-  "updatedAt": 1794267600350,
-  "updatedAtISO": "2026-11-09T23:40:00.350Z"
+  "updatedAt": 1794267603297,
+  "updatedAtISO": "2026-11-09T23:40:03.297Z"
 }
