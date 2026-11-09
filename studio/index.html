@@ -538,6 +538,17 @@
                   <button type="button" class="ai-inline-btn" style="padding:6px 10px;font-size:11.5px;" onclick="exportRecoverySnapshot()" title="Descargar el estado local anterior a la última descarga de GitHub">Recuperación</button>
           </div>
           <div id="syncModalStatusMsg" style="display: none; margin-top: 6px; padding: 6px 9px; border-radius: 6px; font-weight: 600; font-size: 11px;"></div>
+          <section id="stateSyncConflictPanel" hidden aria-label="Resolver diferencias del calendario" style="margin-top:10px;padding:10px;border:1px solid #e0c16b;border-radius:8px;">
+            <strong>Elige qué calendario conservar</strong>
+            <p id="stateSyncConflictLocal" style="margin:6px 0;"></p>
+            <p id="stateSyncConflictRemote" style="margin:6px 0;"></p>
+            <p style="margin:6px 0;">Los conteos pueden ser iguales aunque el contenido sea distinto. Cada opción conserva un respaldo de ambas copias; las claves de la bóveda no cambian.</p>
+            <div style="display:flex;gap:6px;flex-wrap:wrap;">
+              <button type="button" class="ai-inline-btn" onclick="resolveStateSyncConflict('local')">Conservar este dispositivo y subirlo</button>
+              <button type="button" class="ai-inline-btn" onclick="resolveStateSyncConflict('remote')">Usar la copia de GitHub</button>
+              <button type="button" class="ai-inline-btn" onclick="exportStateConflictBackup()">Descargar ambas copias</button>
+            </div>
+          </section>
         </div>
 
         <div style="padding:12px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;">

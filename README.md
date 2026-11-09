@@ -33,6 +33,14 @@ No existe recuperación de la contraseña. Si se pierde, las credenciales se deb
 
 Referencias: [Web Crypto AES-GCM](https://developer.mozilla.org/en-US/docs/Web/API/AesGcmParams), [PBKDF2 según OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html), [CryptoKey e IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm).
 
+## Diferencias entre calendarios
+
+Al migrar desde la versión anterior, el navegador puede no tener el identificador de la última versión sincronizada. Si el contenido editorial coincide con GitHub, Studio recupera ese identificador automáticamente, sin reemplazar datos ni crear un conflicto por fechas de guardado o formato JSON.
+
+Si hay diferencias reales, aparecen las cantidades de publicaciones, historias, destacadas y mensajes de ambas copias. Cantidades iguales no implican textos iguales. «Conservar este dispositivo y subirlo» publica el calendario local; «Usar la copia de GitHub» carga el remoto. Antes de cualquiera de esas opciones se guardan ambas copias en un respaldo descargable. Las credenciales de la bóveda se sincronizan por separado y no cambian al resolver un conflicto de calendario.
+
+Si alguien modifica una copia mientras eliges, Studio vuelve a mostrar las versiones actualizadas y exige una nueva elección; no fuerza una sobrescritura.
+
 ## Verificación y publicación
 
 `npm test` comprueba las acciones de Piti, contexto, calendario, almacenamiento y cifrado real, además de simular primeros accesos, otro dispositivo, recuperación automática, conflicto y cambio de contraseña. Las pruebas no utilizan credenciales reales ni escriben en GitHub. La prueba del sanitizador en un navegador real es opcional (`STUDIO_BROWSER_TEST=1`) y requiere un navegador ejecutable compatible.
