@@ -418,6 +418,39 @@
       border-color: var(--blue-accent);
       transform: translateY(-1px);
     }
+    .cal-story-chip {
+      background: #f5f3ff;
+      border: 1px solid #ddd6fe;
+      border-left: 3px solid #8b5cf6;
+      border-radius: 5px;
+      padding: 3px 6px;
+      font-size: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: baseline;
+      gap: 5px;
+      min-width: 0;
+      width: 100%;
+      box-sizing: border-box;
+      overflow: hidden;
+      transition: border-color 0.15s ease, transform 0.12s ease;
+    }
+    .cal-story-chip:hover {
+      border-color: #8b5cf6;
+      transform: translateY(-1px);
+    }
+    .cal-story-chip .cs-time {
+      flex-shrink: 0;
+      font-weight: 700;
+      color: #7c3aed;
+      font-size: 9.5px;
+    }
+    .cal-story-chip .cs-name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: var(--text-main);
+    }
     .cal-chip-title {
       display: -webkit-box;
       -webkit-line-clamp: 2;
@@ -1704,8 +1737,14 @@
   <div id="view-calendar" style="display: none;" class="calendar-container">
     <div class="cal-header-controls">
       <div class="cal-month-title">Noviembre 2026 (Campaña: 9 al 25)</div>
-      <div style="font-size: 12px; color: var(--text-muted);">
-        🎯 <strong>20 de Noviembre:</strong> Exclusiva Revelación del Portafolio en Behance
+      <div style="display:flex; align-items:center; gap:16px; flex-wrap:wrap;">
+        <label style="font-size:12px; color: var(--text-muted); display:flex; align-items:center; gap:6px; cursor:pointer; user-select:none;">
+          <input type="checkbox" id="calShowStories" onchange="onToggleCalStories(this.checked)" checked>
+          Mostrar historias
+        </label>
+        <div style="font-size: 12px; color: var(--text-muted);">
+          🎯 <strong>20 de Noviembre:</strong> Exclusiva Revelación del Portafolio en Behance
+        </div>
       </div>
     </div>
     <div class="cal-grid" id="cal-grid"></div>
@@ -2630,6 +2669,11 @@
     }
 
     /* RENDER CALENDAR (9 AL 25 NOV) */
+    function onToggleCalStories(checked) {
+      localStorage.setItem("po_cal_show_stories", checked ? "1" : "0");
+      renderCalendar();
+    }
+
     function renderCalendar() {
       const calGrid = document.getElementById("cal-grid");
       calGrid.innerHTML = "";
@@ -2652,18 +2696,27 @@
       }
 
       const filtered = getFilteredPosts();
+      const channelFilterEl = document.getElementById("filterChannel");
+      const channelFilter = channelFilterEl ? channelFilterEl.value : "ALL";
+      const storiesPref = localStorage.getItem("po_cal_show_stories") !== "0";
+      const toggle = document.getElementById("calShowStories");
+      if (toggle) toggle.checked = storiesPref;
+      const allStories = (storiesPref && (channelFilter === "ALL" || channelFilter === "Instagram"))
+        ? sortedStories()
+        : [];
 
       for (let day = 1; day <= 30; day++) {
         const dateStr = `2026-11-${String(day).padStart(2, "0")}`;
         const dayPosts = filtered.filter(p => p.date === dateStr);
+        const dayStories = allStories.filter(s => s.date === dateStr);
 
         const cell = document.createElement("div");
         cell.className = "cal-cell";
-        
+
         const inCampaign = day >= 9 && day <= 25;
         if (inCampaign) {
           cell.classList.add("in-campaign");
-        } else if (dayPosts.length === 0) {
+        } else if (dayPosts.length === 0 && dayStories.length === 0) {
           cell.classList.add("outside-campaign");
         }
         if (day === 20) cell.classList.add("target-day");
@@ -2688,6 +2741,18 @@
               <span style="font-size: 9px; color: var(--text-muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${post.format}</span>
             </div>
             <div class="cal-chip-title">${post.title}</div>
+          `;
+          cell.appendChild(chip);
+        });
+
+        dayStories.forEach(story => {
+          const chip = document.createElement("div");
+          chip.className = "cal-story-chip";
+          chip.title = `Historia${story.time ? " " + story.time : ""}: ${story.name}`;
+          chip.onclick = (e) => { e.stopPropagation(); openStoryModal(story.id); };
+          chip.innerHTML = `
+            <span class="cs-time">${story.time ? escapeHtmlForChat(story.time) : "📱"}</span>
+            <span class="cs-name">${escapeHtmlForChat(story.name)}</span>
           `;
           cell.appendChild(chip);
         });
