@@ -11,7 +11,7 @@ const StudioCredentialVault = (() => {
   const element = id => document.getElementById(id);
   const status = (message, error = false) => {
     const label = element('credentialVaultStatus');
-    if (label) { label.textContent = message; label.style.color = error ? '#b45309' : 'var(--text-muted)'; }
+    if (label) { label.hidden = !error; label.textContent = message; label.style.color = error ? '#b45309' : 'var(--text-muted)'; }
   };
   function authError(message) { const box = element('authErrorMsg'); box.textContent = message; box.style.display = 'block'; }
   function db() {

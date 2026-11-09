@@ -76,6 +76,7 @@ function rememberCommonBase(state,sha) {
 function clearStateSyncConflict() { stateSyncConflict=null;const panel=document.getElementById('stateSyncConflictPanel');if(panel)panel.hidden=true; }
 function updateGhCloudStatusUI(text,colorBg,colorText) {
   const token=secretStorage.getItem('po_gh_repo_token')||'',input=document.getElementById('ghRepoTokenInput');if(input&&token&&!input.value)input.value=token;
+  const setup=document.getElementById('githubTokenSetup');if(setup)setup.hidden=!!token&&blockedToken!==token;
   const message=text||(token?'Sincronización automática lista':'Guardado en este dispositivo');
   const compact = /incompatibles/.test(message) ? 'Revisar cambios' : /Sin conexión/.test(message) ? 'Sin conexión' :
     /Sincronizando/.test(message) ? 'Sincronizando…' : /reintent|conservados|Revisa el token|limita consultas/.test(message) ? 'Guardado local · pendiente' :
@@ -230,7 +231,7 @@ function resolveStateSyncConflict(choice) {
   return requestAutomaticSync(true,{prefer:choice,signature:stateSyncConflict.signature});
 }
 function scheduleGitHubCloudSync(immediate=false){clearTimeout(ghCloudSyncTimer);ghCloudSyncTimer=setTimeout(()=>requestAutomaticSync(false),immediate?100:2500);}
-function onGitHubTokenInput(){showSyncModalStatus('Pulsa Conectar Repo una sola vez para guardar este token en la bóveda.',false);}
+function onGitHubTokenInput(){showSyncModalStatus('Pulsa Guardar acceso para guardar este token en la bóveda.',false);}
 async function saveGitHubRepoTokenAndPush(){
   const token=sanitizeApiKey(document.getElementById('ghRepoTokenInput')?.value||'');if(!token){showSyncModalStatus('Introduce tu token de GitHub para la primera configuración.',true);return;}
   secretStorage.setItem('po_gh_repo_token',token);blockedToken=null;
