@@ -708,26 +708,35 @@
     /* =================== ASISTENTE IA COPILOT (SIDE PANEL & MINIMIZABLE DOCK) =================== */
     .ai-copilot-panel {
       position: fixed;
-      top: auto; bottom: 0; right: 0; width: 460px; max-width: 95vw; height: 100%;
+      top: auto;
+      bottom: 20px;
+      right: 20px;
+      width: 460px;
+      max-width: calc(100vw - 32px);
+      height: min(720px, calc(100vh - 40px));
+      max-height: calc(100vh - 40px);
       background: var(--bg);
-      box-shadow: -6px 0 28px rgba(139, 92, 246, 0.15);
-      border-left: 1px solid #e9d5ff;
+      border: 1px solid #e9d5ff;
+      border-radius: 16px;
+      box-shadow: 0 18px 50px rgba(109, 40, 217, 0.26);
       z-index: 1100;
       display: none;
       flex-direction: column;
-      transition: height 0.28s cubic-bezier(0.16, 1, 0.3, 1), width 0.28s cubic-bezier(0.16, 1, 0.3, 1), top 0.28s ease, bottom 0.28s ease, right 0.28s ease, border-radius 0.28s ease, box-shadow 0.28s ease;
+      overflow: hidden;
+      transition: height 0.28s cubic-bezier(0.16, 1, 0.3, 1), width 0.28s cubic-bezier(0.16, 1, 0.3, 1), bottom 0.28s ease, right 0.28s ease, border-radius 0.28s ease, box-shadow 0.28s ease;
     }
     .ai-copilot-panel.minimized {
       top: auto;
-      bottom: 18px;
+      bottom: 20px;
       right: 20px;
-      width: 390px;
+      width: 132px;
       max-width: 92vw;
-      height: 54px;
-      border-radius: 12px;
+      height: 52px;
+      border-radius: 999px;
       border: 1.5px solid #c084fc;
-      box-shadow: 0 12px 32px rgba(109, 40, 217, 0.28);
+      box-shadow: 0 12px 30px rgba(109, 40, 217, 0.3);
       overflow: hidden;
+      cursor: pointer;
     }
     .ai-copilot-panel.minimized .ai-context-toolbar,
     .ai-copilot-panel.minimized .ai-chat-body,
@@ -737,11 +746,14 @@
       display: none !important;
     }
     .ai-copilot-panel.minimized .ai-copilot-header {
-      padding: 12px 16px;
+      padding: 0 16px;
       height: 100%;
       border-bottom: none;
       cursor: pointer;
+      justify-content: center;
     }
+    .ai-copilot-panel.minimized .ai-copilot-header > div:last-child { display: none !important; }
+    .ai-copilot-panel.minimized #minimizedHintBadge { display: none !important; }
     .ai-copilot-header {
       padding: 14px 18px;
       background: linear-gradient(135deg, #fdf4ff, #f5f3ff);
@@ -1528,10 +1540,14 @@
         grid-template-columns: 1fr;
         gap: 4px;
       }
-      /* Panel de Piti a pantalla completa en móvil */
+      /* Ventana flotante de Piti en móvil (con márgenes) */
       .ai-copilot-panel {
-        width: 100vw;
-        max-width: 100vw;
+        width: calc(100vw - 24px);
+        max-width: calc(100vw - 24px);
+        right: 12px;
+        bottom: 12px;
+        height: min(640px, calc(100vh - 24px));
+        max-height: calc(100vh - 24px);
       }
       .ai-minimized-dock {
         right: 12px;
