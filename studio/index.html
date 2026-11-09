@@ -529,15 +529,19 @@
         <!-- SINCRONIZACIÓN DE CONTEXTO Y BÓVEDA EN REPOSITORIO GITHUB -->
         <div style="margin-top: 4px; padding: 10px 12px; border-radius: 8px; background: #f8fafc; border: 1px solid var(--border); font-size: 11.5px;">
           <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; margin-bottom: 6px; flex-wrap: wrap;">
-            <span style="font-weight: 700; color: var(--text-main);">☁️ Persistencia en Repositorio GitHub (Multi-Dispositivo)</span>
+            <span style="font-weight: 700; color: var(--text-main);">Sincronización automática</span>
             <span id="ghCloudStatusBadge" style="font-size: 10.5px; font-weight: 700; padding: 2px 7px; border-radius: 99px; background: var(--bg-secondary); color: var(--text-muted);">🔄 Verificando...</span>
           </div>
+          <p style="margin:0 0 8px;color:var(--text-muted);">Tus cambios se guardan y se combinan entre dispositivos automáticamente.</p>
+          <details>
+            <summary style="cursor:pointer;color:var(--text-muted);">Opciones avanzadas</summary>
           <div style="display: flex; gap: 6px; flex-wrap: wrap;">
-            <input type="password" id="ghRepoTokenInput" autocomplete="off" spellcheck="false" class="form-input" placeholder="Pega tu Token GitHub (ghp_...) aquí para auto-guardar en la nube" style="flex: 1; min-width: 180px; padding: 6px 9px; font-size: 11.5px;" oninput="onGitHubTokenInput(this.value)">
+            <input type="password" id="ghRepoTokenInput" autocomplete="off" spellcheck="false" class="form-input" placeholder="Token de GitHub: configuración inicial o actualización" style="flex: 1; min-width: 180px; padding: 6px 9px; font-size: 11.5px;" oninput="onGitHubTokenInput(this.value)">
             <button type="button" class="ai-inline-btn" style="padding: 6px 10px; font-size: 11.5px; font-weight: 700;" onclick="saveGitHubRepoTokenAndPush()">☁️ Conectar Repo</button>
-            <button type="button" class="ai-inline-btn" style="padding: 6px 10px; font-size: 11.5px;" onclick="pullStateFromGitHubRepoNow(true)" title="Traer último contexto guardado en GitHub">Sincronizar ahora</button>
+            <button type="button" class="ai-inline-btn" style="padding: 6px 10px; font-size: 11.5px;" onclick="pullStateFromGitHubRepoNow(true)" title="Comprobar la sincronización ahora">Sincronizar ahora</button>
                   <button type="button" class="ai-inline-btn" style="padding:6px 10px;font-size:11.5px;" onclick="exportRecoverySnapshot()" title="Descargar el estado local anterior a la última descarga de GitHub">Recuperación</button>
           </div>
+          </details>
           <div id="syncModalStatusMsg" style="display: none; margin-top: 6px; padding: 6px 9px; border-radius: 6px; font-weight: 600; font-size: 11px;"></div>
           <section id="stateSyncConflictPanel" hidden aria-label="Resolver diferencias del calendario" style="margin-top:10px;padding:10px;border:1px solid #e0c16b;border-radius:8px;">
             <strong>Resolver ediciones incompatibles</strong>
