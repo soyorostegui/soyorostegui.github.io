@@ -733,10 +733,16 @@
       max-width: 92vw;
       height: 52px;
       border-radius: 999px;
-      border: 1.5px solid #c084fc;
-      box-shadow: 0 12px 30px rgba(109, 40, 217, 0.3);
+      border: none;
+      background: var(--ai-gradient);
+      box-shadow: 0 12px 30px rgba(124, 58, 237, 0.38);
       overflow: hidden;
       cursor: pointer;
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
+    }
+    .ai-copilot-panel.minimized:hover {
+      box-shadow: 0 16px 36px rgba(124, 58, 237, 0.5);
+      transform: translateY(-1px);
     }
     .ai-copilot-panel.minimized .ai-context-toolbar,
     .ai-copilot-panel.minimized .ai-chat-body,
@@ -751,7 +757,9 @@
       border-bottom: none;
       cursor: pointer;
       justify-content: center;
+      background: transparent;
     }
+    .ai-copilot-panel.minimized .ai-copilot-title { color: #ffffff; }
     .ai-copilot-panel.minimized .ai-copilot-header > div:last-child { display: none !important; }
     .ai-copilot-panel.minimized #minimizedHintBadge { display: none !important; }
     .ai-copilot-header {
