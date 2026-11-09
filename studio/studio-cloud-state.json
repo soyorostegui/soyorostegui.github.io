@@ -18,17 +18,6 @@
       "caption": "No todo lo que se construye se publica de inmediato.\nMe tomé el tiempo para prepararlo.\nAhora toca mostrarlo."
     },
     {
-      "id": "post-li-1",
-      "channel": "LinkedIn",
-      "title": "El valor de construir en silencio (Por qué no todo se publica en tiempo real)",
-      "date": "2026-11-10",
-      "status": "En Diseño",
-      "phase": "Fase 1: Señal",
-      "format": "Reflexiones",
-      "structure": "Post reflexivo sobre el oficio y la madurez profesional antes del autopromoción.",
-      "caption": "Vivimos en una industria obsesionada con compartir cada boceto en tiempo real. Durante meses preferí hacer lo contrario: encerrarme en el taller, afinar el criterio y llevar encargos reales hasta su producción física. Hoy entiendo que el valor de un diseñador no está en la frecuencia con la que publica, sino en la solidez de lo que sostiene en las manos cuando termina."
-    },
-    {
       "id": "post-ig-2",
       "channel": "Instagram",
       "title": "El fetiche del papel y lo tangible (Detalle Físico)",
@@ -38,6 +27,17 @@
       "format": "Post",
       "structure": "Fotografía macro de estudio: textura de papel de algodón, guardas encuadernadas o el pin metálico personal.",
       "caption": "Cuando el vector se convierte en materia.\nEl rigor de un diseñador no se mide en cómo se ve en su pantalla Retina, sino en cómo se siente cuando sale de la imprenta."
+    },
+    {
+      "id": "post-li-1",
+      "channel": "LinkedIn",
+      "title": "El valor de construir en silencio (Por qué no todo se publica en tiempo real)",
+      "date": "2026-11-10",
+      "status": "En Diseño",
+      "phase": "Fase 1: Señal",
+      "format": "Reflexiones",
+      "structure": "Post reflexivo sobre el oficio y la madurez profesional antes del autopromoción.",
+      "caption": "Vivimos en una industria obsesionada con compartir cada boceto en tiempo real. Durante meses preferí hacer lo contrario: encerrarme en el taller, afinar el criterio y llevar encargos reales hasta su producción física. Hoy entiendo que el valor de un diseñador no está en la frecuencia con la que publica, sino en la solidez de lo que sostiene en las manos cuando termina."
     },
     {
       "id": "post-ig-3",
@@ -629,14 +629,6 @@
   ],
   "chatResetId": "legacy",
   "chatHistory": [
-    {
-      "sender": "user",
-      "html": "Debe ser la cantidad que te dije, no tenemos mucho tiempo como para extendernos",
-      "plainText": "Debe ser la cantidad que te dije, no tenemos mucho tiempo como para extendernos",
-      "actionData": null,
-      "timestamp": "8/11/2026, 10:46:33 p. m.",
-      "id": "legacy-cd0384f050a0ed70-0"
-    },
     {
       "sender": "ai",
       "html": "Tienes razón, cerramos en <strong>19 piezas exactas</strong> y no nos extendemos más.<br><br><strong>Conteo definitivo</strong><br><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong>Instagram: 12</strong> → <code>post-ig-1</code> a <code>post-ig-12</code></div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong>LinkedIn: 6</strong> → <code>post-li-1</code> a <code>post-li-6</code></div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong>Behance: 1</strong> → <code>post-behance-1</code></div><br><strong>Qué hago con el sobrante</strong><br><code>post-ai-1794128749201</code> (el macro del domingo) sale del calendario de campaña. Lo archivo con fecha fuera de la ventana para que no cuente ni aparezca en el tablero, conservando su copy por si algún día lo reutilizas.<br><br><strong>Un apunte, sin abrir debate:</strong> el 15.11 queda sin post de feed en Instagram. No es un problema real porque ese día ya tienes <code>st-15</code> (Q&amp;A sobre diseño) y <code>st-16</code> (respuesta a la pregunta más votada). Las historias cubren el hueco y el feed respira antes del sneak peek del 18.<br><br><br><br>Calendario cerrado en <strong>19 piezas</strong>. Dime si pasamos a producción (marcar estados) o a los copies, y avanzamos sin desviarnos.<div style=\"margin-top:8px;padding-top:6px;border-top:1px dashed #e2e8f0;font-size:11px;color:#475569;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px;\">\n          <span>💳 Costo de este uso: <strong style=\"color:#0369a1;\">$0.00128 USD</strong> (Acumulado sesión: $0.07830 USD)</span>\n          <span style=\"color:#64748b;\">5831 in + 1981 out tokens · deepseek-flash</span>\n        </div>",
@@ -3037,9 +3029,18 @@
         }
       ],
       "timestamp": "9/11/2026, 6:40:02 p. m."
+    },
+    {
+      "id": "489f80f0-23ac-4148-bb8c-4694efcd9d4a",
+      "createdAt": "2026-11-09T23:40:44.215Z",
+      "sender": "user",
+      "html": "Oye, revisa el copy del post de instagram esta bien pero quisiera ver si se puede mejorar.",
+      "plainText": "Oye, revisa el copy del post de instagram esta bien pero quisiera ver si se puede mejorar.",
+      "actionData": null,
+      "timestamp": "9/11/2026, 6:40:44 p. m."
     }
   ],
   "importedCustomContextNotes": "",
-  "updatedAt": 1794267603297,
-  "updatedAtISO": "2026-11-09T23:40:03.297Z"
+  "updatedAt": 1794267650684,
+  "updatedAtISO": "2026-11-09T23:40:50.684Z"
 }
