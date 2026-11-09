@@ -1,7 +1,7 @@
 {
   "version": 3,
-  "updatedAt": 1794210079967,
-  "updatedAtISO": "2026-11-09T07:41:19.967Z",
+  "updatedAt": 1794210095613,
+  "updatedAtISO": "2026-11-09T07:41:35.613Z",
   "posts": [
     {
       "id": "post-ig-1",
@@ -603,9 +603,20 @@
       "time": "19:00",
       "highlightId": "hl-criterio",
       "format": "Foto",
-      "status": "Idea",
-      "context": "Cuaderno abierto en ángulo sobre la mesa, con las últimas cinco páginas visibles pero parcialmente cubiertas por la mano o por otra hoja. Luz lateral para que se marque el relieve del grafito. Se fotografía el gesto, no la solución: el espectador intuye que hay un proyecto avanzado sin poder leerlo. Cierra la jornada de expectativa después del carrusel de la mañana y del test del 10% del mediodía, y demuestra proceso real sin adelantar el lanzamiento del 20.",
+      "status": "En Diseño",
+      "context": "Foto del cuaderno abierto en ángulo, con las páginas recientes tapadas a medias por la mano o por el propio lomo. Se elige la hora de cierre del día porque funciona como pausa reflexiva, no como contenido de mediodía. Cumple la regla de expectativa: se evidencia que hay trabajo avanzado sin revelar ningún proyecto.",
       "order": 5
+    },
+    {
+      "id": "st-1794210093097-811",
+      "name": "¿Quién más aleja el zoom para probar legibilidad?",
+      "date": "2026-11-09",
+      "time": "12:30",
+      "highlightId": "hl-criterio",
+      "format": "Sticker",
+      "status": "En Diseño",
+      "context": "Clip de 6 segundos grabando la pantalla mientras el zoom del lienzo se aleja hasta que la pieza queda pequeña. Sobre el último fotograma va el sticker de pregunta con la frase del título. Funciona porque convierte un hábito privado del oficio en una pregunta de reconocimiento: la gente responde 'yo' sin sentirse examinada. Además mide interés real en legibilidad antes de producir el carrusel del 16.",
+      "order": 3
     }
   ],
   "highlights": [
@@ -2874,6 +2885,35 @@
       "plainText": "Me gusta, pero cambiemosle el enfoque, hagamoslo mas \"¿Quien mas hace esto para ver si sus dseños tienen buena legibilidad?\"",
       "actionData": null,
       "timestamp": "9/11/2026, 2:41:17 a. m."
+    },
+    {
+      "sender": "ai",
+      "html": "Me gusta más así. La pieza deja de ser «mira lo que hago» y pasa a ser <strong>«¿tú también?»</strong> — que es lo que convierte una historia en conversación. El gesto es el mismo (alejar el zoom), pero el foco se corre de tu criterio a un hábito compartido.<br><br><div class=\"ai-md-h\">Cómo queda</div><br><strong>«¿Quién más aleja el zoom para probar legibilidad?»</strong> — hoy, 12:30 p.m., DAILY.<br><br>Clip de 6 segundos: el lienzo se encoge hasta volverse pequeño en pantalla. Sobre el último fotograma, el sticker de pregunta con esa frase. Quien la vea ya hizo ese gesto cien veces; va a responder, y esas respuestas te dan material para el carrusel del 16 sin spoilers.<br><br><strong>Menos obvio, pero importante:</strong> el sticker convierte la historia en interacción medible. Si responde poca gente, sabes que el tema de legibilidad no mueve a tu audiencia y ajustas el post del 16 antes de invertirle diseño.<br><br><div class=\"ai-md-h\">El cierre del día queda así</div><br>| Hora | Historia | Destacada |<br>|---|---|---|<br>| 08:00 | Café en la U | DAILY |<br>| 12:30 | ¿Quién más aleja el zoom? | DAILY |<br>| 19:00 | Las últimas 5 páginas del cuaderno | DAILY |<br><br><strong>Un aviso:</strong> hoy hay <strong>dos historias de «Las últimas 5 páginas del cuaderno»</strong> — <code>…826896-649</code> y <code>…928386-913</code>, la segunda es la que aprobaste (páginas tapadas a medias). Si no borro la primera, mañana el calendario muestra el mismo título dos veces. Dime y la elimino junto con <code>st-1</code> (la de la mesa de trabajo, que ya descartaste).<div style=\"margin-top:8px;padding-top:6px;border-top:1px dashed #e2e8f0;font-size:11px;color:#475569;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px;\">\n          <span>💳 Costo de este uso: <strong style=\"color:#0369a1;\">$0.00136 USD</strong> (Acumulado sesión: $0.16168 USD)</span>\n          <span style=\"color:#64748b;\">7305 in + 1987 out tokens · deepseek-flash</span>\n        </div>",
+      "plainText": "Me gusta más así. La pieza deja de ser «mira lo que hago» y pasa a ser **«¿tú también?»** — que es lo que convierte una historia en conversación. El gesto es el mismo (alejar el zoom), pero el foco se corre de tu criterio a un hábito compartido.\n\n## Cómo queda\n\n**«¿Quién más aleja el zoom para probar legibilidad?»** — hoy, 12:30 p.m., DAILY.\n\nClip de 6 segundos: el lienzo se encoge hasta volverse pequeño en pantalla. Sobre el último fotograma, el sticker de pregunta con esa frase. Quien la vea ya hizo ese gesto cien veces; va a responder, y esas respuestas te dan material para el carrusel del 16 sin spoilers.\n\n**Menos obvio, pero importante:** el sticker convierte la historia en interacción medible. Si responde poca gente, sabes que el tema de legibilidad no mueve a tu audiencia y ajustas el post del 16 antes de invertirle diseño.\n\n## El cierre del día queda así\n\n| Hora | Historia | Destacada |\n|---|---|---|\n| 08:00 | Café en la U | DAILY |\n| 12:30 | ¿Quién más aleja el zoom? | DAILY |\n| 19:00 | Las últimas 5 páginas del cuaderno | DAILY |\n\n**Un aviso:** hoy hay **dos historias de «Las últimas 5 páginas del cuaderno»** — `…826896-649` y `…928386-913`, la segunda es la que aprobaste (páginas tapadas a medias). Si no borro la primera, mañana el calendario muestra el mismo título dos veces. Dime y la elimino junto con `st-1` (la de la mesa de trabajo, que ya descartaste).",
+      "actionData": [
+        {
+          "type": "create_story",
+          "name": "¿Quién más aleja el zoom para probar legibilidad?",
+          "date": "2026-11-09",
+          "time": "12:30",
+          "highlight": "DAILY",
+          "format": "Sticker",
+          "status": "En Diseño",
+          "context": "Clip de 6 segundos grabando la pantalla mientras el zoom del lienzo se aleja hasta que la pieza queda pequeña. Sobre el último fotograma va el sticker de pregunta con la frase del título. Funciona porque convierte un hábito privado del oficio en una pregunta de reconocimiento: la gente responde 'yo' sin sentirse examinada. Además mide interés real en legibilidad antes de producir el carrusel del 16."
+        },
+        {
+          "type": "update_story",
+          "id": "st-1794209928386-913",
+          "name": "Las últimas 5 páginas del cuaderno (páginas tapadas a medias)",
+          "date": "2026-11-09",
+          "time": "19:00",
+          "highlight": "DAILY",
+          "format": "Foto",
+          "status": "En Diseño",
+          "context": "Foto del cuaderno abierto en ángulo, con las páginas recientes tapadas a medias por la mano o por el propio lomo. Se elige la hora de cierre del día porque funciona como pausa reflexiva, no como contenido de mediodía. Cumple la regla de expectativa: se evidencia que hay trabajo avanzado sin revelar ningún proyecto."
+        }
+      ],
+      "timestamp": "9/11/2026, 2:41:33 a. m."
     }
   ],
   "importedCustomContextNotes": ""
