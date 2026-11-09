@@ -1484,7 +1484,7 @@
         grid-template-columns: 1fr;
         gap: 4px;
       }
-      /* Copilot IA a pantalla completa en móvil */
+      /* Panel de Piti a pantalla completa en móvil */
       .ai-copilot-panel {
         width: 100vw;
         max-width: 100vw;
@@ -1510,7 +1510,7 @@
         <div class="auth-logo">PO</div>
         <div class="auth-brand-text">
           <h2>Peter Orostegui · Studio</h2>
-          <p>Ecosistema de Comunicación &amp; Copilot IA 2026</p>
+          <p>Ecosistema de Comunicación &amp; Piti 2026</p>
         </div>
       </div>
 
@@ -1614,7 +1614,7 @@
       </div>
 
       <button class="btn-ai-main" onclick="toggleAICopilot()">
-        <span>✨</span> Copilot IA
+        <span>✨</span> Piti
       </button>
 
       <select class="filter-select" id="filterChannel" onchange="renderCurrentView()">
@@ -2030,7 +2030,7 @@
   <div class="ai-copilot-panel" id="aiCopilotPanel">
     <div class="ai-copilot-header" onclick="onCopilotHeaderClick(event)">
       <div class="ai-copilot-title">
-        <span>✨</span> <span>Copilot IA</span>
+        <span>✨</span> <span>Piti</span>
         <span id="minimizedHintBadge" style="display:none; font-size:11px; font-weight:500; background:#ede9fe; color:#6d28d9; padding:2px 7px; border-radius:99px;">Minimizado · Clic para abrir</span>
       </div>
       <div style="display: flex; align-items: center; gap: 6px;" onclick="event.stopPropagation()">
@@ -2065,7 +2065,7 @@
 
     <div class="ai-chat-body" id="aiChatBody">
       <div class="chat-bubble ai">
-        ¡Hola Peter! Soy tu Copilot de estrategia editorial. Tengo acceso a tu calendario completo de publicaciones y <strong>recuerdo todo lo que vamos conversando</strong>.<br><br>
+        ¡Hola Peter! Soy Piti, tu asistente de estrategia editorial. Tengo acceso a tu calendario completo de publicaciones y <strong>recuerdo todo lo que vamos conversando</strong>.<br><br>
         Puedes minimizar esta ventana con el botón <strong>«—»</strong> sin perder el hilo, o descargar/vincular tu archivo <code>CONTEXTO_CONVERSACIONES_IA.md</code> arriba.
       </div>
     </div>
@@ -2769,7 +2769,7 @@
       container.innerHTML = "";
       const list = sortedStories();
       if (list.length === 0) {
-        container.innerHTML = `<div style="font-size:13px;color:var(--text-muted);padding:8px 0;">Sin historias todavía. Usa «+ Nueva historia» o pídeselas al Copilot.</div>`;
+        container.innerHTML = `<div style="font-size:13px;color:var(--text-muted);padding:8px 0;">Sin historias todavía. Usa «+ Nueva historia» o pídeselas a Piti.</div>`;
         return;
       }
       list.forEach((s, idx) => {
@@ -4528,12 +4528,12 @@
         md += `## 3. Notas de Contexto Importadas\n${importedCustomContextNotes}\n\n---\n\n`;
       }
 
-      md += `## 4. Historial de Conversaciones y Acuerdos con Copilot IA (${chatHistory.length} mensajes)\n\n`;
+      md += `## 4. Historial de Conversaciones y Acuerdos con Piti (${chatHistory.length} mensajes)\n\n`;
       if (chatHistory.length === 0) {
         md += `*Aún no se han registrado mensajes en el historial.*\n`;
       } else {
         chatHistory.forEach((entry, idx) => {
-          const roleLabel = entry.sender === "user" ? "👤 **Peter Orostegui**" : (entry.sender === "ai" ? "✨ **Copilot IA**" : "⚠️ **Aviso Sistema**");
+          const roleLabel = entry.sender === "user" ? "👤 **Peter Orostegui**" : (entry.sender === "ai" ? "✨ **Piti**" : "⚠️ **Aviso Sistema**");
           md += `### [${idx + 1}] ${roleLabel} — *${entry.timestamp || nowStr}*\n`;
           md += `${entry.plainText || stripHtmlToPlain(entry.html)}\n`;
           if (entry.actionData) {
@@ -4658,7 +4658,7 @@
       if (!body) return;
       body.innerHTML = `
         <div class="chat-bubble ai">
-          ¡Hola Peter! Soy tu Copilot de estrategia editorial. Tengo acceso a tu calendario completo de publicaciones y <strong>recuerdo todo lo que vamos conversando</strong>.<br><br>
+          ¡Hola Peter! Soy Piti, tu asistente de estrategia editorial. Tengo acceso a tu calendario completo de publicaciones y <strong>recuerdo todo lo que vamos conversando</strong>.<br><br>
           Puedes minimizar esta ventana con el botón <strong>«—»</strong> sin perder el hilo, o descargar/vincular tu archivo <code>CONTEXTO_CONVERSACIONES_IA.md</code> arriba.
         </div>
       `;
@@ -5263,7 +5263,7 @@
 
       const historyForAI = buildConversationHistoryForAI();
 
-      const systemPrompt = `Eres el Asistente Copilot y Director de Arte del calendario editorial de Peter Orostegui (@soyorostegui).
+      const systemPrompt = `Eres Piti, el Asistente y Director de Arte del calendario editorial de Peter Orostegui (@soyorostegui).
 Proyecto: Portafolio Profesional 2026 (Sustentación el 20 de Noviembre).
 Canales: Behance (landing oficial 20 nov), LinkedIn (criterio, negocio, preprensa) e Instagram (sin spoilers, oficio, detalles macro).
 
