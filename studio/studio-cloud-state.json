@@ -1,7 +1,7 @@
 {
   "version": 3,
-  "updatedAt": 1794209733352,
-  "updatedAtISO": "2026-11-09T07:35:33.352Z",
+  "updatedAt": 1794209804335,
+  "updatedAtISO": "2026-11-09T07:36:44.335Z",
   "posts": [
     {
       "id": "post-ig-1",
@@ -2776,6 +2776,13 @@
       "plainText": "## Hoy, 09.11: dos publicaciones\n\n| Hora sugerida | Pieza | Canal | Formato | Estado |\n|---|---|---|---|---|\n| 11:00 a.m. | Lanzamiento Expectativa: «Mientras tanto...» | Instagram | Carrusel | **Listo** |\n| 6:00 p.m. | El valor de construir en silencio | LinkedIn | Reflexiones | **En Diseño** |\n\n**El de Instagram ya está cerrado**, es el único publicado como *Listo* en toda la campaña. Abre el arco de expectativa:\n\n> No todo lo que se construye se publica de inmediato.\n> Me tomé el tiempo para prepararlo.\n> Ahora toca mostrarlo.\n\nVa primero porque fija el tono y no revela nada: es una promesa, no un anuncio.\n\n**El de LinkedIn le contesta**, tres horas después y en otro registro. Mismo argumento, pero con la frase que da autoridad: *«el valor de un diseñador no está en la frecuencia con la que publica, sino en la solidez de lo que sostiene en las manos»*. Por eso va en la tarde: no compite con el carrusel, lo profundiza. **Le falta pasar a Listo** antes de que lo programes.\n\n## Las historias de hoy\n\n1. **Café en la universidad** — DAILY, *En Diseño*, con la frase que definimos. Es la tuya de esta mañana.\n2. **Detrás de cámaras de la mesa de trabajo** — SETUP, *Idea*. Mediodía, cuando ya estés en el taller.\n3. **Caja de preguntas: «¿Qué se viene?»** — DAILY, *Idea*. Al cierre, para recoger preguntas que alimenten los días siguientes.\n\n## Dos cosas que te van a morder\n\n**La caja de preguntas abre una ventana que no puedes cerrar.** Si hoy preguntas «¿qué se viene?», alguien va a pedir fecha o detalles del portafolio. Si no quieres spoilers, la respuesta tiene que ser evasiva y eso desgasta. Mi consejo: cámbiala por **«¿qué querías saber del oficio?»** — recoge preguntas de proceso, no de lanzamiento.\n\n**El calendario está en 30 historias**, pero hoy `st-1` y `st-3` siguen en *Idea*. Si no las grabas hoy, la curva se te corre.\n\nSi quieres, en el siguiente mensaje te mando los bloques para dejar `post-li-1` en *Listo*, la historia de café en *Listo*, y ajustar el texto de la caja de preguntas. Dime cuáles de los tres.",
       "actionData": null,
       "timestamp": "9/11/2026, 2:35:30 a. m."
+    },
+    {
+      "sender": "user",
+      "html": "No me convencen las historias 2 y 3",
+      "plainText": "No me convencen las historias 2 y 3",
+      "actionData": null,
+      "timestamp": "9/11/2026, 2:36:41 a. m."
     }
   ],
   "importedCustomContextNotes": ""
