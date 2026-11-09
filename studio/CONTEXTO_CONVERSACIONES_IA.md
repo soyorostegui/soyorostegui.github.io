@@ -1,9 +1,9 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 9/11/2026, 2:38:34 a. m.
+**Última actualización:** 9/11/2026, 2:38:53 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
-**Gasto Acumulado en Sesión:** $0.15905 USD (674072 tokens)
+**Gasto Acumulado en Sesión:** $0.16032 USD (682910 tokens)
 
 ---
 
@@ -50,8 +50,8 @@
 - `st-1794204588972-274` #1 · 2026-11-09 08:10 · DAILY · **Café en la universidad: la manía de medir todo** · Foto · En Diseño · Contexto: Foto casual en la universidad: taza de café, mesa y cuaderno, con una sola frase corta de diseño en cuerpo pequeño (por ejemplo 'La manía de medir todo'). Va a las 08:00, antes de la primera story del taller, para abrir el día con tono humano y sin spoilers del portafolio; el formato espontáneo busca comentarios, no alcance.
 - `st-1` #2 · 2026-11-09 09:00 · SETUP · **Detrás de cámaras de la mesa de trabajo** · Foto · Idea · Contexto: Primera imagen de la campaña: la mesa real antes de cualquier publicación. Abre la semana mostrando que el trabajo existe desde antes, coherente con el copy del post-ig-1 sobre construir sin publicar de inmediato.
 - `st-1794209826895-352` #3 · 2026-11-09 12:30 · SETUP · **La primera prueba que sale mal** · Video · En Diseño · Contexto: Video vertical de 6 segundos: el pliego recién salido de la imprenta con el registro corrido, la mano entra al cuadro, gira la hoja, la revisa y la deja a un lado. Se graba en el taller con luz de ventana, sin trípode ni texto encima. Va a las 12:30 porque es el momento en que estás revisando producción y funciona como puente entre la historia de la mañana y el post de LinkedIn de la tarde: demuestra con materia lo que el copy afirma con palabras, y no adelanta ningún proyecto del portafolio.
-- `st-3` #4 · 2026-11-09 19:00 · DAILY · **Caja de preguntas: «¿Qué se viene?»** · Sticker · Idea · Contexto: Cierra el día convirtiendo la expectativa en conversación. Sirve además como sondeo previo al lanzamiento: las respuestas anticipan qué proyecto interesa más antes del 20.11.
-- `st-1794209826896-649` #5 · 2026-11-09 19:00 · DAILY · **Las últimas 5 páginas del cuaderno** · Foto · En Diseño · Contexto: Foto cenital del cuaderno de bocetos abierto por las últimas páginas, con el ángulo cerrado y la esquina doblada para que solo se intuyan trazos y no se lea ningún proyecto. Se publica a las 19:00, cuando el carrusel de expectativa ya lleva horas en el feed y la audiencia está preguntando qué es. Es la respuesta visual a esa curiosidad sin romper la regla de no spoilers: confirma que el trabajo existe y está en curso.
+- `st-1794209826896-649` #4 · 2026-11-09 19:00 · DAILY · **Las últimas 5 páginas del cuaderno** · Foto · En Diseño · Contexto: Foto cenital del cuaderno de bocetos abierto por las últimas páginas, con el ángulo cerrado y la esquina doblada para que solo se intuyan trazos y no se lea ningún proyecto. Se publica a las 19:00, cuando el carrusel de expectativa ya lleva horas en el feed y la audiencia está preguntando qué es. Es la respuesta visual a esa curiosidad sin romper la regla de no spoilers: confirma que el trabajo existe y está en curso.
+- `st-1794209928386-913` #5 · 2026-11-09 19:00 · DAILY · **Las últimas 5 páginas del cuaderno (páginas tapadas a medias)** · Foto · Idea · Contexto: Cuaderno abierto en ángulo sobre la mesa, con las últimas cinco páginas visibles pero parcialmente cubiertas por la mano o por otra hoja. Luz lateral para que se marque el relieve del grafito. Se fotografía el gesto, no la solución: el espectador intuye que hay un proyecto avanzado sin poder leerlo. Cierra la jornada de expectativa después del carrusel de la mañana y del test del 10% del mediodía, y demuestra proceso real sin adelantar el lanzamiento del 20.
 - `st-4` #6 · 2026-11-10 09:30 · SETUP · **Muestra de texturas de papel especial** · Foto · Idea · Contexto: Macro de tres papeles sobre la mesa de corte, el mismo día del post-ig-2 sobre lo tangible. La imagen prueba en textura lo que el caption afirma en concepto.
 - `st-5` #7 · 2026-11-10 18:30 · DAILY · **Encuesta: ¿Prefieres papel mate o brillante?** · Encuesta · Idea · Contexto: Se lanza cuando la audiencia ya vio la textura de la mañana. Convierte una decisión técnica de taller en conversación de fin de jornada, en la ventana de mayor tráfico de la tarde.
 - `st-7` #8 · 2026-11-11 10:00 · SETUP · **Preparando planchas de impresión** · Boomerang · Idea · Contexto: Refuerza el post-ig-3 sobre errores de preprensa y el post-li-2 sobre vallas OOH. El boomerang del registro de planchas demuestra en imagen lo que los captions sostienen en texto.
@@ -83,7 +83,7 @@
 
 ---
 
-## 4. Historial de Conversaciones y Acuerdos con Copilot IA (71 mensajes)
+## 4. Historial de Conversaciones y Acuerdos con Copilot IA (72 mensajes)
 
 ### [1] 👤 **Peter Orostegui** — *8/11/2026, 10:43:33 p. m.*
 Hola
@@ -1550,4 +1550,23 @@ Las dos respetan la regla del 09.11: expectativa sin información.
 1. no me gusta, no entiendo por qué me asocias con imprenta, imprenta, imprenta. yo no frecuento imprentas y tampoco trabajo en una.
 
 2. me gusta la apruebo.
+
+### [72] ✨ **Copilot IA** — *9/11/2026, 2:38:51 a. m.*
+Tienes razón y el error es mío. Metí la imprenta porque el calendario habla de preprensa y artes finales, y confundí el *tema* de tus publicaciones con tu *día a día*. Tú no vives en una imprenta: diriges piezas, decides criterio, y la producción física es solo el final del recorrido. Corrijo el enfoque.
+
+## Aprobado: «Las últimas 5 páginas del cuaderno»
+
+Va hoy a las 7:00 p.m. en DAILY. Cuaderno abierto en ángulo, páginas tapadas a medias. Se ve el trabajo, no se lee qué es.
+
+## Reemplazo para el mediodía, sin imprenta
+
+**«Alejarme del monitor: el test del 10%»** — Captura, 12:30 p.m.
+
+Grabación de pantalla de 6 segundos: alejas el zoom del archivo hasta que la pieza queda pequeña en el lienzo. Si a ese tamaño no se entiende, no está resuelta. Es el gesto que separa a quien mira el diseño de quien lo dirige, y no requiere salir de tu escritorio.
+
+Además te siembra el post del 16 sobre vallas a 80 km/h: mismo principio, misma lógica de distancia. Quien siga la cuenta verá el hilo.
+
+**Sobre las historias viejas:** borro la caja de preguntas, cuyo reemplazo ya aprobaste. La de la mesa de trabajo la mantengo hasta que digas si este test la sustituye.
+
+> **Acción estructurada generada:** `[{"type":"create_story","name":"Las últimas 5 páginas del cuaderno (páginas tapadas a medias)","date":"2026-11-09","time":"19:00","highlight":"DAILY","format":"Foto","status":"Idea","context":"Cuaderno abierto en ángulo sobre la mesa, con las últimas cinco páginas visibles pero parcialmente cubiertas por la mano o por otra hoja. Luz lateral para que se marque el relieve del grafito. Se fotografía el gesto, no la solución: el espectador intuye que hay un proyecto avanzado sin poder leerlo. Cierra la jornada de expectativa después del carrusel de la mañana y del test del 10% del mediodía, y demuestra proceso real sin adelantar el lanzamiento del 20."},{"type":"delete_items","entity":"story","ids":["st-3"],"names":["Caja de preguntas: «¿Qué se viene?»"]}]`
 
