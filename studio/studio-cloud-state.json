@@ -1,7 +1,7 @@
 {
   "version": 3,
-  "updatedAt": 1794210373633,
-  "updatedAtISO": "2026-11-09T07:46:13.633Z",
+  "updatedAt": 1794210387231,
+  "updatedAtISO": "2026-11-09T07:46:27.231Z",
   "posts": [
     {
       "id": "post-ig-1",
@@ -2928,6 +2928,13 @@
       "plainText": "## Las 34 historias del cronograma\n\n**09.11 — hoy (6 historias)**\n| Historia | Destacada | Formato | Estado |\n|---|---|---|---|\n| Café en la universidad: la manía de medir todo | DAILY | Foto | En Diseño |\n| Detrás de cámaras de la mesa de trabajo | SETUP | Foto | Idea |\n| La primera prueba que sale mal | SETUP | Video | En Diseño |\n| ¿Quién más aleja el zoom para probar legibilidad? | DAILY | Sticker | En Diseño |\n| Las últimas 5 páginas del cuaderno | DAILY | Foto | En Diseño |\n| Las últimas 5 páginas del cuaderno *(páginas tapadas a medias)* | DAILY | Foto | En Diseño |\n\n**10.11 (2)** · Muestra de texturas de papel especial — SETUP — Foto · Encuesta: ¿mate o brillante? — DAILY — Encuesta\n\n**11.11 (1)** · Preparando planchas de impresión — SETUP — Boomerang\n\n**12.11 (3)** · Debate: ¿cuándo simplificar un logo? — DAILY — Sticker · Libros y referencias que uso — DAILY — Foto · Hojeando un cuadernillo impreso — PORTFOLIO — Video\n\n**13.11 (2)** · Reflejo de luz en estampado dorado — SETUP — Video · Votación: ¿Serif o Sans? — DAILY — Encuesta\n\n**14.11 (1)** · Muestra de espaciado y kerning manual — DAILY — Captura\n\n**15.11 (1)** · Q&A: diseño y dirección de arte — DAILY — Sticker\n\n**16.11 (3)** · Pasando en carro frente a una valla — SETUP — Video · La escala humana frente a una pieza OOH — PORTFOLIO — Foto · Render de visualizer en After Effects — SETUP — Video\n\n**17.11 (2)** · Caravana de vehículos con gráfica instalada — SETUP — Video · El concierto en vivo lleno de visuales — PORTFOLIO — Foto\n\n**18.11 (1)** · Detalle macro de hilo y bordado en gorra — PORTFOLIO — Foto\n\n**19.11 (3)** · Sticker de Countdown: 24 Horas — PORTFOLIO — Sticker · Mesa con los 4 tomos encuadernados — PORTFOLIO — Foto · Reflexión previa al día de entrega — PTR — Texto\n\n**20.11 (2)** · Sustentación en directo — PORTFOLIO — Foto · ¡Portafolio online en Behance! — PORTFOLIO — Sticker\n\n**21.11 (2)** · Hablemos de diseño: proyectos y colaboraciones — CONTACT — Sticker · Respuesta en menos de 24 h — CONTACT — Foto\n\n**22.11 (2)** · 8 semestres de formación, taller propio — PTR — Foto · La firma: PTR — PTR — Foto\n\n**23.11 (1)** · Cómo cotizar un proyecto de branding — CONTACT — Carrusel\n\n**24.11 (1)** · Mi proceso de trabajo en 4 pasos — CONTACT — Carrusel\n\n**25.11 (1)** · Agenda abierta: proyectos para 2027 — CONTACT — Foto\n\n## Tres cosas que salen de esta revisión\n\n**1. El sticker de preguntas que aprobaste ya existe.** Es `st-…093097-811`, está hoy en DAILY, en *En Diseño*, sin hora. No hay que crearlo: hay que darle hora y grabar el clip. Esa es la buena noticia.\n\n**2. «La primera prueba que sale mal» ya estaba.** Es `st-…826895-352` y es exactamente la que rechazaste por el tema imprenta. Sigue ocupando un lugar hoy.\n\n**3. Dos títulos repetidos.** «Las últimas 5 páginas del cuaderno» aparece dos veces; la buena es la que lleva «páginas tapadas a medias».\n\n**Hoy quedan 6 historias para un solo día.** Con lo aprobado quedan cuatro útiles: café (8:00), zoom (12:30), cuaderno (19:00) y una cuarta que aún no decides. Dime si borro `st-1`, `st-3` y la del cuaderno sin sufijo, y si quieres una cuarta historia para cerrar el día.",
       "actionData": null,
       "timestamp": "9/11/2026, 2:46:11 a. m."
+    },
+    {
+      "sender": "user",
+      "html": "Las de hoy.",
+      "plainText": "Las de hoy.",
+      "actionData": null,
+      "timestamp": "9/11/2026, 2:46:24 a. m."
     }
   ],
   "importedCustomContextNotes": ""
