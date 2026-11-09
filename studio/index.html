@@ -723,7 +723,21 @@
       display: none;
       flex-direction: column;
       overflow: hidden;
-      transition: height 0.28s cubic-bezier(0.16, 1, 0.3, 1), width 0.28s cubic-bezier(0.16, 1, 0.3, 1), bottom 0.28s ease, right 0.28s ease, border-radius 0.28s ease, box-shadow 0.28s ease;
+      transform-origin: bottom right;
+      will-change: transform, opacity, width, height;
+      animation: pitiWindowIn 0.42s cubic-bezier(0.32, 0.72, 0, 1);
+      transition:
+        height 0.42s cubic-bezier(0.32, 0.72, 0, 1),
+        width 0.42s cubic-bezier(0.32, 0.72, 0, 1),
+        bottom 0.42s cubic-bezier(0.32, 0.72, 0, 1),
+        right 0.42s cubic-bezier(0.32, 0.72, 0, 1),
+        border-radius 0.42s cubic-bezier(0.32, 0.72, 0, 1),
+        box-shadow 0.42s cubic-bezier(0.32, 0.72, 0, 1),
+        transform 0.2s cubic-bezier(0.32, 0.72, 0, 1);
+    }
+    @keyframes pitiWindowIn {
+      from { opacity: 0; transform: translateY(10px) scale(0.97); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
     }
     .ai-copilot-panel.minimized {
       top: auto;
@@ -738,7 +752,6 @@
       box-shadow: 0 12px 30px rgba(124, 58, 237, 0.38);
       overflow: hidden;
       cursor: pointer;
-      transition: box-shadow 0.2s ease, transform 0.2s ease;
     }
     .ai-copilot-panel.minimized:hover {
       box-shadow: 0 16px 36px rgba(124, 58, 237, 0.5);
