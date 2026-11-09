@@ -709,12 +709,12 @@
     .ai-copilot-panel {
       position: fixed;
       top: auto;
-      bottom: 20px;
+      bottom: 80px;
       right: 20px;
       width: 460px;
       max-width: calc(100vw - 32px);
-      height: min(720px, calc(100vh - 40px));
-      max-height: calc(100vh - 40px);
+      height: min(680px, calc(100vh - 100px));
+      max-height: calc(100vh - 100px);
       background: var(--bg);
       border: 1px solid #e9d5ff;
       border-radius: 16px;
@@ -730,43 +730,36 @@
       from { opacity: 0; transform: translateY(6px); }
       to { opacity: 1; transform: translateY(0); }
     }
-    .ai-copilot-panel.minimized {
-      top: auto;
-      bottom: 20px;
+
+    /* Botón flotante persistente de Piti */
+    .piti-fab {
+      position: fixed;
       right: 20px;
-      width: 132px;
-      max-width: 92vw;
-      height: 52px;
-      border-radius: 999px;
+      bottom: 20px;
+      height: 46px;
+      padding: 0 14px;
       border: none;
+      border-radius: 999px;
       background: var(--ai-gradient);
-      box-shadow: 0 12px 30px rgba(124, 58, 237, 0.38);
-      overflow: hidden;
+      color: #ffffff;
+      font-family: var(--font);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
       cursor: pointer;
+      z-index: 1200;
+      box-shadow: 0 12px 30px rgba(124, 58, 237, 0.38);
       transition: transform 0.16s ease, box-shadow 0.16s ease;
     }
-    .ai-copilot-panel.minimized:hover {
-      box-shadow: 0 16px 36px rgba(124, 58, 237, 0.5);
+    .piti-fab:hover {
       transform: translateY(-1px);
+      box-shadow: 0 16px 36px rgba(124, 58, 237, 0.5);
     }
-    .ai-copilot-panel.minimized .ai-context-toolbar,
-    .ai-copilot-panel.minimized .ai-chat-body,
-    .ai-copilot-panel.minimized .ai-quick-prompts,
-    .ai-copilot-panel.minimized .ai-panel-footer,
-    .ai-copilot-panel.minimized .ai-chat-input-row {
-      display: none !important;
-    }
-    .ai-copilot-panel.minimized .ai-copilot-header {
-      padding: 0 16px;
-      height: 100%;
-      border-bottom: none;
-      cursor: pointer;
-      justify-content: center;
-      background: transparent;
-    }
-    .ai-copilot-panel.minimized .ai-copilot-title { color: #ffffff; }
-    .ai-copilot-panel.minimized .ai-copilot-header > div:last-child { display: none !important; }
-    .ai-copilot-panel.minimized #minimizedHintBadge { display: none !important; }
+    .piti-fab:active { transform: translateY(0) scale(0.98); }
+    .piti-fab.is-open { box-shadow: 0 8px 22px rgba(124, 58, 237, 0.28); }
     .ai-copilot-header {
       padding: 14px 18px;
       background: linear-gradient(135deg, #fdf4ff, #f5f3ff);
@@ -2110,12 +2103,10 @@
     <div class="ai-copilot-header" onclick="onCopilotHeaderClick(event)">
       <div class="ai-copilot-title">
         <span>✨</span> <span>Piti</span>
-        <span id="minimizedHintBadge" style="display:none; font-size:11px; font-weight:500; background:#ede9fe; color:#6d28d9; padding:2px 7px; border-radius:99px;">Minimizado · Clic para abrir</span>
       </div>
       <div style="display: flex; align-items: center; gap: 6px;" onclick="event.stopPropagation()">
         <span class="config-key-link" onclick="openKeyModal()" id="apiKeyStatusLabel" title="Abrir Bóveda de Claves Multi-IA">🔑 Configurar IA</span>
-        <button class="ai-window-btn" id="btnMinimizeCopilot" onclick="toggleMinimizeAICopilot()" title="Minimizar ventana abajo a la derecha">—</button>
-        <button class="ai-window-btn" onclick="closeAICopilot()" title="Ocultar panel (la conversación queda guardada)">✕</button>
+        <button class="ai-window-btn" onclick="closeAICopilot()" title="Ocultar ventana (la conversación queda guardada)">✕</button>
       </div>
     </div>
 
@@ -2156,9 +2147,13 @@
 
     <div class="ai-panel-footer">
       <span style="font-size:11px; color:var(--text-muted);">Piti · asistente editorial</span>
-      <button class="ai-ctx-btn" onclick="toggleMinimizeAICopilot()" title="Minimizar a la esquina inferior derecha">— Minimizar</button>
     </div>
   </div>
+
+  <!-- BOTÓN FLOTANTE DE PITI (siempre visible, abre y cierra la ventana) -->
+  <button id="pitiFab" class="piti-fab" onclick="toggleAICopilot()" title="Abrir o cerrar Piti">
+    <span>✨</span> Piti
+  </button>
 
   <script>
     // Inventario Estratégico
@@ -4771,38 +4766,6 @@
       updateContextToolbarUI();
     }
 
-    function toggleAICopilot() {
-      const panel = document.getElementById("aiCopilotPanel");
-      if (panel.style.display !== "flex") {
-        panel.style.display = "flex";
-        panel.classList.remove("minimized");
-        localStorage.setItem("po_ai_panel_state", "open");
-        syncMinimizeButtonUI(false);
-        updateApiKeyStatus();
-        setTimeout(() => document.getElementById("aiChatInput")?.focus(), 80);
-      } else if (panel.classList.contains("minimized")) {
-        panel.classList.remove("minimized");
-        localStorage.setItem("po_ai_panel_state", "open");
-        syncMinimizeButtonUI(false);
-        setTimeout(() => document.getElementById("aiChatInput")?.focus(), 80);
-      } else {
-        // Si ya está abierto y presionan el botón principal, minimizarlo suavemente en vez de cerrarlo de golpe
-        toggleMinimizeAICopilot();
-      }
-    }
-
-    function syncMinimizeButtonUI(isMin) {
-      const btn = document.getElementById("btnMinimizeCopilot");
-      const hint = document.getElementById("minimizedHintBadge");
-      if (btn) {
-        btn.innerText = isMin ? "🔼" : "—";
-        btn.title = isMin ? "Restaurar ventana del asistente" : "Minimizar ventana abajo a la derecha";
-      }
-      if (hint) {
-        hint.style.display = isMin ? "inline-block" : "none";
-      }
-    }
-
     function pulsePitiFade() {
       const panel = document.getElementById("aiCopilotPanel");
       if (!panel) return;
@@ -4811,36 +4774,42 @@
       panel.style.animation = "";
     }
 
-    function toggleMinimizeAICopilot() {
+    function openAICopilot() {
       const panel = document.getElementById("aiCopilotPanel");
-      if (panel.style.display !== "flex") {
-        panel.style.display = "flex";
-      }
-      const isNowMin = !panel.classList.contains("minimized");
-      panel.classList.toggle("minimized", isNowMin);
+      if (!panel) return;
+      panel.style.display = "flex";
+      panel.classList.remove("minimized");
       pulsePitiFade();
-      syncMinimizeButtonUI(isNowMin);
-      localStorage.setItem("po_ai_panel_state", isNowMin ? "minimized" : "open");
-      if (!isNowMin) {
-        const body = document.getElementById("aiChatBody");
-        if (body) body.scrollTop = body.scrollHeight;
-        setTimeout(() => document.getElementById("aiChatInput")?.focus(), 80);
-      }
-    }
-
-    function onCopilotHeaderClick(event) {
-      const panel = document.getElementById("aiCopilotPanel");
-      if (panel && panel.classList.contains("minimized")) {
-        toggleMinimizeAICopilot();
-      }
+      localStorage.setItem("po_ai_panel_state", "open");
+      const fab = document.getElementById("pitiFab");
+      if (fab) fab.classList.add("is-open");
+      updateApiKeyStatus();
+      const body = document.getElementById("aiChatBody");
+      if (body) body.scrollTop = body.scrollHeight;
+      setTimeout(() => { const inp = document.getElementById("aiChatInput"); if (inp) inp.focus(); }, 80);
     }
 
     function closeAICopilot() {
       const panel = document.getElementById("aiCopilotPanel");
-      panel.classList.remove("minimized");
+      if (!panel) return;
       panel.style.display = "none";
+      panel.classList.remove("minimized");
       localStorage.setItem("po_ai_panel_state", "closed");
+      const fab = document.getElementById("pitiFab");
+      if (fab) fab.classList.remove("is-open");
     }
+
+    function toggleAICopilot() {
+      const panel = document.getElementById("aiCopilotPanel");
+      if (!panel) return;
+      if (panel.style.display === "flex") closeAICopilot();
+      else openAICopilot();
+    }
+
+    // El minimizado tipo dock ya no se usa: la ventana se cierra desde el botón de Piti.
+    function syncMinimizeButtonUI() {}
+    function toggleMinimizeAICopilot() { closeAICopilot(); }
+    function onCopilotHeaderClick() {}
 
     function restoreCopilotPanelState() {
       renderSavedChatHistory();
@@ -4850,11 +4819,10 @@
       if (st === "open") {
         panel.style.display = "flex";
         panel.classList.remove("minimized");
-        syncMinimizeButtonUI(false);
-      } else if (st === "minimized") {
-        panel.style.display = "flex";
-        panel.classList.add("minimized");
-        syncMinimizeButtonUI(true);
+        const fab = document.getElementById("pitiFab");
+        if (fab) fab.classList.add("is-open");
+      } else {
+        panel.style.display = "none";
       }
     }
 
