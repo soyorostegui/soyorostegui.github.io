@@ -1,7 +1,7 @@
 {
   "version": 3,
-  "updatedAt": 1794210416029,
-  "updatedAtISO": "2026-11-09T07:46:56.029Z",
+  "updatedAt": 1794210428069,
+  "updatedAtISO": "2026-11-09T07:47:08.069Z",
   "posts": [
     {
       "id": "post-ig-1",
@@ -214,18 +214,6 @@
     }
   ],
   "stories": [
-    {
-      "time": "09:00",
-      "context": "Primera imagen de la campaña: la mesa real antes de cualquier publicación. Abre la semana mostrando que el trabajo existe desde antes, coherente con el copy del post-ig-1 sobre construir sin publicar de inmediato.",
-      "formatDetail": "Foto con retícula",
-      "id": "st-1",
-      "date": "2026-11-09",
-      "name": "Detrás de cámaras de la mesa de trabajo",
-      "highlightId": "hl-proceso",
-      "format": "Foto",
-      "status": "Idea",
-      "order": 1
-    },
     {
       "time": "09:30",
       "context": "Macro de tres papeles sobre la mesa de corte, el mismo día del post-ig-2 sobre lo tangible. La imagen prueba en textura lo que el caption afirma en concepto.",
@@ -573,28 +561,6 @@
       "format": "Foto",
       "status": "En Diseño",
       "order": 0
-    },
-    {
-      "id": "st-1794209826895-352",
-      "name": "La primera prueba que sale mal",
-      "date": "2026-11-09",
-      "time": "12:30",
-      "highlightId": "hl-proceso",
-      "format": "Video",
-      "status": "En Diseño",
-      "context": "Video vertical de 6 segundos: el pliego recién salido de la imprenta con el registro corrido, la mano entra al cuadro, gira la hoja, la revisa y la deja a un lado. Se graba en el taller con luz de ventana, sin trípode ni texto encima. Va a las 12:30 porque es el momento en que estás revisando producción y funciona como puente entre la historia de la mañana y el post de LinkedIn de la tarde: demuestra con materia lo que el copy afirma con palabras, y no adelanta ningún proyecto del portafolio.",
-      "order": 2
-    },
-    {
-      "id": "st-1794209826896-649",
-      "name": "Las últimas 5 páginas del cuaderno",
-      "date": "2026-11-09",
-      "time": "19:00",
-      "highlightId": "hl-criterio",
-      "format": "Foto",
-      "status": "En Diseño",
-      "context": "Foto cenital del cuaderno de bocetos abierto por las últimas páginas, con el ángulo cerrado y la esquina doblada para que solo se intuyan trazos y no se lea ningún proyecto. Se publica a las 19:00, cuando el carrusel de expectativa ya lleva horas en el feed y la audiencia está preguntando qué es. Es la respuesta visual a esa curiosidad sin romper la regla de no spoilers: confirma que el trabajo existe y está en curso.",
-      "order": 4
     },
     {
       "id": "st-1794209928386-913",
@@ -2949,6 +2915,28 @@
       "plainText": "Borralas",
       "actionData": null,
       "timestamp": "9/11/2026, 2:46:53 a. m."
+    },
+    {
+      "sender": "ai",
+      "html": "Hecho. Borro las tres: la de la mesa de trabajo, la de la prueba de imprenta que rechazaste y el duplicado del cuaderno.<br><br><strong>Lo que queda de hoy, después del borrado:</strong><br><br>| Historia | Destacada | Formato |<br>|---|---|---|<br>| Café en la universidad: la manía de medir todo | DAILY | Foto |<br>| ¿Quién más aleja el zoom para probar legibilidad? | DAILY | Sticker |<br>| Las últimas 5 páginas del cuaderno <em>(páginas tapadas a medias)</em> | DAILY | Foto |<br><br>Tres historias, un solo destacada. La secuencia del día queda coherente: la manía personal en la mañana, el hábito compartido al mediodía, el trabajo real al cierre.<br><br><strong>Dos cosas que siguen sin resolver:</strong><br><br><div class=\"ai-md-li\" style=\"padding-left:4px;\"><strong>1.</strong> <strong>Las dos que quedan no tienen hora.</strong> Solo el café tiene las 08:00. Si no les pongo hora, el sticker del zoom y el cuaderno se publican en el orden en que los subas, no en el que planeaste. Mi propuesta: zoom a las <strong>12:30</strong> y cuaderno a las <strong>19:00</strong>.</div><div class=\"ai-md-li\" style=\"padding-left:4px;\"><strong>2.</strong> <strong>El sticker del zoom está en «En Diseño»</strong>, no en <em>Idea</em> ni <em>Listo</em>. Y su <code>context</code> sigue siendo el de una idea vieja, no la frase «¿tú también alejas el zoom?» que acordamos.</div><br>Dime si te mando los bloques de actualización de esas dos (hora, estado y contexto) o si prefieres dejarlas como están.<div style=\"margin-top:8px;padding-top:6px;border-top:1px dashed #e2e8f0;font-size:11px;color:#475569;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px;\">\n          <span>💳 Costo de este uso: <strong style=\"color:#0369a1;\">$0.00118 USD</strong> (Acumulado sesión: $0.16558 USD)</span>\n          <span style=\"color:#64748b;\">8172 in + 1550 out tokens · deepseek-flash</span>\n        </div>",
+      "plainText": "Hecho. Borro las tres: la de la mesa de trabajo, la de la prueba de imprenta que rechazaste y el duplicado del cuaderno.\n\n**Lo que queda de hoy, después del borrado:**\n\n| Historia | Destacada | Formato |\n|---|---|---|\n| Café en la universidad: la manía de medir todo | DAILY | Foto |\n| ¿Quién más aleja el zoom para probar legibilidad? | DAILY | Sticker |\n| Las últimas 5 páginas del cuaderno *(páginas tapadas a medias)* | DAILY | Foto |\n\nTres historias, un solo destacada. La secuencia del día queda coherente: la manía personal en la mañana, el hábito compartido al mediodía, el trabajo real al cierre.\n\n**Dos cosas que siguen sin resolver:**\n\n1. **Las dos que quedan no tienen hora.** Solo el café tiene las 08:00. Si no les pongo hora, el sticker del zoom y el cuaderno se publican en el orden en que los subas, no en el que planeaste. Mi propuesta: zoom a las **12:30** y cuaderno a las **19:00**.\n2. **El sticker del zoom está en «En Diseño»**, no en *Idea* ni *Listo*. Y su `context` sigue siendo el de una idea vieja, no la frase «¿tú también alejas el zoom?» que acordamos.\n\nDime si te mando los bloques de actualización de esas dos (hora, estado y contexto) o si prefieres dejarlas como están.",
+      "actionData": [
+        {
+          "type": "delete_items",
+          "entity": "story",
+          "ids": [
+            "st-1",
+            "st-1794209826895-352",
+            "st-1794209826896-649"
+          ],
+          "names": [
+            "Detrás de cámaras de la mesa de trabajo",
+            "La primera prueba que sale mal",
+            "Las últimas 5 páginas del cuaderno"
+          ]
+        }
+      ],
+      "timestamp": "9/11/2026, 2:47:05 a. m."
     }
   ],
   "importedCustomContextNotes": ""
