@@ -1,9 +1,9 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 9/11/2026, 2:45:58 a. m.
+**Última actualización:** 9/11/2026, 2:46:13 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
-**Gasto Acumulado en Sesión:** $0.16168 USD (692202 tokens)
+**Gasto Acumulado en Sesión:** $0.16340 USD (702434 tokens)
 
 ---
 
@@ -84,7 +84,7 @@
 
 ---
 
-## 4. Historial de Conversaciones y Acuerdos con Copilot IA (75 mensajes)
+## 4. Historial de Conversaciones y Acuerdos con Copilot IA (76 mensajes)
 
 ### [1] 👤 **Peter Orostegui** — *8/11/2026, 10:43:33 p. m.*
 Hola
@@ -1599,4 +1599,59 @@ Clip de 6 segundos: el lienzo se encoge hasta volverse pequeño en pantalla. Sob
 
 ### [75] 👤 **Peter Orostegui** — *9/11/2026, 2:45:55 a. m.*
 Dame la lista de las historias que hay actualmente
+
+### [76] ✨ **Copilot IA** — *9/11/2026, 2:46:11 a. m.*
+## Las 34 historias del cronograma
+
+**09.11 — hoy (6 historias)**
+| Historia | Destacada | Formato | Estado |
+|---|---|---|---|
+| Café en la universidad: la manía de medir todo | DAILY | Foto | En Diseño |
+| Detrás de cámaras de la mesa de trabajo | SETUP | Foto | Idea |
+| La primera prueba que sale mal | SETUP | Video | En Diseño |
+| ¿Quién más aleja el zoom para probar legibilidad? | DAILY | Sticker | En Diseño |
+| Las últimas 5 páginas del cuaderno | DAILY | Foto | En Diseño |
+| Las últimas 5 páginas del cuaderno *(páginas tapadas a medias)* | DAILY | Foto | En Diseño |
+
+**10.11 (2)** · Muestra de texturas de papel especial — SETUP — Foto · Encuesta: ¿mate o brillante? — DAILY — Encuesta
+
+**11.11 (1)** · Preparando planchas de impresión — SETUP — Boomerang
+
+**12.11 (3)** · Debate: ¿cuándo simplificar un logo? — DAILY — Sticker · Libros y referencias que uso — DAILY — Foto · Hojeando un cuadernillo impreso — PORTFOLIO — Video
+
+**13.11 (2)** · Reflejo de luz en estampado dorado — SETUP — Video · Votación: ¿Serif o Sans? — DAILY — Encuesta
+
+**14.11 (1)** · Muestra de espaciado y kerning manual — DAILY — Captura
+
+**15.11 (1)** · Q&A: diseño y dirección de arte — DAILY — Sticker
+
+**16.11 (3)** · Pasando en carro frente a una valla — SETUP — Video · La escala humana frente a una pieza OOH — PORTFOLIO — Foto · Render de visualizer en After Effects — SETUP — Video
+
+**17.11 (2)** · Caravana de vehículos con gráfica instalada — SETUP — Video · El concierto en vivo lleno de visuales — PORTFOLIO — Foto
+
+**18.11 (1)** · Detalle macro de hilo y bordado en gorra — PORTFOLIO — Foto
+
+**19.11 (3)** · Sticker de Countdown: 24 Horas — PORTFOLIO — Sticker · Mesa con los 4 tomos encuadernados — PORTFOLIO — Foto · Reflexión previa al día de entrega — PTR — Texto
+
+**20.11 (2)** · Sustentación en directo — PORTFOLIO — Foto · ¡Portafolio online en Behance! — PORTFOLIO — Sticker
+
+**21.11 (2)** · Hablemos de diseño: proyectos y colaboraciones — CONTACT — Sticker · Respuesta en menos de 24 h — CONTACT — Foto
+
+**22.11 (2)** · 8 semestres de formación, taller propio — PTR — Foto · La firma: PTR — PTR — Foto
+
+**23.11 (1)** · Cómo cotizar un proyecto de branding — CONTACT — Carrusel
+
+**24.11 (1)** · Mi proceso de trabajo en 4 pasos — CONTACT — Carrusel
+
+**25.11 (1)** · Agenda abierta: proyectos para 2027 — CONTACT — Foto
+
+## Tres cosas que salen de esta revisión
+
+**1. El sticker de preguntas que aprobaste ya existe.** Es `st-…093097-811`, está hoy en DAILY, en *En Diseño*, sin hora. No hay que crearlo: hay que darle hora y grabar el clip. Esa es la buena noticia.
+
+**2. «La primera prueba que sale mal» ya estaba.** Es `st-…826895-352` y es exactamente la que rechazaste por el tema imprenta. Sigue ocupando un lugar hoy.
+
+**3. Dos títulos repetidos.** «Las últimas 5 páginas del cuaderno» aparece dos veces; la buena es la que lleva «páginas tapadas a medias».
+
+**Hoy quedan 6 historias para un solo día.** Con lo aprobado quedan cuatro útiles: café (8:00), zoom (12:30), cuaderno (19:00) y una cuarta que aún no decides. Dime si borro `st-1`, `st-3` y la del cuaderno sin sufijo, y si quieres una cuarta historia para cerrar el día.
 
