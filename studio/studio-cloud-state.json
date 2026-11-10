@@ -242,18 +242,6 @@
       "order": 1
     },
     {
-      "time": "19:00",
-      "context": "Foto del cuaderno abierto en ángulo, con las páginas recientes tapadas a medias por la mano o por el propio lomo. Se elige la hora de cierre del día porque funciona como pausa reflexiva, no como contenido de mediodía. Cumple la regla de expectativa: se evidencia que hay trabajo avanzado sin revelar ningún proyecto.",
-      "formatDetail": "",
-      "id": "st-1794209928386-913",
-      "name": "Las últimas 5 páginas del cuaderno (páginas tapadas a medias)",
-      "date": "2026-11-18",
-      "highlightId": "hl-criterio",
-      "format": "Foto",
-      "status": "En Diseño",
-      "order": 1
-    },
-    {
       "time": "09:30",
       "context": "Macro de tres papeles sobre la mesa de corte, el mismo día del post-ig-2 sobre lo tangible. La imagen prueba en textura lo que el caption afirma en concepto.",
       "formatDetail": "Foto macro",
@@ -318,12 +306,12 @@
       "context": "Movimiento de carpeta: sale de SETUP y entra en PORTFOLIO. El cuadernillo impreso es producto tangible, no proceso de taller, y a las 20:00 se consume como adelanto pausado del hito.",
       "formatDetail": "Video rápido",
       "id": "st-10",
-      "date": "2026-11-12",
+      "date": "2026-11-14",
       "name": "Hojeando rápido un cuadernillo impreso",
       "highlightId": "hl-hito",
       "format": "Video",
       "status": "Idea",
-      "order": 2
+      "order": 1
     },
     {
       "time": "10:30",
@@ -444,6 +432,18 @@
       "format": "Foto",
       "status": "Idea",
       "order": 0
+    },
+    {
+      "time": "19:00",
+      "context": "Foto del cuaderno abierto en ángulo, con las páginas recientes tapadas a medias por la mano o por el propio lomo. Se elige la hora de cierre del día porque funciona como pausa reflexiva, no como contenido de mediodía. Cumple la regla de expectativa: se evidencia que hay trabajo avanzado sin revelar ningún proyecto.",
+      "formatDetail": "",
+      "id": "st-1794209928386-913",
+      "name": "Las últimas 5 páginas del cuaderno (páginas tapadas a medias)",
+      "date": "2026-11-18",
+      "highlightId": "hl-criterio",
+      "format": "Foto",
+      "status": "En Diseño",
+      "order": 1
     },
     {
       "time": "09:00",
@@ -2781,6 +2781,6 @@
     }
   ],
   "importedCustomContextNotes": "",
-  "updatedAt": 1794286656588,
-  "updatedAtISO": "2026-11-10T04:57:36.588Z"
+  "updatedAt": 1794286668025,
+  "updatedAtISO": "2026-11-10T04:57:48.025Z"
 }

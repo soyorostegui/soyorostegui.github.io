@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 9/11/2026, 11:57:36 p. m.
+**Última actualización:** 9/11/2026, 11:57:48 p. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.17213 USD (803538 tokens)
 
@@ -54,10 +54,10 @@
 - `st-7` #5 · 2026-11-11 10:00 · SETUP · **Preparando planchas de impresión** · Boomerang · Idea · Contexto: Refuerza el post-ig-3 sobre errores de preprensa y el post-li-2 sobre vallas OOH. El boomerang del registro de planchas demuestra en imagen lo que los captions sostienen en texto.
 - `st-8` #6 · 2026-11-12 09:00 · DAILY · **Debate: ¿Cuándo un logo necesita simplificarse?** · Sticker · Idea · Contexto: Abre el día del carrusel post-ig-4 sobre anatomía de un sistema visual. El sticker invita a responder antes de que la publicación explique el argumento completo.
 - `st-9` #7 · 2026-11-12 12:30 · DAILY · **Libros y referencias de diseño que uso** · Foto · Idea · Contexto: Muestra la biblioteca de trabajo a mediodía, cuando el carrusel del día ya está circulando. Humaniza el criterio: detrás de cada decisión hay referencias concretas y verificables.
-- `st-10` #8 · 2026-11-12 20:00 · PORTFOLIO · **Hojeando rápido un cuadernillo impreso** · Video · Idea · Contexto: Movimiento de carpeta: sale de SETUP y entra en PORTFOLIO. El cuadernillo impreso es producto tangible, no proceso de taller, y a las 20:00 se consume como adelanto pausado del hito.
-- `st-11` #9 · 2026-11-13 10:30 · SETUP · **Reflejo de luz en estampado dorado** · Video · Idea · Contexto: Video de acabado especial con la luz moviéndose sobre el foil. Acompaña al sneak peek post-ig-5 del mismo día sin revelar la marca completa: solo el detalle geométrico.
-- `st-12` #10 · 2026-11-13 18:00 · DAILY · **Votación: ¿Tipografía Serif o Sans?** · Encuesta · Idea · Contexto: Cierra la tarde conectando con el post-ig-6 sobre tipografía y tono de voz. La encuesta genera datos reales de preferencia que alimentan la conversación del día siguiente.
-- `st-13` #11 · 2026-11-14 11:00 · DAILY · **Muestra de espaciado y kerning manual** · Captura · Idea · Contexto: Captura ampliada del ajuste de kerning, el detalle que casi nadie publica. Demuestra rigor tipográfico sin depender de un post principal, en un día sin publicación de feed.
+- `st-11` #8 · 2026-11-13 10:30 · SETUP · **Reflejo de luz en estampado dorado** · Video · Idea · Contexto: Video de acabado especial con la luz moviéndose sobre el foil. Acompaña al sneak peek post-ig-5 del mismo día sin revelar la marca completa: solo el detalle geométrico.
+- `st-12` #9 · 2026-11-13 18:00 · DAILY · **Votación: ¿Tipografía Serif o Sans?** · Encuesta · Idea · Contexto: Cierra la tarde conectando con el post-ig-6 sobre tipografía y tono de voz. La encuesta genera datos reales de preferencia que alimentan la conversación del día siguiente.
+- `st-13` #10 · 2026-11-14 11:00 · DAILY · **Muestra de espaciado y kerning manual** · Captura · Idea · Contexto: Captura ampliada del ajuste de kerning, el detalle que casi nadie publica. Demuestra rigor tipográfico sin depender de un post principal, en un día sin publicación de feed.
+- `st-10` #11 · 2026-11-14 20:00 · PORTFOLIO · **Hojeando rápido un cuadernillo impreso** · Video · Idea · Contexto: Movimiento de carpeta: sale de SETUP y entra en PORTFOLIO. El cuadernillo impreso es producto tangible, no proceso de taller, y a las 20:00 se consume como adelanto pausado del hito.
 - `st-15` #12 · 2026-11-15 10:00 · DAILY · **Q&A: Preguntas sobre diseño y dirección de arte** · Sticker · Idea · Contexto: Abre el domingo recogiendo preguntas para responder en la historia siguiente. Aprovecha el tiempo de ocio del fin de semana, cuando la audiencia consume contenido con más calma.
 - `st-17` #13 · 2026-11-16 08:30 · SETUP · **Pasando en carro frente a una valla en la avenida** · Video · Idea · Contexto: Abre la semana del OOH con la prueba de lectura real a velocidad de circulación. Refuerza el post-ig-7 del mismo día: 3 segundos para captar la atención de quien maneja.
 - `st-18` #14 · 2026-11-16 13:00 · PORTFOLIO · **La escala humana frente a una pieza OOH** · Foto · Idea · Contexto: Completa la historia de la mañana con la dimensión real de la pieza. La escala humana es el argumento más persuasivo ante un cliente que aún duda del formato exterior.
