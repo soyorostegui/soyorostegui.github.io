@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 10/11/2026, 2:54:00 a. m.
+**Última actualización:** 10/11/2026, 2:54:25 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.17229 USD (804618 tokens)
 
@@ -26,13 +26,13 @@
 | `post-ig-7` | 2026-11-16 | Instagram | **Idea** | Cómo diseñar una valla que sí se lea a 80 km/h | En publicidad exterior tienes 3 segundos para captar la atención de al... |
 | `post-li-3` | 2026-11-16 | LinkedIn | **Idea** | Más allá de la portada: cómo se orquesta la identidad visual de un lanzamiento musical | En la industria musical, el diseño gráfico es el pegamento de la campa... |
 | `post-ig-8` | 2026-11-17 | Instagram | **Idea** | 3 creadores de diseño que sigo para entrenar el ojo | No sigo cuentas por estética: sigo creadores que me obligan a pensar m... |
-| `post-li-4` | 2026-11-22 | LinkedIn | **Idea** | Diseñar a contrarreloj para música en vivo: cuando el margen de error es cero | Si el equipo de producción te pide ajustar los visuales de una gira 2 ... |
 | `post-ig-9` | 2026-11-18 | Instagram | **Idea** | Sneak Peek 02: Streetwear & Textil | Identidad que se viste. En 48 horas el archivo completo sale a la luz.... |
 | `post-ig-10` | 2026-11-19 | Instagram | **Idea** | 24 Horas: Mañana se abre el archivo | Todo lo que estuvo tomando forma en silencio, en un solo lugar. Mañana... |
-| `post-li-5` | 2026-11-19 | LinkedIn | **Idea** | Unpopular opinion: Los manuales de marca de 150 páginas ya nadie los lee | Entregar un PDF de 150 páginas con reglas sobre cómo NO girar el logo ... |
+| `post-li-5` | 2026-11-18 | LinkedIn | **Idea** | Unpopular opinion: Los manuales de marca de 150 páginas ya nadie los lee | Entregar un PDF de 150 páginas con reglas sobre cómo NO girar el logo ... |
 | `post-behance-1` | 2026-11-20 | Behance | **Idea** | PORTAFOLIO PROFESIONAL 2026 — PETER OROSTEGUI | Presentación oficial de 8 semestres de formación y proyectos reales de... |
 | `post-ig-11` | 2026-11-20 | Instagram | **Idea** | Portafolio 2026: Ya disponible (El Gran Lanzamiento) | Oficialmente publicado. 8 semestres de formación, marcas reales, empaq... |
 | `post-li-6` | 2026-11-20 | LinkedIn | **Idea** | Hoy presento oficialmente mi Portafolio Profesional 2026 | Hoy es un día decisivo: culmino mi etapa académica y presento mi Porta... |
+| `post-li-4` | 2026-11-22 | LinkedIn | **Idea** | Diseñar a contrarreloj para música en vivo: cuando el margen de error es cero | Si el equipo de producción te pide ajustar los visuales de una gira 2 ... |
 | `post-ig-12` | 2026-11-23 | Instagram | **Idea** | Recap: El viaje del taller a la calle | Un agradecimiento especial a todos los que hicieron parte de este proc... |
 
 ### Proyectos
@@ -203,18 +203,6 @@
     "caption": "No sigo cuentas por estética: sigo creadores que me obligan a pensar mejor.\n\nEstos 3 perfiles me ayudan a afinar criterio, composición y narrativa visual.\n\nGuárdalo para tu próxima sesión de referencias."
   },
   {
-    "id": "post-li-4",
-    "projectId": "project-portafolio-2026",
-    "title": "Diseñar a contrarreloj para música en vivo: cuando el margen de error es cero",
-    "date": "2026-11-22",
-    "channel": "LinkedIn",
-    "status": "Idea",
-    "phase": "Fase 2: Archivo",
-    "format": "Cultura",
-    "structure": "Reflexión sobre la velocidad y adaptabilidad en la producción de entretenimiento en vivo.",
-    "caption": "Si el equipo de producción te pide ajustar los visuales de una gira 2 horas antes de abrir puertas, no hay espacio para la queja ni para la improvisación técnica. Trabajar para espectáculos en vivo te enseña a crear sistemas modulares, automatizar flujos y resolver con precisión bajo presión."
-  },
-  {
     "id": "post-ig-9",
     "projectId": "project-portafolio-2026",
     "title": "Sneak Peek 02: Streetwear & Textil",
@@ -242,7 +230,7 @@
     "id": "post-li-5",
     "projectId": "project-portafolio-2026",
     "title": "Unpopular opinion: Los manuales de marca de 150 páginas ya nadie los lee",
-    "date": "2026-11-19",
+    "date": "2026-11-18",
     "channel": "LinkedIn",
     "status": "Idea",
     "phase": "Fase 3: Convocatoria",
@@ -285,6 +273,18 @@
     "format": "Hitos",
     "structure": "Anuncio oficial de culminación y sustentación, agradecimiento a mentores y enlace directo al proyecto en Behance para captación de oportunidades.",
     "caption": "Hoy es un día decisivo: culmino mi etapa académica y presento mi Portafolio Profesional de Diseño Gráfico 2026. Han sido años de trabajo con marcas del sector gastronómico, salud, moda urbana y entretenimiento masivo. Los invito a ver el proyecto completo en Behance (link en comentarios)."
+  },
+  {
+    "id": "post-li-4",
+    "projectId": "project-portafolio-2026",
+    "title": "Diseñar a contrarreloj para música en vivo: cuando el margen de error es cero",
+    "date": "2026-11-22",
+    "channel": "LinkedIn",
+    "status": "Idea",
+    "phase": "Fase 2: Archivo",
+    "format": "Cultura",
+    "structure": "Reflexión sobre la velocidad y adaptabilidad en la producción de entretenimiento en vivo.",
+    "caption": "Si el equipo de producción te pide ajustar los visuales de una gira 2 horas antes de abrir puertas, no hay espacio para la queja ni para la improvisación técnica. Trabajar para espectáculos en vivo te enseña a crear sistemas modulares, automatizar flujos y resolver con precisión bajo presión."
   },
   {
     "id": "post-ig-12",
