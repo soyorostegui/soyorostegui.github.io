@@ -154,6 +154,13 @@
             </div>
           </section>
   <!-- VISTA 1: KANBAN -->
+  <div id="kanbanTools" class="project-actions" style="margin:8px 0 12px;">
+    <div><span id="kanbanSummary" role="status" class="project-muted"></span><p id="kanbanHiddenStories" class="project-muted" hidden>Hay historias fuera de los filtros actuales.</p></div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;">
+      <button type="button" class="ai-inline-btn" onclick="showAllKanbanStories()">Ver todas las historias</button>
+      <button type="button" class="ai-inline-btn" onclick="resetAgendaFilters()">Mostrar todo</button>
+    </div>
+  </div>
   <div id="view-kanban" class="kanban-board">
     <!-- Idea -->
     <div class="kanban-col" data-status="Idea">

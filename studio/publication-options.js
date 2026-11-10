@@ -56,7 +56,7 @@ function addCatalogOption(){
  try{persistOptionCatalog(kind,[...saved,item]);refreshAgendaControls();refreshPublicationOptions();document.getElementById(kind==='networks'?'edit-channel':'edit-format').value=name;input.value='';status.textContent='Opción añadida y seleccionada.';onPublicationFormatChange();}
  catch(_){status.textContent='No se pudo guardar la opción.';}
 }
-function storyAsAgendaEntry(story){return {...story,title:story.name,type:'post',format:'Historia',channel:story.channel||'Instagram',description:story.context||'',__story:true};}
+function storyAsAgendaEntry(story){return {...story,status:story.status||'Idea',title:story.name,type:'post',format:'Historia',channel:story.channel||'Instagram',description:story.context||'',__story:true};}
 function onPublicationFormatChange(){
  const isStory=document.getElementById('edit-type').value==='post'&&document.getElementById('edit-format').value==='Historia';
  const fields=document.getElementById('publicationStoryFields');if(fields)fields.hidden=!isStory;

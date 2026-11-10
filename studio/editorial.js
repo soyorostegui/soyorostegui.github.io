@@ -387,6 +387,7 @@
       document.getElementById(`btn-${view}`).classList.add("active");
 
       document.getElementById("view-kanban").style.display = view === "kanban" ? "grid" : "none";
+      document.getElementById("kanbanTools").style.display = view === "kanban" ? "flex" : "none";
       document.getElementById("view-table").style.display = view === "table" ? "block" : "none";
       document.getElementById("view-calendar").style.display = view === "calendar" ? "block" : "none";
       document.getElementById("view-stories").style.display = view === "stories" ? "flex" : "none";
@@ -457,6 +458,22 @@
       });
     }
 
+    function showAllKanbanStories() {
+      document.getElementById('filterProject').value='ALL';
+      document.getElementById('filterChannel').value='ALL';
+      document.getElementById('filterType').value='story';
+      renderCurrentView();
+    }
+    function resetAgendaFilters() {
+      for(const id of ['filterProject','filterChannel','filterType'])document.getElementById(id).value='ALL';
+      renderCurrentView();
+    }
+    function updateKanbanSummary(entries) {
+      const label=document.getElementById('kanbanSummary');
+      const count=entries.filter(entry=>entry.__story).length;
+      if(label)label.textContent=`${entries.length} entradas visibles · ${count} de ${stories.length} historias`;
+      const note=document.getElementById('kanbanHiddenStories');if(note)note.hidden=count>=stories.length;
+    }
     function renderKanban() {
       const listIdea = document.getElementById("cards-idea");
       const listDesign = document.getElementById("cards-design");
@@ -469,12 +486,14 @@
       listPublished.innerHTML = "";
 
       let count = { Idea: 0, "En Diseño": 0, Listo: 0, Publicado: 0 };
-      const filtered = getFilteredPosts(true);
+      const filtered = getFilteredPosts(true).sort((a,b)=>String(a.date).localeCompare(String(b.date))||String(a.time||"99:99").localeCompare(String(b.time||"99:99"))||String(a.id).localeCompare(String(b.id)));
+      updateKanbanSummary(filtered);
 
       filtered.forEach(post => {
         const card = document.createElement("div");
         card.className = "notion-card";
         card.dataset.postId = post.id;
+        card.dataset.entryKind = post.__story ? "story" : "post";
         card.setAttribute("draggable", "true");
         card.addEventListener("dragstart", (e) => {
           e.dataTransfer.setData("text/plain", post.id);
@@ -496,7 +515,7 @@
 
         card.innerHTML = `
           <div class="card-top">
-            <span class="tag ${channelClass}">${escapeHtmlForChat(entryLabel(post))}</span>
+            <span class="tag ${channelClass}">${post.__story ? "Historia · " : ""}${escapeHtmlForChat(entryLabel(post))}</span>
             <span class="card-date">📅 ${escapeHtmlForChat(post.date.substring(5))}</span>
           </div>
           <div class="card-title">${escapeHtmlForChat(post.title)}</div>
