@@ -107,7 +107,7 @@ function exportSyncBackup(key,name) {
 }
 function exportRecoverySnapshot(){exportSyncBackup('po_sync_recovery','studio-recuperacion.json');}
 function exportStateConflictBackup(){exportSyncBackup('po_sync_conflict_backup','studio-conflicto-ambas-copias.json');}
-function editorOpen(){return ['modalOverlay','storyOverlay'].some(id=>document.getElementById(id)?.style.display==='flex');}
+function editorOpen(){return (typeof calendarDragEntry!=='undefined'&&calendarDragEntry!==null)||['modalOverlay','storyOverlay'].some(id=>document.getElementById(id)?.style.display==='flex');}
 async function githubSyncRequest(path,token,options={}) {
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),20000);
   const headers={Accept:'application/vnd.github+json',...options.headers};if(token)headers.Authorization='Bearer '+token;

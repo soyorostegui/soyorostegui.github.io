@@ -1557,3 +1557,8 @@
         padding: 24px 20px 20px;
       }
     }
+
+    /* Calendar scheduling: the destination highlights without shifting the grid. */
+    .cal-post-chip[draggable="true"], .cal-story-chip[draggable="true"] { cursor: grab; }
+    #cal-grid .calendar-dragging { opacity: .45; cursor: grabbing; }
+    #cal-grid .calendar-drop-target { outline: 2px solid #7c3aed; outline-offset: -2px; background: #ede9fe; opacity: 1; }

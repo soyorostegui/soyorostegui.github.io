@@ -545,7 +545,7 @@
       });
     }
 
-    /* RENDER CALENDAR (9 AL 25 NOV) */
+    /* RENDER CALENDAR */
     function onToggleCalStories(checked) {
       localStorage.setItem("po_cal_show_stories", checked ? "1" : "0");
       renderCalendar();
@@ -571,6 +571,81 @@
       return { year, month, offset: (first.getUTCDay() + 6) % 7,
         days: new Date(Date.UTC(year, month, 0)).getUTCDate(),
         label: new Intl.DateTimeFormat("es-CO", { month: "long", year: "numeric", timeZone: "UTC" }).format(first) };
+    }
+
+    let calendarDragEntry = null;
+    let calendarSuppressClickUntil = 0;
+    const calendarDragType = "application/x-peter-studio-calendar";
+
+    function moveCalendarEntry(kind, id, date) {
+      if (!['post', 'story'].includes(kind) || !/^\d{4}-\d{2}-\d{2}$/.test(date)) return false;
+      const parsed = new Date(date + 'T00:00:00Z');
+      if (!Number.isFinite(parsed.getTime()) || parsed.toISOString().slice(0, 10) !== date) return false;
+      const entry = (kind === 'post' ? posts : stories).find(item => item.id === id);
+      if (!entry || entry.date === date) return false;
+      const beforePosts = JSON.parse(JSON.stringify(posts)), beforeStories = JSON.parse(JSON.stringify(stories));
+      const keys = ['po_posts_v6', 'po_stories_v1', 'po_highlights_v1', 'po_sync_dirty', 'po_last_updated_at'];
+      const stored = keys.map(key => [key, localStorage.getItem(key)]);
+      const originDate = entry.date;
+      try {
+        entry.date = date;
+        if (kind === 'story') {
+          entry.order = Math.max(-1, ...stories.filter(item => item.id !== id && item.date === date).map(item => item.order || 0)) + 1;
+          reflowDayOrder(originDate); reflowDayOrder(date);
+          saveStoriesToStorage();
+        } else saveToStorage();
+      } catch (error) {
+        posts = beforePosts; stories = beforeStories;
+        for (const [key, value] of stored) try {
+          if (value === null) localStorage.removeItem(key); else localStorage.setItem(key, value);
+        } catch (_) {}
+        const status = document.getElementById('calendarMoveStatus');
+        if (status) status.textContent = 'No se pudo guardar la nueva fecha. La entrada conserva su fecha anterior.';
+        renderCurrentView();
+        return false;
+      }
+      renderCurrentView();
+      const status = document.getElementById('calendarMoveStatus');
+      if (status) status.textContent = 'Fecha actualizada al ' + date.split('-').reverse().join('/') + '.';
+      return true;
+    }
+
+    function clearCalendarDrag() {
+      calendarDragEntry = null;
+      calendarSuppressClickUntil = Date.now() + 250;
+      document.querySelectorAll('#cal-grid .calendar-drop-target, #cal-grid .calendar-dragging').forEach(element => {
+        element.classList.remove('calendar-drop-target', 'calendar-dragging');
+      });
+    }
+    function setupCalendarEntryDrag(chip, kind, id) {
+      chip.draggable = true;
+      chip.dataset.entryKind = kind; chip.dataset.entryId = id;
+      chip.addEventListener('dragstart', event => {
+        calendarDragEntry = {kind, id};
+        event.dataTransfer.setData(calendarDragType, JSON.stringify(calendarDragEntry));
+        event.dataTransfer.effectAllowed = 'move';
+        chip.classList.add('calendar-dragging');
+      });
+      chip.addEventListener('dragend', clearCalendarDrag);
+    }
+    function setupCalendarDayDrop(cell, date) {
+      cell.dataset.date = date;
+      const accepts = event => calendarDragEntry && Array.from(event.dataTransfer?.types || []).includes(calendarDragType);
+      cell.addEventListener('dragover', event => {
+        if (!accepts(event)) return;
+        event.preventDefault(); event.dataTransfer.dropEffect = 'move';
+        cell.classList.add('calendar-drop-target');
+      });
+      cell.addEventListener('dragleave', event => {
+        if (!cell.contains(event.relatedTarget)) cell.classList.remove('calendar-drop-target');
+      });
+      cell.addEventListener('drop', event => {
+        if (!accepts(event)) return;
+        event.preventDefault(); event.stopPropagation();
+        const entry = calendarDragEntry;
+        clearCalendarDrag();
+        moveCalendarEntry(entry.kind, entry.id, date);
+      });
     }
 
     function renderCalendar() {
@@ -612,6 +687,7 @@
 
         const cell = document.createElement("div");
         cell.className = "cal-cell";
+        setupCalendarDayDrop(cell, dateStr);
 
         const inCampaign = dateStr >= "2026-11-09" && dateStr <= "2026-11-25";
         if (inCampaign) {
@@ -632,8 +708,9 @@
         dayPosts.forEach(post => {
           const chip = document.createElement("div");
           chip.className = "cal-post-chip";
+          setupCalendarEntryDrag(chip, "post", post.id);
           chip.title = `${post.channel} (${post.format}): ${post.title}`;
-          chip.onclick = (e) => { e.stopPropagation(); openEditModal(post.id); };
+          chip.onclick = (e) => { e.stopPropagation(); if (calendarDragEntry || Date.now() < calendarSuppressClickUntil) return; openEditModal(post.id); };
           const chClass = getChannelTagClass(post.channel);
           chip.innerHTML = `
             <div style="display:flex; justify-content:space-between; align-items:center; gap:4px; min-width:0;">
@@ -648,8 +725,9 @@
         dayStories.forEach(story => {
           const chip = document.createElement("div");
           chip.className = "cal-story-chip";
+          setupCalendarEntryDrag(chip, "story", story.id);
           chip.title = `Historia${story.time ? " " + story.time : ""}: ${story.name}`;
-          chip.onclick = (e) => { e.stopPropagation(); openStoryModal(story.id); };
+          chip.onclick = (e) => { e.stopPropagation(); if (calendarDragEntry || Date.now() < calendarSuppressClickUntil) return; openStoryModal(story.id); };
           chip.innerHTML = `
             <span class="cs-time">${story.time ? escapeHtmlForChat(story.time) : "📱"}</span>
             <span class="cs-name">${escapeHtmlForChat(story.name)}</span>
