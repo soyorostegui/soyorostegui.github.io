@@ -162,18 +162,6 @@
       "projectId": "project-portafolio-2026"
     },
     {
-      "id": "post-ig-10",
-      "channel": "Instagram",
-      "title": "24 Horas: Mañana se abre el archivo",
-      "date": "2026-11-19",
-      "status": "Idea",
-      "phase": "Fase 3: Convocatoria",
-      "format": "Post",
-      "structure": "Composición tipográfica minimalista: «24 HORAS. Mañana se abre el archivo completo. 20.11.2026».",
-      "caption": "Todo lo que estuvo tomando forma en silencio, en un solo lugar.\nMañana viernes 20 de noviembre.",
-      "projectId": "project-portafolio-2026"
-    },
-    {
       "id": "post-li-5",
       "channel": "LinkedIn",
       "title": "Unpopular opinion: Los manuales de marca de 150 páginas ya nadie los lee",
@@ -183,6 +171,18 @@
       "format": "Opiniones",
       "structure": "Ensayo sobre por qué las marcas hoy necesitan guías de diseño ágiles y sistemas de diseño accionables en lugar de manuales PDF gigantes que terminan olvidados en un Google Drive.",
       "caption": "Entregar un PDF de 150 páginas con reglas sobre cómo NO girar el logo a 45 grados ya no resuelve los problemas de un equipo de marketing moderno. Las marcas necesitan sistemas vivos, activos listos para producción y directrices claras de cómo comportarse en entornos físicos y digitales. Mañana compartiré mi propuesta en la presentación de mi portafolio.",
+      "projectId": "project-portafolio-2026"
+    },
+    {
+      "id": "post-ig-10",
+      "channel": "Instagram",
+      "title": "24 Horas: Mañana se abre el archivo",
+      "date": "2026-11-19",
+      "status": "Idea",
+      "phase": "Fase 3: Convocatoria",
+      "format": "Post",
+      "structure": "Composición tipográfica minimalista: «24 HORAS. Mañana se abre el archivo completo. 20.11.2026».",
+      "caption": "Todo lo que estuvo tomando forma en silencio, en un solo lugar.\nMañana viernes 20 de noviembre.",
       "projectId": "project-portafolio-2026"
     },
     {
@@ -757,14 +757,6 @@
   ],
   "chatResetId": "legacy",
   "chatHistory": [
-    {
-      "sender": "user",
-      "html": "Las historias no tienen contexto solo son un titulo?",
-      "plainText": "Las historias no tienen contexto solo son un titulo?",
-      "actionData": null,
-      "timestamp": "8/11/2026, 10:55:07 p. m.",
-      "id": "legacy-d8dec5dd3f2fc71d-0"
-    },
     {
       "sender": "ai",
       "html": "Correcto, y es una limitación real del sistema: <strong>las historias solo tienen título.</strong> No existe campo de copy como en los posts.<br><br><div class=\"ai-md-h\">Qué guarda hoy cada historia</div><br>El esquema de historias solo admite cinco campos:<br><br><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <code>name</code> — título descriptivo de producción</div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <code>date</code> — fecha</div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <code>highlight</code> — carpeta</div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <code>format</code> — Foto, Reel, Encuesta, Boomerang, Sticker</div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <code>status</code> — Idea, En Diseño, Listo, Publicado</div><br>Los posts sí tienen <code>caption</code>; las historias no. Por eso <code>st-13</code> se llama <em>«Muestra de espaciado y kerning manual»</em>: eso describe <strong>qué se graba</strong>, no <strong>qué se lee en pantalla</strong>.<br><br><div class=\"ai-md-h\">El problema que esto genera</div><br>Llega el día de grabar y el título no te dice qué escribir. Y los textos que tú mismo propusiste —<em>«Diseño casi todos los días. Publico cuando aporta.»</em>— hoy no viven en ningún lado del calendario. Se pierden.<br><br><div class=\"ai-md-h\">Tres formas de resolverlo</div><br><strong>A) El <code>name</code> pasa a ser el copy en pantalla.</strong><br><code>st-13</code> → <em>«Ajustando kerning a mano: la diferencia que nadie nota hasta que la ves»</em><br>Ventaja: el calendario se lee como guion de producción. Desventaja: los nombres largos aprietan la tabla.<br><br><strong>B) Nombre de producción + copy, separados por barra.</strong><br><code>st-13</code> → <em>«Kerning manual | Nadie nota el espaciado hasta que está mal»</em><br>Conserva ambas capas. Es el más útil para trabajar, aunque el más verboso.<br><br><strong>C) Solo copy en las historias de texto.</strong><br>Las de texto, sticker y encuesta llevan el copy literal en el <code>name</code>; las de foto y video (st-1, st-4, st-11, st-17, st-21, por ejemplo) conservan el título, porque ahí el mensaje es la imagen, no el texto.<br><br><div class=\"ai-md-h\">Mi recomendación</div><br><strong>Opción C.</strong> No todas las historias necesitan copy: una foto macro del bordado de una gorra se explica sola, pero una encuesta <em>«¿mate o brillante?»</em> sin texto es un sticker vacío. Aplicaría copy redactado a las <strong>17 historias de texto, encuesta, sticker y caja de preguntas</strong>, y dejaría intactas las <strong>17 de foto y video</strong>. Eso deja el calendario legible y el guion completo.<br><br>Ejemplos del cambio:<br><br><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <code>st-5</code> → <em>«¿Papel mate o brillante? Vota. Hoy defiendo el mate.»</em></div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <code>st-8</code> → <em>«¿Cuándo un logo pide simplificarse? Desliza tu respuesta.»</em></div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <code>st-12</code> → <em>«Serif o Sans: elige una y te digo qué dice de ti.»</em></div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <code>st-3</code> → <em>«¿Qué se viene el 20.11? Pregunta lo que quieras.»</em></div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <code>st-26</code> → <em>«24 horas. Mañana se abre el archivo.»</em></div><br><strong>¿Le doy luz verde a la opción C?</strong> Lo ejecuto en bloque y te dejo el listado completo con los 17 copies finales, listos para grabar. Si prefieres la A (todo el calendario como guion puro), también lo hago, pero conviene decidirlo antes de escribir.<div style=\"margin-top:8px;padding-top:6px;border-top:1px dashed #e2e8f0;font-size:11px;color:#475569;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px;\">\n          <span>💳 Costo de este uso: <strong style=\"color:#0369a1;\">$0.00182 USD</strong> (Acumulado sesión: $0.08571 USD)</span>\n          <span style=\"color:#64748b;\">8337 in + 2804 out tokens · deepseek-flash</span>\n        </div>",
@@ -2906,9 +2898,18 @@
       "plainText": "Movida. La del cuaderno pasa del **09.11 al miércoles 18.11**, y conserva las 19:00: es su hora natural, cierre de jornada en tono reflexivo.\n\n**Un ajuste a lo que te dije antes:** el calendario ya solo tiene **una** historia de «Las últimas 5 páginas del cuaderno» (`st-…928386-913`). El duplicado y las dos descartadas desaparecieron, y el sticker del zoom ya tiene las **12:30**. O sea: las eliminaciones sí se ejecutaron y lo que yo daba por pendiente está resuelto. Me corrijo.\n\n## Cómo quedan los dos días\n\n**Hoy 09.11 — se queda en dos historias**\n| Hora | Historia | Destacada |\n|---|---|---|\n| 08:10 | Café en la universidad | DAILY |\n| 12:30 | ¿Quién más aleja el zoom? | DAILY |\n\nSe te vació la noche. No es grave —el carrusel del feed es la pieza fuerte del día y sostiene solo—, pero el día pierde el cierre pausado que le daba el cuaderno.\n\n**Miércoles 18.11 — ahora tiene dos**\n| Hora | Historia | Destacada |\n|---|---|---|\n| 10:00 | Detalle macro de hilo y bordado en gorra | PORTFOLIO |\n| 19:00 | Las últimas 5 páginas del cuaderno | DAILY |\n\nEl 18 es un buen día para el cuaderno: la mañana la ocupa el sneak peek de streetwear y la noche baja el volumen con el cuaderno. Hype arriba, silencio abajo. Y no hay riesgo de spoiler: las páginas siguen tapadas a medias, a dos días del lanzamiento.\n\n**Dos decisiones que te dejo:** si quieres una tercera historia para cerrar hoy, y si quieres que reescriba el `context` del cuaderno —el actual habla de «pausa reflexiva» y todavía sirve, pero no menciona que ahora cae en plena fase de convocatoria.",
       "actionData": null,
       "timestamp": "9/11/2026, 10:46:57 p. m."
+    },
+    {
+      "id": "afbd473a-dda4-4d2c-b511-a3fd68c8610f",
+      "createdAt": "2026-11-10T08:06:58.612Z",
+      "sender": "user",
+      "html": "Leo 31 historias y deberian solo ser 30",
+      "plainText": "Leo 31 historias y deberian solo ser 30",
+      "actionData": null,
+      "timestamp": "10/11/2026, 3:06:58 a. m."
     }
   ],
   "importedCustomContextNotes": "",
-  "updatedAt": 1794297265007,
-  "updatedAtISO": "2026-11-10T07:54:25.007Z"
+  "updatedAt": 1794298021920,
+  "updatedAtISO": "2026-11-10T08:07:01.920Z"
 }
