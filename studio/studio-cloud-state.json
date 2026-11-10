@@ -223,7 +223,7 @@
       "formatDetail": "",
       "id": "st-1794204588972-274",
       "name": "Café en la universidad: la manía de medir todo",
-      "date": "2026-11-09",
+      "date": "2026-11-10",
       "highlightId": "hl-criterio",
       "format": "Foto",
       "status": "En Diseño",
@@ -239,7 +239,7 @@
       "highlightId": "hl-criterio",
       "format": "Sticker",
       "status": "En Diseño",
-      "order": 1
+      "order": 0
     },
     {
       "time": "09:30",
@@ -251,7 +251,7 @@
       "highlightId": "hl-proceso",
       "format": "Foto",
       "status": "Idea",
-      "order": 0
+      "order": 1
     },
     {
       "time": "18:30",
@@ -263,7 +263,7 @@
       "highlightId": "hl-criterio",
       "format": "Encuesta",
       "status": "Idea",
-      "order": 1
+      "order": 2
     },
     {
       "time": "10:00",
@@ -2781,6 +2781,6 @@
     }
   ],
   "importedCustomContextNotes": "",
-  "updatedAt": 1794287308947,
-  "updatedAtISO": "2026-11-10T05:08:28.947Z"
+  "updatedAt": 1794287339011,
+  "updatedAtISO": "2026-11-10T05:08:59.011Z"
 }
