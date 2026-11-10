@@ -321,6 +321,13 @@
       gap: 4px;
       margin-bottom: 8px;
     }
+    .notion-card .tag {
+      min-width: 0;
+      max-width: 100%;
+      white-space: normal;
+      overflow-wrap: anywhere;
+      line-height: 1.4;
+    }
     .card-snippet {
       font-size: 12px;
       color: var(--text-muted);
