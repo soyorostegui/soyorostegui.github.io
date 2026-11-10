@@ -42,6 +42,28 @@
       padding-bottom: 20px;
     }
     .page-icon { font-size: 38px; margin-bottom: 8px; display: inline-block; }
+    .studio-header-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .studio-settings-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+      padding: 7px 12px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--bg);
+      color: var(--text-main);
+      font: inherit;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .studio-settings-btn:hover { background: var(--bg-hover); }
+    .studio-settings-btn:focus-visible { outline: 2px solid var(--blue-accent); outline-offset: 3px; }
     .page-title {
       font-size: 30px;
       font-weight: 700;

@@ -73,7 +73,12 @@
 
   <!-- Header Notion -->
   <header class="notion-header">
-    <div class="page-icon">🗓️</div>
+    <div class="studio-header-top">
+      <div class="page-icon">🗓️</div>
+      <button type="button" class="studio-settings-btn" id="studioSettingsButton" onclick="openKeyModal()" title="Ajustes de modelos, claves y recuperación">
+        <span aria-hidden="true">⚙️</span> Ajustes
+      </button>
+    </div>
     <h1 class="page-title">
       Ecosistema de Comunicación · Peter Orostegui
     </h1>
@@ -118,19 +123,6 @@
     </div>
 
     <div class="tools-right">
-      <div class="ai-quick-switcher-wrap" id="topBarAiQuickWrap">
-        <select class="quick-ai-select" id="quickAiSwitcher" onchange="onQuickAiSwitch(this.value)" title="Cambiar modelo de IA activo al instante">
-          <option value="__open_modal__">🧠 Bóveda Multi-IA (Conectar)</option>
-        </select>
-        <button class="ai-inline-btn" style="padding: 6px 10px; font-size: 12px; font-weight: 600; display: flex; align-items: center; gap: 5px; border: 1px solid var(--border);" onclick="openKeyModal()" id="topBarAiBadge" title="Abrir Bóveda de Claves Multi-IA">
-          <span id="topBarAiIcon">⚙️</span> <span id="topBarAiText">Bóveda</span>
-        </button>
-      </div>
-
-      <button class="btn-ai-main" onclick="toggleAICopilot()">
-        <span>✨</span> Piti
-      </button>
-
       <select class="filter-select" id="filterChannel" onchange="renderCurrentView()">
         <option value="ALL">Todas las Redes</option>
         <option value="Instagram">Instagram (12)</option>
@@ -463,7 +455,7 @@
       <div class="key-modal-header">
         <div>
           <h3 style="font-size:16px; font-weight:700; display:flex; align-items:center; gap:8px; margin:0;">
-            <span>🧠</span> Bóveda Multi-IA &amp; Gestor de Claves
+            <span aria-hidden="true">⚙️</span> Ajustes
           </h3>
           <p style="font-size:12px; color:var(--text-muted); margin:3px 0 0 0;">
             Gestiona tus modelos y credenciales.

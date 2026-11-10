@@ -649,9 +649,8 @@ const AI_PROVIDERS = {
     }
 
     function updateQuickAiSwitchers() {
-      const topSelect = document.getElementById("quickAiSwitcher");
       const copilotSelect = document.getElementById("copilotAiSwitcher");
-      const selects = [topSelect, copilotSelect].filter(Boolean);
+      const selects = [copilotSelect].filter(Boolean);
       if (selects.length === 0) return;
 
       selects.forEach(sel => {
@@ -831,9 +830,6 @@ const AI_PROVIDERS = {
     }
 
     function updateApiKeyStatus() {
-      const topBadge = document.getElementById("topBarAiBadge");
-      const topIcon = document.getElementById("topBarAiIcon");
-      const topText = document.getElementById("topBarAiText");
       const el = document.getElementById("apiKeyStatusLabel");
 
       const providerConf = AI_PROVIDERS[currentAiProvider] || AI_PROVIDERS.deepseek;
@@ -848,24 +844,10 @@ const AI_PROVIDERS = {
           el.innerHTML = sanitizeDisplayHtml(label);
           el.style.color = "#15803d";
         }
-        if (topIcon && topText) {
-          topIcon.innerText = "⚙️";
-          topText.innerText = "Bóveda";
-          topBadge.style.background = "#f0fdf4";
-          topBadge.style.color = "#15803d";
-          topBadge.style.borderColor = "#bbf7d0";
-        }
       } else {
         if (el) {
           el.innerHTML = "🔑 Conectar Cualquier IA";
           el.style.color = "#7c3aed";
-        }
-        if (topIcon && topText) {
-          topIcon.innerText = "🧠";
-          topText.innerText = "Bóveda";
-          topBadge.style.background = "#fff";
-          topBadge.style.color = "var(--text-main)";
-          topBadge.style.borderColor = "var(--border)";
         }
       }
       updateQuickAiSwitchers();
