@@ -1399,8 +1399,9 @@ const AI_PROVIDERS = {
         const shortCap = (p.description || p.caption || "").replace(/\n+/g, " ").substring(0, 70);
         md += `| \`${p.id}\` | ${p.date}${p.time ? " " + p.time : ""}${p.endTime ? "–" + p.endTime : ""} | ${p.channel || p.type || "post"} | **${p.status}** | ${p.title} | ${shortCap}... |\n`;
       });
+      md += '\n### Proyectos\n\n```json\n' + JSON.stringify(view.projects || [], null, 2) + '\n```\n';
       md += `\n### Detalle de las entradas\n\n`;
-      md += '```json\n' + JSON.stringify(posts.map(p=>Object.fromEntries(['id','type','title','date','time','endTime','channel','status','phase','format','structure','caption','description','location','participants','subject','priority'].filter(k=>p[k]!==undefined).map(k=>[k,p[k]]))), null, 2) + '\n```\n';
+      md += '```json\n' + JSON.stringify(posts.map(p=>Object.fromEntries(['id','type','projectId','title','date','time','endTime','channel','status','phase','format','structure','caption','description','location','participants','subject','priority'].filter(k=>p[k]!==undefined).map(k=>[k,p[k]]))), null, 2) + '\n```\n';
       md += `\n---\n\n`;
 
       md += `## 2. Destacadas & Historias\n\n`;
@@ -1493,6 +1494,7 @@ const AI_PROVIDERS = {
             chatHistory,
             posts,
             networks,
+            projects,
             stories,
             highlights,
             importedCustomContextNotes
@@ -2205,7 +2207,8 @@ const AI_PROVIDERS = {
         today: `${part("year")}-${part("month")}-${part("day")}`,
         networks: typeof networkNames === "function" ? networkNames() : ["Instagram","LinkedIn","Behance"],
         timeZone: "America/Bogota",
-        posts: posts.map(p => ({ type:p.type || "post", description:p.description || "", time:p.time || "", endTime:p.endTime || "", location:p.location || "", participants:p.participants || "", subject:p.subject || "", priority:p.priority || "", id: p.id, title: p.title, channel: p.channel, date: p.date,
+        projects: typeof projects === "undefined" ? [] : projects.map(p=>({id:p.id,name:p.name,objective:p.objective,type:p.type,startDate:p.startDate,endDate:p.endDate,status:p.status,color:p.color,stages:p.stages})),
+        posts: posts.map(p => ({ projectId:typeof entryProjectId === "function" ? entryProjectId(p) : p.projectId || "", type:p.type || "post", description:p.description || "", time:p.time || "", endTime:p.endTime || "", location:p.location || "", participants:p.participants || "", subject:p.subject || "", priority:p.priority || "", id: p.id, title: p.title, channel: p.channel, date: p.date,
           status: p.status, phase: p.phase, format: p.format, caption: p.caption || "", structure: p.structure || "" })),
         highlights: highlights.slice().sort((a, b) => (a.order || 0) - (b.order || 0))
           .map(h => ({ id: h.id, name: h.name, icon: h.icon, desc: h.desc, order: h.order })),
@@ -2280,6 +2283,7 @@ ${olderContext || "Sin fragmentos adicionales relacionados."}
 
 ${importedCustomContextNotes ? `CONTEXTO ADICIONAL DE ARCHIVO:\n${clipContextText(importedCustomContextNotes, 8000)}\n` : ""}
 La agenda incluye entradas de tipo post, meeting, class y task. Las acciones create_post solo crean publicaciones. Para crear o cambiar campos específicos de reuniones, clases y tareas, indica usar Nueva entrada o editar la entrada. No las conviertas en publicaciones ni prometas acciones no disponibles. Puedes consultar todos sus campos y actualizar su fecha por ID.
+PROYECTOS: ${JSON.stringify(editorialContext.projects)}. Las etapas pertenecen a cada proyecto. Usa Proyectos o el formulario de entrada para crear proyectos o cambiar sus vínculos; las acciones editoriales no administran proyectos.
 REDES CONFIGURADAS: ${JSON.stringify(editorialContext.networks)}. Usa únicamente estas redes para publicaciones.
 REGLAS DE ORO:
 1. Puedes proponer acciones JSON sobre el calendario. El sistema las valida y puede rechazarlas o pedir confirmación. No afirmes que algo ya quedó guardado: describe la acción propuesta; el distintivo del sistema confirma su resultado. Los RESULTADOS REALES DEL SISTEMA del historial indican lo que sí ocurrió. Un resultado unknown no demuestra éxito.
@@ -2411,7 +2415,7 @@ REGLAS ESPECÍFICAS:
           channel: parsed.channel || "Instagram",
           date: parsed.date,
           status: parsed.status || "Idea",
-          phase: parsed.phase || "Fase 2: Archivo",
+          phase: parsed.phase || "",
           format: parsed.format || "Post",
           structure: parsed.structure || "",
           caption: parsed.caption || ""
@@ -2575,7 +2579,7 @@ REGLAS ESPECÍFICAS:
       const newPost = {
         id: "post-ai-" + (globalThis.crypto?.randomUUID?.() || Date.now() + "-" + Math.random().toString(36).slice(2)),
         title: data.title, channel: data.channel || (typeof networkNames === "function" ? networkNames()[0] : "Instagram"), date: data.date,
-        status: data.status || "Idea", phase: data.phase || "Fase 2: Archivo",
+        status: data.status || "Idea", phase: data.phase || "",
         format: data.format || "Post", structure: data.structure || "", caption: data.caption || ""
       };
       posts.push(newPost);
@@ -2850,7 +2854,7 @@ REGLAS ESPECÍFICAS:
           channel: "Instagram",
           date: "2026-11-15",
           status: "Idea",
-          phase: "Fase 2: Archivo",
+          phase: "",
           format: "Post",
           structure: "Foto o render comparando dos etiquetas con diferentes familias tipográficas y su percepción psicológica.",
           caption: copy

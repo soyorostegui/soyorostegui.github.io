@@ -390,6 +390,7 @@
       document.getElementById("view-table").style.display = view === "table" ? "block" : "none";
       document.getElementById("view-calendar").style.display = view === "calendar" ? "block" : "none";
       document.getElementById("view-stories").style.display = view === "stories" ? "flex" : "none";
+      document.getElementById("view-projects").style.display = view === "projects" ? "block" : "none";
 
       renderCurrentView();
     }
@@ -415,12 +416,12 @@
     }
 
     function getFilteredPosts() {
-      const filterPhase = document.getElementById("filterPhase").value;
+      const filterProject = document.getElementById("filterProject").value;
       const filterChannel = document.getElementById("filterChannel").value;
 
       const filterType = document.getElementById("filterType")?.value || "ALL";
       return posts.filter(p => {
-        const matchPhase = filterPhase === "ALL" || p.phase === filterPhase;
+        const matchPhase = filterProject === "ALL" || (filterProject === "NONE" ? !entryProjectId(p) : entryProjectId(p) === filterProject);
         const matchChannel = filterChannel === "ALL" || p.channel === filterChannel;
         return matchPhase && matchChannel && (filterType === "ALL" || entryType(p) === filterType);
       });
@@ -499,7 +500,7 @@
           </div>
           <div class="card-title">${escapeHtmlForChat(post.title)}</div>
           <div class="card-tags">
-            <span class="tag ${phaseTagClass}">${escapeHtmlForChat((post.phase || "Sin campaña").split(":")[0])}</span>
+            <span class="tag ${phaseTagClass}">${escapeHtmlForChat(projectLabel(post) + (post.phase ? " · " + post.phase : ""))}</span>
             <span class="tag tag-gray">${escapeHtmlForChat(entryDetail(post))}</span>
           </div>
           <div class="card-snippet">“${escapeHtmlForChat(entrySummary(post).replace(/\n/g, ' '))}”</div>
@@ -537,7 +538,7 @@
           <td><div class="table-title">${escapeHtmlForChat(post.title)}</div></td>
           <td><span class="tag tag-gray">${escapeHtmlForChat(entryDetail(post))}</span></td>
           <td><span class="tag ${statusClass}">${escapeHtmlForChat(entryStatusLabel(post))}</span></td>
-          <td><span class="tag ${phaseClass}">${escapeHtmlForChat((post.phase || "Sin campaña").split(":")[0])}</span></td>
+          <td><span class="tag ${phaseClass}">${escapeHtmlForChat(projectLabel(post) + (post.phase ? " · " + post.phase : ""))}</span></td>
           <td style="color: var(--text-muted); max-width: 250px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
             ${escapeHtmlForChat(entrySummary(post))}
           </td>
@@ -874,6 +875,7 @@
       else if (activeView === "table") renderTable();
       else if (activeView === "calendar") renderCalendar();
       else if (activeView === "stories") { renderHighlights(); renderStories(); }
+      else if(activeView === "projects")renderProjectOverview();
       renderStoriesChrome();
     }
 

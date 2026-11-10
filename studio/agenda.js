@@ -31,8 +31,7 @@ function agendaOptions(id,values,first=null,selected) {
 function refreshAgendaControls() {
   for(const [type,id] of Object.entries({post:'agendaCountPosts',meeting:'agendaCountMeetings',class:'agendaCountClasses',task:'agendaCountTasks'})){const count=document.getElementById(id);if(count)count.textContent=String(posts.filter(p=>entryType(p)===type).length);}
   agendaOptions('filterChannel',networkNames().map(n=>[n,n]),['ALL','Todas las redes']);
-  const phases=[...new Set(posts.map(p=>p.phase).filter(Boolean))];
-  agendaOptions('filterPhase',phases.map(p=>[p,p]),['ALL','Todas las campañas']);
+  if(typeof refreshProjectControls==='function')refreshProjectControls();
   const tableLabel=document.getElementById('btn-table');if(tableLabel)tableLabel.textContent=`Tabla (${posts.length} entradas)`;
   renderNetworkSettings();
 }
@@ -82,7 +81,8 @@ function onAgendaTypeChange() {
 }
 function openAgendaEntry(id=null) {
   const entry=id?posts.find(p=>p.id===id):null;if(id&&!entry)return;
-  const value=entry||{type:'post',title:'',date:agendaToday(),status:'Idea',channel:networkNames()[0]||'',format:'Post',phase:''};
+  const filteredProject=document.getElementById('filterProject')?.value||'';
+  const value=entry||{projectId:projects.some(p=>p.id===filteredProject)?filteredProject:'',type:'post',title:'',date:agendaToday(),status:'Idea',channel:networkNames()[0]||'',format:'Post',phase:''};
   refreshAgendaControls();
   agendaOptions('edit-channel',networkNames().map(n=>[n,n]),['','Seleccionar red'],value.channel||'');
   const phase=document.getElementById('edit-phase');
@@ -93,11 +93,14 @@ function openAgendaEntry(id=null) {
     document.getElementById('edit-'+key).value=value[key]|| (key==='priority'?'Normal':'');
   }
   document.getElementById('edit-id').value=entry?.id||'';document.getElementById('edit-type').value=entryType(value);document.getElementById('edit-status').value=value.status||'Idea';
+  fillEntryProjectOptions(entryProjectId(value));fillEntryStageOptions(value.phase||'');
   onAgendaTypeChange();document.getElementById('agendaFormError').textContent='';
   document.getElementById('drawerStatusTag').textContent=entry?'Editar entrada':'Nueva entrada';document.getElementById('btnDelete').style.display=entry?'block':'none';
   document.getElementById('modalOverlay').style.display='flex';
 }
 function validateAgendaEntry(entry) {
+  if(entry.projectId&&!projects.some(p=>p.id===entry.projectId))throw Error('Selecciona un proyecto existente.');
+  if(entry.phase&&!(projects.find(p=>p.id===entry.projectId)?.stages||[]).includes(entry.phase))throw Error('Selecciona una etapa del proyecto elegido.');
   if(!Object.hasOwn(AGENDA_TYPES,entry.type))throw Error('Selecciona un tipo de entrada válido.');
   if(!entry.title.trim())throw Error('Escribe un título.');
   if(!/^\d{4}-\d{2}-\d{2}$/.test(entry.date))throw Error('Selecciona una fecha.');
@@ -116,7 +119,7 @@ function saveAgendaEntry() {
   const get=key=>document.getElementById('edit-'+key).value;
   const id=get('id'),previous=posts.find(p=>p.id===id),type=get('type');
   if(id&&!previous){document.getElementById('agendaFormError').textContent='La entrada ya no existe.';return;}
-  const entry={...previous,id:id||'entry-'+(globalThis.crypto?.randomUUID?.()||Date.now()+'-'+Math.random().toString(36).slice(2)),type,title:get('title').trim(),date:get('date'),status:get('status'),phase:get('phase'),description:get('description'),time:get('time'),
+  const entry={...previous,id:id||'entry-'+(globalThis.crypto?.randomUUID?.()||Date.now()+'-'+Math.random().toString(36).slice(2)),type,title:get('title').trim(),date:get('date'),status:get('status'),projectId:get('project'),phase:get('project')?get('phase'):'',description:get('description'),time:get('time'),
     channel:type==='post'?get('channel'):'',format:type==='post'?get('format'):'',structure:type==='post'?get('structure'):'',caption:type==='post'?get('caption'):'',
     endTime:['meeting','class'].includes(type)?get('endTime'):'',location:['meeting','class'].includes(type)?get('location'):'',participants:type==='meeting'?get('participants'):'',subject:type==='class'?get('subject'):'',priority:type==='task'?get('priority'):''};
   const before=posts;const keys=['po_posts_v6','po_sync_dirty','po_last_updated_at'];const stored=keys.map(k=>[k,localStorage.getItem(k)]);

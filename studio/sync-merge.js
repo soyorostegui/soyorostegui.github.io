@@ -1,6 +1,6 @@
 /* Pure three-way merge. No I/O, timestamps never decide which edit wins. */
 (function(root) {
-  const ABSENT = Symbol('absent'), entities = ['posts','stories','highlights','networks'];
+  const ABSENT = Symbol('absent'), entities = ['posts','stories','highlights','networks','projects'];
   function sorted(value) {
     if (Array.isArray(value)) return value.map(sorted);
     if (value && typeof value === 'object') return Object.fromEntries(Object.keys(value).sort().map(k=>[k,sorted(value[k])]));
@@ -24,7 +24,9 @@
   }
   function normalize(state) {
     const byId=(a,b)=>String(a.id).localeCompare(String(b.id));
-    return {networks:copy(state.networks||['Instagram','LinkedIn','Behance'].map(name=>({id:'network-'+name.toLowerCase(),name}))).sort(byId),posts:copy(state.posts||[]).sort((a,b)=>String(a.date||" ").localeCompare(String(b.date||" "))||byId(a,b)),stories:(state.stories||[]).map(s=>({...{time:'',context:'',formatDetail:''},...copy(s)})).sort((a,b)=>String(a.date||'').localeCompare(String(b.date||''))||String(a.time||'').localeCompare(String(b.time||''))||((a.order||0)-(b.order||0))||byId(a,b)),
+    const stages=['Fase 1: Señal','Fase 2: Archivo','Fase 3: Convocatoria','Fase 4: Continuidad'];
+    const defaults=[{id:'project-portafolio-2026',name:'Lanzamiento del portafolio',objective:'Presentar el portafolio profesional de Peter Orostegui.',type:'campaign',startDate:'2026-11-09',endDate:'2026-11-25',status:'active',color:'#8b5cf6',stages}];
+    return {projects:copy(state.projects||defaults).sort(byId),networks:copy(state.networks||['Instagram','LinkedIn','Behance'].map(name=>({id:'network-'+name.toLowerCase(),name}))).sort(byId),posts:(state.posts||[]).map(p=>({...copy(p),projectId:typeof p.projectId==='string'?p.projectId:(stages.includes(p.phase)?'project-portafolio-2026':'')})).sort((a,b)=>String(a.date||" ").localeCompare(String(b.date||" "))||byId(a,b)),stories:(state.stories||[]).map(s=>({...{time:'',context:'',formatDetail:''},...copy(s)})).sort((a,b)=>String(a.date||'').localeCompare(String(b.date||''))||String(a.time||'').localeCompare(String(b.time||''))||((a.order||0)-(b.order||0))||byId(a,b)),
       highlights:copy(state.highlights||[]).sort((a,b)=>((a.order||0)-(b.order||0))||byId(a,b)),chatHistory:messages(state.chatHistory),
       chatResetId:typeof state.chatResetId==='string'?state.chatResetId:'legacy',
       tombstones:Object.fromEntries(entities.map(entity=>[entity,copy(state.tombstones?.[entity]||{})])),
@@ -115,6 +117,15 @@
         const preferred=(options.prefer==='remote'?remote:local).highlights.find(h=>h.id===story.highlightId);
         if(preferred){output.highlights.push(copy(preferred));highlightMap.set(preferred.id,preferred);delete output.tombstones.highlights[preferred.id];}else story.highlightId='';
       } else story.highlightId='';
+    }
+    const projectMap=new Map(output.projects.map(p=>[p.id,p]));
+    for(const entry of output.posts)if(entry.projectId&&!projectMap.has(entry.projectId)){
+      const project=local.projects.find(p=>p.id===entry.projectId)||remote.projects.find(p=>p.id===entry.projectId);
+      if(project){
+        conflicts.push({entity:'posts',id:entry.id,field:'projectId',kind:'el proyecto fue eliminado en otro dispositivo'});
+        const preferred=(options.prefer==='remote'?remote:local).projects.find(p=>p.id===entry.projectId);
+        if(preferred){output.projects.push(copy(preferred));projectMap.set(preferred.id,preferred);delete output.tombstones.projects[preferred.id];}else{entry.projectId='';entry.phase='';}
+      }else{entry.projectId='';entry.phase='';}
     }
     return {state:{version:4,...output},conflicts,ok:!conflicts.length||['local','remote'].includes(options.prefer)};
   }

@@ -3,7 +3,7 @@ const html=fs.readFileSync(path.join(__dirname,'../index.html'),'utf8');
 const code=fs.readFileSync(path.join(__dirname,'../agenda.js'),'utf8'),editorial=fs.readFileSync(path.join(__dirname,'../editorial.js'),'utf8'),M=require('../sync-merge.js');
 const clone=x=>JSON.parse(JSON.stringify(x));
 class Element {
- constructor(){this.value='';this.children=[];this.style={};this.hidden=false;this.textContent='';this.handlers={};}
+ constructor(){this.value='';this.children=[];this.style={};this.hidden=false;this.textContent='';this.handlers={};this.classList={add(){},remove(){}};}
  get options(){return this.children;}
  replaceChildren(){this.children=[];this.value='';}
  appendChild(e){this.children.push(e);if(this.children.length===1)this.value=e.value;}
@@ -18,7 +18,7 @@ const ctx={Date,Intl,JSON,Object,Array,Set,Math,Number,String,encodeURIComponent
  localStorage:{getItem:k=>stored.get(k)??null,setItem(k,v){if(fail&&k==='po_posts_v6')throw Error('quota');stored.set(k,String(v));},removeItem:k=>stored.delete(k)},
  document:{getElementById:element,createElement:()=>new Element(),querySelectorAll:q=>groups[q.match(/data-agenda-([^\]]+)/)[1]]},
  buildEditorialContext:()=>({today:'2026-11-10'}),scheduleGitHubCloudSync:()=>scheduled++,closeModal(){element('modalOverlay').style.display='none';},renderCurrentView(){renders++;}
-};vm.createContext(ctx);vm.runInContext(code,ctx);
+};vm.createContext(ctx);vm.runInContext(code,ctx);vm.runInContext(fs.readFileSync(path.join(__dirname,'../projects.js'),'utf8'),ctx);
 vm.runInContext(editorial.slice(editorial.indexOf('    function saveToStorage()'),editorial.indexOf('    function switchView(')),ctx);
 vm.runInContext(editorial.slice(editorial.indexOf('    function getFilteredPosts()'),editorial.indexOf('    /* RENDER KANBAN */')),ctx);
 assert.equal(ctx.entryType(ctx.posts[0]),'post');ctx.openAgendaEntry('old');assert.equal(element('edit-caption').value,'Copy antiguo');assert.equal(element('edit-type').value,'post');
@@ -37,7 +37,7 @@ element('newNetworkName').value='TikTok';ctx.addAgendaNetwork();assert.ok(ctx.ne
 element('newNetworkName').value='tiktok';ctx.addAgendaNetwork();assert.equal(JSON.parse(stored.get('po_networks_v1')).filter(n=>n.name.toLowerCase()==='tiktok').length,1);
 create('post',{channel:'TikTok',format:'Video'});assert.equal(ctx.posts.at(-1).channel,'TikTok');ctx.removeAgendaNetwork('network-tiktok');assert.ok(ctx.networkNames().includes('TikTok'),'Networks in use cannot be deleted');
 element('newNetworkName').value='YouTube';ctx.addAgendaNetwork();ctx.removeAgendaNetwork('network-youtube');assert.ok(!ctx.networkNames().includes('YouTube'));
-element('filterType').value='meeting';element('filterChannel').value='ALL';element('filterPhase').value='ALL';assert.equal(ctx.getFilteredPosts().length,1);assert.equal(ctx.getFilteredPosts()[0].id,meeting.id);
+element('filterType').value='meeting';element('filterChannel').value='ALL';element('filterProject').value='ALL';assert.equal(ctx.getFilteredPosts().length,1);assert.equal(ctx.getFilteredPosts()[0].id,meeting.id);
 element('filterType').value='ALL';element('filterChannel').value='TikTok';assert.equal(ctx.getFilteredPosts().length,1);assert.equal(ctx.getFilteredPosts()[0].channel,'TikTok');
 const base={posts:clone(ctx.posts),stories:[],highlights:[],chatHistory:[]},local=clone(base),remote=clone(base);local.networks=M.normalize(base).networks.concat({id:'network-tiktok',name:'TikTok'});remote.networks=M.normalize(base).networks.concat({id:'network-youtube',name:'YouTube'});remote.posts[1].location='Nueva sala';local.posts[1].date='2026-11-13';
 const merged=M.merge(base,local,remote);assert.ok(merged.ok);assert.equal(merged.state.posts.find(p=>p.id===meeting.id).location,'Nueva sala');assert.equal(merged.state.posts.find(p=>p.id===meeting.id).date,'2026-11-13');assert.equal(merged.state.networks.length,5);

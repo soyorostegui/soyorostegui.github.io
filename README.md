@@ -51,8 +51,18 @@ El workflow `studio-checks.yml` ejecuta las pruebas al subir cambios. No publica
 
 ## Agenda y redes configurables
 
-Nueva entrada permite crear publicaciones, reuniones, clases y tareas. Las publicaciones existentes mantienen sus IDs y se interpretan como publicaciones aunque no tengan el campo `type`. Todas las entradas permanecen en la colección histórica `posts`, con `type` (`post`, `meeting`, `class`, `task`), fecha, título y notas. Las reuniones y clases requieren inicio y fin en el mismo día; las tareas tienen prioridad y fecha límite. La campaña es opcional. Los estados internos históricos se conservan para mantener la compatibilidad, con etiquetas generales para actividades.
+Nueva entrada permite crear publicaciones, reuniones, clases y tareas. Las publicaciones existentes mantienen sus IDs y se interpretan como publicaciones aunque no tengan el campo `type`. Todas las entradas permanecen en la colección histórica `posts`, con `type` (`post`, `meeting`, `class`, `task`), fecha, título y notas. Las reuniones y clases requieren inicio y fin en el mismo día; las tareas tienen prioridad y fecha límite. El proyecto y su etapa son opcionales. Los estados internos históricos se conservan para mantener la compatibilidad, con etiquetas generales para actividades.
 
 Ajustes → Redes sociales permite añadir redes y eliminar las que no tienen referencias. El catálogo `networks` usa la misma sincronización de tres vías que las entradas, con marcas de eliminación. Los filtros se generan a partir del catálogo y las entradas existentes. El calendario, la tabla y el tablero muestran todos los tipos; arrastrar una entrada conserva sus campos específicos.
 
 Piti puede consultar los datos de la agenda y modificar fechas de entradas por ID. Sus acciones de creación editorial siguen creando publicaciones; para crear reuniones, clases y tareas se utiliza Nueva entrada. No hay invitaciones, notificaciones ni integración externa de calendarios en esta versión.
+
+## Proyectos
+
+La vista Proyectos permite crear y editar fichas con objetivo, tipo (campaña, académico, cliente o personal), fechas, estado, color y etapas opcionales. Las entradas comparten una referencia estable `projectId`; el campo histórico `phase` conserva el nombre de la etapa. Una entrada puede quedar sin proyecto. La creación desde un proyecto o desde su filtro preselecciona el vínculo.
+
+Las fases del lanzamiento original se interpretan como etapas de `project-portafolio-2026`, con una ficha inicial del portafolio. Esta migración se aplica de forma equivalente en el cliente y en la normalización de la sincronización, sin reemplazar los IDs ni los textos de las publicaciones. Un `projectId` vacío explícito desvincula una entrada e impide volver a asociarla por su antigua fase.
+
+El detalle agrupa actividades por tipo y muestra próximas actividades, tareas vencidas y recuentos separados de tareas, publicaciones, reuniones y clases completadas. Los recuentos usan el estado manual, nunca completan una actividad por haber pasado su fecha. Los proyectos en uso se pueden archivar, pero no eliminar; tampoco se retiran etapas en uso. Los datos `projects` participan en la combinación de tres vías, y una eliminación concurrente con una nueva referencia genera un conflicto revisable.
+
+Piti consulta las fichas y las referencias de la agenda; la administración de proyectos se realiza en su vista y formulario.
