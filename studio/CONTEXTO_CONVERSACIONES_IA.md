@@ -1,9 +1,9 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 10/11/2026, 2:00:43 a. m.
+**Última actualización:** 10/11/2026, 2:54:00 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
-**Gasto Acumulado en Sesión:** $0.17213 USD (803538 tokens)
+**Gasto Acumulado en Sesión:** $0.17229 USD (804618 tokens)
 
 ---
 
@@ -26,7 +26,7 @@
 | `post-ig-7` | 2026-11-16 | Instagram | **Idea** | Cómo diseñar una valla que sí se lea a 80 km/h | En publicidad exterior tienes 3 segundos para captar la atención de al... |
 | `post-li-3` | 2026-11-16 | LinkedIn | **Idea** | Más allá de la portada: cómo se orquesta la identidad visual de un lanzamiento musical | En la industria musical, el diseño gráfico es el pegamento de la campa... |
 | `post-ig-8` | 2026-11-17 | Instagram | **Idea** | 3 creadores de diseño que sigo para entrenar el ojo | No sigo cuentas por estética: sigo creadores que me obligan a pensar m... |
-| `post-li-4` | 2026-11-17 | LinkedIn | **Idea** | Diseñar a contrarreloj para música en vivo: cuando el margen de error es cero | Si el equipo de producción te pide ajustar los visuales de una gira 2 ... |
+| `post-li-4` | 2026-11-22 | LinkedIn | **Idea** | Diseñar a contrarreloj para música en vivo: cuando el margen de error es cero | Si el equipo de producción te pide ajustar los visuales de una gira 2 ... |
 | `post-ig-9` | 2026-11-18 | Instagram | **Idea** | Sneak Peek 02: Streetwear & Textil | Identidad que se viste. En 48 horas el archivo completo sale a la luz.... |
 | `post-ig-10` | 2026-11-19 | Instagram | **Idea** | 24 Horas: Mañana se abre el archivo | Todo lo que estuvo tomando forma en silencio, en un solo lugar. Mañana... |
 | `post-li-5` | 2026-11-19 | LinkedIn | **Idea** | Unpopular opinion: Los manuales de marca de 150 páginas ya nadie los lee | Entregar un PDF de 150 páginas con reglas sobre cómo NO girar el logo ... |
@@ -206,7 +206,7 @@
     "id": "post-li-4",
     "projectId": "project-portafolio-2026",
     "title": "Diseñar a contrarreloj para música en vivo: cuando el margen de error es cero",
-    "date": "2026-11-17",
+    "date": "2026-11-22",
     "channel": "LinkedIn",
     "status": "Idea",
     "phase": "Fase 2: Archivo",
