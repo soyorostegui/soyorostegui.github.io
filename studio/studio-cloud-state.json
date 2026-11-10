@@ -54,7 +54,7 @@
       "id": "post-li-2",
       "channel": "LinkedIn",
       "title": "Diseñar vallas de 12x4m: lo que la universidad no te enseña sobre preprensa OOH",
-      "date": "2026-11-11",
+      "date": "2026-11-13",
       "status": "Idea",
       "phase": "Fase 1: Señal",
       "format": "Procesos",
@@ -76,7 +76,7 @@
       "id": "post-ig-5",
       "channel": "Instagram",
       "title": "Sneak Peek 01: El ornamento geométrico",
-      "date": "2026-11-13",
+      "date": "2026-11-15",
       "status": "Idea",
       "phase": "Fase 2: Archivo",
       "format": "Post",
@@ -302,18 +302,6 @@
       "order": 1
     },
     {
-      "time": "20:00",
-      "context": "Movimiento de carpeta: sale de SETUP y entra en PORTFOLIO. El cuadernillo impreso es producto tangible, no proceso de taller, y a las 20:00 se consume como adelanto pausado del hito.",
-      "formatDetail": "Video rápido",
-      "id": "st-10",
-      "date": "2026-11-14",
-      "name": "Hojeando rápido un cuadernillo impreso",
-      "highlightId": "hl-hito",
-      "format": "Video",
-      "status": "Idea",
-      "order": 1
-    },
-    {
       "time": "10:30",
       "context": "Video de acabado especial con la luz moviéndose sobre el foil. Acompaña al sneak peek post-ig-5 del mismo día sin revelar la marca completa: solo el detalle geométrico.",
       "formatDetail": "Video con luz",
@@ -348,6 +336,18 @@
       "format": "Captura",
       "status": "Idea",
       "order": 0
+    },
+    {
+      "time": "20:00",
+      "context": "Movimiento de carpeta: sale de SETUP y entra en PORTFOLIO. El cuadernillo impreso es producto tangible, no proceso de taller, y a las 20:00 se consume como adelanto pausado del hito.",
+      "formatDetail": "Video rápido",
+      "id": "st-10",
+      "date": "2026-11-14",
+      "name": "Hojeando rápido un cuadernillo impreso",
+      "highlightId": "hl-hito",
+      "format": "Video",
+      "status": "Idea",
+      "order": 1
     },
     {
       "time": "10:00",
@@ -2781,6 +2781,6 @@
     }
   ],
   "importedCustomContextNotes": "",
-  "updatedAt": 1794286668025,
-  "updatedAtISO": "2026-11-10T04:57:48.025Z"
+  "updatedAt": 1794286683109,
+  "updatedAtISO": "2026-11-10T04:58:03.109Z"
 }
