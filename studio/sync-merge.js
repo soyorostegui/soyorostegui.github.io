@@ -1,6 +1,6 @@
 /* Pure three-way merge. No I/O, timestamps never decide which edit wins. */
 (function(root) {
-  const ABSENT = Symbol('absent'), entities = ['posts','stories','highlights','networks','projects'];
+  const ABSENT = Symbol('absent'), entities = ['posts','stories','highlights','networks','projects','publicationFormats'];
   function sorted(value) {
     if (Array.isArray(value)) return value.map(sorted);
     if (value && typeof value === 'object') return Object.fromEntries(Object.keys(value).sort().map(k=>[k,sorted(value[k])]));
@@ -26,7 +26,7 @@
     const byId=(a,b)=>String(a.id).localeCompare(String(b.id));
     const stages=['Fase 1: Señal','Fase 2: Archivo','Fase 3: Convocatoria','Fase 4: Continuidad'];
     const defaults=[{id:'project-portafolio-2026',name:'Lanzamiento del portafolio',objective:'Presentar el portafolio profesional de Peter Orostegui.',type:'campaign',startDate:'2026-11-09',endDate:'2026-11-25',status:'active',color:'#8b5cf6',stages}];
-    return {projects:copy(state.projects||defaults).sort(byId),networks:copy(state.networks||['Instagram','LinkedIn','Behance'].map(name=>({id:'network-'+name.toLowerCase(),name}))).sort(byId),posts:(state.posts||[]).map(p=>({...copy(p),projectId:typeof p.projectId==='string'?p.projectId:(stages.includes(p.phase)?'project-portafolio-2026':'')})).sort((a,b)=>String(a.date||" ").localeCompare(String(b.date||" "))||byId(a,b)),stories:(state.stories||[]).map(s=>({...{time:'',context:'',formatDetail:''},...copy(s)})).sort((a,b)=>String(a.date||'').localeCompare(String(b.date||''))||String(a.time||'').localeCompare(String(b.time||''))||((a.order||0)-(b.order||0))||byId(a,b)),
+    return {publicationFormats:copy(state.publicationFormats||['Post','Carrusel','Video','Reel','Historia','Directo','Artículo','Podcast','Otro','Reflexiones','Procesos','Logros','Cultura','Opiniones','Hitos','Landing'].map(name=>({id:'format-'+encodeURIComponent(name.normalize('NFKC').toLocaleLowerCase()),name}))).sort(byId),projects:copy(state.projects||defaults).sort(byId),networks:copy(state.networks||['Instagram','LinkedIn','Behance'].map(name=>({id:'network-'+name.toLowerCase(),name}))).sort(byId),posts:(state.posts||[]).map(p=>({...copy(p),projectId:typeof p.projectId==='string'?p.projectId:(stages.includes(p.phase)?'project-portafolio-2026':'')})).sort((a,b)=>String(a.date||" ").localeCompare(String(b.date||" "))||byId(a,b)),stories:(state.stories||[]).map(s=>({...{time:'',context:'',formatDetail:''},...copy(s)})).sort((a,b)=>String(a.date||'').localeCompare(String(b.date||''))||String(a.time||'').localeCompare(String(b.time||''))||((a.order||0)-(b.order||0))||byId(a,b)),
       highlights:copy(state.highlights||[]).sort((a,b)=>((a.order||0)-(b.order||0))||byId(a,b)),chatHistory:messages(state.chatHistory),
       chatResetId:typeof state.chatResetId==='string'?state.chatResetId:'legacy',
       tombstones:Object.fromEntries(entities.map(entity=>[entity,copy(state.tombstones?.[entity]||{})])),
@@ -119,13 +119,30 @@
       } else story.highlightId='';
     }
     const projectMap=new Map(output.projects.map(p=>[p.id,p]));
-    for(const entry of output.posts)if(entry.projectId&&!projectMap.has(entry.projectId)){
+    for(const entry of [...output.posts,...output.stories])if(entry.projectId&&!projectMap.has(entry.projectId)){
       const project=local.projects.find(p=>p.id===entry.projectId)||remote.projects.find(p=>p.id===entry.projectId);
       if(project){
-        conflicts.push({entity:'posts',id:entry.id,field:'projectId',kind:'el proyecto fue eliminado en otro dispositivo'});
+        conflicts.push({entity:output.stories.includes(entry)?'stories':'posts',id:entry.id,field:'projectId',kind:'el proyecto fue eliminado en otro dispositivo'});
         const preferred=(options.prefer==='remote'?remote:local).projects.find(p=>p.id===entry.projectId);
         if(preferred){output.projects.push(copy(preferred));projectMap.set(preferred.id,preferred);delete output.tombstones.projects[preferred.id];}else{entry.projectId='';entry.phase='';}
       }else{entry.projectId='';entry.phase='';}
+    }
+    for(const entry of [...output.posts,...output.stories])if(entry.projectId&&entry.phase){
+      const project=projectMap.get(entry.projectId);if(!project||(project.stages||[]).includes(entry.phase))continue;
+      const known=[...local.projects,...remote.projects].some(p=>p.id===entry.projectId&&(p.stages||[]).includes(entry.phase));
+      if(known){
+        conflicts.push({entity:output.stories.includes(entry)?'stories':'posts',id:entry.id,field:'phase',kind:'la etapa fue retirada del proyecto en otro dispositivo'});
+        const preferred=(options.prefer==='remote'?remote:local).projects.find(p=>p.id===entry.projectId);
+        if((preferred?.stages||[]).includes(entry.phase))project.stages=[...(project.stages||[]),entry.phase];else entry.phase='';
+      }else entry.phase='';
+    }
+    for(const post of [...output.posts]){
+      const story=output.stories.find(s=>s.id===post.id);if(!story)continue;
+      conflicts.push({entity:'posts',id:post.id,field:'publicationKind',kind:'la misma publicación fue convertida y editada en otro dispositivo'});
+      const preferred=options.prefer==='remote'?remote:local;
+      if(preferred.stories.some(s=>s.id===post.id)&&!preferred.posts.some(p=>p.id===post.id)){
+        output.posts=output.posts.filter(p=>p.id!==post.id);output.tombstones.posts[post.id]={hash:fingerprint(post)};
+      }else{output.stories=output.stories.filter(s=>s.id!==post.id);output.tombstones.stories[post.id]={hash:fingerprint(story)};}
     }
     return {state:{version:4,...output},conflicts,ok:!conflicts.length||['local','remote'].includes(options.prefer)};
   }

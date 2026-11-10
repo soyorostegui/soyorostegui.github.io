@@ -415,15 +415,16 @@
       return "tag-green";
     }
 
-    function getFilteredPosts() {
+    function getFilteredPosts(includeStories = false) {
       const filterProject = document.getElementById("filterProject").value;
       const filterChannel = document.getElementById("filterChannel").value;
 
       const filterType = document.getElementById("filterType")?.value || "ALL";
-      return posts.filter(p => {
+      const entries = includeStories && typeof storyAsAgendaEntry === "function" ? [...posts, ...stories.map(storyAsAgendaEntry)] : posts;
+      return entries.filter(p => {
         const matchPhase = filterProject === "ALL" || (filterProject === "NONE" ? !entryProjectId(p) : entryProjectId(p) === filterProject);
         const matchChannel = filterChannel === "ALL" || p.channel === filterChannel;
-        return matchPhase && matchChannel && (filterType === "ALL" || entryType(p) === filterType);
+        return matchPhase && matchChannel && (filterType === "ALL" || (filterType === "story" ? p.__story : entryType(p) === filterType));
       });
     }
 
@@ -447,10 +448,10 @@
           col.classList.remove("drag-over");
           const id = e.dataTransfer.getData("text/plain");
           if (!id) return;
-          const post = posts.find(p => p.id === id);
+          const post = posts.find(p => p.id === id) || stories.find(s => s.id === id);
           if (!post || post.status === status) return;
           post.status = status;
-          saveToStorage();
+          if(stories.includes(post))saveStoriesToStorage();else saveToStorage();
           renderCurrentView();
         });
       });
@@ -468,7 +469,7 @@
       listPublished.innerHTML = "";
 
       let count = { Idea: 0, "En Diseño": 0, Listo: 0, Publicado: 0 };
-      const filtered = getFilteredPosts();
+      const filtered = getFilteredPosts(true);
 
       filtered.forEach(post => {
         const card = document.createElement("div");
@@ -522,7 +523,7 @@
     function renderTable() {
       const tbody = document.getElementById("table-body");
       tbody.innerHTML = "";
-      const filtered = getFilteredPosts();
+      const filtered = getFilteredPosts(true);
 
       filtered.sort((a,b) => (a.date > b.date ? 1 : -1)).forEach(post => {
         const tr = document.createElement("tr");
@@ -679,9 +680,10 @@
       const toggle = document.getElementById("calShowStories");
       if (toggle) toggle.checked = storiesPref;
       const typeFilter = document.getElementById("filterType")?.value || "ALL";
-      const allStories = (storiesPref && ["ALL", "story"].includes(typeFilter) && (channelFilter === "ALL" || channelFilter === "Instagram"))
-        ? sortedStories()
-        : [];
+      const projectFilter = document.getElementById('filterProject')?.value || 'ALL';
+      const allStories = storiesPref && ['ALL','post','story'].includes(typeFilter)
+        ? sortedStories().filter(story=>(channelFilter==='ALL'||(story.channel||'Instagram')===channelFilter)&&(projectFilter==='ALL'||(projectFilter==='NONE'?!entryProjectId(story):entryProjectId(story)===projectFilter))) : [];
+
 
       for (let day = 1; day <= details.days; day++) {
         const dateStr = `${calendarMonth}-${String(day).padStart(2, "0")}`;
@@ -729,7 +731,7 @@
           const chip = document.createElement("div");
           chip.className = "cal-story-chip";
           setupCalendarEntryDrag(chip, "story", story.id);
-          chip.title = `Historia${story.time ? " " + story.time : ""}: ${story.name}`;
+          chip.title = `${story.channel||"Instagram"} · Historia${story.time ? " " + story.time : ""}: ${story.name}`;
           chip.onclick = (e) => { e.stopPropagation(); if (calendarDragEntry || Date.now() < calendarSuppressClickUntil) return; openStoryModal(story.id); };
           chip.innerHTML = `
             <span class="cs-time">${story.time ? escapeHtmlForChat(story.time) : "📱"}</span>
@@ -836,7 +838,7 @@
           <span class="st-time" data-label="Hora">${s.time ? escapeHtmlForChat(s.time) : "—"}</span>
           <span class="st-highlight" data-label="Destacada" title="${h ? escapeHtmlForChat((h.icon ? h.icon + " " : "") + h.name) : "Sin destacada"}">${h ? escapeHtmlForChat((h.icon ? h.icon + " " : "") + h.name) : "—"}</span>
           <span class="st-name" data-label="Historia" title="${escapeHtmlForChat(s.name + (s.context ? " — " + s.context : ""))}">
-            <span class="st-name-title">${escapeHtmlForChat(s.name)}</span>
+            <span class="st-name-title">${escapeHtmlForChat(s.channel||"Instagram")} · ${escapeHtmlForChat(s.name)}</span>
             ${s.context
               ? `<span class="st-context">${escapeHtmlForChat(s.context)}</span>`
               : `<span class="st-context st-context-empty">+ Añadir contexto</span>`}
@@ -895,6 +897,7 @@
 
     function deleteCurrentPost() {
       const id = document.getElementById("edit-id").value;
+      if(stories.some(s=>s.id===id)){deleteStory(id);if(!stories.some(s=>s.id===id))closeModal();return;}
       if (!id) return;
       if (confirm("¿Estás seguro de eliminar esta pieza del calendario?")) {
         posts = posts.filter(p => p.id !== id);
@@ -984,6 +987,7 @@
     }
 
     function openStoryModal(id) {
+      if(typeof openAgendaEntry === "function"){openAgendaEntry(id || null,"Historia");return;}
       const item = id ? stories.find(s => s.id === id) : null;
       showStoryModalMode("story");
       fillStoryHighlightOptions(item ? item.highlightId : (highlights[0] && highlights[0].id));

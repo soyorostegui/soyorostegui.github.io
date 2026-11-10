@@ -15,7 +15,7 @@ function fixture({local=seed(),remote=seed(),base=null,legacyBase=false}={}){
  const ctx={Date,JSON,Object,Array,Set,Map,Error,Number,String,TextEncoder,TextDecoder,Uint8Array,Promise,AbortController,crypto:nodeCrypto.webcrypto,StudioSyncMerge:M,
   atob:x=>Buffer.from(x,'base64').toString('binary'),btoa:x=>Buffer.from(x,'binary').toString('base64'),
   localStorage:{getItem:k=>storage.get(k)??null,setItem:(k,v)=>storage.set(k,String(v)),removeItem:k=>storage.delete(k)},
-  projects:clone(M.normalize(local).projects),networks:clone(M.normalize(local).networks),posts:clone(local.posts),stories:clone(local.stories),highlights:clone(local.highlights),chatHistory:clone(local.chatHistory),importedCustomContextNotes:local.importedCustomContextNotes||'',
+  publicationFormats:clone(M.normalize(local).publicationFormats),projects:clone(M.normalize(local).projects),networks:clone(M.normalize(local).networks),posts:clone(local.posts),stories:clone(local.stories),highlights:clone(local.highlights),chatHistory:clone(local.chatHistory),importedCustomContextNotes:local.importedCustomContextNotes||'',
   normalizeStoryEntry:s=>Object.assign({time:'',context:'',formatDetail:''},s),sanitizeApiKey:x=>x,secretStorage:{getItem:()=>state.token},
   document:{getElementById:element,visibilityState:'visible',addEventListener:(n,fn)=>events.set(n,fn)},window:{addEventListener:(n,fn)=>events.set(n,fn)},navigator:{onLine:true},
   renderCurrentView(){state.applied++;},renderSavedChatHistory(){},buildContextMarkdown:s=>JSON.stringify({posts:s.posts,stories:s.stories,chatHistory:s.chatHistory}),
@@ -79,9 +79,10 @@ function fixture({local=seed(),remote=seed(),base=null,legacyBase=false}={}){
  local=seed();local.posts[0].title='Trabajo anterior';f=fixture({local});await f.ctx.pullStateFromGitHubRepoNow(false);assert.equal(f.state.writes.length,0);assert.equal(f.element('stateSyncConflictPanel').hidden,false);
  // Catalog additions and typed agenda metadata survive the actual sync controller.
  const agendaBase=seed(),agendaLocal=clone(agendaBase);agendaLocal.networks=M.normalize(agendaBase).networks.concat({id:'network-tiktok',name:'TikTok'});
+ agendaLocal.publicationFormats=M.normalize(agendaBase).publicationFormats.concat({id:'format-test',name:'Formato propio'});
  agendaLocal.projects=M.normalize(agendaBase).projects.concat({id:'project-client',name:'Cliente',objective:'Entrega',type:'client',status:'active',stages:[],color:'#123abc',startDate:'',endDate:''});
  agendaLocal.posts.push({projectId:'project-client',id:'meeting-1',type:'meeting',title:'Revisión',date:'2026-11-13',time:'10:00',endTime:'11:00',location:'Sala 1',participants:'Peter',description:'Marca',status:'Idea',phase:'',channel:'',format:''});
- f=fixture({base:agendaBase,local:agendaLocal});await f.ctx.pushStateToGitHubRepoNow(false);assert.equal(f.state.writes.length,1);assert(f.state.data.networks.some(n=>n.name==='TikTok'));assert.equal(f.state.data.posts.find(p=>p.id==='meeting-1').endTime,'11:00');assert(f.state.data.projects.some(p=>p.id==='project-client'));assert.equal(f.state.data.posts.find(p=>p.id==='meeting-1').projectId,'project-client');
+ f=fixture({base:agendaBase,local:agendaLocal});await f.ctx.pushStateToGitHubRepoNow(false);assert.equal(f.state.writes.length,1);assert(f.state.data.networks.some(n=>n.name==='TikTok'));assert.equal(f.state.data.posts.find(p=>p.id==='meeting-1').endTime,'11:00');assert(f.state.data.publicationFormats.some(f=>f.name==='Formato propio'));assert(f.state.data.projects.some(p=>p.id==='project-client'));assert.equal(f.state.data.posts.find(p=>p.id==='meeting-1').projectId,'project-client');
  assert(JSON.parse(f.storage.get('po_networks_v1')||'[]').some(n=>n.name==='TikTok')||f.ctx.networks.some(n=>n.name==='TikTok'));
  console.log('PASS: automatic field merge, historical baseline recovery, explicit real-conflict resolution, atomic state/context commit, concurrent branch retry, edits during save, offline reconnect, no-op polling, unsaved editor protection and credential error handling.');
 })().catch(error=>{console.error(error);process.exitCode=1;});

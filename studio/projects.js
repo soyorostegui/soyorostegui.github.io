@@ -11,7 +11,7 @@ let selectedProjectId='';
 function entryProjectId(entry){return typeof entry.projectId==='string'?entry.projectId:(PORTFOLIO_STAGES.includes(entry.phase)?PORTFOLIO_PROJECT_ID:'');}
 function projectForEntry(entry){return projects.find(p=>p.id===entryProjectId(entry))||null;}
 function projectLabel(entry){return projectForEntry(entry)?.name||'Sin proyecto';}
-function projectEntries(id){return posts.filter(entry=>entryProjectId(entry)===id);}
+function projectEntries(id){return [...posts,...(typeof storyAsAgendaEntry==='function'?stories.map(storyAsAgendaEntry):[])].filter(entry=>entryProjectId(entry)===id);}
 function projectProgress(id){
  const entries=projectEntries(id),progress=type=>{const items=entries.filter(p=>entryType(p)===type);return {total:items.length,done:items.filter(p=>p.status==='Publicado').length};};
  return {tasks:progress('task'),posts:progress('post'),meetings:progress('meeting'),classes:progress('class'),
@@ -72,34 +72,38 @@ function openProjectModal(id=''){
  const project=id?projects.find(p=>p.id===id):null;if(id&&!project)return;
  const values=project||{id:'',name:'',objective:'',type:'personal',startDate:'',endDate:'',status:'planned',color:'#8b5cf6',stages:[]};
  for(const key of ['id','name','objective','type','startDate','endDate','status','color'])document.getElementById('project-'+key).value=values[key]||'';
+ document.getElementById('projectClearRemovedStages').checked=false;
  document.getElementById('project-stages').value=(values.stages||[]).join('\n');document.getElementById('projectFormError').textContent='';
  const button=document.getElementById('projectDelete');button.hidden=!project;button.disabled=!!project&&projectEntries(project.id).length>0;button.title=button.disabled?'El proyecto tiene entradas: archívalo para conservar sus referencias.':'Eliminar proyecto vacío';
  document.getElementById('projectOverlay').style.display='flex';
 }
+function openEntryProjectStages(){const id=document.getElementById('edit-project').value;if(!id)return;openProjectModal(id);const field=document.getElementById('project-stages');field.focus?.();field.scrollIntoView?.({block:'center'});}
 function closeProjectModal(){document.getElementById('projectOverlay').style.display='none';}
-function validateProject(project){
+function validateProject(project,allowStageRemoval=false){
  if(!project.name.trim()||project.name.length>100)throw Error('Escribe un nombre de hasta 100 caracteres.');
  if(!Object.hasOwn(PROJECT_TYPES,project.type)||!Object.hasOwn(PROJECT_STATUS,project.status))throw Error('Tipo o estado de proyecto no válido.');
  if(!/^#[0-9a-f]{6}$/i.test(project.color))throw Error('Selecciona un color válido.');
  for(const key of ['startDate','endDate'])if(project[key]){const d=new Date(project[key]+'T00:00:00Z');if(!/^\d{4}-\d{2}-\d{2}$/.test(project[key])||!Number.isFinite(d.getTime())||d.toISOString().slice(0,10)!==project[key])throw Error('La fecha del proyecto no es válida.');}
  if(project.startDate&&project.endDate&&project.endDate<project.startDate)throw Error('La fecha final no puede ser anterior al inicio.');
  if(project.stages.length>20||project.stages.some(s=>s.length>100)||new Set(project.stages.map(s=>s.toLocaleLowerCase())).size!==project.stages.length)throw Error('Usa hasta 20 etapas distintas de hasta 100 caracteres.');
- if(projectEntries(project.id).some(e=>e.phase&&!project.stages.includes(e.phase)))throw Error('No puedes quitar una etapa en uso. Reasigna sus entradas primero.');
+ if(!allowStageRemoval&&projectEntries(project.id).some(e=>e.phase&&!project.stages.includes(e.phase)))throw Error('Hay etapas en uso. Reasigna sus entradas o marca dejar sin etapa las actividades afectadas.');
  return project;
 }
-function persistProjects(next){
- const previous=projects,keys=['po_projects_v1','po_sync_dirty','po_last_updated_at'],stored=keys.map(k=>[k,localStorage.getItem(k)]);
- try{localStorage.setItem('po_projects_v1',JSON.stringify(next));localStorage.setItem('po_sync_dirty','1');localStorage.setItem('po_last_updated_at',String(Date.now()));projects=next;}
- catch(error){projects=previous;for(const[k,v]of stored)try{v===null?localStorage.removeItem(k):localStorage.setItem(k,v);}catch(_){}throw error;}
+function persistProjects(next,changedEntries=null){
+ const previous=projects,oldPosts=posts,oldStories=stories,keys=['po_projects_v1','po_posts_v6','po_stories_v1','po_sync_dirty','po_last_updated_at'],stored=keys.map(k=>[k,localStorage.getItem(k)]);
+ try{localStorage.setItem('po_projects_v1',JSON.stringify(next));if(changedEntries){localStorage.setItem('po_posts_v6',JSON.stringify(changedEntries.posts));localStorage.setItem('po_stories_v1',JSON.stringify(changedEntries.stories));}localStorage.setItem('po_sync_dirty','1');localStorage.setItem('po_last_updated_at',String(Date.now()));projects=next;if(changedEntries){posts=changedEntries.posts;stories=changedEntries.stories;}}
+ catch(error){projects=previous;posts=oldPosts;stories=oldStories;for(const[k,v]of stored)try{v===null?localStorage.removeItem(k):localStorage.setItem(k,v);}catch(_){}throw error;}
  if(typeof scheduleGitHubCloudSync==='function')scheduleGitHubCloudSync();renderCurrentView();
 }
 function saveProject(){
  const value=k=>document.getElementById('project-'+k).value,id=value('id');
  if(id&&!projects.some(p=>p.id===id)){document.getElementById('projectFormError').textContent='El proyecto ya no existe.';return;}
  const project={id:id||'project-'+(globalThis.crypto?.randomUUID?.()||Date.now()+'-'+Math.random().toString(36).slice(2)),name:value('name').trim(),objective:value('objective').trim(),type:value('type'),startDate:value('startDate'),endDate:value('endDate'),status:value('status'),color:value('color'),stages:value('stages').split('\n').map(s=>s.trim()).filter(Boolean)};
- try{validateProject(project);persistProjects(id?projects.map(p=>p.id===id?project:p):[...projects,project]);}
+ const clearRemoved=document.getElementById('projectClearRemovedStages').checked;
+ const clean=entry=>entryProjectId(entry)===project.id&&entry.phase&&!project.stages.includes(entry.phase)?{...entry,phase:''}:entry;
+ try{validateProject(project,clearRemoved);persistProjects(id?projects.map(p=>p.id===id?project:p):[...projects,project],clearRemoved?{posts:posts.map(clean),stories:stories.map(clean)}:null);}
  catch(error){document.getElementById('projectFormError').textContent=error.message;return;}
- if(document.getElementById('modalOverlay').style.display==='flex'){fillEntryProjectOptions(project.id);fillEntryStageOptions(document.getElementById('edit-phase').value);}
+ if(document.getElementById('modalOverlay').style.display==='flex'){const selected=id?document.getElementById('edit-project').value:project.id;const stage=document.getElementById('edit-phase').value;fillEntryProjectOptions(selected);fillEntryStageOptions(stage);}
  closeProjectModal();selectedProjectId=project.id;renderProjectDetail();
 }
 function deleteProject(){

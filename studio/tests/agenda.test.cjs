@@ -18,9 +18,9 @@ const ctx={Date,Intl,JSON,Object,Array,Set,Math,Number,String,encodeURIComponent
  localStorage:{getItem:k=>stored.get(k)??null,setItem(k,v){if(fail&&k==='po_posts_v6')throw Error('quota');stored.set(k,String(v));},removeItem:k=>stored.delete(k)},
  document:{getElementById:element,createElement:()=>new Element(),querySelectorAll:q=>groups[q.match(/data-agenda-([^\]]+)/)[1]]},
  buildEditorialContext:()=>({today:'2026-11-10'}),scheduleGitHubCloudSync:()=>scheduled++,closeModal(){element('modalOverlay').style.display='none';},renderCurrentView(){renders++;}
-};vm.createContext(ctx);vm.runInContext(code,ctx);vm.runInContext(fs.readFileSync(path.join(__dirname,'../projects.js'),'utf8'),ctx);
+};vm.createContext(ctx);vm.runInContext(code,ctx);vm.runInContext(fs.readFileSync(path.join(__dirname,'../publication-options.js'),'utf8'),ctx);vm.runInContext(fs.readFileSync(path.join(__dirname,'../projects.js'),'utf8'),ctx);
 vm.runInContext(editorial.slice(editorial.indexOf('    function saveToStorage()'),editorial.indexOf('    function switchView(')),ctx);
-vm.runInContext(editorial.slice(editorial.indexOf('    function getFilteredPosts()'),editorial.indexOf('    /* RENDER KANBAN */')),ctx);
+vm.runInContext(editorial.slice(editorial.indexOf('    function getFilteredPosts('),editorial.indexOf('    /* RENDER KANBAN */')),ctx);
 assert.equal(ctx.entryType(ctx.posts[0]),'post');ctx.openAgendaEntry('old');assert.equal(element('edit-caption').value,'Copy antiguo');assert.equal(element('edit-type').value,'post');
 ctx.saveAgendaEntry();assert.equal(ctx.posts[0].id,'old');assert.equal(ctx.posts[0].caption,'Copy antiguo');assert.equal(ctx.posts[0].structure,'Estructura antigua');
 function create(type,changes={}){ctx.openAgendaEntry();element('edit-type').value=type;ctx.onAgendaTypeChange();for(const [key,value]of Object.entries({title:'Actividad '+type,date:'2026-11-12',...changes}))element('edit-'+key).value=value;ctx.saveAgendaEntry();}
@@ -33,13 +33,13 @@ const before=JSON.stringify(ctx.posts);create('meeting',{time:'12:00',endTime:'1
 create('class',{time:'',endTime:''});assert.equal(JSON.stringify(ctx.posts),before);assert.match(element('agendaFormError').textContent,/hora/);
 create('task',{date:'2026-02-30'});assert.equal(JSON.stringify(ctx.posts),before);
 fail=true;create('task');fail=false;assert.equal(JSON.stringify(ctx.posts),before);assert.equal(JSON.parse(stored.get('po_posts_v6')).length,4);
-element('newNetworkName').value='TikTok';ctx.addAgendaNetwork();assert.ok(ctx.networkNames().includes('TikTok'));assert.ok(JSON.parse(stored.get('po_networks_v1')).some(n=>n.name==='TikTok'));
-element('newNetworkName').value='tiktok';ctx.addAgendaNetwork();assert.equal(JSON.parse(stored.get('po_networks_v1')).filter(n=>n.name.toLowerCase()==='tiktok').length,1);
-create('post',{channel:'TikTok',format:'Video'});assert.equal(ctx.posts.at(-1).channel,'TikTok');ctx.removeAgendaNetwork('network-tiktok');assert.ok(ctx.networkNames().includes('TikTok'),'Networks in use cannot be deleted');
-element('newNetworkName').value='YouTube';ctx.addAgendaNetwork();ctx.removeAgendaNetwork('network-youtube');assert.ok(!ctx.networkNames().includes('YouTube'));
+element('newNetworkName').value='MiRedSocial';ctx.addAgendaNetwork();assert.ok(ctx.networkNames().includes('MiRedSocial'));assert.ok(JSON.parse(stored.get('po_networks_v1')).some(n=>n.name==='MiRedSocial'));
+element('newNetworkName').value='miredsocial';ctx.addAgendaNetwork();assert.equal(JSON.parse(stored.get('po_networks_v1')).filter(n=>n.name.toLowerCase()==='miredsocial').length,1);
+create('post',{channel:'MiRedSocial',format:'Video'});assert.equal(ctx.posts.at(-1).channel,'MiRedSocial');ctx.removeAgendaNetwork('network-miredsocial');assert.ok(ctx.networkNames().includes('MiRedSocial'),'Networks in use cannot be deleted');
+element('newNetworkName').value='OtraRed';ctx.addAgendaNetwork();ctx.removeAgendaNetwork('network-otrared');assert.ok(!ctx.networkNames().includes('OtraRed'));
 element('filterType').value='meeting';element('filterChannel').value='ALL';element('filterProject').value='ALL';assert.equal(ctx.getFilteredPosts().length,1);assert.equal(ctx.getFilteredPosts()[0].id,meeting.id);
-element('filterType').value='ALL';element('filterChannel').value='TikTok';assert.equal(ctx.getFilteredPosts().length,1);assert.equal(ctx.getFilteredPosts()[0].channel,'TikTok');
-const base={posts:clone(ctx.posts),stories:[],highlights:[],chatHistory:[]},local=clone(base),remote=clone(base);local.networks=M.normalize(base).networks.concat({id:'network-tiktok',name:'TikTok'});remote.networks=M.normalize(base).networks.concat({id:'network-youtube',name:'YouTube'});remote.posts[1].location='Nueva sala';local.posts[1].date='2026-11-13';
+element('filterType').value='ALL';element('filterChannel').value='MiRedSocial';assert.equal(ctx.getFilteredPosts().length,1);assert.equal(ctx.getFilteredPosts()[0].channel,'MiRedSocial');
+const base={posts:clone(ctx.posts),stories:[],highlights:[],chatHistory:[]},local=clone(base),remote=clone(base);local.networks=M.normalize(base).networks.concat({id:'network-miredsocial',name:'MiRedSocial'});remote.networks=M.normalize(base).networks.concat({id:'network-otrared',name:'OtraRed'});remote.posts[1].location='Nueva sala';local.posts[1].date='2026-11-13';
 const merged=M.merge(base,local,remote);assert.ok(merged.ok);assert.equal(merged.state.posts.find(p=>p.id===meeting.id).location,'Nueva sala');assert.equal(merged.state.posts.find(p=>p.id===meeting.id).date,'2026-11-13');assert.equal(merged.state.networks.length,5);
 assert.ok(M.equal(merged.state,M.merge(base,remote,local).state));
 assert.ok(renders>=5);

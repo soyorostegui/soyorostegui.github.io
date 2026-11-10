@@ -277,9 +277,20 @@
       </div>
       <div class="form-group"><label class="form-label" for="project-color">Color</label><input type="color" id="project-color" value="#8b5cf6"></div>
       <div class="form-group"><label class="form-label" for="project-stages">Etapas opcionales (una por línea)</label><textarea id="project-stages" class="form-textarea" placeholder="Investigación&#10;Diseño&#10;Entrega"></textarea></div>
+      <label style="display:flex;align-items:flex-start;gap:8px;font-size:12px;margin:10px 0;"><input type="checkbox" id="projectClearRemovedStages"> Si quito etapas en uso, dejar sus actividades sin etapa. Las actividades se conservan dentro del proyecto.</label>
       <p id="projectFormError" role="alert" style="color:var(--tag-red-text);font-size:12px;"></p>
       <p class="project-muted">Puedes archivar un proyecto sin eliminar sus actividades. Solo se pueden eliminar proyectos vacíos.</p>
       <div class="drawer-actions"><button type="button" id="projectDelete" class="btn-delete" onclick="deleteProject()">Eliminar proyecto vacío</button><button type="button" class="btn-save" onclick="saveProject()">Guardar proyecto</button></div>
+    </div>
+  </div>
+  <div id="optionCatalogOverlay" class="modal-overlay" style="display:none;z-index:1300;" onclick="if(event.target===this)closeOptionCatalog()">
+    <div class="notion-drawer" role="dialog" aria-modal="true" aria-labelledby="optionCatalogTitle">
+      <div class="drawer-top"><h3 id="optionCatalogTitle">Opciones de publicación</h3><button type="button" class="drawer-close" onclick="closeOptionCatalog()" aria-label="Cerrar opciones">✕</button></div>
+      <p class="project-muted">Añade opciones propias o quítalas de los desplegables. Las entradas que ya las usan no se modifican.</p>
+      <div class="agenda-network-row"><input id="optionCatalogName" class="form-input" maxlength="60" aria-label="Nombre de la nueva opción" placeholder="Escribe una opción nueva"><button type="button" class="ai-inline-btn" onclick="addCatalogOption()">Añadir y seleccionar</button></div>
+      <p id="optionCatalogStatus" role="status" style="font-size:12px;"></p>
+      <div id="optionCatalogList"></div>
+      <div class="drawer-actions"><button type="button" class="btn-save" onclick="closeOptionCatalog()">Volver a la entrada</button></div>
     </div>
   </div>
   <!-- DRAWER / MODAL DE DETALLE Y EDICIÓN -->
@@ -307,11 +318,11 @@
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
         <div class="form-group" data-agenda-post>
           <label class="form-label">Red Social</label>
-          <select id="edit-channel" class="form-select">
+          <select id="edit-channel" class="form-select" onchange="onPublicationFormatChange()">
             <option value="Instagram">Instagram</option>
             <option value="LinkedIn">LinkedIn</option>
             <option value="Behance">Behance</option>
-          </select>
+          </select><button type="button" class="ai-inline-btn" style="margin-top:6px;" onclick="openOptionCatalog('networks')">+ Añadir / gestionar redes</button>
         </div>
         <div class="form-group">
           <label class="form-label" id="agendaDateLabel" for="edit-date">Fecha</label>
@@ -338,11 +349,11 @@
 
       <div class="form-group" id="entryStageGroup" hidden>
         <label class="form-label" for="edit-phase">Etapa (opcional)</label>
-        <select id="edit-phase" class="form-select"><option value="">Sin etapa</option><option value="Fase 1: Señal">Fase 1: Señal</option><option value="Fase 2: Archivo">Fase 2: Archivo</option><option value="Fase 3: Convocatoria">Fase 3: Convocatoria</option><option value="Fase 4: Continuidad">Fase 4: Continuidad</option></select>
+        <select id="edit-phase" class="form-select"><option value="">Sin etapa</option><option value="Fase 1: Señal">Fase 1: Señal</option><option value="Fase 2: Archivo">Fase 2: Archivo</option><option value="Fase 3: Convocatoria">Fase 3: Convocatoria</option><option value="Fase 4: Continuidad">Fase 4: Continuidad</option></select><button type="button" class="ai-inline-btn" style="margin-top:6px;" onclick="openEntryProjectStages()">Editar etapas del proyecto</button>
       </div>
       <div class="form-group" data-agenda-post>
-        <label class="form-label">Formato</label>
-        <select id="edit-format" class="form-select"><option value="Video">Video</option><option value="Directo">Directo</option><option value="Artículo">Artículo</option><option value="Podcast">Podcast</option><option value="Otro">Otro</option>
+        <label class="form-label" for="edit-format">Tipo de publicación *</label>
+        <select id="edit-format" class="form-select" onchange="onPublicationFormatChange()"><option value="Video">Video</option><option value="Directo">Directo</option><option value="Artículo">Artículo</option><option value="Podcast">Podcast</option><option value="Otro">Otro</option>
           <option value="Carrusel">Carrusel (IG)</option>
           <option value="Post">Post Estático (IG)</option>
           <option value="Reel">Reel / Video (IG)</option>
@@ -353,8 +364,14 @@
           <option value="Opiniones">LinkedIn: Opinión / Debate</option>
           <option value="Hitos">LinkedIn: Hito / Lanzamiento</option>
           <option value="Landing">Behance: Portafolio Landing</option>
-        </select>
+        </select><button type="button" class="ai-inline-btn" style="margin-top:6px;" onclick="openOptionCatalog('publicationFormats')">+ Añadir / gestionar tipos</button>
       </div>
+      <div id="publicationStoryFields" hidden>
+        <div class="form-group"><label class="form-label" for="edit-storyMedia">Contenido de la historia</label><select id="edit-storyMedia" class="form-select"><option value="Foto">Foto</option><option value="Video">Video</option><option value="Texto">Texto</option></select></div>
+        <div class="form-group" id="publicationHighlightGroup"><label class="form-label" for="edit-highlight">Destacada de Instagram (opcional)</label><select id="edit-highlight" class="form-select"><option value="">Sin destacada</option></select></div>
+        <p class="project-muted">La historia aparecerá en Historias y en el calendario, conservando su red y proyecto.</p>
+      </div>
+
 
       <div class="form-group" data-agenda-post>
         <div class="form-label-row">
@@ -578,13 +595,10 @@
           </div>
           <div id="syncModalStatusMsg" role="status" style="display:none;margin-top:6px;"></div>
         </section>
-        <details style="margin-top:14px;">
-          <summary style="cursor:pointer;font-size:13px;font-weight:600;">Redes sociales</summary>
-          <p style="font-size:12px;color:var(--text-muted);margin:8px 0;">Añade las redes que utilizas. Las redes con entradas se conservan para proteger sus referencias.</p>
-          <div id="networkSettingsList"></div>
-          <div class="agenda-network-row"><input id="newNetworkName" class="form-input" aria-label="Nombre de la nueva red" placeholder="Ej. TikTok o YouTube" maxlength="60"><button type="button" class="ai-inline-btn" onclick="addAgendaNetwork()">Añadir red</button></div>
-          <p id="networkSettingsStatus" role="status" style="font-size:12px;"></p>
-        </details>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;">
+          <button type="button" class="ai-inline-btn" onclick="openOptionCatalog('networks')">Gestionar redes sociales</button>
+          <button type="button" class="ai-inline-btn" onclick="openOptionCatalog('publicationFormats')">Gestionar tipos de publicación</button>
+        </div>
         <div class="key-status-box" id="keyStatusBox" style="display:none;"></div>
       </div>
 
@@ -679,6 +693,7 @@
   <script src="./credential-vault.js"></script>
   <script src="./editorial.js"></script>
   <script src="./agenda.js"></script>
+  <script src="./publication-options.js"></script>
   <script src="./projects.js"></script>
   <script src="./ai.js"></script>
   <script src="./sync-merge.js"></script>

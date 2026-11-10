@@ -1413,7 +1413,7 @@ const AI_PROVIDERS = {
       md += `\n### Historias (${stories.length})\n`;
       sortedStories().forEach((s, i) => {
         const h = getHighlightById(s.highlightId);
-        md += `- \`${s.id}\` #${i + 1} · ${s.date}${s.time ? " " + s.time : ""} · ${h ? h.name : "Sin destacada"} · **${s.name}** · ${s.format || "Sin formato"} · ${s.status || ""}${s.context ? ` · Contexto: ${s.context}` : ""}\n`;
+        md += `- \`${s.id}\` #${i + 1} · ${s.date}${s.time ? " " + s.time : ""} · ${h ? h.name : "Sin destacada"} · **${s.name}** · ${s.format || "Sin formato"} · ${s.status || ""}${s.context ? ` · Contexto: ${s.context}` : ""}${s.caption ? ` · Copy: ${s.caption}` : ""}${s.structure ? ` · Contenido: ${s.structure}` : ""}\n`;
       });
       md += `\n---\n\n`;
 
@@ -1495,6 +1495,7 @@ const AI_PROVIDERS = {
             posts,
             networks,
             projects,
+            publicationFormats,
             stories,
             highlights,
             importedCustomContextNotes
@@ -1684,9 +1685,10 @@ const AI_PROVIDERS = {
       if (data.status !== undefined && !["Idea", "En Diseño", "Listo", "Publicado"].includes(data.status)) throw new Error("Estado no válido.");
       if (data.type.endsWith("_post")) {
         for (const [key, id] of [["channel", "edit-channel"], ["format", "edit-format"], ["phase", "edit-phase"]]) {
-          if (data[key] !== undefined && !(key === "channel" && typeof networkNames === "function" ? networkNames().includes(data[key]) : Array.from(document.getElementById(id).options).some(o => o.value === data[key]))) throw new Error(`Valor no válido para ${key}.`);
+          if (data[key] !== undefined && !(key === "channel" && typeof networkNames === "function" ? networkNames().includes(data[key]) : key === "format" && typeof publicationFormatNames === "function" ? publicationFormatNames().includes(data[key]) : Array.from(document.getElementById(id).options).some(o => o.value === data[key]))) throw new Error(`Valor no válido para ${key}.`);
         }
       }
+      if(data.type.endsWith("_post")&&data.format==="Historia")throw Error("Para crear una historia usa create_story o el formulario de nueva entrada.");
       if (data.type === "create_post" && (!data.title || !data.date)) throw new Error("Para crear una publicación faltan título o fecha.");
       if (data.type === "create_story" && (!data.name || !data.date)) throw new Error("Para crear una historia faltan nombre o fecha.");
       if (data.type === "create_highlight" && !data.name) throw new Error("Falta el nombre de la destacada.");
@@ -2205,6 +2207,7 @@ const AI_PROVIDERS = {
       const part = type => dateParts.find(p => p.type === type).value;
       return {
         today: `${part("year")}-${part("month")}-${part("day")}`,
+        publicationFormats: typeof publicationFormatNames === "function" ? publicationFormatNames() : [],
         networks: typeof networkNames === "function" ? networkNames() : ["Instagram","LinkedIn","Behance"],
         timeZone: "America/Bogota",
         projects: typeof projects === "undefined" ? [] : projects.map(p=>({id:p.id,name:p.name,objective:p.objective,type:p.type,startDate:p.startDate,endDate:p.endDate,status:p.status,color:p.color,stages:p.stages})),
@@ -2213,7 +2216,7 @@ const AI_PROVIDERS = {
         highlights: highlights.slice().sort((a, b) => (a.order || 0) - (b.order || 0))
           .map(h => ({ id: h.id, name: h.name, icon: h.icon, desc: h.desc, order: h.order })),
         stories: sortedStories().map(story => ({
-          id: story.id, date: story.date, time: story.time || "", name: story.name,
+          id: story.id, caption:story.caption||'', structure:story.structure||'', channel:story.channel||'Instagram', projectId:story.projectId||'', phase:story.phase||'', date: story.date, time: story.time || "", name: story.name,
           highlightId: story.highlightId || "", highlight: getHighlightById(story.highlightId)?.name || "Sin destacada",
           format: story.format, status: story.status, context: story.context || "", order: story.order
         }))
@@ -2284,6 +2287,7 @@ ${olderContext || "Sin fragmentos adicionales relacionados."}
 ${importedCustomContextNotes ? `CONTEXTO ADICIONAL DE ARCHIVO:\n${clipContextText(importedCustomContextNotes, 8000)}\n` : ""}
 La agenda incluye entradas de tipo post, meeting, class y task. Las acciones create_post solo crean publicaciones. Para crear o cambiar campos específicos de reuniones, clases y tareas, indica usar Nueva entrada o editar la entrada. No las conviertas en publicaciones ni prometas acciones no disponibles. Puedes consultar todos sus campos y actualizar su fecha por ID.
 PROYECTOS: ${JSON.stringify(editorialContext.projects)}. Las etapas pertenecen a cada proyecto. Usa Proyectos o el formulario de entrada para crear proyectos o cambiar sus vínculos; las acciones editoriales no administran proyectos.
+FORMATOS DISPONIBLES: ${JSON.stringify(editorialContext.publicationFormats)}. Para crear una historia usa create_story; no uses create_post con formato Historia.
 REDES CONFIGURADAS: ${JSON.stringify(editorialContext.networks)}. Usa únicamente estas redes para publicaciones.
 REGLAS DE ORO:
 1. Puedes proponer acciones JSON sobre el calendario. El sistema las valida y puede rechazarlas o pedir confirmación. No afirmes que algo ya quedó guardado: describe la acción propuesta; el distintivo del sistema confirma su resultado. Los RESULTADOS REALES DEL SISTEMA del historial indican lo que sí ocurrió. Un resultado unknown no demuestra éxito.

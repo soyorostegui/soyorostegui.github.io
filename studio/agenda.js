@@ -13,12 +13,13 @@ function entryDetail(entry) {
   return [entryType(entry)==='task'?'Prioridad: '+(entry.priority||'Normal'):entry.subject,time].filter(Boolean).join(' · ')||'Sin hora';
 }
 function entryStatusLabel(entry) { return entryType(entry)==='post'?entry.status:(AGENDA_STATUS[entry.status]||entry.status); }
-function entrySummary(entry) { return entryType(entry)==='post'?(entry.caption||'Sin copy'):(entry.description||entry.subject||entry.location||'Sin descripción'); }
+function entrySummary(entry) { if(entry.__story)return entry.context||entry.caption||'Sin descripción';return entryType(entry)==='post'?(entry.caption||'Sin copy'):(entry.description||entry.subject||entry.location||'Sin descripción'); }
 function agendaToday() {
   if(typeof buildEditorialContext==='function')return buildEditorialContext().today;
   const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 }
-function networkNames() { return [...new Set([...networks.map(n=>n.name),...posts.filter(p=>entryType(p)==='post').map(p=>p.channel).filter(Boolean)])].sort((a,b)=>a.localeCompare(b)); }
+function networkNames() { return typeof availableCatalogNames==='function'?availableCatalogNames('networks'):[...new Set([...networks.map(n=>n.name),...posts.filter(p=>entryType(p)==='post').map(p=>p.channel).filter(Boolean)])].sort((a,b)=>a.localeCompare(b)); }
+
 function agendaOptions(id,values,first=null,selected) {
   const select=document.getElementById(id);if(!select)return;
   const old=selected===undefined?select.value:selected;
@@ -29,10 +30,10 @@ function agendaOptions(id,values,first=null,selected) {
   if(Array.from(select.options).some(o=>o.value===old))select.value=old;
 }
 function refreshAgendaControls() {
-  for(const [type,id] of Object.entries({post:'agendaCountPosts',meeting:'agendaCountMeetings',class:'agendaCountClasses',task:'agendaCountTasks'})){const count=document.getElementById(id);if(count)count.textContent=String(posts.filter(p=>entryType(p)===type).length);}
-  agendaOptions('filterChannel',networkNames().map(n=>[n,n]),['ALL','Todas las redes']);
+  for(const [type,id] of Object.entries({post:'agendaCountPosts',meeting:'agendaCountMeetings',class:'agendaCountClasses',task:'agendaCountTasks'})){const count=document.getElementById(id);if(count)count.textContent=String(posts.filter(p=>entryType(p)===type).length+(type==='post'?stories.length:0));}
+  agendaOptions('filterChannel',(typeof networkFilterNames==='function'?networkFilterNames():networkNames()).map(n=>[n,n]),['ALL','Todas las redes']);
   if(typeof refreshProjectControls==='function')refreshProjectControls();
-  const tableLabel=document.getElementById('btn-table');if(tableLabel)tableLabel.textContent=`Tabla (${posts.length} entradas)`;
+  const tableLabel=document.getElementById('btn-table');if(tableLabel)tableLabel.textContent=`Tabla (${posts.length+stories.length} entradas)`;
   renderNetworkSettings();
 }
 function renderNetworkSettings() {
@@ -77,14 +78,17 @@ function onAgendaTypeChange() {
   document.getElementById('agendaTimeLabel').textContent=event?'Hora de inicio':'Hora (opcional)';
   document.getElementById('edit-time').required=event;document.getElementById('edit-endTime').required=event;
   const status=document.getElementById('edit-status'),old=status.value;
+  if(typeof onPublicationFormatChange==='function')onPublicationFormatChange();
   agendaOptions('edit-status',Object.entries(AGENDA_STATUS).map(([key,label])=>[key,isPost?({Idea:'Planificado / Idea','En Diseño':'En diseño',Listo:'Listo para publicar',Publicado:'Publicado'}[key]):label]),null,old);
 }
-function openAgendaEntry(id=null) {
-  const entry=id?posts.find(p=>p.id===id):null;if(id&&!entry)return;
+function openAgendaEntry(id=null,presetFormat='') {
+  const story=id?stories.find(s=>s.id===id):null;
+  const entry=id?(posts.find(p=>p.id===id)||(story?storyAsAgendaEntry(story):null)):null;if(id&&!entry)return;
   const filteredProject=document.getElementById('filterProject')?.value||'';
-  const value=entry||{projectId:projects.some(p=>p.id===filteredProject)?filteredProject:'',type:'post',title:'',date:agendaToday(),status:'Idea',channel:networkNames()[0]||'',format:'Post',phase:''};
+  const value=entry||{projectId:projects.some(p=>p.id===filteredProject)?filteredProject:'',type:'post',title:'',date:agendaToday(),status:'Idea',channel:networkNames()[0]||'',format:'',phase:''};
   refreshAgendaControls();
-  agendaOptions('edit-channel',networkNames().map(n=>[n,n]),['','Seleccionar red'],value.channel||'');
+  const channels=networkNames();if(value.channel&&!channels.includes(value.channel))channels.push(value.channel);
+  agendaOptions('edit-channel',channels.map(n=>[n,n]),['','Seleccionar red'],value.channel||'');
   const phase=document.getElementById('edit-phase');
   if(value.phase&&!Array.from(phase.options).some(o=>o.value===value.phase)){const option=document.createElement('option');option.value=value.phase;option.textContent=value.phase;phase.appendChild(option);}
   const format=document.getElementById('edit-format');
@@ -94,6 +98,8 @@ function openAgendaEntry(id=null) {
   }
   document.getElementById('edit-id').value=entry?.id||'';document.getElementById('edit-type').value=entryType(value);document.getElementById('edit-status').value=value.status||'Idea';
   fillEntryProjectOptions(entryProjectId(value));fillEntryStageOptions(value.phase||'');
+  if(!entry&&presetFormat)value.format=presetFormat;
+  fillPublicationFormats(value.format||'');fillPublicationStoryFields(story);
   onAgendaTypeChange();document.getElementById('agendaFormError').textContent='';
   document.getElementById('drawerStatusTag').textContent=entry?'Editar entrada':'Nueva entrada';document.getElementById('btnDelete').style.display=entry?'block':'none';
   document.getElementById('modalOverlay').style.display='flex';
@@ -111,19 +117,33 @@ function validateAgendaEntry(entry) {
     if(entry.endTime<=entry.time)throw Error('La hora de fin debe ser posterior al inicio, dentro del mismo día.');
   }
   if(!Object.hasOwn(AGENDA_STATUS,entry.status))throw Error('Selecciona un estado válido.');
-  if(entry.type==='post'&&!networkNames().includes(entry.channel))throw Error('Selecciona una red o añádela en Ajustes.');
+  if(entry.type==='post'&&entry.channel!==posts.find(p=>p.id===entry.id)?.channel&&entry.channel!==(stories.some(s=>s.id===entry.id)?(stories.find(s=>s.id===entry.id).channel||'Instagram'):undefined)&&!networkNames().includes(entry.channel))throw Error('Selecciona una red o añádela en Ajustes.');
+  if(entry.type==='post'&&!entry.format)throw Error('Selecciona el tipo de publicación.');
+  if(entry.type==='post'&&entry.format!==posts.find(p=>p.id===entry.id)?.format&&!(stories.some(s=>s.id===entry.id)&&entry.format==='Historia')&&!publicationFormatNames().includes(entry.format))throw Error('Selecciona un tipo de publicación disponible.');
   if(entry.type==='task'&&!['Baja','Normal','Alta'].includes(entry.priority))throw Error('Selecciona una prioridad válida.');
   return entry;
 }
 function saveAgendaEntry() {
   const get=key=>document.getElementById('edit-'+key).value;
-  const id=get('id'),previous=posts.find(p=>p.id===id),type=get('type');
+  const id=get('id'),previousStory=stories.find(s=>s.id===id),previous=posts.find(p=>p.id===id)||(previousStory?storyAsAgendaEntry(previousStory):null),type=get('type');
   if(id&&!previous){document.getElementById('agendaFormError').textContent='La entrada ya no existe.';return;}
   const entry={...previous,id:id||'entry-'+(globalThis.crypto?.randomUUID?.()||Date.now()+'-'+Math.random().toString(36).slice(2)),type,title:get('title').trim(),date:get('date'),status:get('status'),projectId:get('project'),phase:get('project')?get('phase'):'',description:get('description'),time:get('time'),
     channel:type==='post'?get('channel'):'',format:type==='post'?get('format'):'',structure:type==='post'?get('structure'):'',caption:type==='post'?get('caption'):'',
     endTime:['meeting','class'].includes(type)?get('endTime'):'',location:['meeting','class'].includes(type)?get('location'):'',participants:type==='meeting'?get('participants'):'',subject:type==='class'?get('subject'):'',priority:type==='task'?get('priority'):''};
-  const before=posts;const keys=['po_posts_v6','po_sync_dirty','po_last_updated_at'];const stored=keys.map(k=>[k,localStorage.getItem(k)]);
-  try {validateAgendaEntry(entry);posts=id?posts.map(p=>p.id===id?entry:p):[...posts,entry];saveToStorage();}
-  catch(error){posts=before;for(const [k,v] of stored)try{v===null?localStorage.removeItem(k):localStorage.setItem(k,v);}catch(_){}document.getElementById('agendaFormError').textContent=error.message;return;}
+  const before=posts,beforeStories=stories;const keys=['po_posts_v6','po_stories_v1','po_highlights_v1','po_sync_dirty','po_last_updated_at'];const stored=keys.map(k=>[k,localStorage.getItem(k)]);
+  try {
+    validateAgendaEntry(entry);
+    if(type==='post'&&entry.format==='Historia'){
+      const media=get('storyMedia'),highlightId=entry.channel==='Instagram'?get('highlight'):'';
+      if(!STORY_FORMATS.includes(media))throw Error('Selecciona el contenido de la historia.');
+      if(highlightId&&!highlights.some(h=>h.id===highlightId))throw Error('Selecciona una destacada válida.');
+      const story={...previousStory,id:entry.id,name:entry.title,date:entry.date,time:entry.time,status:entry.status,channel:entry.channel,format:media,highlightId,context:entry.description,caption:entry.caption,structure:entry.structure,projectId:entry.projectId,phase:entry.phase,order:previousStory?.order??Math.max(-1,...stories.filter(s=>s.date===entry.date).map(s=>s.order||0))+1};
+      posts=posts.filter(p=>p.id!==entry.id);stories=previousStory?stories.map(s=>s.id===entry.id?story:s):[...stories,story];
+      saveToStorage();saveStoriesToStorage();
+    }else{
+      delete entry.__story;stories=stories.filter(s=>s.id!==entry.id);posts=previous&&!previousStory?posts.map(p=>p.id===id?entry:p):[...posts,entry];saveToStorage();if(previousStory)saveStoriesToStorage();
+    }
+  }
+  catch(error){posts=before;stories=beforeStories;for(const [k,v] of stored)try{v===null?localStorage.removeItem(k):localStorage.setItem(k,v);}catch(_){}document.getElementById('agendaFormError').textContent=error.message;return;}
   closeModal();renderCurrentView();
 }
