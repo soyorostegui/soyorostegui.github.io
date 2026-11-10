@@ -308,6 +308,17 @@
         <button class="drawer-close" onclick="closeModal()">✕</button>
       </div>
 
+      <div class="entry-piti-actions">
+        <button type="button" class="ai-inline-btn" onclick="openEntryPitiEditor()">Editar con Piti</button>
+        <button type="button" class="ai-inline-btn" onclick="referenceEntryInPiti()">Usar como referencia en el chat</button>
+      </div>
+      <section id="entryPitiEditor" class="entry-piti-editor" hidden aria-label="Editar esta entrada con Piti">
+        <label class="form-label" for="entryPitiInstruction">¿Qué quieres cambiar en esta entrada?</label>
+        <textarea id="entryPitiInstruction" class="form-textarea" placeholder="Ej. Haz el copy más breve y cambia la fecha al viernes."></textarea>
+        <button type="button" class="ai-inline-btn" id="entryPitiSubmit" onclick="editEntryWithPiti()">Actualizar borrador con Piti</button>
+        <p id="entryPitiStatus" role="status"></p><p id="entryPitiReply"></p>
+        <p class="project-muted">Piti cambia únicamente este borrador. Revisa el resultado y usa Guardar cambios.</p>
+      </section>
       <input type="hidden" id="edit-id">
       <div class="form-group">
         <label class="form-label" for="edit-type">Tipo de entrada</label>
@@ -660,6 +671,10 @@
       </div>
     </div>
 
+    <div id="pitiEntryReference" class="piti-entry-reference" hidden>
+      <span id="pitiEntryReferenceLabel"></span>
+      <div><button type="button" class="ai-ctx-btn" onclick="returnToPitiEntry()">Volver a la entrada</button><button type="button" class="ai-ctx-btn" onclick="clearPitiEntryReference()">Quitar referencia</button></div>
+    </div>
     <div class="ai-chat-body" id="aiChatBody">
       <div class="chat-bubble ai">
         ¡Hola Peter! Soy Piti, tu asistente de agenda y estrategia editorial. Tengo acceso a tus entradas del calendario y <strong>uso el calendario actual, hasta 80 mensajes guardados y el contexto que importes</strong>.<br><br>
@@ -703,6 +718,7 @@
   <script src="./publication-options.js"></script>
   <script src="./projects.js"></script>
   <script src="./ai.js"></script>
+  <script src="./entry-piti.js"></script>
   <script src="./sync-merge.js"></script>
   <script src="./security-sync.js"></script>
 </body>

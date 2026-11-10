@@ -103,6 +103,7 @@ function openAgendaEntry(id=null,presetFormat='') {
   onAgendaTypeChange();document.getElementById('agendaFormError').textContent='';
   document.getElementById('drawerStatusTag').textContent=entry?'Editar entrada':'Nueva entrada';document.getElementById('btnDelete').style.display=entry?'block':'none';
   document.getElementById('modalOverlay').style.display='flex';
+  if(typeof beginEntryPitiSession==='function')beginEntryPitiSession();
 }
 function validateAgendaEntry(entry) {
   if(entry.projectId&&!projects.some(p=>p.id===entry.projectId))throw Error('Selecciona un proyecto existente.');

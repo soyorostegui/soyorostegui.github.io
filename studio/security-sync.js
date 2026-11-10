@@ -3,7 +3,7 @@ function unlockStudioUI() {
   document.getElementById("authOverlay").classList.add("hidden");
   document.body.classList.remove("auth-locked");
 }
-function lockStudioSession() { return StudioCredentialVault.lock(); }
+function lockStudioSession() { if(typeof finishEntryPitiSession === "function")finishEntryPitiSession();return StudioCredentialVault.lock(); }
 function toggleAuthPasswordVisibility() {
   const input = document.getElementById("authPasswordInput");
   input.type = input.type === "password" ? "text" : "password";

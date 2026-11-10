@@ -905,6 +905,7 @@
     function openCreateModal() { openAgendaEntry(); }
 
     function closeModal() {
+      if(typeof finishEntryPitiSession === "function")finishEntryPitiSession();
       document.getElementById("modalOverlay").style.display = "none";
     }
 

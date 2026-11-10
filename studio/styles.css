@@ -1639,3 +1639,10 @@
     .project-detail {border:1px solid var(--border);border-radius:8px;padding:16px;margin:16px 0;}
     .project-detail h4 {font-size:14px;margin-top:16px;}
     .project-entry {display:block;text-align:left;width:100%;margin:6px 0;white-space:normal;overflow-wrap:anywhere;}
+
+    .entry-piti-actions {display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px;}
+    .entry-piti-editor {border:1px solid #ddd6fe;border-radius:8px;background:#faf8ff;padding:12px;margin-bottom:16px;}
+    .entry-piti-editor p {font-size:12px;margin-top:8px;white-space:pre-wrap;overflow-wrap:anywhere;}
+    .piti-entry-reference {padding:8px 12px;background:#f5f3ff;border-bottom:1px solid #ddd6fe;flex-shrink:0;}
+    .piti-entry-reference>span {display:block;font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:6px;}
+    .piti-entry-reference>div {display:flex;gap:6px;flex-wrap:wrap;}

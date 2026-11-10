@@ -2242,6 +2242,7 @@ const AI_PROVIDERS = {
     }
 
     async function sendAIChat() {
+      if(typeof pitiEntryReference !== "undefined" && pitiEntryReference){await sendReferencedEntryChat();return;}
       if (aiChatBusy) return; // evita envíos dobles mientras la IA responde
       const input = document.getElementById("aiChatInput");
       const userText = input.value.trim();
