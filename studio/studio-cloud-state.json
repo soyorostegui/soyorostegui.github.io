@@ -3,8 +3,20 @@
   "tombstones": {
     "posts": {},
     "stories": {
+      "st-10": {
+        "hash": "ddac4cb0f89e636c"
+      },
+      "st-11": {
+        "hash": "7ce151a62bd0dff2"
+      },
+      "st-4": {
+        "hash": "003473da49ba1ff6"
+      },
       "st-5": {
         "hash": "57afd8bf0a089cc9"
+      },
+      "st-7": {
+        "hash": "d6e7d8c0db1d52b2"
       }
     },
     "highlights": {},
@@ -264,18 +276,6 @@
       "order": 0
     },
     {
-      "time": "09:30",
-      "context": "Macro de tres papeles sobre la mesa de corte, el mismo día del post-ig-2 sobre lo tangible. La imagen prueba en textura lo que el caption afirma en concepto.",
-      "formatDetail": "Foto macro",
-      "id": "st-4",
-      "date": "2026-11-10",
-      "name": "Muestra de texturas de papel especial",
-      "highlightId": "hl-proceso",
-      "format": "Foto",
-      "status": "Idea",
-      "order": 0
-    },
-    {
       "time": "12:30",
       "context": "Clip de 6 segundos grabando la pantalla mientras el zoom del lienzo se aleja hasta que la pieza queda pequeña. Sobre el último fotograma va el sticker de pregunta con la frase del título. Funciona porque convierte un hábito privado del oficio en una pregunta de reconocimiento: la gente responde 'yo' sin sentirse examinada. Además mide interés real en legibilidad antes de producir el carrusel del 16.",
       "formatDetail": "",
@@ -286,18 +286,6 @@
       "format": "Sticker",
       "status": "En Diseño",
       "order": 1
-    },
-    {
-      "time": "10:00",
-      "context": "Refuerza el post-ig-3 sobre errores de preprensa y el post-li-2 sobre vallas OOH. El boomerang del registro de planchas demuestra en imagen lo que los captions sostienen en texto.",
-      "formatDetail": "Boomerang taller",
-      "id": "st-7",
-      "date": "2026-11-11",
-      "name": "Preparando planchas de impresión",
-      "highlightId": "hl-proceso",
-      "format": "Boomerang",
-      "status": "Idea",
-      "order": 0
     },
     {
       "time": "18:30",
@@ -337,18 +325,6 @@
     },
     {
       "time": "10:30",
-      "context": "Video de acabado especial con la luz moviéndose sobre el foil. Acompaña al sneak peek post-ig-5 del mismo día sin revelar la marca completa: solo el detalle geométrico.",
-      "formatDetail": "Video con luz",
-      "id": "st-11",
-      "date": "2026-11-13",
-      "name": "Reflejo de luz en estampado dorado",
-      "highlightId": "hl-proceso",
-      "format": "Video",
-      "status": "Idea",
-      "order": 0
-    },
-    {
-      "time": "10:30",
       "context": "Foto de cuaderno, regla y lápiz con las líneas de construcción, márgenes medidos y una cruz de registro dibujadas a mano. Va a media mañana reforzando el sneak peek geométrico del feed del mismo día: la precisión del ornamento dorado se explica por esta retícula previa. Demuestra oficio verificable sin depender de foil ni de taller, y sustituye a la misma hora la historia del estampado dorado que se descartó por falta de acceso a materiales.",
       "formatDetail": "",
       "id": "st-1794299136345-295",
@@ -382,18 +358,6 @@
       "format": "Captura",
       "status": "Idea",
       "order": 0
-    },
-    {
-      "time": "20:00",
-      "context": "Movimiento de carpeta: sale de SETUP y entra en PORTFOLIO. El cuadernillo impreso es producto tangible, no proceso de taller, y a las 20:00 se consume como adelanto pausado del hito.",
-      "formatDetail": "Video rápido",
-      "id": "st-10",
-      "date": "2026-11-14",
-      "name": "Hojeando rápido un cuadernillo impreso",
-      "highlightId": "hl-hito",
-      "format": "Video",
-      "status": "Idea",
-      "order": 1
     },
     {
       "time": "22:30",
@@ -785,14 +749,6 @@
   ],
   "chatResetId": "legacy",
   "chatHistory": [
-    {
-      "sender": "user",
-      "html": "Manda los botones de cada eliminacion separados en el chat y yo los presiono",
-      "plainText": "Manda los botones de cada eliminacion separados en el chat y yo los presiono",
-      "actionData": null,
-      "timestamp": "9/11/2026, 12:45:01 a. m.",
-      "id": "legacy-66e353b00cf85bf8-0"
-    },
     {
       "sender": "ai",
       "html": "Hecho. Como solo se procesa un bloque por respuesta, va uno solo y espero tu confirmación.<br><br><strong>Eliminar <code>st-14</code></strong> — «El orden de capas en un archivo maestro» · 14.11 · SETUP<br><br><br><br>Presiona ese botón y, si desaparece, te mando el de <code>st-25</code> en el siguiente mensaje. Después de esas dos, retomo las horas y el contexto de las 33 historias activas, también de una en una.<div style=\"margin-top:8px;padding-top:6px;border-top:1px dashed #e2e8f0;font-size:11px;color:#475569;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px;\">\n          <span>💳 Costo de este uso: <strong style=\"color:#0369a1;\">$0.00064 USD</strong> (Acumulado sesión: $0.13418 USD)</span>\n          <span style=\"color:#64748b;\">8523 in + 418 out tokens · deepseek-flash</span>\n        </div>",
@@ -2223,9 +2179,34 @@
       "plainText": "siguen viendose",
       "actionData": null,
       "timestamp": "10/11/2026, 3:30:52 a. m."
+    },
+    {
+      "id": "4d5e6fb5-fc42-48d6-84a6-586a613100cf",
+      "createdAt": "2026-11-10T08:30:59.050Z",
+      "sender": "ai",
+      "html": "Tienes razón: en los tres mensajes anteriores no salió ningún comando, solo tablas. El sistema nunca recibió el borrado, por eso siguen ahí. Va el bloque, sin más texto alrededor.<br><br>Las cuatro, en un solo lote:<br><br><div class=\"ai-md-li\">• <code>st-4</code> — texturas de papel (10.11)</div><div class=\"ai-md-li\">• <code>st-7</code> — planchas de impresión (11.11)</div><div class=\"ai-md-li\">• <code>st-11</code> — estampado dorado (13.11)</div><div class=\"ai-md-li\">• <code>st-10</code> — cuadernillo impreso (14.11)</div><br>Si tras confirmar el sistema siguen apareciendo, el problema no es el comando sino que los IDs cambiaron; en ese caso mándame los títulos exactos tal como los ves y los borro por nombre.<div>\n          <span>💳 Costo de este uso: <strong>$0.00114 USD</strong> (Acumulado sesión: $0.19186 USD)</span>\n          <span>17484 in + 530 out tokens · deepseek-flash</span>\n        </div>",
+      "plainText": "Tienes razón: en los tres mensajes anteriores no salió ningún comando, solo tablas. El sistema nunca recibió el borrado, por eso siguen ahí. Va el bloque, sin más texto alrededor.\n\nLas cuatro, en un solo lote:\n\n- `st-4` — texturas de papel (10.11)\n- `st-7` — planchas de impresión (11.11)\n- `st-11` — estampado dorado (13.11)\n- `st-10` — cuadernillo impreso (14.11)\n\nSi tras confirmar el sistema siguen apareciendo, el problema no es el comando sino que los IDs cambiaron; en ese caso mándame los títulos exactos tal como los ves y los borro por nombre.",
+      "actionData": [
+        {
+          "type": "delete_items",
+          "entity": "story",
+          "ids": [
+            "st-4",
+            "st-7",
+            "st-11",
+            "st-10"
+          ],
+          "names": [],
+          "result": {
+            "status": "success",
+            "message": "4 historia(s) eliminada(s)."
+          }
+        }
+      ],
+      "timestamp": "10/11/2026, 3:30:59 a. m."
     }
   ],
   "importedCustomContextNotes": "",
-  "updatedAt": 1794299455753,
-  "updatedAtISO": "2026-11-10T08:30:55.753Z"
+  "updatedAt": 1794299459871,
+  "updatedAtISO": "2026-11-10T08:30:59.871Z"
 }
