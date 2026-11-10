@@ -300,6 +300,18 @@
       "order": 0
     },
     {
+      "time": "18:30",
+      "context": "Captura de la lista de versiones de un mismo archivo en Finder o Drive, con nombres visibles del tipo _v1, _v2, _v3, _final_final. Se publica al cierre de la jornada, cuando el post de LinkedIn del mismo día ya circuló y la audiencia está en modo lectura. El humor de reconocimiento genera comentarios del tipo 'yo tengo hasta la v7' sin revelar ningún proyecto ni exigir materiales de taller: es el método de trabajo convertido en conversación, y llena el único día de la campaña que había quedado sin ninguna historia.",
+      "formatDetail": "",
+      "id": "st-1794299136343-260",
+      "name": "_v1 _v2 _v3 _final_final",
+      "date": "2026-11-11",
+      "highlightId": "hl-criterio",
+      "format": "Captura",
+      "status": "Idea",
+      "order": 1
+    },
+    {
       "time": "09:00",
       "context": "Abre el día del carrusel post-ig-4 sobre anatomía de un sistema visual. El sticker invita a responder antes de que la publicación explique el argumento completo.",
       "formatDetail": "Sticker deslizador",
@@ -336,6 +348,18 @@
       "order": 0
     },
     {
+      "time": "10:30",
+      "context": "Foto de cuaderno, regla y lápiz con las líneas de construcción, márgenes medidos y una cruz de registro dibujadas a mano. Va a media mañana reforzando el sneak peek geométrico del feed del mismo día: la precisión del ornamento dorado se explica por esta retícula previa. Demuestra oficio verificable sin depender de foil ni de taller, y sustituye a la misma hora la historia del estampado dorado que se descartó por falta de acceso a materiales.",
+      "formatDetail": "",
+      "id": "st-1794299136345-295",
+      "name": "La retícula dibujada a mano antes de abrir Illustrator",
+      "date": "2026-11-13",
+      "highlightId": "hl-criterio",
+      "format": "Foto",
+      "status": "Idea",
+      "order": 1
+    },
+    {
       "time": "18:00",
       "context": "Cierra la tarde conectando con el post-ig-6 sobre tipografía y tono de voz. La encuesta genera datos reales de preferencia que alimentan la conversación del día siguiente.",
       "formatDetail": "",
@@ -370,6 +394,18 @@
       "format": "Video",
       "status": "Idea",
       "order": 1
+    },
+    {
+      "time": "22:30",
+      "context": "Plano general sin estilizar del escritorio de trabajo de noche: taza, cargador, luces bajas y la pantalla encendida. Cierra un día sin publicación de feed, así que carga todo el peso de la jornada. Va en PTR porque su valor no es el criterio de diseño sino la persona detrás del proceso, y humaniza la fase de expectativa sin mostrar producto. Se programó a las 22:30 y no a las 23:00 para no perder alcance, aunque el título conserve la hora redonda.",
+      "formatDetail": "",
+      "id": "st-1794299136346-207",
+      "name": "El escritorio a las 11 de la noche",
+      "date": "2026-11-14",
+      "highlightId": "hl-ptr",
+      "format": "Foto",
+      "status": "Idea",
+      "order": 2
     },
     {
       "time": "10:00",
@@ -610,42 +646,6 @@
       "format": "Foto",
       "status": "Idea",
       "order": 0
-    },
-    {
-      "time": "18:30",
-      "context": "Captura de la lista de versiones de un mismo archivo en Finder o Drive, con nombres visibles del tipo _v1, _v2, _v3, _final_final. Se publica al cierre de la jornada, cuando el post de LinkedIn del mismo día ya circuló y la audiencia está en modo lectura. El humor de reconocimiento genera comentarios del tipo 'yo tengo hasta la v7' sin revelar ningún proyecto ni exigir materiales de taller: es el método de trabajo convertido en conversación, y llena el único día de la campaña que había quedado sin ninguna historia.",
-      "formatDetail": "",
-      "id": "st-1794299136343-260",
-      "name": "_v1 _v2 _v3 _final_final",
-      "date": "2026-11-11",
-      "highlightId": "hl-criterio",
-      "format": "Captura",
-      "status": "Idea",
-      "order": 1
-    },
-    {
-      "time": "10:30",
-      "context": "Foto de cuaderno, regla y lápiz con las líneas de construcción, márgenes medidos y una cruz de registro dibujadas a mano. Va a media mañana reforzando el sneak peek geométrico del feed del mismo día: la precisión del ornamento dorado se explica por esta retícula previa. Demuestra oficio verificable sin depender de foil ni de taller, y sustituye a la misma hora la historia del estampado dorado que se descartó por falta de acceso a materiales.",
-      "formatDetail": "",
-      "id": "st-1794299136345-295",
-      "name": "La retícula dibujada a mano antes de abrir Illustrator",
-      "date": "2026-11-13",
-      "highlightId": "hl-criterio",
-      "format": "Foto",
-      "status": "Idea",
-      "order": 1
-    },
-    {
-      "time": "22:30",
-      "context": "Plano general sin estilizar del escritorio de trabajo de noche: taza, cargador, luces bajas y la pantalla encendida. Cierra un día sin publicación de feed, así que carga todo el peso de la jornada. Va en PTR porque su valor no es el criterio de diseño sino la persona detrás del proceso, y humaniza la fase de expectativa sin mostrar producto. Se programó a las 22:30 y no a las 23:00 para no perder alcance, aunque el título conserve la hora redonda.",
-      "formatDetail": "",
-      "id": "st-1794299136346-207",
-      "name": "El escritorio a las 11 de la noche",
-      "date": "2026-11-14",
-      "highlightId": "hl-ptr",
-      "format": "Foto",
-      "status": "Idea",
-      "order": 2
     }
   ],
   "highlights": [
@@ -785,14 +785,6 @@
   ],
   "chatResetId": "legacy",
   "chatHistory": [
-    {
-      "sender": "user",
-      "html": "Revisa el interfaz, tiene un boton para eliminar las entradas.",
-      "plainText": "Revisa el interfaz, tiene un boton para eliminar las entradas.",
-      "actionData": null,
-      "timestamp": "9/11/2026, 12:41:00 a. m.",
-      "id": "legacy-fd5aa2cbfb225781-0"
-    },
     {
       "sender": "ai",
       "html": "Confirmado. Cada entrada tiene su control de eliminar, y ese detalle explica los dos intentos fallidos: <strong>mis respuestas se cortaron a mitad del JSON</strong>, quedó una llave abierta y el intérprete descartó el lote completo. No fue que el comando estuviera mal escrito: nunca llegó entero.<br><br>Las tres entradas a borrar, con nombre exacto para que las ubiques en la lista:<br><br><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong><code>st-6</code></strong> — «Marcas de corte y sangría en archivo real» · 11.11 · SETUP</div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong><code>st-14</code></strong> — «El orden de capas en un archivo maestro» · 14.11 · SETUP</div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong><code>st-25</code></strong> — «Comprobando resolución a escala 1:1» · 18.11 · SETUP</div><br>Puedes eliminarlas con el botón si te resulta más rápido; los bloques de abajo hacen lo mismo.<br><br><div class=\"ai-md-h\">Corrección de método</div><br>Dejo de mandar 34 bloques en una sola respuesta. Van <strong>por lotes de 6 a 8</strong>, uno detrás de otro, para que nada se trunque. Este primer lote es solo el borrado:<br><br><pre class=\"ai-code\"><code>{ &quot;action&quot;: &quot;delete_story&quot;, &quot;id&quot;: &quot;st-6&quot; }\n{ &quot;action&quot;: &quot;delete_story&quot;, &quot;id&quot;: &quot;st-14&quot; }\n{ &quot;action&quot;: &quot;delete_story&quot;, &quot;id&quot;: &quot;st-25&quot; }</code></pre><br>Cuando confirmes que desaparecieron, sigo con el lote 2: las ocho historias que salen de CONTACT y se reparten entre SETUP (instalación y montaje) y PORTFOLIO (pieza terminada).<div class=\"ai-md-quote\" style=\"color:#b45309;\">⚠️ La IA envió un comando con formato inválido. Pídele: <em>\"repite solo el bloque JSON\"</em>.</div><div style=\"margin-top:8px;padding-top:6px;border-top:1px dashed #e2e8f0;font-size:11px;color:#475569;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px;\">\n          <span>💳 Costo de este uso: <strong style=\"color:#0369a1;\">$0.00134 USD</strong> (Acumulado sesión: $0.12835 USD)</span>\n          <span style=\"color:#64748b;\">10279 in + 1656 out tokens · deepseek-flash</span>\n        </div>",
@@ -2225,9 +2217,18 @@
         }
       ],
       "timestamp": "10/11/2026, 3:25:36 a. m."
+    },
+    {
+      "id": "b6979010-725b-4f47-bed3-47c54fb77de6",
+      "createdAt": "2026-11-10T08:25:53.367Z",
+      "sender": "user",
+      "html": "las que te dije que eliminaras?",
+      "plainText": "las que te dije que eliminaras?",
+      "actionData": null,
+      "timestamp": "10/11/2026, 3:25:53 a. m."
     }
   ],
   "importedCustomContextNotes": "",
-  "updatedAt": 1794299139537,
-  "updatedAtISO": "2026-11-10T08:25:39.537Z"
+  "updatedAt": 1794299156578,
+  "updatedAtISO": "2026-11-10T08:25:56.578Z"
 }
