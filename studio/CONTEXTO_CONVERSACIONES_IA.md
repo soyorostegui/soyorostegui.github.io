@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 10/11/2026, 1:34:12 a. m.
+**Última actualización:** 10/11/2026, 2:00:43 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.17213 USD (803538 tokens)
 
@@ -88,15 +88,23 @@
   },
   {
     "id": "post-li-1",
+    "type": "post",
     "projectId": "project-portafolio-2026",
     "title": "El valor de construir en silencio (Por qué no todo se publica en tiempo real)",
     "date": "2026-11-10",
+    "time": "",
+    "endTime": "",
     "channel": "LinkedIn",
     "status": "En Diseño",
     "phase": "Fase 1: Señal",
-    "format": "Reflexiones",
+    "format": "Post",
     "structure": "Post reflexivo sobre el oficio y la madurez profesional antes del autopromoción.",
-    "caption": "Vivimos en una industria obsesionada con compartir cada boceto en tiempo real. Durante meses preferí hacer lo contrario: encerrarme en el taller, afinar el criterio y llevar encargos reales hasta su producción física. Hoy entiendo que el valor de un diseñador no está en la frecuencia con la que publica, sino en la solidez de lo que sostiene en las manos cuando termina."
+    "caption": "Vivimos en una industria obsesionada con compartir cada boceto en tiempo real. Durante meses preferí hacer lo contrario: encerrarme en el taller, afinar el criterio y llevar encargos reales hasta su producción física. Hoy entiendo que el valor de un diseñador no está en la frecuencia con la que publica, sino en la solidez de lo que sostiene en las manos cuando termina.",
+    "description": "",
+    "location": "",
+    "participants": "",
+    "subject": "",
+    "priority": ""
   },
   {
     "id": "post-ig-3",

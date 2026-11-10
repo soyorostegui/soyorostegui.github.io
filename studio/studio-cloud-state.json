@@ -40,10 +40,18 @@
       "date": "2026-11-10",
       "status": "En Diseño",
       "phase": "Fase 1: Señal",
-      "format": "Reflexiones",
+      "format": "Post",
       "structure": "Post reflexivo sobre el oficio y la madurez profesional antes del autopromoción.",
       "caption": "Vivimos en una industria obsesionada con compartir cada boceto en tiempo real. Durante meses preferí hacer lo contrario: encerrarme en el taller, afinar el criterio y llevar encargos reales hasta su producción física. Hoy entiendo que el valor de un diseñador no está en la frecuencia con la que publica, sino en la solidez de lo que sostiene en las manos cuando termina.",
-      "projectId": "project-portafolio-2026"
+      "type": "post",
+      "projectId": "project-portafolio-2026",
+      "description": "",
+      "time": "",
+      "endTime": "",
+      "location": "",
+      "participants": "",
+      "subject": "",
+      "priority": ""
     },
     {
       "id": "post-ig-3",
@@ -2901,6 +2909,6 @@
     }
   ],
   "importedCustomContextNotes": "",
-  "updatedAt": 1794292452660,
-  "updatedAtISO": "2026-11-10T06:34:12.660Z"
+  "updatedAt": 1794294043189,
+  "updatedAtISO": "2026-11-10T07:00:43.189Z"
 }
