@@ -11,7 +11,7 @@
       "channel": "Instagram",
       "title": "Lanzamiento Expectativa: «Mientras tanto...»",
       "date": "2026-11-09",
-      "status": "Listo",
+      "status": "Publicado",
       "phase": "Fase 1: Señal",
       "format": "Carrusel",
       "structure": "Slide 1: Mientras tanto...\nSlide 2: mucho se estuvo construyendo\nSlide 3: y pronto lo verás aquí.\n(Solo tipografía sobria sobre fondo claro y retícula tenue).",
@@ -51,17 +51,6 @@
       "caption": "Cosas que duelen en el taller de impresión: enviar un archivo sin sangría o usar RGB para una gigantografía. 3 detalles técnicos que salvan presupuestos."
     },
     {
-      "id": "post-li-2",
-      "channel": "LinkedIn",
-      "title": "Diseñar vallas de 12x4m: lo que la universidad no te enseña sobre preprensa OOH",
-      "date": "2026-11-13",
-      "status": "Idea",
-      "phase": "Fase 1: Señal",
-      "format": "Procesos",
-      "structure": "Post técnico y detallado sobre cómo se prepara un archivo de publicidad exterior a escala 1:10, resoluciones DPI según distancia de visualización y pruebas de color en lona vinílica.",
-      "caption": "Una valla publicitaria en una avenida principal no perdona un error de preprensa. En la academia diseñamos en lienzos infinitos de Illustrator; en la práctica aprendes sobre sobreimpresión, reventados (trapping) y por qué un texto en cuerpo 24pt desaparece si el carro pasa a 80 km/h."
-    },
-    {
       "id": "post-ig-4",
       "channel": "Instagram",
       "title": "Un logo no es una marca: anatomía de un sistema visual",
@@ -73,15 +62,15 @@
       "caption": "Si le quitas el isotipo a una marca y no sabes de quién es, no tienes una identidad: tienes solo un dibujo. Un sistema visual vive en el espacio, en el papel y en la calle."
     },
     {
-      "id": "post-ig-5",
-      "channel": "Instagram",
-      "title": "Sneak Peek 01: El ornamento geométrico",
-      "date": "2026-11-15",
+      "id": "post-li-2",
+      "channel": "LinkedIn",
+      "title": "Diseñar vallas de 12x4m: lo que la universidad no te enseña sobre preprensa OOH",
+      "date": "2026-11-13",
       "status": "Idea",
-      "phase": "Fase 2: Archivo",
-      "format": "Post",
-      "structure": "Macro cerrada de un patrón geométrico dorado con textura sin revelar el nombre de la marca.",
-      "caption": "Una pista de lo que se abre el 20.11.\nPrecisión geométrica y contraste. Los detalles que hacen que un producto hable antes de abrirlo."
+      "phase": "Fase 1: Señal",
+      "format": "Procesos",
+      "structure": "Post técnico y detallado sobre cómo se prepara un archivo de publicidad exterior a escala 1:10, resoluciones DPI según distancia de visualización y pruebas de color en lona vinílica.",
+      "caption": "Una valla publicitaria en una avenida principal no perdona un error de preprensa. En la academia diseñamos en lienzos infinitos de Illustrator; en la práctica aprendes sobre sobreimpresión, reventados (trapping) y por qué un texto en cuerpo 24pt desaparece si el carro pasa a 80 km/h."
     },
     {
       "id": "post-ig-6",
@@ -93,6 +82,17 @@
       "format": "Post",
       "structure": "Composición tipográfica en alto contraste comparando pesos y caracteres para demostrar cómo la elección tipográfica comunica antes de que el cerebro lea.",
       "caption": "Antes de que el ojo lea una sola palabra, la tipografía ya le dijo al lector si debe confiar, si es algo urgente o si es algo exclusivo. La tipografía no decora: modula la voz."
+    },
+    {
+      "id": "post-ig-5",
+      "channel": "Instagram",
+      "title": "Sneak Peek 01: El ornamento geométrico",
+      "date": "2026-11-15",
+      "status": "Idea",
+      "phase": "Fase 2: Archivo",
+      "format": "Post",
+      "structure": "Macro cerrada de un patrón geométrico dorado con textura sin revelar el nombre de la marca.",
+      "caption": "Una pista de lo que se abre el 20.11.\nPrecisión geométrica y contraste. Los detalles que hacen que un producto hable antes de abrirlo."
     },
     {
       "id": "post-ig-7",
@@ -2781,6 +2781,6 @@
     }
   ],
   "importedCustomContextNotes": "",
-  "updatedAt": 1794286683109,
-  "updatedAtISO": "2026-11-10T04:58:03.109Z"
+  "updatedAt": 1794287308947,
+  "updatedAtISO": "2026-11-10T05:08:28.947Z"
 }
