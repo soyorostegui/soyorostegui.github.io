@@ -44,7 +44,7 @@
       "channel": "Instagram",
       "title": "3 errores de preprensa que arruinan un diseño",
       "date": "2026-11-11",
-      "status": "Idea",
+      "status": "En Diseño",
       "phase": "Fase 1: Señal",
       "format": "Reel",
       "structure": "Reel educativo dinámico (15 seg): 1. Sangrías omitidas, 2. Negro 100K vs. Negro enriquecido, 3. Resolución efectiva a escala. Formato tutorial rápido de alto guardado.",
@@ -218,18 +218,6 @@
   ],
   "stories": [
     {
-      "time": "08:10",
-      "context": "Foto casual en la universidad: taza de café, mesa y cuaderno, con una sola frase corta de diseño en cuerpo pequeño (por ejemplo 'La manía de medir todo'). Va a las 08:00, antes de la primera story del taller, para abrir el día con tono humano y sin spoilers del portafolio; el formato espontáneo busca comentarios, no alcance.",
-      "formatDetail": "",
-      "id": "st-1794204588972-274",
-      "name": "Café en la universidad: la manía de medir todo",
-      "date": "2026-11-10",
-      "highlightId": "hl-criterio",
-      "format": "Foto",
-      "status": "En Diseño",
-      "order": 0
-    },
-    {
       "time": "12:30",
       "context": "Clip de 6 segundos grabando la pantalla mientras el zoom del lienzo se aleja hasta que la pieza queda pequeña. Sobre el último fotograma va el sticker de pregunta con la frase del título. Funciona porque convierte un hábito privado del oficio en una pregunta de reconocimiento: la gente responde 'yo' sin sentirse examinada. Además mide interés real en legibilidad antes de producir el carrusel del 16.",
       "formatDetail": "",
@@ -238,6 +226,18 @@
       "date": "2026-11-09",
       "highlightId": "hl-criterio",
       "format": "Sticker",
+      "status": "En Diseño",
+      "order": 0
+    },
+    {
+      "time": "08:10",
+      "context": "Foto casual en la universidad: taza de café, mesa y cuaderno, con una sola frase corta de diseño en cuerpo pequeño (por ejemplo 'La manía de medir todo'). Va a las 08:00, antes de la primera story del taller, para abrir el día con tono humano y sin spoilers del portafolio; el formato espontáneo busca comentarios, no alcance.",
+      "formatDetail": "",
+      "id": "st-1794204588972-274",
+      "name": "Café en la universidad: la manía de medir todo",
+      "date": "2026-11-10",
+      "highlightId": "hl-criterio",
+      "format": "Foto",
       "status": "En Diseño",
       "order": 0
     },
@@ -2781,6 +2781,6 @@
     }
   ],
   "importedCustomContextNotes": "",
-  "updatedAt": 1794287339011,
-  "updatedAtISO": "2026-11-10T05:08:59.011Z"
+  "updatedAt": 1794287686569,
+  "updatedAtISO": "2026-11-10T05:14:46.569Z"
 }

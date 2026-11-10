@@ -1,15 +1,15 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 10/11/2026, 12:08:59 a. m.
+**Última actualización:** 10/11/2026, 12:14:46 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.17213 USD (803538 tokens)
 
 ---
 
 ## 1. Estado Actual del Ecosistema de Publicaciones (19 piezas)
-- **💡 Idea / Planificado:** 17 piezas
-- **🎨 En Diseño / Proceso:** 1 piezas
+- **💡 Idea / Planificado:** 16 piezas
+- **🎨 En Diseño / Proceso:** 2 piezas
 - **✅ Listo para publicar:** 0 piezas
 - **🚀 Publicado:** 1 piezas
 
@@ -18,7 +18,7 @@
 | `post-ig-1` | 2026-11-09 | Instagram | **Publicado** | Lanzamiento Expectativa: «Mientras tanto...» | No todo lo que se construye se publica de inmediato. 🗂️ Hay archivos ... |
 | `post-ig-2` | 2026-11-10 | Instagram | **Idea** | El fetiche del papel y lo tangible (Detalle Físico) | Cuando el vector se convierte en materia. El rigor de un diseñador no ... |
 | `post-li-1` | 2026-11-10 | LinkedIn | **En Diseño** | El valor de construir en silencio (Por qué no todo se publica en tiempo real) | Vivimos en una industria obsesionada con compartir cada boceto en tiem... |
-| `post-ig-3` | 2026-11-11 | Instagram | **Idea** | 3 errores de preprensa que arruinan un diseño | Cosas que duelen en el taller de impresión: enviar un archivo sin sang... |
+| `post-ig-3` | 2026-11-11 | Instagram | **En Diseño** | 3 errores de preprensa que arruinan un diseño | Cosas que duelen en el taller de impresión: enviar un archivo sin sang... |
 | `post-ig-4` | 2026-11-12 | Instagram | **Idea** | Un logo no es una marca: anatomía de un sistema visual | Si le quitas el isotipo a una marca y no sabes de quién es, no tienes ... |
 | `post-li-2` | 2026-11-13 | LinkedIn | **Idea** | Diseñar vallas de 12x4m: lo que la universidad no te enseña sobre preprensa OOH | Una valla publicitaria en una avenida principal no perdona un error de... |
 | `post-ig-6` | 2026-11-14 | Instagram | **Idea** | La tipografía tiene tono de voz | Antes de que el ojo lea una sola palabra, la tipografía ya le dijo al ... |
