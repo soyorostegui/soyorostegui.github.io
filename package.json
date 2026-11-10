@@ -6,6 +6,6 @@
     "node": ">=22"
   },
   "scripts": {
-    "test": "node studio/tests/ai-actions.test.cjs && node studio/tests/ai-memory.test.cjs && node studio/tests/security.test.cjs && node studio/tests/calendar.test.cjs && node studio/tests/vault.test.cjs && node studio/tests/sync.test.cjs && node studio/tests/merge.test.cjs && node studio/tests/agenda.test.cjs && node studio/tests/projects.test.cjs && node studio/tests/publication-options.test.cjs && node studio/tests/kanban.test.cjs && node studio/tests/entry-piti.test.cjs"
+    "test": "node studio/tests/ai-actions.test.cjs && node studio/tests/ai-response.test.cjs && node studio/tests/ai-memory.test.cjs && node studio/tests/security.test.cjs && node studio/tests/calendar.test.cjs && node studio/tests/vault.test.cjs && node studio/tests/sync.test.cjs && node studio/tests/merge.test.cjs && node studio/tests/agenda.test.cjs && node studio/tests/projects.test.cjs && node studio/tests/publication-options.test.cjs && node studio/tests/kanban.test.cjs && node studio/tests/entry-piti.test.cjs"
   }
 }

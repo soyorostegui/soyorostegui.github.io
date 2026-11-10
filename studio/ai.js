@@ -2333,19 +2333,31 @@ REGLAS ESPECÍFICAS:
 
       // Intentar primero con la API conectada (OpenAI, Claude, Gemini, DeepSeek, Groq, etc.)
       if (hasActiveAI()) {
+        let displayingResponse = false;
         try {
-          const aiResponse = await callUniversalAI(systemPrompt, userText, historyForAI);
+          const response = await StudioAIResponse.request(callUniversalAI,
+            systemPrompt + "\n" + StudioAIResponse.contract, userText, historyForAI,
+            raw => parseCalendarAIResponse(raw, userText));
+          displayingResponse = true;
+          processAndDisplayAIResponse(response);
           finishUi();
-          processAndDisplayAIResponse(aiResponse);
           return;
         } catch (err) {
           console.warn("Fallo API de IA:", err);
           finishUi();
-          appendAIChat("error", `⚠️ <strong>Aviso de API (${currentAiProvider} - ${escapeHtmlForChat(currentAiModel)}):</strong> ${escapeHtmlForChat(err.message)}.<br><small>Procesando con motor inteligente local:</small>`);
+          if (err.code === "AI_RESPONSE_INVALID") {
+            appendAIChat("error", escapeHtmlForChat(err.message), null, true, err.message);
+            return; // Never invent a local mutation after a rejected response.
+          }
+          const notice = displayingResponse
+            ? "No se pudo completar la respuesta de Piti. Revisa la agenda y los resultados antes de repetir la solicitud."
+            : "No se pudo obtener la respuesta de Piti. No se aplicaron cambios. " + err.message;
+          appendAIChat("error", escapeHtmlForChat(notice), null, true, notice);
+          return; // A failed connected request must never trigger an unrelated local action.
         }
       }
 
-      // Si no hay API o falló, usar el motor heurístico local que NUNCA falla
+      // Demo local only when no provider is configured.
       finishUi();
       handleLocalAIResponse(userText);
     }
@@ -2505,68 +2517,20 @@ REGLAS ESPECÍFICAS:
       return out;
     }
 
-    function processAndDisplayAIResponse(aiResponse) {
-      const original = String(aiResponse || "");
-      const actions = [];
-      let commandNotice = "";
+    function parseCalendarAIResponse(raw, instruction = "") {
+      if (lastCallWasTruncated) throw Error("La respuesta llegó incompleta.");
+      const response = StudioAIResponse.calendar(raw, buildActionDataFromParsed);
+      StudioAIResponse.checkMissingChanges(instruction, response.message, response.actions.length);
+      return response;
+    }
 
-      // 1) Contenido de las cercas ```...``` (si existen)
-      const fenceBodies = [];
-      const withoutFences = original.replace(/```[ \t]*[a-zA-Z]*[ \t]*\r?\n?([\s\S]*?)```/g, (m, body) => {
-        fenceBodies.push(body);
-        return "\n";
-      });
-
-      // 2) Objetos JSON sueltos que quedaron fuera de las cercas
-      const unfencedRanges = extractJsonObjectRanges(withoutFences);
-      let visibleText = stripRanges(withoutFences, unfencedRanges).replace(/```[a-zA-Z]*\s*/g, "");
-
-      // 3) Candidatos: lo que hay dentro de las cercas + lo suelto
-      const rawCandidates = [];
-      fenceBodies.forEach(body => {
-        extractJsonObjectRanges(body).forEach(r => rawCandidates.push(r.raw));
-      });
-      unfencedRanges.forEach(r => rawCandidates.push(r.raw));
-
-      // 4) Cada objeto se parsea por separado (varios seguidos = varios comandos)
-      const seen = new Set();
-      let invalid = 0;
-      rawCandidates.forEach(raw => {
-        const key = String(raw || "").trim();
-        if (!key || seen.has(key)) return;
-        seen.add(key);
-        let parsed;
-        try {
-          parsed = JSON.parse(key);
-        } catch (e) {
-          invalid += 1;
-          return;
-        }
-        const actionData = buildActionDataFromParsed(parsed);
-        if (actionData) actions.push(actionData);
-      });
-
-      if (actions.length === 0 && invalid > 0) {
-        commandNotice += `<div class="ai-md-quote" style="color:#b45309;">⚠️ La IA envió un comando con formato inválido. Pídele: <em>"repite solo el bloque JSON"</em>.</div>`;
-      }
-
-      // 5) Cerca abierta y sin cerrar (respuesta cortada)
-      const fenceCount = (original.match(/```/g) || []).length;
-      if (fenceCount % 2 === 1) {
-        commandNotice += `<div class="ai-md-quote" style="color:#b45309;">⚠️ El comando para el calendario llegó incompleto. Escribe <em>"continúa"</em> o <em>"repite solo el bloque JSON"</em>.</div>`;
-      }
-
-      // 6) Si quedó un objeto a medias visible, cortarlo
-      const partialIdx = visibleText.search(/\{\s*"action"\s*:/);
-      if (partialIdx >= 0) visibleText = visibleText.slice(0, partialIdx);
-
-      const truncNotice = lastCallWasTruncated
-        ? `<div class="ai-md-quote" style="color:#b45309;">✂️ La respuesta era muy larga y alcanzó el límite del modelo. Escribe <em>"continúa"</em> para recibir el resto.</div>`
-        : "";
-
-      const visible = visibleText.replace(/\n{3,}/g, "\n\n").trim();
-
-      appendAIChat("ai", formatAiMarkdown(visible) + commandNotice + truncNotice + (lastCallUsageFooter || ""), actions.length ? actions : null, true, visible);
+    function processAndDisplayAIResponse(response) {
+      // Parsing and automatic repair finish before any side effect occurs.
+      const parsed = typeof response === "string" ? parseCalendarAIResponse(response) : response;
+      const visible = parsed.message.trim();
+      const plain = visible || "Acciones preparadas; revisa los resultados del sistema.";
+      appendAIChat("ai", formatAiMarkdown(plain) + (lastCallUsageFooter || ""),
+        parsed.actions.length ? parsed.actions : null, true, plain);
     }
 
     function applyDirectUpdate(data) {

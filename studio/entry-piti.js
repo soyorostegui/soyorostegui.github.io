@@ -103,8 +103,14 @@ async function requestEntryPitiEdit(instruction,reference=null){
  const inline=entryPitiNode('entryPitiSubmit'),chat=entryPitiNode('btnSendAi');if(inline)inline.disabled=true;if(chat)chat.disabled=true;
  try{
   const safeInstruction=typeof redactKnownSecrets==='function'?redactKnownSecrets(instruction):instruction;
-  const response=await callUniversalAI(entryPitiPrompt(request.draft),safeInstruction,reference?.history||[]);
-  const parsed=parseEntryPitiResponse(response),changed=applyEntryPitiPatch(request,parsed.changes);
+  const parsed=await StudioAIResponse.request(callUniversalAI,entryPitiPrompt(request.draft),safeInstruction,reference?.history||[],raw=>{
+   if(typeof lastCallWasTruncated!=='undefined'&&lastCallWasTruncated)throw Error('La respuesta llegó incompleta.');
+   const value=parseEntryPitiResponse(raw);
+   validateEntryPitiPatch(request.draft,value.changes);
+   StudioAIResponse.checkMissingChanges(safeInstruction,value.message,Object.keys(value.changes).length);
+   return value;
+  });
+  const changed=applyEntryPitiPatch(request,parsed.changes);
   return {...parsed,changed};
  }finally{entryPitiRequest=null;if(typeof aiChatBusy!=='undefined')aiChatBusy=false;if(inline)inline.disabled=false;if(chat)chat.disabled=false;}
 }

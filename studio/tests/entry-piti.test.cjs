@@ -11,7 +11,7 @@ const ctx={Date,Intl,JSON,Math,Object,Array,Set,Number,String,encodeURIComponent
  callUniversalAI:async(...args)=>{calls.push(args);return responder(...args);},redactKnownSecrets:text=>text.replaceAll('SECRET_TEST','[oculto]'),
  openAICopilot(){chatOpened++;},closeAICopilot(){},appendAIChat:(...args)=>messages.push(args),escapeHtmlForChat:s=>String(s).replaceAll('<','&lt;').replaceAll('>','&gt;'),
  executeAiAction(){throw Error('Reference editing must not execute general actions');},handleLocalAIResponse(){throw Error('Reference editing must not fall back to general actions');},processAndDisplayAIResponse(){throw Error('Reference editing must not use the general response parser');}
-};vm.createContext(ctx);vm.runInContext(read('agenda.js')+'\n'+read('publication-options.js')+'\n'+read('projects.js')+'\n'+read('entry-piti.js'),ctx);
+};vm.createContext(ctx);vm.runInContext(read('ai-response.js')+'\n'+read('agenda.js')+'\n'+read('publication-options.js')+'\n'+read('projects.js')+'\n'+read('entry-piti.js'),ctx);
 const editorial=read('editorial.js');vm.runInContext(editorial.slice(editorial.indexOf('    function saveToStorage()'),editorial.indexOf('    function switchView('))+editorial.slice(editorial.indexOf('    function closeModal()'),editorial.indexOf('    function closeModalOnOverlay(')),ctx);
 const ai=read('ai.js');vm.runInContext(ai.slice(ai.indexOf('    async function sendAIChat()'),ai.indexOf('    function escapeHtmlForChat(')),ctx);
 (async()=>{
@@ -37,5 +37,13 @@ const ai=read('ai.js');vm.runInContext(ai.slice(ai.indexOf('    async function s
  ctx.openAgendaEntry('s1');responder=async()=>JSON.stringify({changes:{caption:'Texto para la historia',storyMedia:'Foto'}});await ctx.requestEntryPitiEdit('Ajusta la historia');ctx.saveAgendaEntry();assert.equal(ctx.stories[0].format,'Foto');assert.equal(ctx.stories[0].caption,'Texto para la historia');assert(!ctx.posts.some(p=>p.id==='s1'));
  ctx.openAgendaEntry('meeting');responder=async()=>JSON.stringify({changes:{time:'11:00',endTime:'12:00',participants:'Peter y Ana'}});await ctx.requestEntryPitiEdit('Mueve la reunión');assert.equal(node('edit-time').value,'11:00');assert.equal(node('edit-participants').value,'Peter y Ana');responder=async()=>JSON.stringify({changes:{endTime:'09:00'}});await assert.rejects(ctx.requestEntryPitiEdit('Hora inválida'),/posterior/);assert.equal(node('edit-endTime').value,'12:00');
  responder=()=>new Promise(resolve=>release=resolve);pending=ctx.requestEntryPitiEdit('Edita');ctx.closeModal();release(JSON.stringify({changes:{title:'Tarde'}}));await assert.rejects(pending,/cerró o cambió/);assert.equal(node('pitiEntryReference').hidden,true);assert.equal(ctx.aiChatBusy,false);assert.equal(node('entryPitiSubmit').disabled,false);assert.equal(node('btnSendAi').disabled,false);
- console.log('PASS: scoped inline/chat editing, real draft persistence only on Save, exact target, provider reuse, illegal patch rejection, concurrent manual edits, stale/closed drafts, cancelled references, stories, meeting fields and truthful feedback.');
+ // Recover missing JSON and missing changes before touching the draft.
+ ctx.openAgendaEntry('p1');let attempts=0;
+ responder=async()=>++attempts===1?'Ya actualice el copy.':JSON.stringify({message:'Copy propuesto',changes:{caption:'Copy recuperado'}});
+ await ctx.requestEntryPitiEdit('Actualiza el copy');assert.equal(attempts,2);assert.equal(node('edit-caption').value,'Copy recuperado');assert.equal(ctx.posts[0].caption,'Copy nuevo');
+ attempts=0;responder=async()=>++attempts===1?JSON.stringify({message:'Voy a cambiarlo',changes:{}}):JSON.stringify({changes:{caption:'Copy con cambios'}});
+ await ctx.requestEntryPitiEdit('Cambia el copy');assert.equal(attempts,2);assert.equal(node('edit-caption').value,'Copy con cambios');
+ attempts=0;responder=async()=>{attempts++;return 'Olvide los cambios';};await assert.rejects(ctx.requestEntryPitiEdit('Hazlo'),error=>error.code==='AI_RESPONSE_INVALID');assert.equal(attempts,2);assert.equal(node('edit-caption').value,'Copy con cambios');assert.equal(ctx.aiChatBusy,false);
+ attempts=0;responder=async()=>{attempts++;return JSON.stringify({message:'Necesito el nuevo titulo. Cual prefieres?',changes:{}});};await ctx.requestEntryPitiEdit('Cambia el titulo');assert.equal(attempts,1);
+ console.log('PASS: scoped inline/chat editing, draft-only persistence, exact target, automatic response repair, omitted patches, bounded failures, clarification, illegal patch rejection, concurrent manual edits, stale drafts, cancelled references, stories and meeting fields.');
 })().catch(error=>{console.error(error);process.exitCode=1;});
