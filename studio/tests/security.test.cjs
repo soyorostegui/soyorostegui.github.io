@@ -14,7 +14,7 @@ vm.runInContext('secretStorage.setItem("po_api_vault", "new-vault")',ctx);
 ctx.setRememberSecrets(true);assert.equal(local.getItem('po_api_vault'),'new-vault');assert.equal(session.getItem('po_api_vault'),null);
 assert(!code.includes('cloudObj.encryptedSecrets'));assert(!code.includes('xorDecipherWithKeyHex'));
 assert(!/onclick="[^"\n]*\$\{/.test(html));
-for(const field of ['post.title','post.channel','post.format','post.status']) assert(code.includes('${escapeHtmlForChat('+field+')}'));
+for(const field of ['post.title','entryLabel(post)','entryStatusLabel(post)']) assert(code.includes('${escapeHtmlForChat('+field+')}'));
 assert(code.includes('div.innerHTML = sanitizeDisplayHtml(text)'));
 console.log('PASS: syntax, credential migration in both directions, session writes, editorial data retained, legacy remote secrets disabled, dynamic inline handlers removed, and escaped post fields.');
 const sanitizer = section('    function sanitizeDisplayHtml(', '    function stripHtmlToPlain(');

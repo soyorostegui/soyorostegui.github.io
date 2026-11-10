@@ -401,9 +401,9 @@
     }
 
     function getTagPhaseClass(phase) {
-      if (phase.includes("Señal")) return "tag-purple";
-      if (phase.includes("Archivo")) return "tag-blue";
-      if (phase.includes("Convocatoria")) return "tag-red";
+      if ((phase || "").includes("Señal")) return "tag-purple";
+      if ((phase || "").includes("Archivo")) return "tag-blue";
+      if ((phase || "").includes("Convocatoria")) return "tag-red";
       return "tag-green";
     }
 
@@ -418,10 +418,11 @@
       const filterPhase = document.getElementById("filterPhase").value;
       const filterChannel = document.getElementById("filterChannel").value;
 
+      const filterType = document.getElementById("filterType")?.value || "ALL";
       return posts.filter(p => {
         const matchPhase = filterPhase === "ALL" || p.phase === filterPhase;
         const matchChannel = filterChannel === "ALL" || p.channel === filterChannel;
-        return matchPhase && matchChannel;
+        return matchPhase && matchChannel && (filterType === "ALL" || entryType(p) === filterType);
       });
     }
 
@@ -493,15 +494,15 @@
 
         card.innerHTML = `
           <div class="card-top">
-            <span class="tag ${channelClass}">${escapeHtmlForChat(post.channel)}</span>
+            <span class="tag ${channelClass}">${escapeHtmlForChat(entryLabel(post))}</span>
             <span class="card-date">📅 ${escapeHtmlForChat(post.date.substring(5))}</span>
           </div>
           <div class="card-title">${escapeHtmlForChat(post.title)}</div>
           <div class="card-tags">
-            <span class="tag ${phaseTagClass}">${escapeHtmlForChat(post.phase.split(":")[0])}</span>
-            <span class="tag tag-gray">${escapeHtmlForChat(post.format)}</span>
+            <span class="tag ${phaseTagClass}">${escapeHtmlForChat((post.phase || "Sin campaña").split(":")[0])}</span>
+            <span class="tag tag-gray">${escapeHtmlForChat(entryDetail(post))}</span>
           </div>
-          <div class="card-snippet">“${escapeHtmlForChat(post.caption ? post.caption.replace(/\n/g, ' ') : 'Sin caption')}”</div>
+          <div class="card-snippet">“${escapeHtmlForChat(entrySummary(post).replace(/\n/g, ' '))}”</div>
         `;
 
         if (post.status === "Idea") { listIdea.appendChild(card); count.Idea++; }
@@ -532,13 +533,13 @@
 
         tr.innerHTML = `
           <td style="white-space: nowrap; font-weight: 500;">📅 ${escapeHtmlForChat(post.date)}</td>
-          <td><span class="tag ${channelClass}">${escapeHtmlForChat(post.channel)}</span></td>
+          <td><span class="tag ${channelClass}">${escapeHtmlForChat(entryLabel(post))}</span></td>
           <td><div class="table-title">${escapeHtmlForChat(post.title)}</div></td>
-          <td><span class="tag tag-gray">${escapeHtmlForChat(post.format)}</span></td>
-          <td><span class="tag ${statusClass}">${escapeHtmlForChat(post.status)}</span></td>
-          <td><span class="tag ${phaseClass}">${escapeHtmlForChat(post.phase.split(":")[0])}</span></td>
+          <td><span class="tag tag-gray">${escapeHtmlForChat(entryDetail(post))}</span></td>
+          <td><span class="tag ${statusClass}">${escapeHtmlForChat(entryStatusLabel(post))}</span></td>
+          <td><span class="tag ${phaseClass}">${escapeHtmlForChat((post.phase || "Sin campaña").split(":")[0])}</span></td>
           <td style="color: var(--text-muted); max-width: 250px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
-            ${escapeHtmlForChat(post.caption || "-")}
+            ${escapeHtmlForChat(entrySummary(post))}
           </td>
         `;
         tbody.appendChild(tr);
@@ -676,7 +677,8 @@
       const storiesPref = localStorage.getItem("po_cal_show_stories") !== "0";
       const toggle = document.getElementById("calShowStories");
       if (toggle) toggle.checked = storiesPref;
-      const allStories = (storiesPref && (channelFilter === "ALL" || channelFilter === "Instagram"))
+      const typeFilter = document.getElementById("filterType")?.value || "ALL";
+      const allStories = (storiesPref && ["ALL", "story"].includes(typeFilter) && (channelFilter === "ALL" || channelFilter === "Instagram"))
         ? sortedStories()
         : [];
 
@@ -709,13 +711,13 @@
           const chip = document.createElement("div");
           chip.className = "cal-post-chip";
           setupCalendarEntryDrag(chip, "post", post.id);
-          chip.title = `${post.channel} (${post.format}): ${post.title}`;
+          chip.title = `${entryLabel(post)}${post.time ? " " + post.time : ""}: ${post.title}`;
           chip.onclick = (e) => { e.stopPropagation(); if (calendarDragEntry || Date.now() < calendarSuppressClickUntil) return; openEditModal(post.id); };
           const chClass = getChannelTagClass(post.channel);
           chip.innerHTML = `
             <div style="display:flex; justify-content:space-between; align-items:center; gap:4px; min-width:0;">
-              <span class="tag ${chClass}" style="font-size: 9px; padding: 1px 4px; flex-shrink:0;">${escapeHtmlForChat(post.channel)}</span>
-              <span style="font-size: 9px; color: var(--text-muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${escapeHtmlForChat(post.format)}</span>
+              <span class="tag ${chClass}" style="font-size: 9px; padding: 1px 4px; flex-shrink:0;">${escapeHtmlForChat(entryLabel(post))}</span>
+              <span style="font-size: 9px; color: var(--text-muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${escapeHtmlForChat(entryDetail(post))}</span>
             </div>
             <div class="cal-chip-title">${escapeHtmlForChat(post.title)}</div>
           `;
@@ -867,6 +869,7 @@
     }
 
     function renderCurrentView() {
+      if(typeof refreshAgendaControls === "function") refreshAgendaControls();
       if (activeView === "kanban") renderKanban();
       else if (activeView === "table") renderTable();
       else if (activeView === "calendar") renderCalendar();
@@ -875,40 +878,8 @@
     }
 
     /* MODAL LOGIC */
-    function openEditModal(id) {
-      const post = posts.find(p => p.id === id);
-      if (!post) return;
-
-      document.getElementById("edit-id").value = post.id;
-      document.getElementById("edit-title").value = post.title;
-      document.getElementById("edit-channel").value = post.channel || "Instagram";
-      document.getElementById("edit-date").value = post.date;
-      document.getElementById("edit-status").value = post.status;
-      document.getElementById("edit-phase").value = post.phase;
-      document.getElementById("edit-format").value = post.format;
-      document.getElementById("edit-structure").value = post.structure || "";
-      document.getElementById("edit-caption").value = post.caption || "";
-
-      document.getElementById("drawerStatusTag").innerText = "Editar Pieza (" + post.channel + ")";
-      document.getElementById("btnDelete").style.display = "block";
-      document.getElementById("modalOverlay").style.display = "flex";
-    }
-
-    function openCreateModal() {
-      document.getElementById("edit-id").value = "";
-      document.getElementById("edit-title").value = "";
-      document.getElementById("edit-channel").value = "Instagram";
-      document.getElementById("edit-date").value = "2026-11-12";
-      document.getElementById("edit-status").value = "Idea";
-      document.getElementById("edit-phase").value = "Fase 2: Archivo";
-      document.getElementById("edit-format").value = "Carrusel";
-      document.getElementById("edit-structure").value = "";
-      document.getElementById("edit-caption").value = "";
-
-      document.getElementById("drawerStatusTag").innerText = "Nueva Pieza";
-      document.getElementById("btnDelete").style.display = "none";
-      document.getElementById("modalOverlay").style.display = "flex";
-    }
+    function openEditModal(id) { openAgendaEntry(id); }
+    function openCreateModal() { openAgendaEntry(); }
 
     function closeModal() {
       document.getElementById("modalOverlay").style.display = "none";
@@ -918,43 +889,7 @@
       if (e.target.id === "modalOverlay") closeModal();
     }
 
-    function saveCurrentPost() {
-      const id = document.getElementById("edit-id").value;
-      const title = document.getElementById("edit-title").value.trim();
-      if (!title) { alert("Por favor escribe un título para la pieza"); return; }
-
-      const channel = document.getElementById("edit-channel").value;
-      const date = document.getElementById("edit-date").value;
-      const status = document.getElementById("edit-status").value;
-      const phase = document.getElementById("edit-phase").value;
-      const format = document.getElementById("edit-format").value;
-      const structure = document.getElementById("edit-structure").value;
-      const caption = document.getElementById("edit-caption").value;
-
-      if (id) {
-        const post = posts.find(p => p.id === id);
-        if (post) {
-          post.title = title;
-          post.channel = channel;
-          post.date = date;
-          post.status = status;
-          post.phase = phase;
-          post.format = format;
-          post.structure = structure;
-          post.caption = caption;
-        }
-      } else {
-        const newPost = {
-          id: "post-" + Date.now(),
-          title, channel, date, status, phase, format, structure, caption
-        };
-        posts.push(newPost);
-      }
-
-      saveToStorage();
-      closeModal();
-      renderCurrentView();
-    }
+    function saveCurrentPost() { saveAgendaEntry(); }
 
     function deleteCurrentPost() {
       const id = document.getElementById("edit-id").value;

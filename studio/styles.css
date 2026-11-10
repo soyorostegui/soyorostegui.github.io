@@ -1584,3 +1584,10 @@
     .cal-post-chip[draggable="true"], .cal-story-chip[draggable="true"] { cursor: grab; }
     #cal-grid .calendar-dragging { opacity: .45; cursor: grabbing; }
     #cal-grid .calendar-drop-target { outline: 2px solid #7c3aed; outline-offset: -2px; background: #ede9fe; opacity: 1; }
+
+    [hidden] { display: none !important; }
+    .agenda-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+    .agenda-network-row { display:flex; align-items:center; justify-content:space-between; gap:8px; margin:8px 0; font-size:12px; }
+    .agenda-network-row input { min-width:0; flex:1; }
+    .agenda-network-row button { flex-shrink:0; }
+    @media(max-width:480px) { .agenda-grid { grid-template-columns:1fr; } }

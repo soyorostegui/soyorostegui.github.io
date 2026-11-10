@@ -18,7 +18,7 @@ const dragCtx={Intl,Date,Math,Number,JSON,Array,posts:[{id:'p',date:'2026-11-09'
   stories:[{id:'s',date:'2026-11-09',time:'13:00',order:0,name:'Historia',highlightId:'h'},{id:'s2',date:'2026-11-12',time:'09:00',order:0}],
   localStorage:{getItem:k=>storage.get(k)??null,setItem:(k,v)=>storage.set(k,v),removeItem:k=>storage.delete(k)},
   document:{getElementById:id=>nodes[id]||null,createElement:()=>new CalendarElement(),querySelectorAll:()=>nodes['cal-grid'].children.flatMap(c=>[c,...c.children])},
-  getFilteredPosts:()=>dragCtx.posts,sortedStories:()=>dragCtx.stories,getChannelTagClass:()=>'',escapeHtmlForChat:s=>s,
+  entryLabel:p=>p.channel,entryDetail:p=>p.format,entryType:p=>p.type||'post',getFilteredPosts:()=>dragCtx.posts,sortedStories:()=>dragCtx.stories,getChannelTagClass:()=>'',escapeHtmlForChat:s=>s,
   openEditModal:()=>opened++,openStoryModal:()=>opened++,renderCurrentView:()=>renders++,
   saveToStorage:()=>{if(failSave)throw Error('quota');savedPosts++;storage.set('po_posts_v6',JSON.stringify(dragCtx.posts));storage.set('po_sync_dirty','1');},
   saveStoriesToStorage:()=>{if(failSave)throw Error('quota');savedStories++;storage.set('po_stories_v1',JSON.stringify(dragCtx.stories));storage.set('po_sync_dirty','1');},

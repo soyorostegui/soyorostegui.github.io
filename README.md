@@ -48,3 +48,11 @@ Los formularios abiertos posponen la actualización para conservar lo que estás
 `npm test` comprueba las acciones de Piti, contexto, calendario, almacenamiento y cifrado real, además de simular primeros accesos, otro dispositivo, recuperación automática, conflicto y cambio de contraseña. Las pruebas no utilizan credenciales reales ni escriben en GitHub. La prueba del sanitizador en un navegador real es opcional (`STUDIO_BROWSER_TEST=1`) y requiere un navegador ejecutable compatible.
 
 El workflow `studio-checks.yml` ejecuta las pruebas al subir cambios. No publica claves, no necesita secretos de Actions y no cambia la configuración actual de GitHub Pages. No hay un archivo de bóveda inicial en el código: se crea cuando el propietario configura sus credenciales y confirma la conexión.
+
+## Agenda y redes configurables
+
+Nueva entrada permite crear publicaciones, reuniones, clases y tareas. Las publicaciones existentes mantienen sus IDs y se interpretan como publicaciones aunque no tengan el campo `type`. Todas las entradas permanecen en la colección histórica `posts`, con `type` (`post`, `meeting`, `class`, `task`), fecha, título y notas. Las reuniones y clases requieren inicio y fin en el mismo día; las tareas tienen prioridad y fecha límite. La campaña es opcional. Los estados internos históricos se conservan para mantener la compatibilidad, con etiquetas generales para actividades.
+
+Ajustes → Redes sociales permite añadir redes y eliminar las que no tienen referencias. El catálogo `networks` usa la misma sincronización de tres vías que las entradas, con marcas de eliminación. Los filtros se generan a partir del catálogo y las entradas existentes. El calendario, la tabla y el tablero muestran todos los tipos; arrastrar una entrada conserva sus campos específicos.
+
+Piti puede consultar los datos de la agenda y modificar fechas de entradas por ID. Sus acciones de creación editorial siguen creando publicaciones; para crear reuniones, clases y tareas se utiliza Nueva entrada. No hay invitaciones, notificaciones ni integración externa de calendarios en esta versión.

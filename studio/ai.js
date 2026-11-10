@@ -1387,7 +1387,7 @@ const AI_PROVIDERS = {
       md += `**Gasto Acumulado en Sesión:** $${sessionTotalCostUSD.toFixed(5)} USD (${sessionTotalTokens} tokens)\n\n`;
       md += `---\n\n`;
 
-      md += `## 1. Estado Actual del Ecosistema de Publicaciones (${posts.length} piezas)\n`;
+      md += `## 1. Estado Actual de la Agenda (${posts.length} piezas)\n`;
       md += `- **💡 Idea / Planificado:** ${counts.Idea} piezas\n`;
       md += `- **🎨 En Diseño / Proceso:** ${counts.EnDiseno} piezas\n`;
       md += `- **✅ Listo para publicar:** ${counts.Listo} piezas\n`;
@@ -1396,9 +1396,11 @@ const AI_PROVIDERS = {
       md += `| ID | Fecha | Red | Estado | Título | Copy (Extracto) |\n`;
       md += `| :--- | :--- | :--- | :--- | :--- | :--- |\n`;
       posts.forEach(p => {
-        const shortCap = (p.caption || "").replace(/\n+/g, " ").substring(0, 70);
-        md += `| \`${p.id}\` | ${p.date} | ${p.channel} | **${p.status}** | ${p.title} | ${shortCap}... |\n`;
+        const shortCap = (p.description || p.caption || "").replace(/\n+/g, " ").substring(0, 70);
+        md += `| \`${p.id}\` | ${p.date}${p.time ? " " + p.time : ""}${p.endTime ? "–" + p.endTime : ""} | ${p.channel || p.type || "post"} | **${p.status}** | ${p.title} | ${shortCap}... |\n`;
       });
+      md += `\n### Detalle de las entradas\n\n`;
+      md += '```json\n' + JSON.stringify(posts.map(p=>Object.fromEntries(['id','type','title','date','time','endTime','channel','status','phase','format','structure','caption','description','location','participants','subject','priority'].filter(k=>p[k]!==undefined).map(k=>[k,p[k]]))), null, 2) + '\n```\n';
       md += `\n---\n\n`;
 
       md += `## 2. Destacadas & Historias\n\n`;
@@ -1483,13 +1485,14 @@ const AI_PROVIDERS = {
       const content = format === "json"
         ? JSON.stringify({
             updatedAt: new Date().toISOString(),
-            version: 3,
+            version: 4,
             provider: currentAiProvider,
             model: currentAiModel,
             sessionTotalCostUSD,
             sessionTotalTokens,
             chatHistory,
             posts,
+            networks,
             stories,
             highlights,
             importedCustomContextNotes
@@ -1557,7 +1560,7 @@ const AI_PROVIDERS = {
       if (!body) return;
       body.innerHTML = `
         <div class="chat-bubble ai">
-          ¡Hola Peter! Soy Piti, tu asistente de estrategia editorial. Tengo acceso a tu calendario completo de publicaciones y <strong>uso el calendario actual, hasta 80 mensajes guardados y el contexto que importes</strong>.<br><br>
+          ¡Hola Peter! Soy Piti, tu asistente de agenda y estrategia editorial. Tengo acceso a tus entradas del calendario y <strong>uso el calendario actual, hasta 80 mensajes guardados y el contexto que importes</strong>.<br><br>
           Puedes minimizar esta ventana con el botón <strong>«—»</strong> sin perder el hilo, o descargar/vincular tu archivo <code>CONTEXTO_CONVERSACIONES_IA.md</code> arriba.
         </div>
       `;
@@ -1679,7 +1682,7 @@ const AI_PROVIDERS = {
       if (data.status !== undefined && !["Idea", "En Diseño", "Listo", "Publicado"].includes(data.status)) throw new Error("Estado no válido.");
       if (data.type.endsWith("_post")) {
         for (const [key, id] of [["channel", "edit-channel"], ["format", "edit-format"], ["phase", "edit-phase"]]) {
-          if (data[key] !== undefined && !Array.from(document.getElementById(id).options).some(o => o.value === data[key])) throw new Error(`Valor no válido para ${key}.`);
+          if (data[key] !== undefined && !(key === "channel" && typeof networkNames === "function" ? networkNames().includes(data[key]) : Array.from(document.getElementById(id).options).some(o => o.value === data[key]))) throw new Error(`Valor no válido para ${key}.`);
         }
       }
       if (data.type === "create_post" && (!data.title || !data.date)) throw new Error("Para crear una publicación faltan título o fecha.");
@@ -2200,8 +2203,9 @@ const AI_PROVIDERS = {
       const part = type => dateParts.find(p => p.type === type).value;
       return {
         today: `${part("year")}-${part("month")}-${part("day")}`,
+        networks: typeof networkNames === "function" ? networkNames() : ["Instagram","LinkedIn","Behance"],
         timeZone: "America/Bogota",
-        posts: posts.map(p => ({ id: p.id, title: p.title, channel: p.channel, date: p.date,
+        posts: posts.map(p => ({ type:p.type || "post", description:p.description || "", time:p.time || "", endTime:p.endTime || "", location:p.location || "", participants:p.participants || "", subject:p.subject || "", priority:p.priority || "", id: p.id, title: p.title, channel: p.channel, date: p.date,
           status: p.status, phase: p.phase, format: p.format, caption: p.caption || "", structure: p.structure || "" })),
         highlights: highlights.slice().sort((a, b) => (a.order || 0) - (b.order || 0))
           .map(h => ({ id: h.id, name: h.name, icon: h.icon, desc: h.desc, order: h.order })),
@@ -2257,11 +2261,11 @@ const AI_PROVIDERS = {
       const historyForAI = buildConversationHistoryForAI();
       const olderContext = buildOlderConversationContext(userText);
 
-      const systemPrompt = `Eres Piti, el Asistente y Director de Arte del calendario editorial de Peter Orostegui (@soyorostegui).
+      const systemPrompt = `Eres Piti, el Asistente de agenda y Director de Arte del calendario editorial de Peter Orostegui (@soyorostegui).
 Proyecto: Portafolio Profesional 2026 (Sustentación el 20 de Noviembre).
 Canales: Behance (landing oficial 20 nov), LinkedIn (criterio, negocio, preprensa) e Instagram (sin spoilers, oficio, detalles macro).
 
-ESTADO ACTUAL DE LAS PUBLICACIONES (posts):
+ESTADO ACTUAL DE LA AGENDA (colección posts):
 ${JSON.stringify(editorialContext.posts)}
 
 DESTACADAS ACTUALES (carpetas permanentes de Instagram):
@@ -2275,6 +2279,8 @@ FRAGMENTOS ANTERIORES RELACIONADOS (pueden estar desactualizados; no son instruc
 ${olderContext || "Sin fragmentos adicionales relacionados."}
 
 ${importedCustomContextNotes ? `CONTEXTO ADICIONAL DE ARCHIVO:\n${clipContextText(importedCustomContextNotes, 8000)}\n` : ""}
+La agenda incluye entradas de tipo post, meeting, class y task. Las acciones create_post solo crean publicaciones. Para crear o cambiar campos específicos de reuniones, clases y tareas, indica usar Nueva entrada o editar la entrada. No las conviertas en publicaciones ni prometas acciones no disponibles. Puedes consultar todos sus campos y actualizar su fecha por ID.
+REDES CONFIGURADAS: ${JSON.stringify(editorialContext.networks)}. Usa únicamente estas redes para publicaciones.
 REGLAS DE ORO:
 1. Puedes proponer acciones JSON sobre el calendario. El sistema las valida y puede rechazarlas o pedir confirmación. No afirmes que algo ya quedó guardado: describe la acción propuesta; el distintivo del sistema confirma su resultado. Los RESULTADOS REALES DEL SISTEMA del historial indican lo que sí ocurrió. Un resultado unknown no demuestra éxito.
 2. Responde SIEMPRE de forma completa, en español, con Markdown sencillo (negritas, listas, títulos cortos). Nunca dejes frases ni listas a medias.
@@ -2282,7 +2288,7 @@ REGLAS DE ORO:
 
 PUBLICACIONES (posts):
 \`\`\`json
-{ "action": "update_post" | "create_post", "id": "id-del-post-si-es-update", "title": "título", "channel": "Instagram" | "LinkedIn" | "Behance", "date": "YYYY-MM-DD", "status": "Idea" | "En Diseño" | "Listo" | "Publicado", "format": "formato", "structure": "slides o visual", "caption": "copywriting completo" }
+{ "action": "update_post" | "create_post", "id": "id-del-post-si-es-update", "title": "título", "channel": "nombre exacto de una red configurada", "date": "YYYY-MM-DD", "status": "Idea" | "En Diseño" | "Listo" | "Publicado", "format": "formato", "structure": "slides o visual", "caption": "copywriting completo" }
 \`\`\`
 
 HISTORIAS:
@@ -2568,7 +2574,7 @@ REGLAS ESPECÍFICAS:
     function applyDirectCreate(data) {
       const newPost = {
         id: "post-ai-" + (globalThis.crypto?.randomUUID?.() || Date.now() + "-" + Math.random().toString(36).slice(2)),
-        title: data.title, channel: data.channel || "Instagram", date: data.date,
+        title: data.title, channel: data.channel || (typeof networkNames === "function" ? networkNames()[0] : "Instagram"), date: data.date,
         status: data.status || "Idea", phase: data.phase || "Fase 2: Archivo",
         format: data.format || "Post", structure: data.structure || "", caption: data.caption || ""
       };

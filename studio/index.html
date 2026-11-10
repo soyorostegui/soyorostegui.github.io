@@ -80,28 +80,16 @@
       </button>
     </div>
     <h1 class="page-title">
-      Ecosistema de Comunicación · Peter Orostegui
+      Studio · Peter Orostegui
     </h1>
-    <p class="page-desc">
-      Campaña multiplataforma (<strong>Behance</strong>, <strong>LinkedIn</strong> e <strong>Instagram</strong>) para el lanzamiento del Portafolio Profesional 2026. Fechas: <strong>Lunes 9 Nov → Miércoles 25 Nov</strong>. Concepto: <em>«Mientras tanto»</em>.
-    </p>
+    <p class="page-desc">Organiza publicaciones, reuniones, clases y tareas en una misma agenda. Tus campañas siguen disponibles como filtro opcional.</p>
     
-    <div class="kpi-row">
-      <div class="kpi-chip">
-        <span>🚀</span> <strong>Behance:</strong> 1 Landing Completa (20 Nov)
-      </div>
-      <div class="kpi-chip">
-        <span>💼</span> <strong>LinkedIn:</strong> 6 Posteos de Criterio & Liderazgo
-      </div>
-      <div class="kpi-chip">
-        <span>📸</span> <strong>Instagram:</strong> 12 Posts Feed (Sin spoilers)
-      </div>
-      <div class="kpi-chip">
-        <span>📱</span> <strong><span id="kpiStoryCount">30</span> Historias:</strong> en <span id="kpiHighlightCount">4</span> Destacadas
-      </div>
-      <div class="kpi-chip" style="background: var(--tag-orange-bg); color: var(--tag-orange-text);">
-        <span>🔥</span> Hito Día D: 20 de Noviembre
-      </div>
+    <div class="kpi-row" aria-label="Resumen de la agenda">
+      <div class="kpi-chip">Publicaciones: <strong id="agendaCountPosts">0</strong></div>
+      <div class="kpi-chip">Reuniones: <strong id="agendaCountMeetings">0</strong></div>
+      <div class="kpi-chip">Clases: <strong id="agendaCountClasses">0</strong></div>
+      <div class="kpi-chip">Tareas: <strong id="agendaCountTasks">0</strong></div>
+      <div class="kpi-chip">Historias: <strong id="kpiStoryCount">0</strong> · Destacadas: <strong id="kpiHighlightCount">0</strong></div>
     </div>
   </header>
 
@@ -112,10 +100,10 @@
         <span>📋</span> Tablero Kanban
       </button>
       <button class="view-btn" onclick="switchView('calendar')" id="btn-calendar">
-        <span>📅</span> Calendario (9–25 Nov)
+        <span>📅</span> Calendario
       </button>
       <button class="view-btn" onclick="switchView('table')" id="btn-table">
-        <span>📑</span> Tabla Base (19 Piezas)
+        <span>📑</span> Tabla de entradas
       </button>
       <button class="view-btn" onclick="switchView('stories')" id="btn-stories">
         <span>📱</span> <span id="btnStoriesLabel">30</span> Historias & Destacadas
@@ -123,6 +111,9 @@
     </div>
 
     <div class="tools-right">
+      <select class="filter-select" id="filterType" onchange="renderCurrentView()" aria-label="Filtrar por tipo de entrada">
+        <option value="ALL">Todos los tipos</option><option value="post">Publicaciones</option><option value="meeting">Reuniones</option><option value="class">Clases</option><option value="task">Tareas</option><option value="story">Historias</option>
+      </select>
       <select class="filter-select" id="filterChannel" onchange="renderCurrentView()">
         <option value="ALL">Todas las Redes</option>
         <option value="Instagram">Instagram (12)</option>
@@ -139,7 +130,7 @@
       </select>
 
       <button class="btn-new" onclick="openCreateModal()">
-        <span>+</span> Nueva Pieza
+        <span>+</span> Nueva entrada
       </button>
 
       <a href="../" class="btn-lock-session" style="text-decoration: none;" title="Ir a la Landing Pública (@soyorostegui)">
@@ -180,7 +171,7 @@
     <!-- En diseño -->
     <div class="kanban-col" data-status="En Diseño">
       <div class="col-header">
-        <span class="col-title"><span class="tag tag-yellow">🎨 En Diseño / Proceso</span></span>
+        <span class="col-title"><span class="tag tag-yellow">🎨 En curso</span></span>
         <span class="col-count" id="count-design">0</span>
       </div>
       <div class="card-list" id="cards-design"></div>
@@ -188,7 +179,7 @@
     <!-- Listo -->
     <div class="kanban-col" data-status="Listo">
       <div class="col-header">
-        <span class="col-title"><span class="tag tag-blue">✅ Listo para publicar</span></span>
+        <span class="col-title"><span class="tag tag-blue">✅ Listo</span></span>
         <span class="col-count" id="count-ready">0</span>
       </div>
       <div class="card-list" id="cards-ready"></div>
@@ -196,7 +187,7 @@
     <!-- Publicado -->
     <div class="kanban-col" data-status="Publicado">
       <div class="col-header">
-        <span class="col-title"><span class="tag tag-green">🚀 Publicado</span></span>
+        <span class="col-title"><span class="tag tag-green">🚀 Completado / Publicado</span></span>
         <span class="col-count" id="count-published">0</span>
       </div>
       <div class="card-list" id="cards-published"></div>
@@ -209,12 +200,12 @@
       <thead>
         <tr>
           <th>Fecha</th>
-          <th>Red</th>
-          <th>Pieza / Título</th>
-          <th>Formato</th>
+          <th>Tipo / Red</th>
+          <th>Título</th>
+          <th>Formato / Detalle</th>
           <th>Estado</th>
-          <th>Fase</th>
-          <th>Enfoque Estratégico</th>
+          <th>Campaña</th>
+          <th>Descripción / Copy</th>
         </tr>
       </thead>
       <tbody id="table-body"></tbody>
@@ -280,17 +271,21 @@
       </div>
 
       <input type="hidden" id="edit-id">
+      <div class="form-group">
+        <label class="form-label" for="edit-type">Tipo de entrada</label>
+        <select id="edit-type" class="form-select" onchange="onAgendaTypeChange()"><option value="post">Publicación</option><option value="meeting">Reunión</option><option value="class">Clase</option><option value="task">Tarea</option></select>
+      </div>
 
       <div class="form-group">
         <div class="form-label-row">
-          <label class="form-label">Título de la Pieza</label>
-          <button class="ai-inline-btn" id="btnAiTitle" onclick="aiImproveTitle()">✨ Mejorar Título</button>
+          <label class="form-label">Título</label>
+          <button class="ai-inline-btn" data-agenda-post id="btnAiTitle" onclick="aiImproveTitle()">✨ Mejorar Título</button>
         </div>
         <input type="text" id="edit-title" class="form-input" placeholder="Ej. Lanzamiento Expectativa">
       </div>
 
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
-        <div class="form-group">
+        <div class="form-group" data-agenda-post>
           <label class="form-label">Red Social</label>
           <select id="edit-channel" class="form-select">
             <option value="Instagram">Instagram</option>
@@ -299,7 +294,7 @@
           </select>
         </div>
         <div class="form-group">
-          <label class="form-label">Fecha de Publicación</label>
+          <label class="form-label" id="agendaDateLabel" for="edit-date">Fecha</label>
           <input type="date" id="edit-date" class="form-input">
         </div>
       </div>
@@ -315,8 +310,8 @@
           </select>
         </div>
         <div class="form-group">
-          <label class="form-label">Fase de la Estrategia</label>
-          <select id="edit-phase" class="form-select">
+          <label class="form-label">Campaña (opcional)</label>
+          <select id="edit-phase" class="form-select"><option value="">Sin campaña</option>
             <option value="Fase 1: Señal">Fase 1: Señal (9–11 Nov)</option>
             <option value="Fase 2: Archivo">Fase 2: Archivo (12–17 Nov)</option>
             <option value="Fase 3: Convocatoria">Fase 3: Convocatoria (18–20 Nov)</option>
@@ -325,9 +320,9 @@
         </div>
       </div>
 
-      <div class="form-group">
+      <div class="form-group" data-agenda-post>
         <label class="form-label">Formato</label>
-        <select id="edit-format" class="form-select">
+        <select id="edit-format" class="form-select"><option value="Video">Video</option><option value="Directo">Directo</option><option value="Artículo">Artículo</option><option value="Podcast">Podcast</option><option value="Otro">Otro</option>
           <option value="Carrusel">Carrusel (IG)</option>
           <option value="Post">Post Estático (IG)</option>
           <option value="Reel">Reel / Video (IG)</option>
@@ -341,7 +336,7 @@
         </select>
       </div>
 
-      <div class="form-group">
+      <div class="form-group" data-agenda-post>
         <div class="form-label-row">
           <label class="form-label">Estructura / Slides / Contenido</label>
           <button class="ai-inline-btn" id="btnAiSlides" onclick="aiGenerateSlides()">✨ Estructurar Slides</button>
@@ -349,7 +344,7 @@
         <textarea id="edit-structure" class="form-textarea" placeholder="Estructura visual..."></textarea>
       </div>
 
-      <div class="form-group">
+      <div class="form-group" data-agenda-post>
         <div class="form-label-row">
           <label class="form-label">Copy / Caption</label>
           <div style="display:flex; gap:4px;">
@@ -360,6 +355,16 @@
         <textarea id="edit-caption" class="form-textarea" style="min-height: 110px;" placeholder="Copywriting completo..."></textarea>
       </div>
 
+      <div class="agenda-grid">
+        <div class="form-group"><label class="form-label" id="agendaTimeLabel" for="edit-time">Hora de inicio / vencimiento (opcional)</label><input type="time" id="edit-time" class="form-input"></div>
+        <div class="form-group" data-agenda-event hidden><label class="form-label" for="edit-endTime">Hora de fin</label><input type="time" id="edit-endTime" class="form-input"></div>
+      </div>
+      <div class="form-group" data-agenda-event hidden><label class="form-label" for="edit-location">Lugar o enlace</label><input type="text" id="edit-location" class="form-input" placeholder="Ej. Sala 2 o enlace de videollamada"></div>
+      <div class="form-group" data-agenda-meeting hidden><label class="form-label" for="edit-participants">Participantes</label><input type="text" id="edit-participants" class="form-input"></div>
+      <div class="form-group" data-agenda-class hidden><label class="form-label" for="edit-subject">Asignatura</label><input type="text" id="edit-subject" class="form-input"></div>
+      <div class="form-group" data-agenda-task hidden><label class="form-label" for="edit-priority">Prioridad</label><select id="edit-priority" class="form-select"><option value="Baja">Baja</option><option value="Normal">Normal</option><option value="Alta">Alta</option></select></div>
+      <div class="form-group"><label class="form-label" for="edit-description">Descripción / notas</label><textarea id="edit-description" class="form-textarea" placeholder="Detalles de la actividad..."></textarea></div>
+      <p id="agendaFormError" role="alert" style="font-size:12px;color:var(--tag-red-text);"></p>
       <div class="drawer-actions">
         <button class="btn-delete" onclick="deleteCurrentPost()" id="btnDelete">Eliminar</button>
         <button class="btn-save" onclick="saveCurrentPost()">Guardar cambios</button>
@@ -396,7 +401,7 @@
       <div id="storyFields" style="display:flex;flex-direction:column;gap:14px;">
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
           <div class="form-group">
-            <label class="form-label">Fecha</label>
+            <label class="form-label" for="story-date">Fecha</label>
             <input type="date" id="story-date" class="form-input">
           </div>
           <div class="form-group">
@@ -553,6 +558,13 @@
           </div>
           <div id="syncModalStatusMsg" role="status" style="display:none;margin-top:6px;"></div>
         </section>
+        <details style="margin-top:14px;">
+          <summary style="cursor:pointer;font-size:13px;font-weight:600;">Redes sociales</summary>
+          <p style="font-size:12px;color:var(--text-muted);margin:8px 0;">Añade las redes que utilizas. Las redes con entradas se conservan para proteger sus referencias.</p>
+          <div id="networkSettingsList"></div>
+          <div class="agenda-network-row"><input id="newNetworkName" class="form-input" aria-label="Nombre de la nueva red" placeholder="Ej. TikTok o YouTube" maxlength="60"><button type="button" class="ai-inline-btn" onclick="addAgendaNetwork()">Añadir red</button></div>
+          <p id="networkSettingsStatus" role="status" style="font-size:12px;"></p>
+        </details>
         <div class="key-status-box" id="keyStatusBox" style="display:none;"></div>
       </div>
 
@@ -609,7 +621,7 @@
 
     <div class="ai-chat-body" id="aiChatBody">
       <div class="chat-bubble ai">
-        ¡Hola Peter! Soy Piti, tu asistente de estrategia editorial. Tengo acceso a tu calendario completo de publicaciones y <strong>uso el calendario actual, hasta 80 mensajes guardados y el contexto que importes</strong>.<br><br>
+        ¡Hola Peter! Soy Piti, tu asistente de agenda y estrategia editorial. Tengo acceso a tus entradas del calendario y <strong>uso el calendario actual, hasta 80 mensajes guardados y el contexto que importes</strong>.<br><br>
         Puedes minimizar esta ventana con el botón <strong>«—»</strong> sin perder el hilo, o descargar/vincular tu archivo <code>CONTEXTO_CONVERSACIONES_IA.md</code> arriba.
       </div>
     </div>
@@ -646,6 +658,7 @@
   <script src="./vault-crypto.js"></script>
   <script src="./credential-vault.js"></script>
   <script src="./editorial.js"></script>
+  <script src="./agenda.js"></script>
   <script src="./ai.js"></script>
   <script src="./sync-merge.js"></script>
   <script src="./security-sync.js"></script>

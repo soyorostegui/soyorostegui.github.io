@@ -41,7 +41,7 @@ const cloneSync = value => JSON.parse(JSON.stringify(value));
 function readSyncJson(key,fallback) { try { return JSON.parse(localStorage.getItem(key)||'null')??fallback; } catch (_) { return fallback; } }
 function buildCloudStateObject() {
   return cloneSync({version:4,updatedAt:Number(localStorage.getItem('po_last_updated_at'))||0,updatedAtISO:new Date().toISOString(),
-    posts,stories,highlights,chatHistory,importedCustomContextNotes:importedCustomContextNotes||'',
+    posts,stories,highlights,networks:typeof networks==='undefined'?undefined:networks,chatHistory,importedCustomContextNotes:importedCustomContextNotes||'',
     chatResetId:localStorage.getItem('po_ai_chat_reset')||'legacy',tombstones:readSyncJson('po_sync_tombstones',{})});
 }
 function canonicalSyncValue(value) { if(Array.isArray(value))return value.map(canonicalSyncValue);if(value&&typeof value==='object')return Object.fromEntries(Object.keys(value).sort().map(k=>[k,canonicalSyncValue(value[k])]));return value; }
@@ -56,7 +56,7 @@ function parseRemoteState(meta) {
 }
 function applyCloudStateObject(input) {
   const state=editorialSyncContent(input), before=buildCloudStateObject();
-  const values={po_posts_v6:state.posts,po_stories_v1:state.stories,po_highlights_v1:state.highlights,po_ai_chat_history:state.chatHistory,po_sync_tombstones:state.tombstones};
+  const values={po_networks_v1:state.networks,po_posts_v6:state.posts,po_stories_v1:state.stories,po_highlights_v1:state.highlights,po_ai_chat_history:state.chatHistory,po_sync_tombstones:state.tombstones};
   const old=Object.keys(values).concat(['po_ai_imported_notes','po_ai_chat_reset']).map(k=>[k,localStorage.getItem(k)]);
   localStorage.setItem('po_sync_recovery',JSON.stringify(before));
   try {
@@ -66,6 +66,7 @@ function applyCloudStateObject(input) {
     for(const [key,value] of old)try{if(value===null)localStorage.removeItem(key);else localStorage.setItem(key,value);}catch(_){}
     throw Error('No se pudo guardar la combinación en este navegador. Se conserva el respaldo local.');
   }
+  if(typeof networks!=='undefined')networks=state.networks;
   posts=state.posts;stories=state.stories;highlights=state.highlights;chatHistory=state.chatHistory;importedCustomContextNotes=state.importedCustomContextNotes;
   renderCurrentView();if(typeof renderSavedChatHistory==='function')renderSavedChatHistory();return true;
 }
@@ -240,7 +241,7 @@ async function saveGitHubRepoTokenAndPush(){
 function startAutomaticSync(){
   const resume=()=>{nextSyncAt=0;scheduleGitHubCloudSync(true);};
   window.addEventListener('online',resume);window.addEventListener('focus',()=>scheduleGitHubCloudSync(true));
-  window.addEventListener('storage',event=>{if(['po_posts_v6','po_stories_v1','po_highlights_v1','po_ai_chat_history','po_sync_base_record'].includes(event.key))scheduleGitHubCloudSync(true);});
+  window.addEventListener('storage',event=>{if(['po_posts_v6','po_stories_v1','po_highlights_v1','po_ai_chat_history','po_networks_v1','po_sync_base_record'].includes(event.key))scheduleGitHubCloudSync(true);});
   document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')scheduleGitHubCloudSync(true);});
   setInterval(()=>{if(document.visibilityState!=='hidden')requestAutomaticSync(false);},60000);
 }

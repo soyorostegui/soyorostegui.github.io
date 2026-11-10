@@ -1,6 +1,6 @@
 /* Pure three-way merge. No I/O, timestamps never decide which edit wins. */
 (function(root) {
-  const ABSENT = Symbol('absent'), entities = ['posts','stories','highlights'];
+  const ABSENT = Symbol('absent'), entities = ['posts','stories','highlights','networks'];
   function sorted(value) {
     if (Array.isArray(value)) return value.map(sorted);
     if (value && typeof value === 'object') return Object.fromEntries(Object.keys(value).sort().map(k=>[k,sorted(value[k])]));
@@ -24,7 +24,7 @@
   }
   function normalize(state) {
     const byId=(a,b)=>String(a.id).localeCompare(String(b.id));
-    return {posts:copy(state.posts||[]).sort((a,b)=>String(a.date||" ").localeCompare(String(b.date||" "))||byId(a,b)),stories:(state.stories||[]).map(s=>({...{time:'',context:'',formatDetail:''},...copy(s)})).sort((a,b)=>String(a.date||'').localeCompare(String(b.date||''))||String(a.time||'').localeCompare(String(b.time||''))||((a.order||0)-(b.order||0))||byId(a,b)),
+    return {networks:copy(state.networks||['Instagram','LinkedIn','Behance'].map(name=>({id:'network-'+name.toLowerCase(),name}))).sort(byId),posts:copy(state.posts||[]).sort((a,b)=>String(a.date||" ").localeCompare(String(b.date||" "))||byId(a,b)),stories:(state.stories||[]).map(s=>({...{time:'',context:'',formatDetail:''},...copy(s)})).sort((a,b)=>String(a.date||'').localeCompare(String(b.date||''))||String(a.time||'').localeCompare(String(b.time||''))||((a.order||0)-(b.order||0))||byId(a,b)),
       highlights:copy(state.highlights||[]).sort((a,b)=>((a.order||0)-(b.order||0))||byId(a,b)),chatHistory:messages(state.chatHistory),
       chatResetId:typeof state.chatResetId==='string'?state.chatResetId:'legacy',
       tombstones:Object.fromEntries(entities.map(entity=>[entity,copy(state.tombstones?.[entity]||{})])),
