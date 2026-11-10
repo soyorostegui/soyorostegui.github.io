@@ -1,13 +1,13 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 10/11/2026, 12:14:52 a. m.
+**Última actualización:** 10/11/2026, 12:43:54 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.17213 USD (803538 tokens)
 
 ---
 
-## 1. Estado Actual del Ecosistema de Publicaciones (19 piezas)
+## 1. Estado Actual de la Agenda (19 piezas)
 - **💡 Idea / Planificado:** 17 piezas
 - **🎨 En Diseño / Proceso:** 1 piezas
 - **✅ Listo para publicar:** 0 piezas
@@ -35,6 +35,264 @@
 | `post-li-6` | 2026-11-20 | LinkedIn | **Idea** | Hoy presento oficialmente mi Portafolio Profesional 2026 | Hoy es un día decisivo: culmino mi etapa académica y presento mi Porta... |
 | `post-ig-12` | 2026-11-23 | Instagram | **Idea** | Recap: El viaje del taller a la calle | Un agradecimiento especial a todos los que hicieron parte de este proc... |
 
+### Proyectos
+
+```json
+[
+  {
+    "id": "project-portafolio-2026",
+    "name": "Lanzamiento del portafolio",
+    "objective": "Presentar el portafolio profesional de Peter Orostegui.",
+    "type": "campaign",
+    "startDate": "2026-11-09",
+    "endDate": "2026-11-25",
+    "status": "active",
+    "color": "#8b5cf6",
+    "stages": [
+      "Fase 1: Señal",
+      "Fase 2: Archivo",
+      "Fase 3: Convocatoria",
+      "Fase 4: Continuidad"
+    ]
+  }
+]
+```
+
+### Detalle de las entradas
+
+```json
+[
+  {
+    "id": "post-ig-1",
+    "projectId": "project-portafolio-2026",
+    "title": "Lanzamiento Expectativa: «Mientras tanto...»",
+    "date": "2026-11-09",
+    "channel": "Instagram",
+    "status": "Publicado",
+    "phase": "Fase 1: Señal",
+    "format": "Carrusel",
+    "structure": "Slide 1: Mientras tanto...\nSlide 2: mucho se estuvo construyendo\nSlide 3: y pronto lo verás aquí.\n(Solo tipografía sobria sobre fondo claro y retícula tenue).",
+    "caption": "No todo lo que se construye se publica de inmediato. 🗂️\nHay archivos que llevan meses abiertos y nadie ha visto.\nMientras tanto, esto es todo lo que voy a decir. 👀\n\n#DiseñoGráfico #DirecciónDeArte #ProcesoCreativo"
+  },
+  {
+    "id": "post-ig-2",
+    "projectId": "project-portafolio-2026",
+    "title": "El fetiche del papel y lo tangible (Detalle Físico)",
+    "date": "2026-11-10",
+    "channel": "Instagram",
+    "status": "Idea",
+    "phase": "Fase 1: Señal",
+    "format": "Post",
+    "structure": "Fotografía macro de estudio: textura de papel de algodón, guardas encuadernadas o el pin metálico personal.",
+    "caption": "Cuando el vector se convierte en materia.\nEl rigor de un diseñador no se mide en cómo se ve en su pantalla Retina, sino en cómo se siente cuando sale de la imprenta."
+  },
+  {
+    "id": "post-li-1",
+    "projectId": "project-portafolio-2026",
+    "title": "El valor de construir en silencio (Por qué no todo se publica en tiempo real)",
+    "date": "2026-11-10",
+    "channel": "LinkedIn",
+    "status": "En Diseño",
+    "phase": "Fase 1: Señal",
+    "format": "Reflexiones",
+    "structure": "Post reflexivo sobre el oficio y la madurez profesional antes del autopromoción.",
+    "caption": "Vivimos en una industria obsesionada con compartir cada boceto en tiempo real. Durante meses preferí hacer lo contrario: encerrarme en el taller, afinar el criterio y llevar encargos reales hasta su producción física. Hoy entiendo que el valor de un diseñador no está en la frecuencia con la que publica, sino en la solidez de lo que sostiene en las manos cuando termina."
+  },
+  {
+    "id": "post-ig-3",
+    "projectId": "project-portafolio-2026",
+    "title": "3 errores de preprensa que arruinan un diseño",
+    "date": "2026-11-11",
+    "channel": "Instagram",
+    "status": "Idea",
+    "phase": "Fase 1: Señal",
+    "format": "Reel",
+    "structure": "Reel educativo dinámico (15 seg): 1. Sangrías omitidas, 2. Negro 100K vs. Negro enriquecido, 3. Resolución efectiva a escala. Formato tutorial rápido de alto guardado.",
+    "caption": "Cosas que duelen en el taller de impresión: enviar un archivo sin sangría o usar RGB para una gigantografía. 3 detalles técnicos que salvan presupuestos."
+  },
+  {
+    "id": "post-ig-4",
+    "projectId": "project-portafolio-2026",
+    "title": "Un logo no es una marca: anatomía de un sistema visual",
+    "date": "2026-11-12",
+    "channel": "Instagram",
+    "status": "Idea",
+    "phase": "Fase 2: Archivo",
+    "format": "Carrusel",
+    "structure": "Carrusel conceptual con esquemas vectoriales limpios: Slide 1: El logo solo representa el 10% | Slide 2: El sistema tipográfico como voz | Slide 3: El comportamiento en empaque | Slide 4: El impacto en vía pública.",
+    "caption": "Si le quitas el isotipo a una marca y no sabes de quién es, no tienes una identidad: tienes solo un dibujo. Un sistema visual vive en el espacio, en el papel y en la calle."
+  },
+  {
+    "id": "post-li-2",
+    "projectId": "project-portafolio-2026",
+    "title": "Diseñar vallas de 12x4m: lo que la universidad no te enseña sobre preprensa OOH",
+    "date": "2026-11-13",
+    "channel": "LinkedIn",
+    "status": "Idea",
+    "phase": "Fase 1: Señal",
+    "format": "Procesos",
+    "structure": "Post técnico y detallado sobre cómo se prepara un archivo de publicidad exterior a escala 1:10, resoluciones DPI según distancia de visualización y pruebas de color en lona vinílica.",
+    "caption": "Una valla publicitaria en una avenida principal no perdona un error de preprensa. En la academia diseñamos en lienzos infinitos de Illustrator; en la práctica aprendes sobre sobreimpresión, reventados (trapping) y por qué un texto en cuerpo 24pt desaparece si el carro pasa a 80 km/h."
+  },
+  {
+    "id": "post-ig-6",
+    "projectId": "project-portafolio-2026",
+    "title": "La tipografía tiene tono de voz",
+    "date": "2026-11-14",
+    "channel": "Instagram",
+    "status": "Idea",
+    "phase": "Fase 2: Archivo",
+    "format": "Post",
+    "structure": "Composición tipográfica en alto contraste comparando pesos y caracteres para demostrar cómo la elección tipográfica comunica antes de que el cerebro lea.",
+    "caption": "Antes de que el ojo lea una sola palabra, la tipografía ya le dijo al lector si debe confiar, si es algo urgente o si es algo exclusivo. La tipografía no decora: modula la voz."
+  },
+  {
+    "id": "post-ig-5",
+    "projectId": "project-portafolio-2026",
+    "title": "Sneak Peek 01: El ornamento geométrico",
+    "date": "2026-11-15",
+    "channel": "Instagram",
+    "status": "Idea",
+    "phase": "Fase 2: Archivo",
+    "format": "Post",
+    "structure": "Macro cerrada de un patrón geométrico dorado con textura sin revelar el nombre de la marca.",
+    "caption": "Una pista de lo que se abre el 20.11.\nPrecisión geométrica y contraste. Los detalles que hacen que un producto hable antes de abrirlo."
+  },
+  {
+    "id": "post-ig-7",
+    "projectId": "project-portafolio-2026",
+    "title": "Cómo diseñar una valla que sí se lea a 80 km/h",
+    "date": "2026-11-16",
+    "channel": "Instagram",
+    "status": "Idea",
+    "phase": "Fase 2: Archivo",
+    "format": "Carrusel",
+    "structure": "Carrusel educativo sobre diseño exterior: Slide 1: La regla de los 3 segundos | Slide 2: Contraste cromático contra el cielo y la ciudad | Slide 3: Menos de 7 palabras | Slide 4: Ejemplo de estructura en valla real.",
+    "caption": "En publicidad exterior tienes 3 segundos para captar la atención de alguien que va manejando. Si intentas poner todo el menú o todos los patrocinadores, no dijiste nada."
+  },
+  {
+    "id": "post-li-3",
+    "projectId": "project-portafolio-2026",
+    "title": "Más allá de la portada: cómo se orquesta la identidad visual de un lanzamiento musical",
+    "date": "2026-11-16",
+    "channel": "LinkedIn",
+    "status": "Idea",
+    "phase": "Fase 2: Archivo",
+    "format": "Logros",
+    "structure": "Análisis de caso de negocio: el reto de coordinar lanzamientos musicales donde el diseño debe alimentar simultáneamente plataformas de streaming (Spotify/Apple), vía pública y visuales de concierto.",
+    "caption": "En la industria musical, el diseño gráfico es el pegamento de la campaña. No se trata solo de entregar la portada en 3000x3000px; se trata de concebir un lenguaje que se adapte con la misma contundencia a una valla de carretera, una miniatura de playlist y un visual de pantalla LED de 20 metros."
+  },
+  {
+    "id": "post-ig-8",
+    "projectId": "project-portafolio-2026",
+    "title": "3 creadores de diseño que sigo para entrenar el ojo",
+    "date": "2026-11-17",
+    "channel": "Instagram",
+    "status": "Idea",
+    "phase": "Fase 2: Archivo",
+    "format": "Reel",
+    "structure": "3 clips + texto en pantalla + voz en off breve",
+    "caption": "No sigo cuentas por estética: sigo creadores que me obligan a pensar mejor.\n\nEstos 3 perfiles me ayudan a afinar criterio, composición y narrativa visual.\n\nGuárdalo para tu próxima sesión de referencias."
+  },
+  {
+    "id": "post-li-4",
+    "projectId": "project-portafolio-2026",
+    "title": "Diseñar a contrarreloj para música en vivo: cuando el margen de error es cero",
+    "date": "2026-11-17",
+    "channel": "LinkedIn",
+    "status": "Idea",
+    "phase": "Fase 2: Archivo",
+    "format": "Cultura",
+    "structure": "Reflexión sobre la velocidad y adaptabilidad en la producción de entretenimiento en vivo.",
+    "caption": "Si el equipo de producción te pide ajustar los visuales de una gira 2 horas antes de abrir puertas, no hay espacio para la queja ni para la improvisación técnica. Trabajar para espectáculos en vivo te enseña a crear sistemas modulares, automatizar flujos y resolver con precisión bajo presión."
+  },
+  {
+    "id": "post-ig-9",
+    "projectId": "project-portafolio-2026",
+    "title": "Sneak Peek 02: Streetwear & Textil",
+    "date": "2026-11-18",
+    "channel": "Instagram",
+    "status": "Idea",
+    "phase": "Fase 3: Convocatoria",
+    "format": "Post",
+    "structure": "Foto de detalle cerrado de un bordado tipográfico en tela de gorra o etiqueta textil.",
+    "caption": "Identidad que se viste.\nEn 48 horas el archivo completo sale a la luz. 20.11."
+  },
+  {
+    "id": "post-ig-10",
+    "projectId": "project-portafolio-2026",
+    "title": "24 Horas: Mañana se abre el archivo",
+    "date": "2026-11-19",
+    "channel": "Instagram",
+    "status": "Idea",
+    "phase": "Fase 3: Convocatoria",
+    "format": "Post",
+    "structure": "Composición tipográfica minimalista: «24 HORAS. Mañana se abre el archivo completo. 20.11.2026».",
+    "caption": "Todo lo que estuvo tomando forma en silencio, en un solo lugar.\nMañana viernes 20 de noviembre."
+  },
+  {
+    "id": "post-li-5",
+    "projectId": "project-portafolio-2026",
+    "title": "Unpopular opinion: Los manuales de marca de 150 páginas ya nadie los lee",
+    "date": "2026-11-19",
+    "channel": "LinkedIn",
+    "status": "Idea",
+    "phase": "Fase 3: Convocatoria",
+    "format": "Opiniones",
+    "structure": "Ensayo sobre por qué las marcas hoy necesitan guías de diseño ágiles y sistemas de diseño accionables en lugar de manuales PDF gigantes que terminan olvidados en un Google Drive.",
+    "caption": "Entregar un PDF de 150 páginas con reglas sobre cómo NO girar el logo a 45 grados ya no resuelve los problemas de un equipo de marketing moderno. Las marcas necesitan sistemas vivos, activos listos para producción y directrices claras de cómo comportarse en entornos físicos y digitales. Mañana compartiré mi propuesta en la presentación de mi portafolio."
+  },
+  {
+    "id": "post-behance-1",
+    "projectId": "project-portafolio-2026",
+    "title": "PORTAFOLIO PROFESIONAL 2026 — PETER OROSTEGUI",
+    "date": "2026-11-20",
+    "channel": "Behance",
+    "status": "Idea",
+    "phase": "Fase 3: Convocatoria",
+    "format": "Landing",
+    "structure": "Landing continua oficial (1400px): Portada -> Bio -> Brandpedia Vol I-IV completos -> Transmedia Karen Lizarazo & LBD5 -> Créditos y contacto.",
+    "caption": "Presentación oficial de 8 semestres de formación y proyectos reales de branding, artes finales y campañas transmedia."
+  },
+  {
+    "id": "post-ig-11",
+    "projectId": "project-portafolio-2026",
+    "title": "Portafolio 2026: Ya disponible (El Gran Lanzamiento)",
+    "date": "2026-11-20",
+    "channel": "Instagram",
+    "status": "Idea",
+    "phase": "Fase 3: Convocatoria",
+    "format": "Carrusel",
+    "structure": "Slide 1: Portada oficial | Slide 2: Brandpedia (4 tomos) | Slide 3: Campañas de calle y música | Slide 4: «Explora el proyecto completo en el link de mi bio».",
+    "caption": "Oficialmente publicado.\n8 semestres de formación, marcas reales, empaques físicos y campañas de publicidad exterior reunidas en un solo lugar.\nDescubre el portafolio completo en el enlace de mi biografía (Behance)."
+  },
+  {
+    "id": "post-li-6",
+    "projectId": "project-portafolio-2026",
+    "title": "Hoy presento oficialmente mi Portafolio Profesional 2026",
+    "date": "2026-11-20",
+    "channel": "LinkedIn",
+    "status": "Idea",
+    "phase": "Fase 3: Convocatoria",
+    "format": "Hitos",
+    "structure": "Anuncio oficial de culminación y sustentación, agradecimiento a mentores y enlace directo al proyecto en Behance para captación de oportunidades.",
+    "caption": "Hoy es un día decisivo: culmino mi etapa académica y presento mi Portafolio Profesional de Diseño Gráfico 2026. Han sido años de trabajo con marcas del sector gastronómico, salud, moda urbana y entretenimiento masivo. Los invito a ver el proyecto completo en Behance (link en comentarios)."
+  },
+  {
+    "id": "post-ig-12",
+    "projectId": "project-portafolio-2026",
+    "title": "Recap: El viaje del taller a la calle",
+    "date": "2026-11-23",
+    "channel": "Instagram",
+    "status": "Idea",
+    "phase": "Fase 4: Continuidad",
+    "format": "Reel",
+    "structure": "Video recap enérgico: tomas rápidas de la sustentación, la gente interactuando con los manuales impresos y el portafolio en pantalla.",
+    "caption": "Un agradecimiento especial a todos los que hicieron parte de este proceso. El portafolio sigue disponible en el link de la bio."
+  }
+]
+```
+
 ---
 
 ## 2. Destacadas & Historias
@@ -47,9 +305,9 @@
 - `hl-ptr` ▮ **PTR** — 3 historia(s) · Peter Orostegui + diseño gráfico
 
 ### Historias (31)
-- `st-1794210093097-811` #1 · 2026-11-09 12:30 · DAILY · **¿Quién más aleja el zoom para probar legibilidad?** · Sticker · En Diseño · Contexto: Clip de 6 segundos grabando la pantalla mientras el zoom del lienzo se aleja hasta que la pieza queda pequeña. Sobre el último fotograma va el sticker de pregunta con la frase del título. Funciona porque convierte un hábito privado del oficio en una pregunta de reconocimiento: la gente responde 'yo' sin sentirse examinada. Además mide interés real en legibilidad antes de producir el carrusel del 16.
-- `st-1794204588972-274` #2 · 2026-11-10 08:10 · DAILY · **Café en la universidad: la manía de medir todo** · Foto · En Diseño · Contexto: Foto casual en la universidad: taza de café, mesa y cuaderno, con una sola frase corta de diseño en cuerpo pequeño (por ejemplo 'La manía de medir todo'). Va a las 08:00, antes de la primera story del taller, para abrir el día con tono humano y sin spoilers del portafolio; el formato espontáneo busca comentarios, no alcance.
-- `st-4` #3 · 2026-11-10 09:30 · SETUP · **Muestra de texturas de papel especial** · Foto · Idea · Contexto: Macro de tres papeles sobre la mesa de corte, el mismo día del post-ig-2 sobre lo tangible. La imagen prueba en textura lo que el caption afirma en concepto.
+- `st-1794204588972-274` #1 · 2026-11-09 08:10 · DAILY · **Café en la universidad: la manía de medir todo** · Foto · En Diseño · Contexto: Foto casual en la universidad: taza de café, mesa y cuaderno, con una sola frase corta de diseño en cuerpo pequeño (por ejemplo 'La manía de medir todo'). Va a las 08:00, antes de la primera story del taller, para abrir el día con tono humano y sin spoilers del portafolio; el formato espontáneo busca comentarios, no alcance.
+- `st-4` #2 · 2026-11-10 09:30 · SETUP · **Muestra de texturas de papel especial** · Foto · Idea · Contexto: Macro de tres papeles sobre la mesa de corte, el mismo día del post-ig-2 sobre lo tangible. La imagen prueba en textura lo que el caption afirma en concepto.
+- `st-1794210093097-811` #3 · 2026-11-10 12:30 · DAILY · **¿Quién más aleja el zoom para probar legibilidad?** · Sticker · En Diseño · Contexto: Clip de 6 segundos grabando la pantalla mientras el zoom del lienzo se aleja hasta que la pieza queda pequeña. Sobre el último fotograma va el sticker de pregunta con la frase del título. Funciona porque convierte un hábito privado del oficio en una pregunta de reconocimiento: la gente responde 'yo' sin sentirse examinada. Además mide interés real en legibilidad antes de producir el carrusel del 16.
 - `st-5` #4 · 2026-11-10 18:30 · DAILY · **Encuesta: ¿Prefieres papel mate o brillante?** · Encuesta · Idea · Contexto: Se lanza cuando la audiencia ya vio la textura de la mañana. Convierte una decisión técnica de taller en conversación de fin de jornada, en la ventana de mayor tráfico de la tarde.
 - `st-7` #5 · 2026-11-11 10:00 · SETUP · **Preparando planchas de impresión** · Boomerang · Idea · Contexto: Refuerza el post-ig-3 sobre errores de preprensa y el post-li-2 sobre vallas OOH. El boomerang del registro de planchas demuestra en imagen lo que los captions sostienen en texto.
 - `st-8` #6 · 2026-11-12 09:00 · DAILY · **Debate: ¿Cuándo un logo necesita simplificarse?** · Sticker · Idea · Contexto: Abre el día del carrusel post-ig-4 sobre anatomía de un sistema visual. El sticker invita a responder antes de que la publicación explique el argumento completo.

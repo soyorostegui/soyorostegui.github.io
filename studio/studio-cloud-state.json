@@ -3,7 +3,9 @@
   "tombstones": {
     "posts": {},
     "stories": {},
-    "highlights": {}
+    "highlights": {},
+    "networks": {},
+    "projects": {}
   },
   "posts": [
     {
@@ -15,7 +17,8 @@
       "phase": "Fase 1: Señal",
       "format": "Carrusel",
       "structure": "Slide 1: Mientras tanto...\nSlide 2: mucho se estuvo construyendo\nSlide 3: y pronto lo verás aquí.\n(Solo tipografía sobria sobre fondo claro y retícula tenue).",
-      "caption": "No todo lo que se construye se publica de inmediato. 🗂️\nHay archivos que llevan meses abiertos y nadie ha visto.\nMientras tanto, esto es todo lo que voy a decir. 👀\n\n#DiseñoGráfico #DirecciónDeArte #ProcesoCreativo"
+      "caption": "No todo lo que se construye se publica de inmediato. 🗂️\nHay archivos que llevan meses abiertos y nadie ha visto.\nMientras tanto, esto es todo lo que voy a decir. 👀\n\n#DiseñoGráfico #DirecciónDeArte #ProcesoCreativo",
+      "projectId": "project-portafolio-2026"
     },
     {
       "id": "post-ig-2",
@@ -26,7 +29,8 @@
       "phase": "Fase 1: Señal",
       "format": "Post",
       "structure": "Fotografía macro de estudio: textura de papel de algodón, guardas encuadernadas o el pin metálico personal.",
-      "caption": "Cuando el vector se convierte en materia.\nEl rigor de un diseñador no se mide en cómo se ve en su pantalla Retina, sino en cómo se siente cuando sale de la imprenta."
+      "caption": "Cuando el vector se convierte en materia.\nEl rigor de un diseñador no se mide en cómo se ve en su pantalla Retina, sino en cómo se siente cuando sale de la imprenta.",
+      "projectId": "project-portafolio-2026"
     },
     {
       "id": "post-li-1",
@@ -37,7 +41,8 @@
       "phase": "Fase 1: Señal",
       "format": "Reflexiones",
       "structure": "Post reflexivo sobre el oficio y la madurez profesional antes del autopromoción.",
-      "caption": "Vivimos en una industria obsesionada con compartir cada boceto en tiempo real. Durante meses preferí hacer lo contrario: encerrarme en el taller, afinar el criterio y llevar encargos reales hasta su producción física. Hoy entiendo que el valor de un diseñador no está en la frecuencia con la que publica, sino en la solidez de lo que sostiene en las manos cuando termina."
+      "caption": "Vivimos en una industria obsesionada con compartir cada boceto en tiempo real. Durante meses preferí hacer lo contrario: encerrarme en el taller, afinar el criterio y llevar encargos reales hasta su producción física. Hoy entiendo que el valor de un diseñador no está en la frecuencia con la que publica, sino en la solidez de lo que sostiene en las manos cuando termina.",
+      "projectId": "project-portafolio-2026"
     },
     {
       "id": "post-ig-3",
@@ -48,7 +53,8 @@
       "phase": "Fase 1: Señal",
       "format": "Reel",
       "structure": "Reel educativo dinámico (15 seg): 1. Sangrías omitidas, 2. Negro 100K vs. Negro enriquecido, 3. Resolución efectiva a escala. Formato tutorial rápido de alto guardado.",
-      "caption": "Cosas que duelen en el taller de impresión: enviar un archivo sin sangría o usar RGB para una gigantografía. 3 detalles técnicos que salvan presupuestos."
+      "caption": "Cosas que duelen en el taller de impresión: enviar un archivo sin sangría o usar RGB para una gigantografía. 3 detalles técnicos que salvan presupuestos.",
+      "projectId": "project-portafolio-2026"
     },
     {
       "id": "post-ig-4",
@@ -59,7 +65,8 @@
       "phase": "Fase 2: Archivo",
       "format": "Carrusel",
       "structure": "Carrusel conceptual con esquemas vectoriales limpios: Slide 1: El logo solo representa el 10% | Slide 2: El sistema tipográfico como voz | Slide 3: El comportamiento en empaque | Slide 4: El impacto en vía pública.",
-      "caption": "Si le quitas el isotipo a una marca y no sabes de quién es, no tienes una identidad: tienes solo un dibujo. Un sistema visual vive en el espacio, en el papel y en la calle."
+      "caption": "Si le quitas el isotipo a una marca y no sabes de quién es, no tienes una identidad: tienes solo un dibujo. Un sistema visual vive en el espacio, en el papel y en la calle.",
+      "projectId": "project-portafolio-2026"
     },
     {
       "id": "post-li-2",
@@ -70,7 +77,8 @@
       "phase": "Fase 1: Señal",
       "format": "Procesos",
       "structure": "Post técnico y detallado sobre cómo se prepara un archivo de publicidad exterior a escala 1:10, resoluciones DPI según distancia de visualización y pruebas de color en lona vinílica.",
-      "caption": "Una valla publicitaria en una avenida principal no perdona un error de preprensa. En la academia diseñamos en lienzos infinitos de Illustrator; en la práctica aprendes sobre sobreimpresión, reventados (trapping) y por qué un texto en cuerpo 24pt desaparece si el carro pasa a 80 km/h."
+      "caption": "Una valla publicitaria en una avenida principal no perdona un error de preprensa. En la academia diseñamos en lienzos infinitos de Illustrator; en la práctica aprendes sobre sobreimpresión, reventados (trapping) y por qué un texto en cuerpo 24pt desaparece si el carro pasa a 80 km/h.",
+      "projectId": "project-portafolio-2026"
     },
     {
       "id": "post-ig-6",
@@ -81,7 +89,8 @@
       "phase": "Fase 2: Archivo",
       "format": "Post",
       "structure": "Composición tipográfica en alto contraste comparando pesos y caracteres para demostrar cómo la elección tipográfica comunica antes de que el cerebro lea.",
-      "caption": "Antes de que el ojo lea una sola palabra, la tipografía ya le dijo al lector si debe confiar, si es algo urgente o si es algo exclusivo. La tipografía no decora: modula la voz."
+      "caption": "Antes de que el ojo lea una sola palabra, la tipografía ya le dijo al lector si debe confiar, si es algo urgente o si es algo exclusivo. La tipografía no decora: modula la voz.",
+      "projectId": "project-portafolio-2026"
     },
     {
       "id": "post-ig-5",
@@ -92,7 +101,8 @@
       "phase": "Fase 2: Archivo",
       "format": "Post",
       "structure": "Macro cerrada de un patrón geométrico dorado con textura sin revelar el nombre de la marca.",
-      "caption": "Una pista de lo que se abre el 20.11.\nPrecisión geométrica y contraste. Los detalles que hacen que un producto hable antes de abrirlo."
+      "caption": "Una pista de lo que se abre el 20.11.\nPrecisión geométrica y contraste. Los detalles que hacen que un producto hable antes de abrirlo.",
+      "projectId": "project-portafolio-2026"
     },
     {
       "id": "post-ig-7",
@@ -103,7 +113,8 @@
       "phase": "Fase 2: Archivo",
       "format": "Carrusel",
       "structure": "Carrusel educativo sobre diseño exterior: Slide 1: La regla de los 3 segundos | Slide 2: Contraste cromático contra el cielo y la ciudad | Slide 3: Menos de 7 palabras | Slide 4: Ejemplo de estructura en valla real.",
-      "caption": "En publicidad exterior tienes 3 segundos para captar la atención de alguien que va manejando. Si intentas poner todo el menú o todos los patrocinadores, no dijiste nada."
+      "caption": "En publicidad exterior tienes 3 segundos para captar la atención de alguien que va manejando. Si intentas poner todo el menú o todos los patrocinadores, no dijiste nada.",
+      "projectId": "project-portafolio-2026"
     },
     {
       "id": "post-li-3",
@@ -114,7 +125,8 @@
       "phase": "Fase 2: Archivo",
       "format": "Logros",
       "structure": "Análisis de caso de negocio: el reto de coordinar lanzamientos musicales donde el diseño debe alimentar simultáneamente plataformas de streaming (Spotify/Apple), vía pública y visuales de concierto.",
-      "caption": "En la industria musical, el diseño gráfico es el pegamento de la campaña. No se trata solo de entregar la portada en 3000x3000px; se trata de concebir un lenguaje que se adapte con la misma contundencia a una valla de carretera, una miniatura de playlist y un visual de pantalla LED de 20 metros."
+      "caption": "En la industria musical, el diseño gráfico es el pegamento de la campaña. No se trata solo de entregar la portada en 3000x3000px; se trata de concebir un lenguaje que se adapte con la misma contundencia a una valla de carretera, una miniatura de playlist y un visual de pantalla LED de 20 metros.",
+      "projectId": "project-portafolio-2026"
     },
     {
       "id": "post-ig-8",
@@ -125,7 +137,8 @@
       "phase": "Fase 2: Archivo",
       "format": "Reel",
       "structure": "3 clips + texto en pantalla + voz en off breve",
-      "caption": "No sigo cuentas por estética: sigo creadores que me obligan a pensar mejor.\n\nEstos 3 perfiles me ayudan a afinar criterio, composición y narrativa visual.\n\nGuárdalo para tu próxima sesión de referencias."
+      "caption": "No sigo cuentas por estética: sigo creadores que me obligan a pensar mejor.\n\nEstos 3 perfiles me ayudan a afinar criterio, composición y narrativa visual.\n\nGuárdalo para tu próxima sesión de referencias.",
+      "projectId": "project-portafolio-2026"
     },
     {
       "id": "post-li-4",
@@ -136,7 +149,8 @@
       "phase": "Fase 2: Archivo",
       "format": "Cultura",
       "structure": "Reflexión sobre la velocidad y adaptabilidad en la producción de entretenimiento en vivo.",
-      "caption": "Si el equipo de producción te pide ajustar los visuales de una gira 2 horas antes de abrir puertas, no hay espacio para la queja ni para la improvisación técnica. Trabajar para espectáculos en vivo te enseña a crear sistemas modulares, automatizar flujos y resolver con precisión bajo presión."
+      "caption": "Si el equipo de producción te pide ajustar los visuales de una gira 2 horas antes de abrir puertas, no hay espacio para la queja ni para la improvisación técnica. Trabajar para espectáculos en vivo te enseña a crear sistemas modulares, automatizar flujos y resolver con precisión bajo presión.",
+      "projectId": "project-portafolio-2026"
     },
     {
       "id": "post-ig-9",
@@ -147,7 +161,8 @@
       "phase": "Fase 3: Convocatoria",
       "format": "Post",
       "structure": "Foto de detalle cerrado de un bordado tipográfico en tela de gorra o etiqueta textil.",
-      "caption": "Identidad que se viste.\nEn 48 horas el archivo completo sale a la luz. 20.11."
+      "caption": "Identidad que se viste.\nEn 48 horas el archivo completo sale a la luz. 20.11.",
+      "projectId": "project-portafolio-2026"
     },
     {
       "id": "post-ig-10",
@@ -158,7 +173,8 @@
       "phase": "Fase 3: Convocatoria",
       "format": "Post",
       "structure": "Composición tipográfica minimalista: «24 HORAS. Mañana se abre el archivo completo. 20.11.2026».",
-      "caption": "Todo lo que estuvo tomando forma en silencio, en un solo lugar.\nMañana viernes 20 de noviembre."
+      "caption": "Todo lo que estuvo tomando forma en silencio, en un solo lugar.\nMañana viernes 20 de noviembre.",
+      "projectId": "project-portafolio-2026"
     },
     {
       "id": "post-li-5",
@@ -169,7 +185,8 @@
       "phase": "Fase 3: Convocatoria",
       "format": "Opiniones",
       "structure": "Ensayo sobre por qué las marcas hoy necesitan guías de diseño ágiles y sistemas de diseño accionables en lugar de manuales PDF gigantes que terminan olvidados en un Google Drive.",
-      "caption": "Entregar un PDF de 150 páginas con reglas sobre cómo NO girar el logo a 45 grados ya no resuelve los problemas de un equipo de marketing moderno. Las marcas necesitan sistemas vivos, activos listos para producción y directrices claras de cómo comportarse en entornos físicos y digitales. Mañana compartiré mi propuesta en la presentación de mi portafolio."
+      "caption": "Entregar un PDF de 150 páginas con reglas sobre cómo NO girar el logo a 45 grados ya no resuelve los problemas de un equipo de marketing moderno. Las marcas necesitan sistemas vivos, activos listos para producción y directrices claras de cómo comportarse en entornos físicos y digitales. Mañana compartiré mi propuesta en la presentación de mi portafolio.",
+      "projectId": "project-portafolio-2026"
     },
     {
       "id": "post-behance-1",
@@ -180,7 +197,8 @@
       "phase": "Fase 3: Convocatoria",
       "format": "Landing",
       "structure": "Landing continua oficial (1400px): Portada -> Bio -> Brandpedia Vol I-IV completos -> Transmedia Karen Lizarazo & LBD5 -> Créditos y contacto.",
-      "caption": "Presentación oficial de 8 semestres de formación y proyectos reales de branding, artes finales y campañas transmedia."
+      "caption": "Presentación oficial de 8 semestres de formación y proyectos reales de branding, artes finales y campañas transmedia.",
+      "projectId": "project-portafolio-2026"
     },
     {
       "id": "post-ig-11",
@@ -191,7 +209,8 @@
       "phase": "Fase 3: Convocatoria",
       "format": "Carrusel",
       "structure": "Slide 1: Portada oficial | Slide 2: Brandpedia (4 tomos) | Slide 3: Campañas de calle y música | Slide 4: «Explora el proyecto completo en el link de mi bio».",
-      "caption": "Oficialmente publicado.\n8 semestres de formación, marcas reales, empaques físicos y campañas de publicidad exterior reunidas en un solo lugar.\nDescubre el portafolio completo en el enlace de mi biografía (Behance)."
+      "caption": "Oficialmente publicado.\n8 semestres de formación, marcas reales, empaques físicos y campañas de publicidad exterior reunidas en un solo lugar.\nDescubre el portafolio completo en el enlace de mi biografía (Behance).",
+      "projectId": "project-portafolio-2026"
     },
     {
       "id": "post-li-6",
@@ -202,7 +221,8 @@
       "phase": "Fase 3: Convocatoria",
       "format": "Hitos",
       "structure": "Anuncio oficial de culminación y sustentación, agradecimiento a mentores y enlace directo al proyecto en Behance para captación de oportunidades.",
-      "caption": "Hoy es un día decisivo: culmino mi etapa académica y presento mi Portafolio Profesional de Diseño Gráfico 2026. Han sido años de trabajo con marcas del sector gastronómico, salud, moda urbana y entretenimiento masivo. Los invito a ver el proyecto completo en Behance (link en comentarios)."
+      "caption": "Hoy es un día decisivo: culmino mi etapa académica y presento mi Portafolio Profesional de Diseño Gráfico 2026. Han sido años de trabajo con marcas del sector gastronómico, salud, moda urbana y entretenimiento masivo. Los invito a ver el proyecto completo en Behance (link en comentarios).",
+      "projectId": "project-portafolio-2026"
     },
     {
       "id": "post-ig-12",
@@ -213,7 +233,8 @@
       "phase": "Fase 4: Continuidad",
       "format": "Reel",
       "structure": "Video recap enérgico: tomas rápidas de la sustentación, la gente interactuando con los manuales impresos y el portafolio en pantalla.",
-      "caption": "Un agradecimiento especial a todos los que hicieron parte de este proceso. El portafolio sigue disponible en el link de la bio."
+      "caption": "Un agradecimiento especial a todos los que hicieron parte de este proceso. El portafolio sigue disponible en el link de la bio.",
+      "projectId": "project-portafolio-2026"
     }
   ],
   "stories": [
@@ -223,11 +244,11 @@
       "formatDetail": "",
       "id": "st-1794210093097-811",
       "name": "¿Quién más aleja el zoom para probar legibilidad?",
-      "date": "2026-11-09",
+      "date": "2026-11-10",
       "highlightId": "hl-criterio",
       "format": "Sticker",
       "status": "En Diseño",
-      "order": 0
+      "order": 1
     },
     {
       "time": "08:10",
@@ -235,7 +256,7 @@
       "formatDetail": "",
       "id": "st-1794204588972-274",
       "name": "Café en la universidad: la manía de medir todo",
-      "date": "2026-11-10",
+      "date": "2026-11-09",
       "highlightId": "hl-criterio",
       "format": "Foto",
       "status": "En Diseño",
@@ -251,7 +272,7 @@
       "highlightId": "hl-proceso",
       "format": "Foto",
       "status": "Idea",
-      "order": 1
+      "order": 0
     },
     {
       "time": "18:30",
@@ -625,6 +646,38 @@
       "icon": "▮",
       "desc": "Peter Orostegui + diseño gráfico",
       "order": 4
+    }
+  ],
+  "networks": [
+    {
+      "id": "network-behance",
+      "name": "Behance"
+    },
+    {
+      "id": "network-instagram",
+      "name": "Instagram"
+    },
+    {
+      "id": "network-linkedin",
+      "name": "LinkedIn"
+    }
+  ],
+  "projects": [
+    {
+      "id": "project-portafolio-2026",
+      "name": "Lanzamiento del portafolio",
+      "objective": "Presentar el portafolio profesional de Peter Orostegui.",
+      "type": "campaign",
+      "startDate": "2026-11-09",
+      "endDate": "2026-11-25",
+      "status": "active",
+      "color": "#8b5cf6",
+      "stages": [
+        "Fase 1: Señal",
+        "Fase 2: Archivo",
+        "Fase 3: Convocatoria",
+        "Fase 4: Continuidad"
+      ]
     }
   ],
   "chatResetId": "legacy",
@@ -2781,6 +2834,6 @@
     }
   ],
   "importedCustomContextNotes": "",
-  "updatedAt": 1794287692248,
-  "updatedAtISO": "2026-11-10T05:14:52.248Z"
+  "updatedAt": 1794289434243,
+  "updatedAtISO": "2026-11-10T05:43:54.243Z"
 }
