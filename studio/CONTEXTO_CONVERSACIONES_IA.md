@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 10/11/2026, 1:34:09 a. m.
+**Última actualización:** 10/11/2026, 1:34:12 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.17213 USD (803538 tokens)
 
@@ -323,7 +323,7 @@
 - `st-20` #16 · 2026-11-17 09:00 · SETUP · **Caravana de vehículos con gráfica instalada** · Video · Idea · Contexto: Pieza de campaña itinerante vista en movimiento, con la gráfica ya instalada. Complementa el post-li-4 sobre trabajar con margen de error cero y plazos que no admiten improvisación.
 - `st-22` #17 · 2026-11-17 22:00 · PORTFOLIO · **El concierto en vivo lleno de visuales** · Foto · Idea · Contexto: Cierre del bloque musical: la pantalla ya en uso real con el público delante. Solo se publica después del evento, cuando ya no hay riesgo de revelar la producción antes de tiempo.
 - `st-23` #18 · 2026-11-18 10:00 · PORTFOLIO · **Detalle macro de hilo y bordado en gorra** · Foto · Idea · Contexto: Prepara el sneak peek post-ig-9 de streetwear y textil. El macro del bordado transmite oficio artesanal y justifica el precio del producto sin nombrar la marca todavía.
-- `st-1794209928386-913` #19 · 2026-11-18 19:00 · DAILY · **Las últimas 5 páginas del cuaderno (páginas tapadas a medias)** · Foto · En Diseño · Contexto: Foto del cuaderno abierto en ángulo, con las páginas recientes tapadas a medias por la mano o por el propio lomo. Se elige la hora de cierre del día porque funciona como pausa reflexiva, no como contenido de mediodía. Cumple la regla de expectativa: se evidencia que hay trabajo avanzado sin revelar ningún proyecto.
+- `st-1794209928386-913` #19 · 2026-11-18 19:00 · DAILY · **Las últimas 5 páginas del cuaderno (páginas tapadas a medias)** · Foto · Idea · Contexto: Foto del cuaderno abierto en ángulo, con las páginas recientes tapadas a medias por la mano o por el propio lomo. Se elige la hora de cierre del día porque funciona como pausa reflexiva, no como contenido de mediodía. Cumple la regla de expectativa: se evidencia que hay trabajo avanzado sin revelar ningún proyecto.
 - `st-26` #20 · 2026-11-19 09:00 · PORTFOLIO · **Sticker oficial de Countdown: 24 Horas** · Sticker · Idea · Contexto: Arranca la cuenta atrás de 24 horas enlazando con el post-ig-10. El sticker de countdown genera guardados y recordatorios, que es exactamente lo que se necesita la víspera.
 - `st-27` #21 · 2026-11-19 13:00 · PORTFOLIO · **Mesa con los 4 tomos encuadernados listos** · Foto · Idea · Contexto: Prueba definitiva de que el entregable físico existe y está terminado. Los cuatro tomos sobre la mesa dicen más que cualquier caption la víspera de la sustentación.
 - `st-28` #22 · 2026-11-19 21:00 · PTR · **Reflexión previa al día de entrega** · Texto · Idea · Contexto: Cierre emocional de la víspera en primera persona. Va en PTR porque es voz de autor, no muestra de producto, y prepara la audiencia para los dos días de máxima exposición.

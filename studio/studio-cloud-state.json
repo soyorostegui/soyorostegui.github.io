@@ -464,7 +464,7 @@
       "date": "2026-11-18",
       "highlightId": "hl-criterio",
       "format": "Foto",
-      "status": "En Diseño",
+      "status": "Idea",
       "order": 1
     },
     {
@@ -2901,6 +2901,6 @@
     }
   ],
   "importedCustomContextNotes": "",
-  "updatedAt": 1794292449630,
-  "updatedAtISO": "2026-11-10T06:34:09.630Z"
+  "updatedAt": 1794292452660,
+  "updatedAtISO": "2026-11-10T06:34:12.660Z"
 }
