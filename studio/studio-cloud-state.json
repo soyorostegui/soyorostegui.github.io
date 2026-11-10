@@ -2,7 +2,11 @@
   "version": 4,
   "tombstones": {
     "posts": {},
-    "stories": {},
+    "stories": {
+      "st-5": {
+        "hash": "57afd8bf0a089cc9"
+      }
+    },
     "highlights": {},
     "networks": {},
     "projects": {},
@@ -282,18 +286,6 @@
       "format": "Sticker",
       "status": "En Diseño",
       "order": 1
-    },
-    {
-      "time": "18:30",
-      "context": "Se lanza cuando la audiencia ya vio la textura de la mañana. Convierte una decisión técnica de taller en conversación de fin de jornada, en la ventana de mayor tráfico de la tarde.",
-      "formatDetail": "",
-      "id": "st-5",
-      "date": "2026-11-10",
-      "name": "Encuesta: ¿Prefieres papel mate o brillante?",
-      "highlightId": "hl-criterio",
-      "format": "Encuesta",
-      "status": "Idea",
-      "order": 2
     },
     {
       "time": "10:00",
@@ -757,14 +749,6 @@
   ],
   "chatResetId": "legacy",
   "chatHistory": [
-    {
-      "sender": "ai",
-      "html": "Buena pregunta, y va al fondo del asunto: la historia no está incompleta por falta de un campo, sino porque <strong>el título describe la producción, no la ejecución</strong>. Son dos cosas distintas. <code>st-7</code> dice <em>«Preparando planchas de impresión»</em>: eso te dice qué grabar, pero no cuándo, con qué texto, ni qué debe quedar en pantalla.<br><br><div class=\"ai-md-h\">Los campos que debería tener una entrada</div><br><strong>Críticos</strong> (sin ellos no puedes grabar ni publicar):<br><br>| Campo | Para qué sirve |<br>|---|---|<br>| <strong>Copy en pantalla</strong> | El texto literal que se lee. Sin esto, el título es solo una nota mental. |<br>| <strong>Asset</strong> | Qué archivo concreto: foto, video, captura, boomerang. Y si ya existe o hay que producirlo. |<br>| <strong>Hora</strong> | El &quot;cuándo&quot; dentro del día. Una encuesta a las 8 a.m. y a las 9 p.m. no rinde igual. |<br><br><strong>De ejecución</strong> (evitan rehacer trabajo):<br><br>| Campo | Para qué sirve |<br>|---|---|<br>| <strong>Interacción</strong> | Si lleva encuesta: las dos opciones exactas. Si lleva caja: la pregunta. Si lleva link: la URL. |<br>| <strong>Secuencia</strong> | Orden dentro del día. Instagram es efímero: la historia 2 se ve después de la 1, no antes. |<br>| <strong>Notas de arte</strong> | Composición, dónde va el texto, qué queda fuera de encuadre. |<br><br><strong>De control</strong> (opcionales, pero útiles):<br><br><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong>Responsable</strong> — si alguien más graba o edita.</div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong>Intención</strong> — qué buscas: guardados, respuestas, clics al link. No es vanity metrics, es saber si la historia funcionó.</div><br><div class=\"ai-md-h\">Cómo se ve una entrada completa</div><br><strong>st-26 (Countdown 24 horas):</strong><br><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong>Copy:</strong> «24 horas. Mañana se abre el archivo.»</div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong>Asset:</strong> video corto, fondo negro, tipografía del sistema. Ya existe la plantilla.</div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong>Hora:</strong> 7:00 p.m. (cuando la gente sale del trabajo)</div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong>Interacción:</strong> sticker de cuenta regresiva, sin link todavía</div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong>Secuencia:</strong> 1 de 1 ese día</div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong>Arte:</strong> texto centrado, ícono ● arriba, sin música</div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong>Intención:</strong> expectativa, no clics</div><br><strong>st-5 (Encuesta papel):</strong><br><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong>Copy:</strong> «¿Mate o brillante? Hoy defiendo el mate.»</div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong>Asset:</strong> foto macro de dos muestras de papel, lado a lado</div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong>Hora:</strong> 12:30 p.m.</div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong>Interacción:</strong> encuesta — opción A «Mate», opción B «Brillante»</div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong>Secuencia:</strong> única del día en SETUP</div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong>Arte:</strong> luz lateral para que se vea la textura</div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong>Intención:</strong> respuestas y conversación en DM</div><br><div class=\"ai-md-h\">El problema de fondo</div><br><strong>El esquema actual solo admite seis campos</strong> y ninguno es copy, hora ni interacción. Así que la entrada completa, hoy, no cabe. Hay dos salidas:<br><br><div class=\"ai-md-li\" style=\"padding-left:4px;\"><strong>1.</strong> <strong>Convención dentro del <code>name</code></strong> — usar <code>Producción | Copy</code> y dejar el resto en la descripción de la destacada. Es lo que ya permite el sistema, pero se vuelve ilegible con 30 historias.</div><div class=\"ai-md-li\" style=\"padding-left:4px;\"><strong>2.</strong> <strong>Ampliar el esquema</strong> — añadir <code>copy</code>, <code>time</code>, <code>interaction</code> y <code>asset</code> como campos reales. Es lo correcto si vamos a producir en serio los próximos diez días.</div><br>Mi recomendación es la <strong>2</strong>, pero no la aplico sin tu visto bueno porque implica tocar el modelo, no solo el contenido.<br><br><strong>No he modificado nada.</strong> Dime si quieres que prepare la propuesta de esquema ampliado con las 30 historias ya cargadas en ese formato, o si prefieres quedarte con la convención en el <code>name</code> y avanzar a producción.<div style=\"margin-top:8px;padding-top:6px;border-top:1px dashed #e2e8f0;font-size:11px;color:#475569;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px;\">\n          <span>💳 Costo de este uso: <strong style=\"color:#0369a1;\">$0.00129 USD</strong> (Acumulado sesión: $0.08700 USD)</span>\n          <span style=\"color:#64748b;\">9136 in + 1667 out tokens · deepseek-flash</span>\n        </div>",
-      "plainText": "Buena pregunta, y va al fondo del asunto: la historia no está incompleta por falta de un campo, sino porque **el título describe la producción, no la ejecución**. Son dos cosas distintas. `st-7` dice *«Preparando planchas de impresión»*: eso te dice qué grabar, pero no cuándo, con qué texto, ni qué debe quedar en pantalla.\n\n## Los campos que debería tener una entrada\n\n**Críticos** (sin ellos no puedes grabar ni publicar):\n\n| Campo | Para qué sirve |\n|---|---|\n| **Copy en pantalla** | El texto literal que se lee. Sin esto, el título es solo una nota mental. |\n| **Asset** | Qué archivo concreto: foto, video, captura, boomerang. Y si ya existe o hay que producirlo. |\n| **Hora** | El \"cuándo\" dentro del día. Una encuesta a las 8 a.m. y a las 9 p.m. no rinde igual. |\n\n**De ejecución** (evitan rehacer trabajo):\n\n| Campo | Para qué sirve |\n|---|---|\n| **Interacción** | Si lleva encuesta: las dos opciones exactas. Si lleva caja: la pregunta. Si lleva link: la URL. |\n| **Secuencia** | Orden dentro del día. Instagram es efímero: la historia 2 se ve después de la 1, no antes. |\n| **Notas de arte** | Composición, dónde va el texto, qué queda fuera de encuadre. |\n\n**De control** (opcionales, pero útiles):\n\n- **Responsable** — si alguien más graba o edita.\n- **Intención** — qué buscas: guardados, respuestas, clics al link. No es vanity metrics, es saber si la historia funcionó.\n\n## Cómo se ve una entrada completa\n\n**st-26 (Countdown 24 horas):**\n- **Copy:** «24 horas. Mañana se abre el archivo.»\n- **Asset:** video corto, fondo negro, tipografía del sistema. Ya existe la plantilla.\n- **Hora:** 7:00 p.m. (cuando la gente sale del trabajo)\n- **Interacción:** sticker de cuenta regresiva, sin link todavía\n- **Secuencia:** 1 de 1 ese día\n- **Arte:** texto centrado, ícono ● arriba, sin música\n- **Intención:** expectativa, no clics\n\n**st-5 (Encuesta papel):**\n- **Copy:** «¿Mate o brillante? Hoy defiendo el mate.»\n- **Asset:** foto macro de dos muestras de papel, lado a lado\n- **Hora:** 12:30 p.m.\n- **Interacción:** encuesta — opción A «Mate», opción B «Brillante»\n- **Secuencia:** única del día en SETUP\n- **Arte:** luz lateral para que se vea la textura\n- **Intención:** respuestas y conversación en DM\n\n## El problema de fondo\n\n**El esquema actual solo admite seis campos** y ninguno es copy, hora ni interacción. Así que la entrada completa, hoy, no cabe. Hay dos salidas:\n\n1. **Convención dentro del `name`** — usar `Producción | Copy` y dejar el resto en la descripción de la destacada. Es lo que ya permite el sistema, pero se vuelve ilegible con 30 historias.\n2. **Ampliar el esquema** — añadir `copy`, `time`, `interaction` y `asset` como campos reales. Es lo correcto si vamos a producir en serio los próximos diez días.\n\nMi recomendación es la **2**, pero no la aplico sin tu visto bueno porque implica tocar el modelo, no solo el contenido.\n\n**No he modificado nada.** Dime si quieres que prepare la propuesta de esquema ampliado con las 30 historias ya cargadas en ese formato, o si prefieres quedarte con la convención en el `name` y avanzar a producción.",
-      "actionData": null,
-      "timestamp": "8/11/2026, 10:56:54 p. m.",
-      "id": "legacy-84865fd790479239-0"
-    },
     {
       "sender": "user",
       "html": "Analiza las historias, agrega el contexto y ajusta la hora de publicación.",
@@ -2909,9 +2893,31 @@
       "plainText": "Eliminala",
       "actionData": null,
       "timestamp": "10/11/2026, 3:11:52 a. m."
+    },
+    {
+      "id": "85ea6d78-c5d7-4c73-985c-0a5bd2128b26",
+      "createdAt": "2026-11-10T08:11:59.783Z",
+      "sender": "ai",
+      "html": "Elimino <strong><code>st-5</code> — «Encuesta: ¿Prefieres papel mate o brillante?» (10.11, 18:30)</strong>. Con eso el cronograma queda en 30 historias.<br><br><strong>Lo que cambia el 10.11:</strong><br><br>| Antes | Ahora |<br>|---|---|<br>| 09:30 Texturas de papel | 09:30 Texturas de papel |<br>| 12:30 ¿Quién aleja el zoom? | 12:30 ¿Quién aleja el zoom? |<br>| 18:30 Encuesta mate/brillante | — |<br><br>El día se queda en dos historias y ambas hablan de lo mismo desde ángulos distintos: la textura física en la mañana, el hábito de oficio al mediodía. El post del feed —el del papel y lo tangible— cierra la jornada solo, sin una encuesta compitiendo por la misma atención.<br><br><strong>Un detalle que no pierdes:</strong> la pregunta sobre mate o brillante es buena, y encaja mejor en el contexto del 13.11, donde ya hay una votación tipográfica. Si algún día quieres recuperarla, ese es su lugar natural, no un día con dos piezas de papel ya publicadas.<br><br>El badge del sistema confirma el resultado. Si el conteo sigue en 31, dímelo: significaría que el borrado no se ejecutó y lo mando por nombre en lugar de por id.<div>\n          <span>💳 Costo de este uso: <strong>$0.00108 USD</strong> (Acumulado sesión: $0.17732 USD)</span>\n          <span>16338 in + 531 out tokens · deepseek-flash</span>\n        </div>",
+      "plainText": "Elimino **`st-5` — «Encuesta: ¿Prefieres papel mate o brillante?» (10.11, 18:30)**. Con eso el cronograma queda en 30 historias.\n\n**Lo que cambia el 10.11:**\n\n| Antes | Ahora |\n|---|---|\n| 09:30 Texturas de papel | 09:30 Texturas de papel |\n| 12:30 ¿Quién aleja el zoom? | 12:30 ¿Quién aleja el zoom? |\n| 18:30 Encuesta mate/brillante | — |\n\nEl día se queda en dos historias y ambas hablan de lo mismo desde ángulos distintos: la textura física en la mañana, el hábito de oficio al mediodía. El post del feed —el del papel y lo tangible— cierra la jornada solo, sin una encuesta compitiendo por la misma atención.\n\n**Un detalle que no pierdes:** la pregunta sobre mate o brillante es buena, y encaja mejor en el contexto del 13.11, donde ya hay una votación tipográfica. Si algún día quieres recuperarla, ese es su lugar natural, no un día con dos piezas de papel ya publicadas.\n\nEl badge del sistema confirma el resultado. Si el conteo sigue en 31, dímelo: significaría que el borrado no se ejecutó y lo mando por nombre en lugar de por id.",
+      "actionData": [
+        {
+          "type": "delete_items",
+          "entity": "story",
+          "ids": [
+            "st-5"
+          ],
+          "names": [],
+          "result": {
+            "status": "success",
+            "message": "1 historia(s) eliminada(s)."
+          }
+        }
+      ],
+      "timestamp": "10/11/2026, 3:11:59 a. m."
     }
   ],
   "importedCustomContextNotes": "",
-  "updatedAt": 1794298316679,
-  "updatedAtISO": "2026-11-10T08:11:56.679Z"
+  "updatedAt": 1794298320593,
+  "updatedAtISO": "2026-11-10T08:12:00.593Z"
 }
