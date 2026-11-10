@@ -26,18 +26,6 @@
       "projectId": "project-portafolio-2026"
     },
     {
-      "id": "post-ig-2",
-      "channel": "Instagram",
-      "title": "El fetiche del papel y lo tangible (Detalle Físico)",
-      "date": "2026-11-11",
-      "status": "Idea",
-      "phase": "Fase 1: Señal",
-      "format": "Post",
-      "structure": "Fotografía macro de estudio: textura de papel de algodón, guardas encuadernadas o el pin metálico personal.",
-      "caption": "Cuando el vector se convierte en materia.\nEl rigor de un diseñador no se mide en cómo se ve en su pantalla Retina, sino en cómo se siente cuando sale de la imprenta.",
-      "projectId": "project-portafolio-2026"
-    },
-    {
       "id": "post-li-1",
       "channel": "LinkedIn",
       "title": "El valor de construir en silencio (Por qué no todo se publica en tiempo real)",
@@ -58,15 +46,15 @@
       "priority": ""
     },
     {
-      "id": "post-ig-3",
+      "id": "post-ig-2",
       "channel": "Instagram",
-      "title": "3 errores de preprensa que arruinan un diseño",
-      "date": "2026-11-13",
+      "title": "El fetiche del papel y lo tangible (Detalle Físico)",
+      "date": "2026-11-11",
       "status": "Idea",
       "phase": "Fase 1: Señal",
-      "format": "Reel",
-      "structure": "Reel educativo dinámico (15 seg): 1. Sangrías omitidas, 2. Negro 100K vs. Negro enriquecido, 3. Resolución efectiva a escala. Formato tutorial rápido de alto guardado.",
-      "caption": "Cosas que duelen en el taller de impresión: enviar un archivo sin sangría o usar RGB para una gigantografía. 3 detalles técnicos que salvan presupuestos.",
+      "format": "Post",
+      "structure": "Fotografía macro de estudio: textura de papel de algodón, guardas encuadernadas o el pin metálico personal.",
+      "caption": "Cuando el vector se convierte en materia.\nEl rigor de un diseñador no se mide en cómo se ve en su pantalla Retina, sino en cómo se siente cuando sale de la imprenta.",
       "projectId": "project-portafolio-2026"
     },
     {
@@ -79,6 +67,18 @@
       "format": "Carrusel",
       "structure": "Carrusel conceptual con esquemas vectoriales limpios: Slide 1: El logo solo representa el 10% | Slide 2: El sistema tipográfico como voz | Slide 3: El comportamiento en empaque | Slide 4: El impacto en vía pública.",
       "caption": "Si le quitas el isotipo a una marca y no sabes de quién es, no tienes una identidad: tienes solo un dibujo. Un sistema visual vive en el espacio, en el papel y en la calle.",
+      "projectId": "project-portafolio-2026"
+    },
+    {
+      "id": "post-ig-3",
+      "channel": "Instagram",
+      "title": "3 errores de preprensa que arruinan un diseño",
+      "date": "2026-11-13",
+      "status": "Idea",
+      "phase": "Fase 1: Señal",
+      "format": "Reel",
+      "structure": "Reel educativo dinámico (15 seg): 1. Sangrías omitidas, 2. Negro 100K vs. Negro enriquecido, 3. Resolución efectiva a escala. Formato tutorial rápido de alto guardado.",
+      "caption": "Cosas que duelen en el taller de impresión: enviar un archivo sin sangría o usar RGB para una gigantografía. 3 detalles técnicos que salvan presupuestos.",
       "projectId": "project-portafolio-2026"
     },
     {
@@ -749,14 +749,6 @@
   ],
   "chatResetId": "legacy",
   "chatHistory": [
-    {
-      "sender": "user",
-      "html": "Creo que estamos enfocando mal la generacion de las historias, cada destacada tiene una tematica en concreto y las ideas de historia deberian ir enfocadas a la destacada en donde van a vivir, por ejemplo",
-      "plainText": "Creo que estamos enfocando mal la generacion de las historias, cada destacada tiene una tematica en concreto y las ideas de historia deberian ir enfocadas a la destacada en donde van a vivir, por ejemplo",
-      "actionData": null,
-      "timestamp": "8/11/2026, 11:22:07 p. m.",
-      "id": "legacy-5dbb76563c6b6e60-0"
-    },
     {
       "sender": "ai",
       "html": "Tienes razón y el ejemplo se cortó, pero el punto se entiende perfectamente. Déjame nombrarlo con precisión porque es un error de origen, no de detalle.<br><br><div class=\"ai-md-h\">El error de origen</div><br>Las 34 historias se generaron <strong>desde el calendario de campaña</strong> (09–25 de noviembre), no desde las carpetas. Es decir: primero se decidió <em>qué pasa cada día</em> y después se repartió en la carpeta que parecía más cercana. Por eso hay historias que hoy viven en un lugar donde no pertenecen.<br><br>Una destacada no es un segmento de fechas. <strong>Es un arco temático permanente</strong> que alguien abre meses después del 20.11. Si la historia no aporta a ese arco, no debería estar ahí, sin importar qué día se publique.<br><br><div class=\"ai-md-h\">El test de pertenencia</div><br>Toda historia debe responder dos preguntas:<br><br><div class=\"ai-md-li\" style=\"padding-left:4px;\"><strong>1.</strong> <strong>¿De qué habla?</strong> — el tema manda, no la fecha.</div><div class=\"ai-md-li\" style=\"padding-left:4px;\"><strong>2.</strong> <strong>¿Sigue teniendo sentido en marzo de 2027?</strong> — si solo funciona dentro de la campaña, va a PORTFOLIO o no va.</div><br><div class=\"ai-md-h\">Desalineaciones que encontré</div><br><strong>Movimientos claros:</strong><br><br><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong><code>st-25</code> «Comprobando resolución a escala 1:1»</strong> está en CONTACT. Pero no es un proyecto en la calle: es verificación técnica de archivo. <strong>Va a SETUP.</strong></div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong><code>st-11</code> «Reflejo de luz en estampado dorado»</strong> está en SETUP. Correcto: es prueba de acabado, no pieza instalada. Se queda.</div><br><strong>Casos con matiz, para que decidas:</strong><br><br><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong><code>st-5</code> «¿Papel mate o brillante?»</strong> está en DAILY. El objeto es material físico (SETUP), pero la función es conversación (DAILY). Mi lectura: <strong>se queda en DAILY</strong>, porque DAILY es «criterio» y elegir papel es una decisión de criterio. Si lo mueves a SETUP, DAILY baja a 5 historias y pierde la única encuesta de oficio.</div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong><code>st-13</code> «Kerning manual»</strong> está en DAILY. Es técnica, pero la tipografía como decisión es exactamente el criterio que DAILY representa. <strong>Se queda.</strong></div><br><div class=\"ai-md-h\">El desbalance de fondo</div><br>| Carpeta | Historias | Problema |<br>|---|---|---|<br>| SETUP | 9 → 10 | Sana |<br>| CONTACT | 10 → 9 | Sana, pero todo concentrado 16–21.11 |<br>| DAILY | 6 | Sana |<br>| PORTFOLIO | 5 | <strong>4 de 5 son del 19–20.11.</strong> No tiene proceso de construcción del portafolio. |<br>| PTR | 4 | <strong>Todo del 15.11 en adelante.</strong> No tiene presentación. |<br><br>Ahí está el problema real: <strong>PORTFOLIO y PTR no tienen arco, tienen final.</strong> Alguien que abre PORTFOLIO hoy ve un countdown y un lanzamiento, pero no ve cómo se construyó. Y PTR arranca en la mitad de la conversación: no hay una historia que diga quién eres antes de la firma.<br><br><div class=\"ai-md-h\">Lo que debería tener cada arco</div><br><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong>PORTFOLIO</strong> — apertura (qué es el archivo) → construcción (cómo se armó) → teasers → lanzamiento → disponible.</div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong>PTR</strong> — quién eres → formación → taller → voz personal → firma.</div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong>CONTACT</strong> — servicios → prueba en calle → cómo trabajar contigo → respuesta.</div><div class=\"ai-md-li\" style=\"padding-left:4px;\">• <strong>SETUP</strong> y <strong>DAILY</strong> ya están completas.</div><br><div class=\"ai-md-h\">Ejecuto lo indiscutible</div><br>Muevo <code>st-25</code> a SETUP, que es el único error objetivo de clasificación. Antes dime tú: <strong>¿muevo <code>st-5</code> a SETUP y dejamos DAILY en 5?</strong> Y si quieres cerrar los arcos de PORTFOLIO y PTR, creo las historias de apertura que hoy faltan (2 en cada una, fechas 09–10.11) para que ninguna carpeta empiece por el final.<div style=\"margin-top:8px;padding-top:6px;border-top:1px dashed #e2e8f0;font-size:11px;color:#475569;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px;\">\n          <span>💳 Costo de este uso: <strong style=\"color:#0369a1;\">$0.00255 USD</strong> (Acumulado sesión: $0.09705 USD)</span>\n          <span style=\"color:#64748b;\">9836 in + 4124 out tokens · deepseek-flash</span>\n        </div>",
@@ -2553,9 +2545,18 @@
       "plainText": "Entendido, y es un límite real: si no tienes acceso a papel de algodón, foil ni planchas, esas historias no se graban. Una historia que no se puede ejecutar no es una idea, es una deuda.\n\n**Antes de las alternativas, una advertencia que pesa más:** el post del feed de mañana (`post-ig-2`) es *exactamente* eso. Su estructura pide «fotografía macro de papel de algodón, guardas encuadernadas o pin metálico». Si no tienes esas piezas, no es solo la historia la que se cae: se cae la única publicación de Instagram del día. Eso lo tenemos que resolver también, y te lo planteo al final.\n\n## Cinco alternativas sin imprenta\n\nNinguna necesita salir de tu escritorio, tu laptop o tu cuaderno.\n\n**1. «El archivo que nadie ha abierto»** — Captura, DAILY\nCarpeta abierta en Finder o Drive, con los nombres de los archivos pixelados o tapados con un rectángulo. Se ve el volumen: cuántas carpetas, cuántas fechas viejas. **Es la imagen literal del caption que acabas de aprobar** («hay archivos que llevan meses abiertos y nadie ha visto»). Cero producción, coherencia total.\n\n**2. «_v1 _v2 _v3 _final_final»** — Captura, DAILY\nLa lista de versiones de un mismo archivo. Es el chiste que todo diseñador reconoce y el que más comentarios genera del tipo «yo tengo hasta la v7». No revela el proyecto, solo el método.\n\n**3. «La retícula dibujada a mano antes de abrir Illustrator»** — Foto, DAILY\nCuaderno, regla y lápiz: líneas de construcción, márgenes medidos, una cruz de registro. Demuestra oficio sin una sola pieza impresa. Si tienes el cuaderno que ya aprobaste, es el mismo objeto en otro momento.\n\n**4. «¿Cuántas veces reescribiste este titular?»** — Sticker, DAILY\nSobre una pantalla con un titular a medio escribir, la pregunta. Convierte un hábito privado en conversación, igual que funcionó con el zoom. Mide interés en copywriting antes de que lo trabajes en el feed.\n\n**5. «El escritorio a las 11 de la noche»** — Foto, DAILY\nPlano general, sin estilizar: taza, cargador, luces bajas, la pantalla encendida. Humaniza la fase de expectativa sin mostrar producto. Es la que menos se guarda, pero la que más se responde.\n\n## Qué haría yo con mañana\n\n| Hora | Historia | Por qué |\n|---|---|---|\n| 09:30 | **El archivo que nadie ha abierto** | Reemplaza la textura de papel y refuerza el caption del carrusel de ayer |\n| 12:30 | **¿Quién más aleja el zoom?** | Ya está montada, no depende de nada físico. Se queda |\n| 18:30 | **_v1 _v2 _v3 _final_final** *(opcional)* | Cierra el día con humor y sin producción |\n\nSolo necesito reemplazar una (`st-4`) y, si quieres, sumar la tercera.\n\n## Y el post del feed\n\nTres caminos para `post-ig-2`, de menor a mayor esfuerzo:\n\n- **Reencuadre mínimo:** en vez de papel de algodón, una pieza tuya **en pantalla**, con el zoom al 400% mostrando el detalle del trazo. Sigue siendo «el detalle que casi nadie ve», ya no exige imprenta.\n- **Cambio de tema:** reemplazarlo por un post de criterio («el logo no es la marca»), pero entonces adelantas el `post-ig-4` del 12 y desarmas la curva de expectativa.\n- **Fusionarlo con el 09.11:** dejar el 10.11 solo con LinkedIn y mover este post más cerca del 15, cuando ya tengas acceso a las piezas físicas. Es lo más honesto, pero te deja un día sin Instagram.\n\nDime cuál alternativa eliges para la historia, si quieres la tercera de la noche, y qué camino prefieres para el post. Con eso mando los bloques.",
       "actionData": null,
       "timestamp": "10/11/2026, 3:16:19 a. m."
+    },
+    {
+      "id": "00ff82d8-7dcf-427d-aecc-76c491663310",
+      "createdAt": "2026-11-10T08:18:44.486Z",
+      "sender": "user",
+      "html": "2,3,5 incorporalas a la lista de historias. el post ya lo rodé mañana solo tenemos behance por ahora si tengo tiempo lo ajustamos nuevamente.",
+      "plainText": "2,3,5 incorporalas a la lista de historias. el post ya lo rodé mañana solo tenemos behance por ahora si tengo tiempo lo ajustamos nuevamente.",
+      "actionData": null,
+      "timestamp": "10/11/2026, 3:18:44 a. m."
     }
   ],
   "importedCustomContextNotes": "",
-  "updatedAt": 1794298597051,
-  "updatedAtISO": "2026-11-10T08:16:37.051Z"
+  "updatedAt": 1794298728185,
+  "updatedAtISO": "2026-11-10T08:18:48.185Z"
 }
