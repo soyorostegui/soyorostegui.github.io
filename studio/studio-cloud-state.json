@@ -239,7 +239,7 @@
       "highlightId": "hl-criterio",
       "format": "Sticker",
       "status": "En Diseño",
-      "order": 3
+      "order": 1
     },
     {
       "time": "19:00",
@@ -247,11 +247,11 @@
       "formatDetail": "",
       "id": "st-1794209928386-913",
       "name": "Las últimas 5 páginas del cuaderno (páginas tapadas a medias)",
-      "date": "2026-11-09",
+      "date": "2026-11-18",
       "highlightId": "hl-criterio",
       "format": "Foto",
       "status": "En Diseño",
-      "order": 5
+      "order": 1
     },
     {
       "time": "09:30",
@@ -2781,6 +2781,6 @@
     }
   ],
   "importedCustomContextNotes": "",
-  "updatedAt": 1794282420672,
-  "updatedAtISO": "2026-11-10T03:47:00.672Z"
+  "updatedAt": 1794286656588,
+  "updatedAtISO": "2026-11-10T04:57:36.588Z"
 }
