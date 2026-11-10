@@ -210,7 +210,7 @@
     /* =================== VIEW: KANBAN =================== */
     .kanban-board {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 16px;
       align-items: start;
     }
@@ -219,7 +219,14 @@
       border-radius: 8px;
       padding: 12px;
       border: 1px solid var(--border);
-      min-height: 540px;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      min-height: 0;
+      height: clamp(340px, 65vh, 720px);
+      height: clamp(340px, 65dvh, 720px);
+      container-type: inline-size;
+      container-name: kanban-state;
     }
     .col-header {
       display: flex;
@@ -227,6 +234,7 @@
       justify-content: space-between;
       margin-bottom: 12px;
       padding: 0 4px;
+      flex: 0 0 auto;
     }
     .col-title {
       font-size: 13px;
@@ -241,11 +249,32 @@
       font-weight: 500;
     }
     .card-list {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      align-content: start;
+      align-items: start;
       gap: 10px;
+      flex: 1 1 auto;
+      min-height: 0;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: 3px 4px 6px;
+      scrollbar-gutter: stable;
+      overscroll-behavior-y: contain;
+    }
+    .card-list:focus-visible { outline: 2px solid var(--blue-accent); outline-offset: 2px; border-radius: 4px; }
+    @container kanban-state (min-width: 380px) {
+      .card-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (min-width: 1800px) {
+      .kanban-board { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    }
+    @media (max-width: 640px) {
+      .card-list { grid-template-columns: minmax(0, 1fr); }
     }
     .notion-card {
+      min-width: 0;
+      overflow-wrap: anywhere;
       background: var(--bg);
       border: 1px solid var(--border);
       border-radius: 6px;
@@ -269,6 +298,8 @@
     }
     .card-top {
       display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 6px;
