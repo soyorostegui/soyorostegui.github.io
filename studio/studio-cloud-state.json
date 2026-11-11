@@ -38,11 +38,23 @@
       "projectId": "project-portafolio-2026"
     },
     {
+      "id": "post-ig-2",
+      "channel": "Instagram",
+      "title": "El fetiche del papel y lo tangible (Detalle Físico)",
+      "date": "2026-11-11",
+      "status": "Idea",
+      "phase": "Fase 1: Señal",
+      "format": "Post",
+      "structure": "Fotografía macro de estudio: textura de papel de algodón, guardas encuadernadas o el pin metálico personal.",
+      "caption": "Cuando el vector se convierte en materia.\nEl rigor de un diseñador no se mide en cómo se ve en su pantalla Retina, sino en cómo se siente cuando sale de la imprenta.",
+      "projectId": "project-portafolio-2026"
+    },
+    {
       "id": "post-li-1",
       "channel": "LinkedIn",
       "title": "El valor de construir en silencio (Por qué no todo se publica en tiempo real)",
       "date": "2026-11-11",
-      "status": "En Diseño",
+      "status": "Idea",
       "phase": "Fase 1: Señal",
       "format": "Post",
       "structure": "Post reflexivo sobre el oficio y la madurez profesional antes del autopromoción.",
@@ -56,18 +68,6 @@
       "participants": "",
       "subject": "",
       "priority": ""
-    },
-    {
-      "id": "post-ig-2",
-      "channel": "Instagram",
-      "title": "El fetiche del papel y lo tangible (Detalle Físico)",
-      "date": "2026-11-11",
-      "status": "Idea",
-      "phase": "Fase 1: Señal",
-      "format": "Post",
-      "structure": "Fotografía macro de estudio: textura de papel de algodón, guardas encuadernadas o el pin metálico personal.",
-      "caption": "Cuando el vector se convierte en materia.\nEl rigor de un diseñador no se mide en cómo se ve en su pantalla Retina, sino en cómo se siente cuando sale de la imprenta.",
-      "projectId": "project-portafolio-2026"
     },
     {
       "id": "post-ig-4",
@@ -2158,6 +2158,6 @@
     }
   ],
   "importedCustomContextNotes": "",
-  "updatedAt": 1794383316209,
-  "updatedAtISO": "2026-11-11T07:48:36.209Z"
+  "updatedAt": 1794384344936,
+  "updatedAtISO": "2026-11-11T08:05:44.936Z"
 }
