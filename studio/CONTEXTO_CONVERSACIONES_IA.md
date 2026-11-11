@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 11/11/2026, 1:00:34 a. m.
+**Última actualización:** 11/11/2026, 2:48:36 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
@@ -16,7 +16,7 @@
 | ID | Fecha | Red | Estado | Título | Copy (Extracto) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `post-ig-1` | 2026-11-09 | Instagram | **Publicado** | Lanzamiento Expectativa: «Mientras tanto...» | No todo lo que se construye se publica de inmediato. 🗂️ Hay archivos ... |
-| `post-li-1` | 2026-11-10 | LinkedIn | **En Diseño** | El valor de construir en silencio (Por qué no todo se publica en tiempo real) | Vivimos en una industria obsesionada con compartir cada boceto en tiem... |
+| `post-li-1` | 2026-11-11 | LinkedIn | **En Diseño** | El valor de construir en silencio (Por qué no todo se publica en tiempo real) | Vivimos en una industria obsesionada con compartir cada boceto en tiem... |
 | `post-ig-2` | 2026-11-11 | Instagram | **Idea** | El fetiche del papel y lo tangible (Detalle Físico) | Cuando el vector se convierte en materia. El rigor de un diseñador no ... |
 | `post-ig-4` | 2026-11-12 | Instagram | **Idea** | Un logo no es una marca: anatomía de un sistema visual | Si le quitas el isotipo a una marca y no sabes de quién es, no tienes ... |
 | `post-ig-3` | 2026-11-13 | Instagram | **Idea** | 3 errores de preprensa que arruinan un diseño | Cosas que duelen en el taller de impresión: enviar un archivo sin sang... |
@@ -79,7 +79,7 @@
     "type": "post",
     "projectId": "project-portafolio-2026",
     "title": "El valor de construir en silencio (Por qué no todo se publica en tiempo real)",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "",
     "endTime": "",
     "channel": "LinkedIn",
@@ -307,7 +307,7 @@
 
 ### Destacadas (5)
 - `hl-criterio` ◼ **DAILY** — 10 historia(s) · Criterio + proceso diario
-- `hl-proceso` ▲ **SETUP** — 3 historia(s) · Taller + preprensa
+- `hl-proceso` ▲ **SETUP** — 3 historia(s) · Espacio de trabajo y herramientas
 - `hl-hito` ● **PORTFOLIO** — 7 historia(s) · Behance + lanzamiento 20.11
 - `hl-calle` ◈ **CONTACT** — 5 historia(s) · Proyectos + colaboraciones
 - `hl-ptr` ▮ **PTR** — 4 historia(s) · Peter Orostegui + diseño gráfico
