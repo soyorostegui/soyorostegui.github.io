@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 11/11/2026, 3:28:11 a. m.
+**Última actualización:** 11/11/2026, 3:29:20 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
@@ -18,9 +18,9 @@
 | `post-ig-1` | 2026-11-09 | Instagram | **Publicado** | Lanzamiento Expectativa: «Mientras tanto...» | No todo lo que se construye se publica de inmediato. 🗂️ Hay archivos ... |
 | `post-ig-metele-diseno` | 2026-11-11 18:00 | Instagram | **Idea** | Métele más diseño | ... |
 | `post-li-1` | 2026-11-11 09:00 | LinkedIn | **Idea** | El valor de construir en silencio | ... |
-| `post-ig-cemedicar` | 2026-11-13 18:00 | Instagram | **Idea** | Cemedicar: adelanto del proyecto | ... |
+| `post-ig-cemedicar` | 2026-11-14 18:00 | Instagram | **Idea** | Cemedicar: adelanto del proyecto | ... |
 | `post-li-arcomadrid` | 2026-11-13 09:00 | LinkedIn | **Idea** | ARCOmadrid: concepto, decisiones y reconocimiento | ... |
-| `post-ig-criterio-forma` | 2026-11-14 18:00 | Instagram | **Idea** | Criterio vs Forma | ... |
+| `post-ig-criterio-forma` | 2026-11-13 18:00 | Instagram | **Idea** | Criterio vs Forma | ... |
 | `post-ig-consejo-humor` | 2026-11-15 18:00 | Instagram | **Idea** | El consejo chino que me hizo más eficiente como diseñador | ... |
 | `post-ig-karen-valla` | 2026-11-16 18:00 | Instagram | **Idea** | Karen Lizarazo: diseño de valla | ... |
 | `post-li-vallas` | 2026-11-16 09:00 | LinkedIn | **Idea** | Dos vallas musicales: Karen Lizarazo y La Banda del 5 | ... |
@@ -115,7 +115,7 @@
     "type": "post",
     "projectId": "project-portafolio-2026",
     "title": "Cemedicar: adelanto del proyecto",
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "time": "18:00",
     "endTime": "",
     "channel": "Instagram",
@@ -147,7 +147,7 @@
     "type": "post",
     "projectId": "project-portafolio-2026",
     "title": "Criterio vs Forma",
-    "date": "2026-11-14",
+    "date": "2026-11-13",
     "time": "18:00",
     "endTime": "",
     "channel": "Instagram",
