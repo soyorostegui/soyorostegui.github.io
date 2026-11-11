@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 11/11/2026, 3:29:20 a. m.
+**Última actualización:** 11/11/2026, 3:30:15 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
@@ -18,9 +18,9 @@
 | `post-ig-1` | 2026-11-09 | Instagram | **Publicado** | Lanzamiento Expectativa: «Mientras tanto...» | No todo lo que se construye se publica de inmediato. 🗂️ Hay archivos ... |
 | `post-ig-metele-diseno` | 2026-11-11 18:00 | Instagram | **Idea** | Métele más diseño | ... |
 | `post-li-1` | 2026-11-11 09:00 | LinkedIn | **Idea** | El valor de construir en silencio | ... |
-| `post-ig-cemedicar` | 2026-11-14 18:00 | Instagram | **Idea** | Cemedicar: adelanto del proyecto | ... |
-| `post-li-arcomadrid` | 2026-11-13 09:00 | LinkedIn | **Idea** | ARCOmadrid: concepto, decisiones y reconocimiento | ... |
 | `post-ig-criterio-forma` | 2026-11-13 18:00 | Instagram | **Idea** | Criterio vs Forma | ... |
+| `post-li-arcomadrid` | 2026-11-13 09:00 | LinkedIn | **Idea** | ARCOmadrid: concepto, decisiones y reconocimiento | ... |
+| `post-ig-cemedicar` | 2026-11-14 18:00 | Instagram | **Idea** | Cemedicar: adelanto del proyecto | ... |
 | `post-ig-consejo-humor` | 2026-11-15 18:00 | Instagram | **Idea** | El consejo chino que me hizo más eficiente como diseñador | ... |
 | `post-ig-karen-valla` | 2026-11-16 18:00 | Instagram | **Idea** | Karen Lizarazo: diseño de valla | ... |
 | `post-li-vallas` | 2026-11-16 09:00 | LinkedIn | **Idea** | Dos vallas musicales: Karen Lizarazo y La Banda del 5 | ... |
@@ -111,18 +111,18 @@
     "priority": ""
   },
   {
-    "id": "post-ig-cemedicar",
+    "id": "post-ig-criterio-forma",
     "type": "post",
     "projectId": "project-portafolio-2026",
-    "title": "Cemedicar: adelanto del proyecto",
-    "date": "2026-11-14",
+    "title": "Criterio vs Forma",
+    "date": "2026-11-13",
     "time": "18:00",
     "endTime": "",
     "channel": "Instagram",
     "status": "Idea",
     "phase": "Fase 2: Archivo",
-    "format": "Carrusel",
-    "structure": "OBJETIVO: Mostrar una identidad de branding y anticipar el proyecto completo en Behance.\nQUÉ MOSTRAR: Carrusel contemplativo de 5 slides con aplicaciones de Cemedicar; uno incluye video generado con IA.\nCÓMO PRODUCIR: Seleccionar aplicaciones reales del proyecto y construir una secuencia visual coherente de cinco slides. Integrar un video de IA que conserve la identidad aprobada. Evitar convertirlo en explicación técnica extensa.\nMENSAJE / TEXTO: Cierre: «Proyecto completo en Behance · 20 de noviembre».\nPENDIENTE: Elegir aplicaciones, distribuir los cinco slides y producir el video.",
+    "format": "Post",
+    "structure": "OBJETIVO: Expresar la filosofía de Peter y conectar el resultado visual con decisiones de diseño.\nQUÉ MOSTRAR: Una imagen que contraste criterio y forma, usando el slogan «Criterio antes que forma».\nCÓMO PRODUCIR: Construir una composición con dos conceptos legibles. Elegir una decisión concreta como respaldo del contraste; la dirección visual se resuelve en producción.\nMENSAJE / TEXTO: Slogan exacto: «Criterio antes que forma». Explicar por qué se toma una decisión antes de dibujar o decorar, usando un ejemplo propio.\nPENDIENTE: Definir contraste visual, ejemplo y pie de publicación.",
     "caption": "",
     "description": ""
   },
@@ -143,18 +143,18 @@
     "description": ""
   },
   {
-    "id": "post-ig-criterio-forma",
+    "id": "post-ig-cemedicar",
     "type": "post",
     "projectId": "project-portafolio-2026",
-    "title": "Criterio vs Forma",
-    "date": "2026-11-13",
+    "title": "Cemedicar: adelanto del proyecto",
+    "date": "2026-11-14",
     "time": "18:00",
     "endTime": "",
     "channel": "Instagram",
     "status": "Idea",
     "phase": "Fase 2: Archivo",
-    "format": "Post",
-    "structure": "OBJETIVO: Expresar la filosofía de Peter y conectar el resultado visual con decisiones de diseño.\nQUÉ MOSTRAR: Una imagen que contraste criterio y forma, usando el slogan «Criterio antes que forma».\nCÓMO PRODUCIR: Construir una composición con dos conceptos legibles. Elegir una decisión concreta como respaldo del contraste; la dirección visual se resuelve en producción.\nMENSAJE / TEXTO: Slogan exacto: «Criterio antes que forma». Explicar por qué se toma una decisión antes de dibujar o decorar, usando un ejemplo propio.\nPENDIENTE: Definir contraste visual, ejemplo y pie de publicación.",
+    "format": "Carrusel",
+    "structure": "OBJETIVO: Mostrar una identidad de branding y anticipar el proyecto completo en Behance.\nQUÉ MOSTRAR: Carrusel contemplativo de 5 slides con aplicaciones de Cemedicar; uno incluye video generado con IA.\nCÓMO PRODUCIR: Seleccionar aplicaciones reales del proyecto y construir una secuencia visual coherente de cinco slides. Integrar un video de IA que conserve la identidad aprobada. Evitar convertirlo en explicación técnica extensa.\nMENSAJE / TEXTO: Cierre: «Proyecto completo en Behance · 20 de noviembre».\nPENDIENTE: Elegir aplicaciones, distribuir los cinco slides y producir el video.",
     "caption": "",
     "description": ""
   },
@@ -474,31 +474,31 @@ QUÉ MOSTRAR: Detalle de la portada real del portafolio.
 CÓMO PRODUCIR: Recortar un detalle de identidad, reservar espacio para texto y sticker. Configurar cuenta regresiva al 20 de noviembre a las 12:00 America/Bogota.
 MENSAJE / TEXTO: «Mañana abro mi portafolio.» Debajo: «20 de noviembre · Behance».
 PENDIENTE: Elegir recorte y configurar sticker.
-- `st-tools-brandboard` #21 · 2026-11-19 12:30 · TOOLS · **Descarga mi BrandBoard: Illustrator + PDF** · Foto · Idea · Contexto: OBJETIVO: Dar acceso al recurso que complementa el reel de BrandBoard.
-QUÉ MOSTRAR: Vista clara de la plantilla y formatos disponibles.
-CÓMO PRODUCIR: Mostrar una previsualización legible, indicar Illustrator editable (.ai) y PDF, añadir sticker con el enlace de Drive. Publicar después del reel; comprobar permisos de descarga.
-MENSAJE / TEXTO: «BrandBoard editable · Illustrator + PDF». Invitación clara a descargar.
-PENDIENTE: Preparar plantilla, archivos y enlace de Drive.
-- `st-28` #22 · 2026-11-19 20:00 · PTR · **Antes de compartir mi portafolio** · Foto · Idea · Contexto: OBJETIVO: Expresar el significado personal del lanzamiento del 20.
+- `st-28` #21 · 2026-11-19 20:00 · PTR · **Antes de compartir mi portafolio** · Foto · Idea · Contexto: OBJETIVO: Expresar el significado personal del lanzamiento del 20.
 QUÉ MOSTRAR: Foto de Peter revisando el portafolio o preparando su publicación.
 CÓMO PRODUCIR: Antes de redactar, responder: ¿qué sientes al mostrarlo?, ¿qué aprendizaje reconoces en los proyectos?, ¿qué esperas de esta nueva etapa? Elegir una respuesta concreta y escribir con la voz de Peter. No trata del evento del auditorio.
 MENSAJE / TEXTO: Reflexión breve propia sobre compartir el trabajo al día siguiente.
 PENDIENTE: Obtener respuesta personal y foto; redactar desde esa respuesta.
-- `st-ptr-gran-dia` #23 · 2026-11-20 08:00 · PTR · **Hoy es un gran día** · Foto · Idea · Contexto: OBJETIVO: Compartir expectativa personal la mañana del lanzamiento.
+- `st-ptr-gran-dia` #22 · 2026-11-20 08:00 · PTR · **Hoy es un gran día** · Foto · Idea · Contexto: OBJETIVO: Compartir expectativa personal la mañana del lanzamiento.
 QUÉ MOSTRAR: Foto o clip sencillo de Peter al comenzar el día.
 CÓMO PRODUCIR: Una pantalla temprana con mensaje breve de ilusión por lo que se compartirá. Mantener la revelación y el enlace para el anuncio de las 12:20.
 MENSAJE / TEXTO: Frase personal que anticipe que hoy sucede algo esperado.
 PENDIENTE: Elegir imagen y frase.
-- `st-30` #24 · 2026-11-20 12:20 · PORTFOLIO · **Mi portafolio ya está en Behance** · Sticker · Idea · Contexto: OBJETIVO: Dar acceso inmediato al portafolio publicado.
+- `st-30` #23 · 2026-11-20 12:20 · PORTFOLIO · **Mi portafolio ya está en Behance** · Sticker · Idea · Contexto: OBJETIVO: Dar acceso inmediato al portafolio publicado.
 QUÉ MOSTRAR: Vista del portafolio real en Behance.
 CÓMO PRODUCIR: Verificar que el enlace esté activo; usar una captura o composición formal y añadir sticker de enlace directo. Publicar después del lanzamiento y del post de Instagram.
 MENSAJE / TEXTO: Anunciar que ya está disponible e invitar a explorarlo.
 PENDIENTE: URL definitiva y captura de la publicación.
-- `st-1794202219509-869` #25 · 2026-11-21 11:00 · CONTACT · **Qué necesito saber para cotizar tu proyecto de diseño** · Foto · Idea · Contexto: OBJETIVO: Ayudar a iniciar una consulta de diseño con información útil.
+- `st-1794202219509-869` #24 · 2026-11-21 11:00 · CONTACT · **Qué necesito saber para cotizar tu proyecto de diseño** · Foto · Idea · Contexto: OBJETIVO: Ayudar a iniciar una consulta de diseño con información útil.
 QUÉ MOSTRAR: Composición atemporal con tres preguntas.
 CÓMO PRODUCIR: Una sola pantalla legible con identidad de Peter. Preguntas: ¿qué necesitas comunicar o resolver?, ¿qué piezas o entregables necesitas?, ¿para cuándo lo necesitas? Aplica a proyectos de diseño en general, no solo branding.
 MENSAJE / TEXTO: «Cuéntame estos detalles por mensaje directo y conversemos sobre tu proyecto.»
 PENDIENTE: Diseñar pantalla y revisar legibilidad.
+- `st-tools-brandboard` #25 · 2026-11-21 12:30 · TOOLS · **Descarga mi BrandBoard: Illustrator + PDF** · Foto · Idea · Contexto: OBJETIVO: Dar acceso al recurso que complementa el reel de BrandBoard.
+QUÉ MOSTRAR: Vista clara de la plantilla y formatos disponibles.
+CÓMO PRODUCIR: Mostrar una previsualización legible, indicar Illustrator editable (.ai) y PDF, añadir sticker con el enlace de Drive. Publicar después del reel; comprobar permisos de descarga.
+MENSAJE / TEXTO: «BrandBoard editable · Illustrator + PDF». Invitación clara a descargar.
+PENDIENTE: Preparar plantilla, archivos y enlace de Drive.
 - `st-1794299136346-207` #26 · 2026-11-22 21:30 · PTR · **La tranquilidad de crear de noche** · Foto · Idea · Contexto: OBJETIVO: Mostrar por qué Peter a veces busca las horas nocturnas para crear.
 QUÉ MOSTRAR: Foto real de escritorio durante una sesión nocturna.
 CÓMO PRODUCIR: Fotografiar la escena cotidiana con pantalla, luces y objetos reales. El texto debe hablar de silencio y tranquilidad para concentrarse, no limitarse a describir el equipo.

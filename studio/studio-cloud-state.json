@@ -162,17 +162,17 @@
       "priority": ""
     },
     {
-      "id": "post-ig-cemedicar",
+      "id": "post-ig-criterio-forma",
       "type": "post",
       "projectId": "project-portafolio-2026",
       "channel": "Instagram",
-      "format": "Carrusel",
-      "title": "Cemedicar: adelanto del proyecto",
-      "date": "2026-11-14",
+      "format": "Post",
+      "title": "Criterio vs Forma",
+      "date": "2026-11-13",
       "time": "18:00",
       "status": "Idea",
       "phase": "Fase 2: Archivo",
-      "structure": "OBJETIVO: Mostrar una identidad de branding y anticipar el proyecto completo en Behance.\nQUÉ MOSTRAR: Carrusel contemplativo de 5 slides con aplicaciones de Cemedicar; uno incluye video generado con IA.\nCÓMO PRODUCIR: Seleccionar aplicaciones reales del proyecto y construir una secuencia visual coherente de cinco slides. Integrar un video de IA que conserve la identidad aprobada. Evitar convertirlo en explicación técnica extensa.\nMENSAJE / TEXTO: Cierre: «Proyecto completo en Behance · 20 de noviembre».\nPENDIENTE: Elegir aplicaciones, distribuir los cinco slides y producir el video.",
+      "structure": "OBJETIVO: Expresar la filosofía de Peter y conectar el resultado visual con decisiones de diseño.\nQUÉ MOSTRAR: Una imagen que contraste criterio y forma, usando el slogan «Criterio antes que forma».\nCÓMO PRODUCIR: Construir una composición con dos conceptos legibles. Elegir una decisión concreta como respaldo del contraste; la dirección visual se resuelve en producción.\nMENSAJE / TEXTO: Slogan exacto: «Criterio antes que forma». Explicar por qué se toma una decisión antes de dibujar o decorar, usando un ejemplo propio.\nPENDIENTE: Definir contraste visual, ejemplo y pie de publicación.",
       "caption": "",
       "description": "",
       "endTime": ""
@@ -194,17 +194,17 @@
       "endTime": ""
     },
     {
-      "id": "post-ig-criterio-forma",
+      "id": "post-ig-cemedicar",
       "type": "post",
       "projectId": "project-portafolio-2026",
       "channel": "Instagram",
-      "format": "Post",
-      "title": "Criterio vs Forma",
-      "date": "2026-11-13",
+      "format": "Carrusel",
+      "title": "Cemedicar: adelanto del proyecto",
+      "date": "2026-11-14",
       "time": "18:00",
       "status": "Idea",
       "phase": "Fase 2: Archivo",
-      "structure": "OBJETIVO: Expresar la filosofía de Peter y conectar el resultado visual con decisiones de diseño.\nQUÉ MOSTRAR: Una imagen que contraste criterio y forma, usando el slogan «Criterio antes que forma».\nCÓMO PRODUCIR: Construir una composición con dos conceptos legibles. Elegir una decisión concreta como respaldo del contraste; la dirección visual se resuelve en producción.\nMENSAJE / TEXTO: Slogan exacto: «Criterio antes que forma». Explicar por qué se toma una decisión antes de dibujar o decorar, usando un ejemplo propio.\nPENDIENTE: Definir contraste visual, ejemplo y pie de publicación.",
+      "structure": "OBJETIVO: Mostrar una identidad de branding y anticipar el proyecto completo en Behance.\nQUÉ MOSTRAR: Carrusel contemplativo de 5 slides con aplicaciones de Cemedicar; uno incluye video generado con IA.\nCÓMO PRODUCIR: Seleccionar aplicaciones reales del proyecto y construir una secuencia visual coherente de cinco slides. Integrar un video de IA que conserve la identidad aprobada. Evitar convertirlo en explicación técnica extensa.\nMENSAJE / TEXTO: Cierre: «Proyecto completo en Behance · 20 de noviembre».\nPENDIENTE: Elegir aplicaciones, distribuir los cinco slides y producir el video.",
       "caption": "",
       "description": "",
       "endTime": ""
@@ -719,11 +719,11 @@
       "formatDetail": "Fotografía vertical sencilla",
       "id": "st-tools-brandboard",
       "name": "Descarga mi BrandBoard: Illustrator + PDF",
-      "date": "2026-11-19",
+      "date": "2026-11-21",
       "highlightId": "hl-tools",
       "format": "Foto",
       "status": "Idea",
-      "order": 0,
+      "order": 1,
       "channel": "Instagram",
       "projectId": "project-portafolio-2026",
       "phase": "Fase 3: Convocatoria"
@@ -738,7 +738,7 @@
       "highlightId": "hl-ptr",
       "format": "Foto",
       "status": "Idea",
-      "order": 0,
+      "order": 1,
       "channel": "Instagram",
       "projectId": "project-portafolio-2026",
       "phase": "Fase 3: Convocatoria"
@@ -2417,6 +2417,6 @@
     }
   ],
   "importedCustomContextNotes": "PLAN APROBADO Y SINCRONIZADO — 11 noviembre 2026\nZona horaria: America/Bogota. Campaña del 9 al 25 de noviembre; lanzamiento oficial en Behance el 20 a las 12:00. El evento del auditorio del 25 es independiente; su historia quedó excluida.\nMetas totales, incluidos publicados: Instagram 30 historias, 3 reels, 5 posts y 4 carruseles; LinkedIn 6 publicaciones; Behance 1 portafolio con 6 proyectos.\nConservar exactamente el carrusel «Mientras tanto…» del 9 y las historias de café del 9 y alejar el zoom del 10 con sus estados publicados.\nEl 11 y 12 Peter está muy ocupado: solo fotos/capturas sencillas en historias, dos por día; sin reels. Reel de creadores movido al 21. Historias de contacto juntas el 18 y atemporales.\nReels elegidos: tres creadores (Marco Creativo, Đức Thắng Ds, CJ Cawley), BrandBoard con AI editable y PDF solicitado con BRAND y entregado por Drive, consejo humorístico.\nPosts: Criterio vs Forma; logofolio con retrato; «Métele más diseño»; retrato intervenido; anuncio de lanzamiento con foto IA.\nCarruseles: publicado «Mientras tanto…», Cemedicar, Karen Lizarazo, alejamiento progresivo en tres slides. La Banda del 5 no tendrá carrusel individual en Instagram; sí aparece junto a Karen en LinkedIn y en Behance.\nLinkedIn: construir en silencio, lanzamiento, ARCOmadrid, ambas vallas, filosofía de diseño, valor del diseño.\nBehance: branding Cemedicar, Kivado, Gyal y Carboneo; transmedia Karen Lizarazo y La Banda del 5. Orden y desarrollo se decidirán después.\nSlogan exacto: «Criterio antes que forma». Teaser exacto: «Pronto, con criterio todo toma forma.»\nDestacadas: DAILY registros espontáneos y práctica diaria; SETUP espacio de trabajo y herramientas; PORTFOLIO presentaciones formales; CONTACT canales y contratación atemporales; PTR historia y reflexiones personales; TOOLS consejos, recursos, referentes, noticias y actualizaciones.\nLa encuesta serif/sans está integrada en el primer ejemplo de combinaciones tipográficas: una sola pantalla. Son tres historias tipográficas, no cuatro. La foto casual de valla va en DAILY.\nCada entrada debe explicar objetivo, qué mostrar, cómo producir, mensaje y pendientes. Si depende de una vivencia o material no disponible, preguntar o elegirlo en producción; no inventar.\nReserva fuera del calendario activo: papelería personal con IA, proceso de logo, otras propuestas no seleccionadas. ARCOmadrid queda en LinkedIn.\nNo se han publicado automáticamente contenidos en redes: las fechas son planificación editorial.",
-  "updatedAt": 1794385760539,
-  "updatedAtISO": "2026-11-11T08:29:20.539Z"
+  "updatedAt": 1794385815768,
+  "updatedAtISO": "2026-11-11T08:30:15.768Z"
 }
