@@ -2,44 +2,44 @@
   "version": 4,
   "tombstones": {
     "posts": {
+      "post-ig-10": {
+        "hash": "14fa5c008de81b20"
+      },
+      "post-ig-12": {
+        "hash": "7d42dd6d4ca0a2fd"
+      },
       "post-ig-2": {
         "hash": "1fa0859cedd4066a"
-      },
-      "post-ig-4": {
-        "hash": "95e341bcca5aafb8"
       },
       "post-ig-3": {
         "hash": "1512d0f1a080e43b"
       },
-      "post-li-2": {
-        "hash": "d6ca80545d02d110"
-      },
-      "post-ig-6": {
-        "hash": "8685b048c3403212"
+      "post-ig-4": {
+        "hash": "95e341bcca5aafb8"
       },
       "post-ig-5": {
         "hash": "8f935476df4fce3c"
       },
+      "post-ig-6": {
+        "hash": "8685b048c3403212"
+      },
       "post-ig-7": {
         "hash": "ba9db6bba14f31e7"
-      },
-      "post-li-3": {
-        "hash": "9c8098801f63fa80"
       },
       "post-ig-9": {
         "hash": "e781a2a235fdcf3a"
       },
-      "post-li-5": {
-        "hash": "085bdbfd09298d19"
+      "post-li-2": {
+        "hash": "d6ca80545d02d110"
       },
-      "post-ig-10": {
-        "hash": "14fa5c008de81b20"
+      "post-li-3": {
+        "hash": "9c8098801f63fa80"
       },
       "post-li-4": {
         "hash": "f5d647eff9969847"
       },
-      "post-ig-12": {
-        "hash": "7d42dd6d4ca0a2fd"
+      "post-li-5": {
+        "hash": "085bdbfd09298d19"
       }
     },
     "stories": {
@@ -49,26 +49,29 @@
       "st-11": {
         "hash": "7ce151a62bd0dff2"
       },
-      "st-4": {
-        "hash": "003473da49ba1ff6"
+      "st-15": {
+        "hash": "9d4a7cf6d6e20908"
       },
-      "st-5": {
-        "hash": "57afd8bf0a089cc9"
+      "st-1794196266553-508": {
+        "hash": "0d320fd6b3364f56"
       },
-      "st-7": {
-        "hash": "d6e7d8c0db1d52b2"
+      "st-1794196266555-622": {
+        "hash": "8a5fb16dd18b6a31"
       },
-      "st-8": {
-        "hash": "eeb33a219a472b2b"
+      "st-1794196266559-552": {
+        "hash": "e6f1c346b3327152"
       },
-      "st-9": {
-        "hash": "619b9fc382e0bf13"
+      "st-1794196266562-575": {
+        "hash": "6ded2f75572016a1"
+      },
+      "st-1794202219512-548": {
+        "hash": "358e41e80816558c"
+      },
+      "st-1794209928386-913": {
+        "hash": "5e0a466cd4251c30"
       },
       "st-1794299136345-295": {
         "hash": "2ac1908e4182a080"
-      },
-      "st-15": {
-        "hash": "9d4a7cf6d6e20908"
       },
       "st-18": {
         "hash": "c9f6d5e64c739954"
@@ -85,26 +88,23 @@
       "st-23": {
         "hash": "42426ca197a4fa67"
       },
-      "st-1794209928386-913": {
-        "hash": "5e0a466cd4251c30"
-      },
       "st-29": {
         "hash": "54420e5d34df8663"
       },
-      "st-1794196266553-508": {
-        "hash": "0d320fd6b3364f56"
+      "st-4": {
+        "hash": "003473da49ba1ff6"
       },
-      "st-1794196266555-622": {
-        "hash": "8a5fb16dd18b6a31"
+      "st-5": {
+        "hash": "57afd8bf0a089cc9"
       },
-      "st-1794196266559-552": {
-        "hash": "e6f1c346b3327152"
+      "st-7": {
+        "hash": "d6e7d8c0db1d52b2"
       },
-      "st-1794196266562-575": {
-        "hash": "6ded2f75572016a1"
+      "st-8": {
+        "hash": "eeb33a219a472b2b"
       },
-      "st-1794202219512-548": {
-        "hash": "358e41e80816558c"
+      "st-9": {
+        "hash": "619b9fc382e0bf13"
       }
     },
     "highlights": {},
@@ -124,6 +124,22 @@
       "structure": "Slide 1: Mientras tanto...\nSlide 2: mucho se estuvo construyendo\nSlide 3: y pronto lo verás aquí.\n(Solo tipografía sobria sobre fondo claro y retícula tenue).",
       "caption": "No todo lo que se construye se publica de inmediato. 🗂️\nHay archivos que llevan meses abiertos y nadie ha visto.\nMientras tanto, esto es todo lo que voy a decir. 👀\n\n#DiseñoGráfico #DirecciónDeArte #ProcesoCreativo",
       "projectId": "project-portafolio-2026"
+    },
+    {
+      "id": "post-ig-metele-diseno",
+      "type": "post",
+      "projectId": "project-portafolio-2026",
+      "channel": "Instagram",
+      "format": "Post",
+      "title": "Métele más diseño",
+      "date": "2026-11-11",
+      "time": "18:00",
+      "status": "Idea",
+      "phase": "Fase 1: Señal",
+      "structure": "OBJETIVO: Publicar una frase con personalidad y abrir una conversación sobre el oficio.\nQUÉ MOSTRAR: Composición tipográfica de «Métele más diseño» con la identidad de Peter.\nCÓMO PRODUCIR: Una sola imagen. Resolver con tipografía y recursos de marca disponibles; mantener producción ligera el 11. Definir si el tono será humorístico o reflexivo antes de redactar el pie.\nMENSAJE / TEXTO: Frase protagonista exacta: «Métele más diseño». El pie debe aclarar su intención con una situación concreta, sin inventar experiencias.\nPENDIENTE: Definir el sentido de la frase y cerrar composición y pie.",
+      "caption": "",
+      "description": "",
+      "endTime": ""
     },
     {
       "id": "post-li-1",
@@ -146,17 +162,17 @@
       "priority": ""
     },
     {
-      "id": "post-ig-metele-diseno",
+      "id": "post-ig-cemedicar",
       "type": "post",
       "projectId": "project-portafolio-2026",
       "channel": "Instagram",
-      "format": "Post",
-      "title": "Métele más diseño",
-      "date": "2026-11-11",
+      "format": "Carrusel",
+      "title": "Cemedicar: adelanto del proyecto",
+      "date": "2026-11-13",
       "time": "18:00",
       "status": "Idea",
-      "phase": "Fase 1: Señal",
-      "structure": "OBJETIVO: Publicar una frase con personalidad y abrir una conversación sobre el oficio.\nQUÉ MOSTRAR: Composición tipográfica de «Métele más diseño» con la identidad de Peter.\nCÓMO PRODUCIR: Una sola imagen. Resolver con tipografía y recursos de marca disponibles; mantener producción ligera el 11. Definir si el tono será humorístico o reflexivo antes de redactar el pie.\nMENSAJE / TEXTO: Frase protagonista exacta: «Métele más diseño». El pie debe aclarar su intención con una situación concreta, sin inventar experiencias.\nPENDIENTE: Definir el sentido de la frase y cerrar composición y pie.",
+      "phase": "Fase 2: Archivo",
+      "structure": "OBJETIVO: Mostrar una identidad de branding y anticipar el proyecto completo en Behance.\nQUÉ MOSTRAR: Carrusel contemplativo de 5 slides con aplicaciones de Cemedicar; uno incluye video generado con IA.\nCÓMO PRODUCIR: Seleccionar aplicaciones reales del proyecto y construir una secuencia visual coherente de cinco slides. Integrar un video de IA que conserve la identidad aprobada. Evitar convertirlo en explicación técnica extensa.\nMENSAJE / TEXTO: Cierre: «Proyecto completo en Behance · 20 de noviembre».\nPENDIENTE: Elegir aplicaciones, distribuir los cinco slides y producir el video.",
       "caption": "",
       "description": "",
       "endTime": ""
@@ -173,22 +189,6 @@
       "status": "Idea",
       "phase": "Fase 2: Archivo",
       "structure": "OBJETIVO: Presentar un caso académico con razonamiento de diseño y reconocimiento.\nQUÉ MOSTRAR: Proyecto ARCOmadrid, reto académico, decisiones y reconocimiento obtenido.\nCÓMO PRODUCIR: Adaptar al lenguaje de LinkedIn. Secuencia: resultado, encargo/reto, decisiones de composición y concepto, reconocimiento. Utilizar pruebas reales y explicar el papel de Peter.\nMENSAJE / TEXTO: Contar cómo se abordó el reto y qué decisiones sostienen el resultado; describir el reconocimiento con precisión.\nPENDIENTE: Reunir afiche, brief académico, datos del reconocimiento y redactar slides.",
-      "caption": "",
-      "description": "",
-      "endTime": ""
-    },
-    {
-      "id": "post-ig-cemedicar",
-      "type": "post",
-      "projectId": "project-portafolio-2026",
-      "channel": "Instagram",
-      "format": "Carrusel",
-      "title": "Cemedicar: adelanto del proyecto",
-      "date": "2026-11-13",
-      "time": "18:00",
-      "status": "Idea",
-      "phase": "Fase 2: Archivo",
-      "structure": "OBJETIVO: Mostrar una identidad de branding y anticipar el proyecto completo en Behance.\nQUÉ MOSTRAR: Carrusel contemplativo de 5 slides con aplicaciones de Cemedicar; uno incluye video generado con IA.\nCÓMO PRODUCIR: Seleccionar aplicaciones reales del proyecto y construir una secuencia visual coherente de cinco slides. Integrar un video de IA que conserve la identidad aprobada. Evitar convertirlo en explicación técnica extensa.\nMENSAJE / TEXTO: Cierre: «Proyecto completo en Behance · 20 de noviembre».\nPENDIENTE: Elegir aplicaciones, distribuir los cinco slides y producir el video.",
       "caption": "",
       "description": "",
       "endTime": ""
@@ -226,22 +226,6 @@
       "endTime": ""
     },
     {
-      "id": "post-li-vallas",
-      "type": "post",
-      "projectId": "project-portafolio-2026",
-      "channel": "LinkedIn",
-      "format": "Carrusel",
-      "title": "Dos vallas musicales: Karen Lizarazo y La Banda del 5",
-      "date": "2026-11-16",
-      "time": "09:00",
-      "status": "Idea",
-      "phase": "Fase 2: Archivo",
-      "structure": "OBJETIVO: Mostrar diseño aplicado y capacidad de trabajar con escala y legibilidad.\nQUÉ MOSTRAR: Ambas vallas: diseño digital e instalación real.\nCÓMO PRODUCIR: Un solo carrusel de LinkedIn para los dos proyectos. Para cada uno, mostrar archivo y resultado instalado; explicar una decisión real sobre escala, color o legibilidad. En Instagram se muestra solo Karen.\nMENSAJE / TEXTO: Identificar el encargo, la participación real de Peter y el resultado de cada proyecto. La valla de La Banda del 5 corresponde al álbum «Vallenato».\nPENDIENTE: Elegir materiales, cantidad de slides y decisiones documentadas.",
-      "caption": "",
-      "description": "",
-      "endTime": ""
-    },
-    {
       "id": "post-ig-karen-valla",
       "type": "post",
       "projectId": "project-portafolio-2026",
@@ -253,6 +237,22 @@
       "status": "Idea",
       "phase": "Fase 2: Archivo",
       "structure": "OBJETIVO: Presentar formalmente el diseño de la valla y el resultado instalado.\nQUÉ MOSTRAR: 5 slides: portada, dos mitades de la fotografía real, POV del archivo y mockup.\nCÓMO PRODUCIR: Slide 1: foto real desenfocada, título del proyecto y firma de Peter; logo del artista secundario si se utiliza. Slides 2–3: mitad izquierda y derecha de la misma foto, idéntica escala y alineación. Slide 4: diseño abierto en el programa. Slide 5: mockup limpio.\nMENSAJE / TEXTO: Cierre: «Proyecto completo en Behance · 20 de noviembre». Mantener poco texto; explicar el encargo y la participación real en el pie.\nPENDIENTE: Seleccionar fotografía, título exacto, POV y mockup.",
+      "caption": "",
+      "description": "",
+      "endTime": ""
+    },
+    {
+      "id": "post-li-vallas",
+      "type": "post",
+      "projectId": "project-portafolio-2026",
+      "channel": "LinkedIn",
+      "format": "Carrusel",
+      "title": "Dos vallas musicales: Karen Lizarazo y La Banda del 5",
+      "date": "2026-11-16",
+      "time": "09:00",
+      "status": "Idea",
+      "phase": "Fase 2: Archivo",
+      "structure": "OBJETIVO: Mostrar diseño aplicado y capacidad de trabajar con escala y legibilidad.\nQUÉ MOSTRAR: Ambas vallas: diseño digital e instalación real.\nCÓMO PRODUCIR: Un solo carrusel de LinkedIn para los dos proyectos. Para cada uno, mostrar archivo y resultado instalado; explicar una decisión real sobre escala, color o legibilidad. En Instagram se muestra solo Karen.\nMENSAJE / TEXTO: Identificar el encargo, la participación real de Peter y el resultado de cada proyecto. La valla de La Banda del 5 corresponde al álbum «Vallenato».\nPENDIENTE: Elegir materiales, cantidad de slides y decisiones documentadas.",
       "caption": "",
       "description": "",
       "endTime": ""
@@ -274,22 +274,6 @@
       "endTime": ""
     },
     {
-      "id": "post-li-filosofia",
-      "type": "post",
-      "projectId": "project-portafolio-2026",
-      "channel": "LinkedIn",
-      "format": "Post",
-      "title": "Criterio antes que forma: mi filosofía de diseño",
-      "date": "2026-11-18",
-      "time": "09:00",
-      "status": "Idea",
-      "phase": "Fase 3: Convocatoria",
-      "structure": "OBJETIVO: Explicar la metodología que guía el trabajo de Peter.\nQUÉ MOSTRAR: Reflexión profesional apoyada en una decisión real de uno de sus proyectos.\nCÓMO PRODUCIR: Elegir un ejemplo donde objetivo, público o medio determinaron una decisión visual. Desarrollar la secuencia problema, criterio, decisión y resultado.\nMENSAJE / TEXTO: Slogan exacto: «Criterio antes que forma». No limitarse a una declaración abstracta.\nPENDIENTE: Elegir caso y redactar reflexión.",
-      "caption": "",
-      "description": "",
-      "endTime": ""
-    },
-    {
       "id": "post-ig-diseno-entorno",
       "type": "post",
       "projectId": "project-portafolio-2026",
@@ -301,6 +285,22 @@
       "status": "Idea",
       "phase": "Fase 3: Convocatoria",
       "structure": "OBJETIVO: Revelar progresivamente lo que rodea una creación.\nQUÉ MOSTRAR: 3 slides de la misma escena: diseño cerrado, mesa parcialmente visible y entorno completo.\nCÓMO PRODUCIR: Construir desde una única escena amplia y obtener tres encuadres que se alejen. Conservar posición y escala relativa de los objetos. En el segundo, algunos elementos quedan cortados; en el tercero, aparecen completos.\nMENSAJE / TEXTO: Una frase breve de una o dos líneas en un espacio libre del tercer slide, conectada con las herramientas, pruebas y decisiones del proyecto elegido.\nPENDIENTE: Elegir proyecto, preparar escena y redactar la frase de cierre.",
+      "caption": "",
+      "description": "",
+      "endTime": ""
+    },
+    {
+      "id": "post-li-filosofia",
+      "type": "post",
+      "projectId": "project-portafolio-2026",
+      "channel": "LinkedIn",
+      "format": "Post",
+      "title": "Criterio antes que forma: mi filosofía de diseño",
+      "date": "2026-11-18",
+      "time": "09:00",
+      "status": "Idea",
+      "phase": "Fase 3: Convocatoria",
+      "structure": "OBJETIVO: Explicar la metodología que guía el trabajo de Peter.\nQUÉ MOSTRAR: Reflexión profesional apoyada en una decisión real de uno de sus proyectos.\nCÓMO PRODUCIR: Elegir un ejemplo donde objetivo, público o medio determinaron una decisión visual. Desarrollar la secuencia problema, criterio, decisión y resultado.\nMENSAJE / TEXTO: Slogan exacto: «Criterio antes que forma». No limitarse a una declaración abstracta.\nPENDIENTE: Elegir caso y redactar reflexión.",
       "caption": "",
       "description": "",
       "endTime": ""
@@ -392,7 +392,7 @@
       "channel": "Instagram",
       "format": "Post",
       "title": "Logofolio con mi retrato",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "time": "18:00",
       "status": "Idea",
       "phase": "Fase 4: Continuidad",
@@ -408,7 +408,7 @@
       "channel": "LinkedIn",
       "format": "Carrusel",
       "title": "El valor del diseño",
-      "date": "2026-11-25",
+      "date": "2026-11-24",
       "time": "09:00",
       "status": "Idea",
       "phase": "Fase 4: Continuidad",
@@ -444,19 +444,19 @@
       "order": 1
     },
     {
+      "time": "12:00",
+      "context": "OBJETIVO: Presentar el espacio real de trabajo con producción ligera.\nQUÉ MOSTRAR: Escritorio tal como está.\nCÓMO PRODUCIR: Una fotografía sencilla con el móvil. Añadir una frase sobre una decisión real de organización. Los tres señalamientos son opcionales. Hoy Peter tiene poco tiempo: no requiere video ni edición elaborada.\nMENSAJE / TEXTO: Explicar brevemente por qué una disposición del escritorio te facilita trabajar.\nPENDIENTE: Tomar foto y elegir una decisión real.",
+      "formatDetail": "Fotografía vertical sencilla",
       "id": "st-setup-espacio",
       "name": "Así organizo mi espacio de trabajo",
       "date": "2026-11-11",
-      "time": "12:00",
       "highlightId": "hl-proceso",
       "format": "Foto",
-      "formatDetail": "Fotografía vertical sencilla",
       "status": "Idea",
       "order": 0,
       "channel": "Instagram",
       "projectId": "project-portafolio-2026",
-      "phase": "Fase 1: Señal",
-      "context": "OBJETIVO: Presentar el espacio real de trabajo con producción ligera.\nQUÉ MOSTRAR: Escritorio tal como está.\nCÓMO PRODUCIR: Una fotografía sencilla con el móvil. Añadir una frase sobre una decisión real de organización. Los tres señalamientos son opcionales. Hoy Peter tiene poco tiempo: no requiere video ni edición elaborada.\nMENSAJE / TEXTO: Explicar brevemente por qué una disposición del escritorio te facilita trabajar.\nPENDIENTE: Tomar foto y elegir una decisión real."
+      "phase": "Fase 1: Señal"
     },
     {
       "time": "18:30",
@@ -474,19 +474,19 @@
       "phase": "Fase 1: Señal"
     },
     {
+      "time": "12:00",
+      "context": "OBJETIVO: Mostrar una herramienta real y su utilidad cotidiana.\nQUÉ MOSTRAR: Foto de una herramienta física o digital a mano.\nCÓMO PRODUCIR: Una fotografía sencilla, sin grabar video. Escribir nombre y una línea sobre la tarea que facilita. La elección debe corresponder al uso real de Peter.\nMENSAJE / TEXTO: Qué haces con esta herramienta y por qué la utilizas.\nPENDIENTE: Elegir herramienta y tomar foto.",
+      "formatDetail": "Fotografía vertical sencilla",
       "id": "st-setup-herramienta",
       "name": "Una herramienta que uso de verdad",
       "date": "2026-11-12",
-      "time": "12:00",
       "highlightId": "hl-proceso",
       "format": "Foto",
-      "formatDetail": "Fotografía vertical sencilla",
       "status": "Idea",
       "order": 0,
       "channel": "Instagram",
       "projectId": "project-portafolio-2026",
-      "phase": "Fase 2: Archivo",
-      "context": "OBJETIVO: Mostrar una herramienta real y su utilidad cotidiana.\nQUÉ MOSTRAR: Foto de una herramienta física o digital a mano.\nCÓMO PRODUCIR: Una fotografía sencilla, sin grabar video. Escribir nombre y una línea sobre la tarea que facilita. La elección debe corresponder al uso real de Peter.\nMENSAJE / TEXTO: Qué haces con esta herramienta y por qué la utilizas.\nPENDIENTE: Elegir herramienta y tomar foto."
+      "phase": "Fase 2: Archivo"
     },
     {
       "time": "18:30",
@@ -504,19 +504,19 @@
       "phase": "Fase 2: Archivo"
     },
     {
+      "time": "10:00",
+      "context": "OBJETIVO: Mostrar la organización del entorno digital de trabajo.\nQUÉ MOSTRAR: Panel de capas de un proyecto real con nombres y grupos legibles.\nCÓMO PRODUCIR: Abrir un proyecto y mostrar conjunto y acercamiento al panel. Explicar cómo localizas o ajustas elementos gracias a su orden; evitar capturas diminutas.\nMENSAJE / TEXTO: Una decisión concreta de organización que te facilita trabajar.\nPENDIENTE: Elegir archivo y elemento que explicar.",
+      "formatDetail": "Composición vertical",
       "id": "st-setup-archivo",
       "name": "Mi archivo por dentro: capas y organización",
       "date": "2026-11-13",
-      "time": "10:00",
       "highlightId": "hl-proceso",
       "format": "Captura",
-      "formatDetail": "Composición vertical",
       "status": "Idea",
       "order": 0,
       "channel": "Instagram",
       "projectId": "project-portafolio-2026",
-      "phase": "Fase 2: Archivo",
-      "context": "OBJETIVO: Mostrar la organización del entorno digital de trabajo.\nQUÉ MOSTRAR: Panel de capas de un proyecto real con nombres y grupos legibles.\nCÓMO PRODUCIR: Abrir un proyecto y mostrar conjunto y acercamiento al panel. Explicar cómo localizas o ajustas elementos gracias a su orden; evitar capturas diminutas.\nMENSAJE / TEXTO: Una decisión concreta de organización que te facilita trabajar.\nPENDIENTE: Elegir archivo y elemento que explicar."
+      "phase": "Fase 2: Archivo"
     },
     {
       "time": "13:00",
@@ -549,154 +549,154 @@
       "phase": "Fase 2: Archivo"
     },
     {
+      "time": "11:01",
+      "context": "OBJETIVO: Mostrar una segunda intención visual mediante tipografía.\nQUÉ MOSTRAR: Mismo texto y estructura del ejemplo 1, otra pareja tipográfica.\nCÓMO PRODUCIR: Publicar inmediatamente después de la primera. Mantener comparación y legibilidad; explicar qué aporta cada fuente al tono.\nMENSAJE / TEXTO: Nombrar el tono buscado y una razón concreta de la elección.\nPENDIENTE: Elegir pareja y tono diferentes del primero.",
+      "formatDetail": "Fotografía vertical sencilla",
       "id": "st-tools-tipografia-2",
       "name": "Combinaciones tipográficas 2/3",
       "date": "2026-11-14",
-      "time": "11:01",
       "highlightId": "hl-tools",
       "format": "Foto",
-      "formatDetail": "Fotografía vertical sencilla",
       "status": "Idea",
       "order": 0,
       "channel": "Instagram",
       "projectId": "project-portafolio-2026",
-      "phase": "Fase 2: Archivo",
-      "context": "OBJETIVO: Mostrar una segunda intención visual mediante tipografía.\nQUÉ MOSTRAR: Mismo texto y estructura del ejemplo 1, otra pareja tipográfica.\nCÓMO PRODUCIR: Publicar inmediatamente después de la primera. Mantener comparación y legibilidad; explicar qué aporta cada fuente al tono.\nMENSAJE / TEXTO: Nombrar el tono buscado y una razón concreta de la elección.\nPENDIENTE: Elegir pareja y tono diferentes del primero."
+      "phase": "Fase 2: Archivo"
     },
     {
+      "time": "11:02",
+      "context": "OBJETIVO: Completar la comparación con un tercer tono.\nQUÉ MOSTRAR: Mismo texto, tercera combinación de titular y apoyo.\nCÓMO PRODUCIR: Publicar inmediatamente después de la segunda. Explicar la relación de fuentes, pesos y composición, evitando afirmar que una familia comunica siempre lo mismo.\nMENSAJE / TEXTO: Una explicación breve de la intención y del efecto de esta combinación.\nPENDIENTE: Elegir pareja y preparar tercera pantalla.",
+      "formatDetail": "Fotografía vertical sencilla",
       "id": "st-tools-tipografia-3",
       "name": "Combinaciones tipográficas 3/3",
       "date": "2026-11-14",
-      "time": "11:02",
       "highlightId": "hl-tools",
       "format": "Foto",
-      "formatDetail": "Fotografía vertical sencilla",
       "status": "Idea",
       "order": 0,
       "channel": "Instagram",
       "projectId": "project-portafolio-2026",
-      "phase": "Fase 2: Archivo",
-      "context": "OBJETIVO: Completar la comparación con un tercer tono.\nQUÉ MOSTRAR: Mismo texto, tercera combinación de titular y apoyo.\nCÓMO PRODUCIR: Publicar inmediatamente después de la segunda. Explicar la relación de fuentes, pesos y composición, evitando afirmar que una familia comunica siempre lo mismo.\nMENSAJE / TEXTO: Una explicación breve de la intención y del efecto de esta combinación.\nPENDIENTE: Elegir pareja y preparar tercera pantalla."
+      "phase": "Fase 2: Archivo"
     },
     {
+      "time": "11:00",
+      "context": "OBJETIVO: Conectar la historia personal de Peter con su vocación de diseñador.\nQUÉ MOSTRAR: Foto actual con fotografía infantil superpuesta como foto pegada.\nCÓMO PRODUCIR: Seleccionar las dos fotos y escribir desde un recuerdo real de infancia que conecte con querer ser diseñador. No inventar anécdotas.\nMENSAJE / TEXTO: Contar qué recuerdo sostiene la idea de que querías diseñar desde pequeño.\nPENDIENTE: Elegir fotos y pedir a Peter el recuerdo concreto.",
+      "formatDetail": "Fotografía vertical sencilla",
       "id": "st-ptr-vocacion",
       "name": "Yo adulto y yo de pequeño: mi vocación",
       "date": "2026-11-15",
-      "time": "11:00",
       "highlightId": "hl-ptr",
       "format": "Foto",
-      "formatDetail": "Fotografía vertical sencilla",
       "status": "Idea",
       "order": 0,
       "channel": "Instagram",
       "projectId": "project-portafolio-2026",
-      "phase": "Fase 2: Archivo",
-      "context": "OBJETIVO: Conectar la historia personal de Peter con su vocación de diseñador.\nQUÉ MOSTRAR: Foto actual con fotografía infantil superpuesta como foto pegada.\nCÓMO PRODUCIR: Seleccionar las dos fotos y escribir desde un recuerdo real de infancia que conecte con querer ser diseñador. No inventar anécdotas.\nMENSAJE / TEXTO: Contar qué recuerdo sostiene la idea de que querías diseñar desde pequeño.\nPENDIENTE: Elegir fotos y pedir a Peter el recuerdo concreto."
+      "phase": "Fase 2: Archivo"
     },
     {
+      "time": "17:00",
+      "context": "OBJETIVO: Compartir una herramienta o recurso útil y accesible.\nQUÉ MOSTRAR: Captura del recurso en uso y un ejemplo de su utilidad.\nCÓMO PRODUCIR: Elegir un recurso que Peter conozca; explicar qué problema resuelve y añadir enlace. Comprobar acceso y condiciones antes de recomendar.\nMENSAJE / TEXTO: Para qué lo usas y cuándo puede ayudar a otro diseñador.\nPENDIENTE: Elegir recurso, ejemplo y enlace.",
+      "formatDetail": "Fotografía vertical sencilla",
       "id": "st-tools-recurso",
       "name": "Un recurso que recomiendo",
       "date": "2026-11-15",
-      "time": "17:00",
       "highlightId": "hl-tools",
       "format": "Foto",
-      "formatDetail": "Fotografía vertical sencilla",
       "status": "Idea",
       "order": 0,
       "channel": "Instagram",
       "projectId": "project-portafolio-2026",
-      "phase": "Fase 2: Archivo",
-      "context": "OBJETIVO: Compartir una herramienta o recurso útil y accesible.\nQUÉ MOSTRAR: Captura del recurso en uso y un ejemplo de su utilidad.\nCÓMO PRODUCIR: Elegir un recurso que Peter conozca; explicar qué problema resuelve y añadir enlace. Comprobar acceso y condiciones antes de recomendar.\nMENSAJE / TEXTO: Para qué lo usas y cuándo puede ayudar a otro diseñador.\nPENDIENTE: Elegir recurso, ejemplo y enlace."
+      "phase": "Fase 2: Archivo"
     },
     {
+      "time": "12:00",
+      "context": "OBJETIVO: Enseñar a mirar una decisión de diseño con criterio.\nQUÉ MOSTRAR: Un proyecto acreditado de otro diseñador.\nCÓMO PRODUCIR: Seleccionar un proyecto y destacar una decisión concreta de composición, identidad o narrativa. Incluir autor, fuente y enlace cuando esté disponible. Trasladado del 12 al 16 para dejar producción ligera el 12.\nMENSAJE / TEXTO: Qué decisión destacarías y qué aprendizaje te deja; evitar elogios genéricos.\nPENDIENTE: Elegir referente, proyecto y fuente.",
+      "formatDetail": "Fotografía vertical sencilla",
       "id": "st-tools-referente",
       "name": "Un referente internacional y qué aprender de su proyecto",
       "date": "2026-11-16",
-      "time": "12:00",
       "highlightId": "hl-tools",
       "format": "Foto",
-      "formatDetail": "Fotografía vertical sencilla",
       "status": "Idea",
       "order": 0,
       "channel": "Instagram",
       "projectId": "project-portafolio-2026",
-      "phase": "Fase 2: Archivo",
-      "context": "OBJETIVO: Enseñar a mirar una decisión de diseño con criterio.\nQUÉ MOSTRAR: Un proyecto acreditado de otro diseñador.\nCÓMO PRODUCIR: Seleccionar un proyecto y destacar una decisión concreta de composición, identidad o narrativa. Incluir autor, fuente y enlace cuando esté disponible. Trasladado del 12 al 16 para dejar producción ligera el 12.\nMENSAJE / TEXTO: Qué decisión destacarías y qué aprendizaje te deja; evitar elogios genéricos.\nPENDIENTE: Elegir referente, proyecto y fuente."
+      "phase": "Fase 2: Archivo"
     },
     {
+      "time": "18:30",
+      "context": "OBJETIVO: Generar expectativa por el lanzamiento.\nQUÉ MOSTRAR: Peter sentado frente al computador trabajando en programas de diseño, grabado desde detrás del hombro.\nCÓMO PRODUCIR: Toma continua de unos 15 segundos, escena desenfocada y movimiento sutil. Textos nítidos: 0–5 s escena; 5–10 s frase; 10–15 s fecha.\nMENSAJE / TEXTO: «Pronto, con criterio todo toma forma.» Después: «20 de noviembre».\nPENDIENTE: Grabar toma y elegir audio.",
+      "formatDetail": "Video vertical",
       "id": "st-portfolio-teaser",
       "name": "Pronto, con criterio todo toma forma",
       "date": "2026-11-17",
-      "time": "18:30",
       "highlightId": "hl-hito",
       "format": "Video",
-      "formatDetail": "Video vertical",
       "status": "Idea",
       "order": 0,
       "channel": "Instagram",
       "projectId": "project-portafolio-2026",
-      "phase": "Fase 2: Archivo",
-      "context": "OBJETIVO: Generar expectativa por el lanzamiento.\nQUÉ MOSTRAR: Peter sentado frente al computador trabajando en programas de diseño, grabado desde detrás del hombro.\nCÓMO PRODUCIR: Toma continua de unos 15 segundos, escena desenfocada y movimiento sutil. Textos nítidos: 0–5 s escena; 5–10 s frase; 10–15 s fecha.\nMENSAJE / TEXTO: «Pronto, con criterio todo toma forma.» Después: «20 de noviembre».\nPENDIENTE: Grabar toma y elegir audio."
+      "phase": "Fase 2: Archivo"
     },
     {
+      "time": "10:00",
+      "context": "OBJETIVO: Presentar un canal de contacto atemporal.\nQUÉ MOSTRAR: Captura o composición del perfil de Behance, usuario y sticker de enlace.\nCÓMO PRODUCIR: Publicar las cuatro pantallas juntas y en este orden el 18, antes del lanzamiento. Mantener diseño coherente, una función por canal y SIN fechas ni anuncios del portafolio.\nMENSAJE / TEXTO: Explicar que allí pueden explorar tus proyectos completos y las decisiones que los sostienen.\nPENDIENTE: Confirmar usuario y enlace del perfil.",
+      "formatDetail": "Fotografía vertical sencilla",
       "id": "st-contact-behance",
       "name": "Behance: explora mis proyectos completos",
       "date": "2026-11-18",
-      "time": "10:00",
       "highlightId": "hl-calle",
       "format": "Foto",
-      "formatDetail": "Fotografía vertical sencilla",
       "status": "Idea",
       "order": 0,
       "channel": "Instagram",
       "projectId": "project-portafolio-2026",
-      "phase": "Fase 3: Convocatoria",
-      "context": "OBJETIVO: Presentar un canal de contacto atemporal.\nQUÉ MOSTRAR: Captura o composición del perfil de Behance, usuario y sticker de enlace.\nCÓMO PRODUCIR: Publicar las cuatro pantallas juntas y en este orden el 18, antes del lanzamiento. Mantener diseño coherente, una función por canal y SIN fechas ni anuncios del portafolio.\nMENSAJE / TEXTO: Explicar que allí pueden explorar tus proyectos completos y las decisiones que los sostienen.\nPENDIENTE: Confirmar usuario y enlace del perfil."
+      "phase": "Fase 3: Convocatoria"
     },
     {
+      "time": "10:01",
+      "context": "OBJETIVO: Presentar un canal de contacto atemporal.\nQUÉ MOSTRAR: Perfil de LinkedIn, nombre y sticker de enlace.\nCÓMO PRODUCIR: Publicar las cuatro pantallas juntas y en este orden el 18, antes del lanzamiento. Mantener diseño coherente, una función por canal y SIN fechas ni anuncios del portafolio.\nMENSAJE / TEXTO: Invitar a conectar y conocer tu perfil para oportunidades profesionales.\nPENDIENTE: Confirmar URL del perfil.",
+      "formatDetail": "Fotografía vertical sencilla",
       "id": "st-contact-linkedin",
       "name": "LinkedIn: conectemos profesionalmente",
       "date": "2026-11-18",
-      "time": "10:01",
       "highlightId": "hl-calle",
       "format": "Foto",
-      "formatDetail": "Fotografía vertical sencilla",
       "status": "Idea",
       "order": 0,
       "channel": "Instagram",
       "projectId": "project-portafolio-2026",
-      "phase": "Fase 3: Convocatoria",
-      "context": "OBJETIVO: Presentar un canal de contacto atemporal.\nQUÉ MOSTRAR: Perfil de LinkedIn, nombre y sticker de enlace.\nCÓMO PRODUCIR: Publicar las cuatro pantallas juntas y en este orden el 18, antes del lanzamiento. Mantener diseño coherente, una función por canal y SIN fechas ni anuncios del portafolio.\nMENSAJE / TEXTO: Invitar a conectar y conocer tu perfil para oportunidades profesionales.\nPENDIENTE: Confirmar URL del perfil."
+      "phase": "Fase 3: Convocatoria"
     },
     {
+      "time": "10:02",
+      "context": "OBJETIVO: Presentar un canal de contacto atemporal.\nQUÉ MOSTRAR: Dirección de correo legible en una composición con tu identidad.\nCÓMO PRODUCIR: Publicar las cuatro pantallas juntas y en este orden el 18, antes del lanzamiento. Mantener diseño coherente, una función por canal y SIN fechas ni anuncios del portafolio.\nMENSAJE / TEXTO: Invitar a escribir sobre proyectos; facilitar copiar la dirección o abrir el correo.\nPENDIENTE: Confirmar correo público.",
+      "formatDetail": "Fotografía vertical sencilla",
       "id": "st-contact-correo",
       "name": "Correo: conversemos sobre tu proyecto",
       "date": "2026-11-18",
-      "time": "10:02",
       "highlightId": "hl-calle",
       "format": "Foto",
-      "formatDetail": "Fotografía vertical sencilla",
       "status": "Idea",
       "order": 0,
       "channel": "Instagram",
       "projectId": "project-portafolio-2026",
-      "phase": "Fase 3: Convocatoria",
-      "context": "OBJETIVO: Presentar un canal de contacto atemporal.\nQUÉ MOSTRAR: Dirección de correo legible en una composición con tu identidad.\nCÓMO PRODUCIR: Publicar las cuatro pantallas juntas y en este orden el 18, antes del lanzamiento. Mantener diseño coherente, una función por canal y SIN fechas ni anuncios del portafolio.\nMENSAJE / TEXTO: Invitar a escribir sobre proyectos; facilitar copiar la dirección o abrir el correo.\nPENDIENTE: Confirmar correo público."
+      "phase": "Fase 3: Convocatoria"
     },
     {
+      "time": "10:03",
+      "context": "OBJETIVO: Presentar un canal de contacto atemporal.\nQUÉ MOSTRAR: Usuario de Instagram e invitación a enviar un mensaje.\nCÓMO PRODUCIR: Publicar las cuatro pantallas juntas y en este orden el 18, antes del lanzamiento. Mantener diseño coherente, una función por canal y SIN fechas ni anuncios del portafolio.\nMENSAJE / TEXTO: Invitar a iniciar una conversación por mensaje directo.\nPENDIENTE: Confirmar usuario y preparar pieza.",
+      "formatDetail": "Fotografía vertical sencilla",
       "id": "st-contact-instagram",
       "name": "Instagram: podemos empezar por aquí",
       "date": "2026-11-18",
-      "time": "10:03",
       "highlightId": "hl-calle",
       "format": "Foto",
-      "formatDetail": "Fotografía vertical sencilla",
       "status": "Idea",
       "order": 0,
       "channel": "Instagram",
       "projectId": "project-portafolio-2026",
-      "phase": "Fase 3: Convocatoria",
-      "context": "OBJETIVO: Presentar un canal de contacto atemporal.\nQUÉ MOSTRAR: Usuario de Instagram e invitación a enviar un mensaje.\nCÓMO PRODUCIR: Publicar las cuatro pantallas juntas y en este orden el 18, antes del lanzamiento. Mantener diseño coherente, una función por canal y SIN fechas ni anuncios del portafolio.\nMENSAJE / TEXTO: Invitar a iniciar una conversación por mensaje directo.\nPENDIENTE: Confirmar usuario y preparar pieza."
+      "phase": "Fase 3: Convocatoria"
     },
     {
       "time": "09:00",
@@ -714,19 +714,19 @@
       "phase": "Fase 3: Convocatoria"
     },
     {
+      "time": "12:30",
+      "context": "OBJETIVO: Dar acceso al recurso que complementa el reel de BrandBoard.\nQUÉ MOSTRAR: Vista clara de la plantilla y formatos disponibles.\nCÓMO PRODUCIR: Mostrar una previsualización legible, indicar Illustrator editable (.ai) y PDF, añadir sticker con el enlace de Drive. Publicar después del reel; comprobar permisos de descarga.\nMENSAJE / TEXTO: «BrandBoard editable · Illustrator + PDF». Invitación clara a descargar.\nPENDIENTE: Preparar plantilla, archivos y enlace de Drive.",
+      "formatDetail": "Fotografía vertical sencilla",
       "id": "st-tools-brandboard",
       "name": "Descarga mi BrandBoard: Illustrator + PDF",
       "date": "2026-11-19",
-      "time": "12:30",
       "highlightId": "hl-tools",
       "format": "Foto",
-      "formatDetail": "Fotografía vertical sencilla",
       "status": "Idea",
       "order": 0,
       "channel": "Instagram",
       "projectId": "project-portafolio-2026",
-      "phase": "Fase 3: Convocatoria",
-      "context": "OBJETIVO: Dar acceso al recurso que complementa el reel de BrandBoard.\nQUÉ MOSTRAR: Vista clara de la plantilla y formatos disponibles.\nCÓMO PRODUCIR: Mostrar una previsualización legible, indicar Illustrator editable (.ai) y PDF, añadir sticker con el enlace de Drive. Publicar después del reel; comprobar permisos de descarga.\nMENSAJE / TEXTO: «BrandBoard editable · Illustrator + PDF». Invitación clara a descargar.\nPENDIENTE: Preparar plantilla, archivos y enlace de Drive."
+      "phase": "Fase 3: Convocatoria"
     },
     {
       "time": "20:00",
@@ -744,19 +744,19 @@
       "phase": "Fase 3: Convocatoria"
     },
     {
+      "time": "08:00",
+      "context": "OBJETIVO: Compartir expectativa personal la mañana del lanzamiento.\nQUÉ MOSTRAR: Foto o clip sencillo de Peter al comenzar el día.\nCÓMO PRODUCIR: Una pantalla temprana con mensaje breve de ilusión por lo que se compartirá. Mantener la revelación y el enlace para el anuncio de las 12:20.\nMENSAJE / TEXTO: Frase personal que anticipe que hoy sucede algo esperado.\nPENDIENTE: Elegir imagen y frase.",
+      "formatDetail": "Fotografía vertical sencilla",
       "id": "st-ptr-gran-dia",
       "name": "Hoy es un gran día",
       "date": "2026-11-20",
-      "time": "08:00",
       "highlightId": "hl-ptr",
       "format": "Foto",
-      "formatDetail": "Fotografía vertical sencilla",
       "status": "Idea",
       "order": 0,
       "channel": "Instagram",
       "projectId": "project-portafolio-2026",
-      "phase": "Fase 3: Convocatoria",
-      "context": "OBJETIVO: Compartir expectativa personal la mañana del lanzamiento.\nQUÉ MOSTRAR: Foto o clip sencillo de Peter al comenzar el día.\nCÓMO PRODUCIR: Una pantalla temprana con mensaje breve de ilusión por lo que se compartirá. Mantener la revelación y el enlace para el anuncio de las 12:20.\nMENSAJE / TEXTO: Frase personal que anticipe que hoy sucede algo esperado.\nPENDIENTE: Elegir imagen y frase."
+      "phase": "Fase 3: Convocatoria"
     },
     {
       "time": "12:20",
@@ -804,34 +804,34 @@
       "phase": "Fase 4: Continuidad"
     },
     {
+      "time": "12:00",
+      "context": "OBJETIVO: Compartir una novedad relevante con interpretación propia.\nQUÉ MOSTRAR: Titular o captura acreditada de una noticia verificada.\nCÓMO PRODUCIR: Elegir noticia cerca del 23; verificar anuncio, fecha y fuente primaria. Resumir el cambio y añadir una consecuencia concreta para el diseño. No dar por confirmado el ejemplo anterior de MCP de Adobe sin verificarlo.\nMENSAJE / TEXTO: Qué se anunció, por qué importa y qué lectura hace Peter.\nPENDIENTE: Elegir noticia vigente, verificar fuente y redactar reflexión.",
+      "formatDetail": "Fotografía vertical sencilla",
       "id": "st-tools-noticia-ia",
       "name": "Noticia de IA y diseño: qué cambia para nosotros",
       "date": "2026-11-23",
-      "time": "12:00",
       "highlightId": "hl-tools",
       "format": "Foto",
-      "formatDetail": "Fotografía vertical sencilla",
       "status": "Idea",
       "order": 0,
       "channel": "Instagram",
       "projectId": "project-portafolio-2026",
-      "phase": "Fase 4: Continuidad",
-      "context": "OBJETIVO: Compartir una novedad relevante con interpretación propia.\nQUÉ MOSTRAR: Titular o captura acreditada de una noticia verificada.\nCÓMO PRODUCIR: Elegir noticia cerca del 23; verificar anuncio, fecha y fuente primaria. Resumir el cambio y añadir una consecuencia concreta para el diseño. No dar por confirmado el ejemplo anterior de MCP de Adobe sin verificarlo.\nMENSAJE / TEXTO: Qué se anunció, por qué importa y qué lectura hace Peter.\nPENDIENTE: Elegir noticia vigente, verificar fuente y redactar reflexión."
+      "phase": "Fase 4: Continuidad"
     },
     {
+      "time": "18:00",
+      "context": "OBJETIVO: Expresar la postura de Peter sobre las partes de su trabajo que quiere hacer personalmente.\nQUÉ MOSTRAR: Peter hablando a cámara, sin edición.\nCÓMO PRODUCIR: Definir primero qué significa conservar tu creación y edición, qué tareas deseas hacer tú y qué usos de IA sí aceptas. Grabar una opinión concreta desde esa distinción; no atribuirle una postura absoluta incompatible con las imágenes de IA previstas.\nMENSAJE / TEXTO: Opinión personal con un argumento claro y un ejemplo real.\nPENDIENTE: Conversar la postura con Peter y preparar una guía breve antes de grabar.",
+      "formatDetail": "Video vertical",
       "id": "st-ptr-creacion-ia",
       "name": "Mi creación y la IA: una opinión personal",
       "date": "2026-11-23",
-      "time": "18:00",
       "highlightId": "hl-ptr",
       "format": "Video",
-      "formatDetail": "Video vertical",
       "status": "Idea",
       "order": 0,
       "channel": "Instagram",
       "projectId": "project-portafolio-2026",
-      "phase": "Fase 4: Continuidad",
-      "context": "OBJETIVO: Expresar la postura de Peter sobre las partes de su trabajo que quiere hacer personalmente.\nQUÉ MOSTRAR: Peter hablando a cámara, sin edición.\nCÓMO PRODUCIR: Definir primero qué significa conservar tu creación y edición, qué tareas deseas hacer tú y qué usos de IA sí aceptas. Grabar una opinión concreta desde esa distinción; no atribuirle una postura absoluta incompatible con las imágenes de IA previstas.\nMENSAJE / TEXTO: Opinión personal con un argumento claro y un ejemplo real.\nPENDIENTE: Conversar la postura con Peter y preparar una guía breve antes de grabar."
+      "phase": "Fase 4: Continuidad"
     },
     {
       "time": "12:00",
@@ -2417,6 +2417,6 @@
     }
   ],
   "importedCustomContextNotes": "PLAN APROBADO Y SINCRONIZADO — 11 noviembre 2026\nZona horaria: America/Bogota. Campaña del 9 al 25 de noviembre; lanzamiento oficial en Behance el 20 a las 12:00. El evento del auditorio del 25 es independiente; su historia quedó excluida.\nMetas totales, incluidos publicados: Instagram 30 historias, 3 reels, 5 posts y 4 carruseles; LinkedIn 6 publicaciones; Behance 1 portafolio con 6 proyectos.\nConservar exactamente el carrusel «Mientras tanto…» del 9 y las historias de café del 9 y alejar el zoom del 10 con sus estados publicados.\nEl 11 y 12 Peter está muy ocupado: solo fotos/capturas sencillas en historias, dos por día; sin reels. Reel de creadores movido al 21. Historias de contacto juntas el 18 y atemporales.\nReels elegidos: tres creadores (Marco Creativo, Đức Thắng Ds, CJ Cawley), BrandBoard con AI editable y PDF solicitado con BRAND y entregado por Drive, consejo humorístico.\nPosts: Criterio vs Forma; logofolio con retrato; «Métele más diseño»; retrato intervenido; anuncio de lanzamiento con foto IA.\nCarruseles: publicado «Mientras tanto…», Cemedicar, Karen Lizarazo, alejamiento progresivo en tres slides. La Banda del 5 no tendrá carrusel individual en Instagram; sí aparece junto a Karen en LinkedIn y en Behance.\nLinkedIn: construir en silencio, lanzamiento, ARCOmadrid, ambas vallas, filosofía de diseño, valor del diseño.\nBehance: branding Cemedicar, Kivado, Gyal y Carboneo; transmedia Karen Lizarazo y La Banda del 5. Orden y desarrollo se decidirán después.\nSlogan exacto: «Criterio antes que forma». Teaser exacto: «Pronto, con criterio todo toma forma.»\nDestacadas: DAILY registros espontáneos y práctica diaria; SETUP espacio de trabajo y herramientas; PORTFOLIO presentaciones formales; CONTACT canales y contratación atemporales; PTR historia y reflexiones personales; TOOLS consejos, recursos, referentes, noticias y actualizaciones.\nLa encuesta serif/sans está integrada en el primer ejemplo de combinaciones tipográficas: una sola pantalla. Son tres historias tipográficas, no cuatro. La foto casual de valla va en DAILY.\nCada entrada debe explicar objetivo, qué mostrar, cómo producir, mensaje y pendientes. Si depende de una vivencia o material no disponible, preguntar o elegirlo en producción; no inventar.\nReserva fuera del calendario activo: papelería personal con IA, proceso de logo, otras propuestas no seleccionadas. ARCOmadrid queda en LinkedIn.\nNo se han publicado automáticamente contenidos en redes: las fechas son planificación editorial.",
-  "updatedAt": 1794385166688,
-  "updatedAtISO": "2026-11-11T08:19:26.688Z"
+  "updatedAt": 1794385691452,
+  "updatedAtISO": "2026-11-11T08:28:11.452Z"
 }
