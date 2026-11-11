@@ -624,7 +624,7 @@
       "id": "hl-proceso",
       "name": "SETUP",
       "icon": "▲",
-      "desc": "Taller + preprensa",
+      "desc": "Espacio de trabajo y herramientas",
       "order": 1
     },
     {
@@ -2158,6 +2158,6 @@
     }
   ],
   "importedCustomContextNotes": "",
-  "updatedAt": 1794376834319,
-  "updatedAtISO": "2026-11-11T06:00:34.319Z"
+  "updatedAt": 1794377058583,
+  "updatedAtISO": "2026-11-11T06:04:18.583Z"
 }
