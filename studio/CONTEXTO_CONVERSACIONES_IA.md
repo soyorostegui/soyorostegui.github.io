@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 10/11/2026, 3:40:03 a. m.
+**Última actualización:** 11/11/2026, 1:00:34 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
@@ -314,7 +314,7 @@
 
 ### Historias (29)
 - `st-1794204588972-274` #1 · 2026-11-09 08:10 · DAILY · **Café en la universidad: la manía de medir todo** · Foto · Publicado · Contexto: Foto casual en la universidad: taza de café, mesa y cuaderno, con una sola frase corta de diseño en cuerpo pequeño (por ejemplo 'La manía de medir todo'). Va a las 08:00, antes de la primera story del taller, para abrir el día con tono humano y sin spoilers del portafolio; el formato espontáneo busca comentarios, no alcance.
-- `st-1794210093097-811` #2 · 2026-11-10 12:30 · DAILY · **¿Quién más aleja el zoom para probar legibilidad?** · Sticker · En Diseño · Contexto: Clip de 6 segundos grabando la pantalla mientras el zoom del lienzo se aleja hasta que la pieza queda pequeña. Sobre el último fotograma va el sticker de pregunta con la frase del título. Funciona porque convierte un hábito privado del oficio en una pregunta de reconocimiento: la gente responde 'yo' sin sentirse examinada. Además mide interés real en legibilidad antes de producir el carrusel del 16.
+- `st-1794210093097-811` #2 · 2026-11-10 12:30 · DAILY · **¿Quién más aleja el zoom para probar legibilidad?** · Sticker · Publicado · Contexto: Clip de 6 segundos grabando la pantalla mientras el zoom del lienzo se aleja hasta que la pieza queda pequeña. Sobre el último fotograma va el sticker de pregunta con la frase del título. Funciona porque convierte un hábito privado del oficio en una pregunta de reconocimiento: la gente responde 'yo' sin sentirse examinada. Además mide interés real en legibilidad antes de producir el carrusel del 16.
 - `st-1794299136343-260` #3 · 2026-11-11 18:30 · DAILY · **_v1 _v2 _v3 _final_final** · Captura · Idea · Contexto: Captura de la lista de versiones de un mismo archivo en Finder o Drive, con nombres visibles del tipo _v1, _v2, _v3, _final_final. Se publica al cierre de la jornada, cuando el post de LinkedIn del mismo día ya circuló y la audiencia está en modo lectura. El humor de reconocimiento genera comentarios del tipo 'yo tengo hasta la v7' sin revelar ningún proyecto ni exigir materiales de taller: es el método de trabajo convertido en conversación, y llena el único día de la campaña que había quedado sin ninguna historia.
 - `st-8` #4 · 2026-11-12 09:00 · DAILY · **Debate: ¿Cuándo un logo necesita simplificarse?** · Sticker · Idea · Contexto: Abre el día del carrusel post-ig-4 sobre anatomía de un sistema visual. El sticker invita a responder antes de que la publicación explique el argumento completo.
 - `st-9` #5 · 2026-11-12 12:30 · DAILY · **Libros y referencias de diseño que uso** · Foto · Idea · Contexto: Muestra la biblioteca de trabajo a mediodía, cuando el carrusel del día ya está circulando. Humaniza el criterio: detrás de cada decisión hay referencias concretas y verificables.
