@@ -378,152 +378,41 @@
 - `hl-proceso` ▲ **SETUP** — 3 historia(s) · Espacio de trabajo y herramientas
 - `hl-hito` ● **PORTFOLIO** — 3 historia(s) · Presentaciones formales y cuidadas de proyectos, portafolio y lanzamiento.
 - `hl-calle` ◈ **CONTACT** — 6 historia(s) · Canales de contacto, consultas y colaboración. Contenido atemporal.
-- `hl-ptr` ▮ **PTR** — 6 historia(s) · Historia personal, vocación y reflexiones de Peter.
+- `hl-ptr` ▮ **PTR** — 7 historia(s) · Historia personal, vocación y reflexiones de Peter.
 - `hl-tools` ◆ **TOOLS** — 8 historia(s) · Contenido de valor: consejos, recursos descargables, referentes, noticias y actualizaciones de diseño.
 
-### Historias (30)
+### Historias (31)
 - `st-1794204588972-274` #1 · 2026-11-09 08:10 · DAILY · **Café en la universidad: la manía de medir todo** · Foto · Publicado · Contexto: Foto casual en la universidad: taza de café, mesa y cuaderno, con una sola frase corta de diseño en cuerpo pequeño (por ejemplo 'La manía de medir todo'). Va a las 08:00, antes de la primera story del taller, para abrir el día con tono humano y sin spoilers del portafolio; el formato espontáneo busca comentarios, no alcance.
 - `st-1794210093097-811` #2 · 2026-11-10 12:30 · DAILY · **¿Quién más aleja el zoom para probar legibilidad?** · Sticker · Publicado · Contexto: Clip de 6 segundos grabando la pantalla mientras el zoom del lienzo se aleja hasta que la pieza queda pequeña. Sobre el último fotograma va el sticker de pregunta con la frase del título. Funciona porque convierte un hábito privado del oficio en una pregunta de reconocimiento: la gente responde 'yo' sin sentirse examinada. Además mide interés real en legibilidad antes de producir el carrusel del 16.
-- `st-setup-herramienta` #3 · 2026-11-12 12:00 · SETUP · **Una herramienta que uso de verdad** · Foto · Idea · Contexto: OBJETIVO: Mostrar una herramienta real y su utilidad cotidiana.
-QUÉ MOSTRAR: Foto de una herramienta física o digital a mano.
-CÓMO PRODUCIR: Una fotografía sencilla, sin grabar video. Escribir nombre y una línea sobre la tarea que facilita. La elección debe corresponder al uso real de Peter.
-MENSAJE / TEXTO: Qué haces con esta herramienta y por qué la utilizas.
-PENDIENTE: Elegir herramienta y tomar foto.
-- `st-1794299136343-260` #4 · 2026-11-12 18:30 · DAILY · **_v1 _v2 _v3 _final_final** · Captura · Idea · Contexto: OBJETIVO: Compartir humor sobre las revisiones del oficio.
-QUÉ MOSTRAR: Captura de versiones reales del mismo archivo.
-CÓMO PRODUCIR: Usar una captura disponible, recortar y ocultar información privada; añadir una sola frase de humor. Producción sencilla para el 11.
-MENSAJE / TEXTO: Humor de reconocimiento sobre las revisiones y cuándo una versión se vuelve definitiva.
-PENDIENTE: Elegir captura real y frase.
-- `st-17` #5 · 2026-11-12 18:30 · DAILY · **Mi diseño en la calle: una foto desde el carro** · Foto · Idea · Contexto: OBJETIVO: Compartir casualmente el encuentro con un trabajo instalado.
-QUÉ MOSTRAR: Foto existente de una valla diseñada por Peter, tomada desde un carro.
-CÓMO PRODUCIR: Usar la fotografía que Peter ya tiene. Mantener el registro espontáneo con un texto breve; no convertirlo en presentación formal. La presentación cuidada del proyecto pertenece al carrusel.
-MENSAJE / TEXTO: Mensaje personal sobre encontrarte con tu trabajo en la calle.
-PENDIENTE: Elegir foto y redactar mensaje breve.
-- `st-setup-archivo` #6 · 2026-11-13 10:00 · SETUP · **Mi archivo por dentro: capas y organización** · Captura · Idea · Contexto: OBJETIVO: Mostrar la organización del entorno digital de trabajo.
-QUÉ MOSTRAR: Panel de capas de un proyecto real con nombres y grupos legibles.
-CÓMO PRODUCIR: Abrir un proyecto y mostrar conjunto y acercamiento al panel. Explicar cómo localizas o ajustas elementos gracias a su orden; evitar capturas diminutas.
-MENSAJE / TEXTO: Una decisión concreta de organización que te facilita trabajar.
-PENDIENTE: Elegir archivo y elemento que explicar.
-- `st-13` #7 · 2026-11-13 13:00 · TOOLS · **El espaciado también diseña: antes y después del kerning** · Captura · Idea · Contexto: OBJETIVO: Enseñar el efecto de un ajuste de espaciado.
-QUÉ MOSTRAR: El mismo texto antes y después, con el espacio intervenido señalado.
-CÓMO PRODUCIR: Preparar comparación en una sola pantalla manteniendo el resto igual. Ampliar lo suficiente para ver el cambio y explicar qué problema resuelve.
-MENSAJE / TEXTO: Explicar el ajuste con un ejemplo concreto, sin convertirlo en una regla universal.
-PENDIENTE: Seleccionar ejemplo y preparar comparación.
-- `st-12` #8 · 2026-11-14 11:00 · TOOLS · **Combinaciones tipográficas 1/3: ejemplo y encuesta** · Encuesta · Idea · Contexto: OBJETIVO: Mostrar cómo una elección tipográfica afecta el tono e invitar a comparar.
-QUÉ MOSTRAR: Dos opciones comparables para el mismo texto; una combinación protagonista de la primera entrega.
-CÓMO PRODUCIR: Primera pantalla de una secuencia de tres. Definir intención comunicativa, mostrar titular y apoyo, explicar qué aporta cada fuente e integrar aquí la encuesta serif/sans. La encuesta y el ejemplo cuentan como UNA historia.
-MENSAJE / TEXTO: Preguntar qué opción comunica mejor la intención elegida y explicar brevemente el criterio.
-PENDIENTE: Elegir fuentes, texto, intención y opciones de encuesta.
-- `st-tools-tipografia-2` #9 · 2026-11-14 11:01 · TOOLS · **Combinaciones tipográficas 2/3** · Foto · Idea · Contexto: OBJETIVO: Mostrar una segunda intención visual mediante tipografía.
-QUÉ MOSTRAR: Mismo texto y estructura del ejemplo 1, otra pareja tipográfica.
-CÓMO PRODUCIR: Publicar inmediatamente después de la primera. Mantener comparación y legibilidad; explicar qué aporta cada fuente al tono.
-MENSAJE / TEXTO: Nombrar el tono buscado y una razón concreta de la elección.
-PENDIENTE: Elegir pareja y tono diferentes del primero.
-- `st-tools-tipografia-3` #10 · 2026-11-14 11:02 · TOOLS · **Combinaciones tipográficas 3/3** · Foto · Idea · Contexto: OBJETIVO: Completar la comparación con un tercer tono.
-QUÉ MOSTRAR: Mismo texto, tercera combinación de titular y apoyo.
-CÓMO PRODUCIR: Publicar inmediatamente después de la segunda. Explicar la relación de fuentes, pesos y composición, evitando afirmar que una familia comunica siempre lo mismo.
-MENSAJE / TEXTO: Una explicación breve de la intención y del efecto de esta combinación.
-PENDIENTE: Elegir pareja y preparar tercera pantalla.
-- `st-setup-espacio` #11 · 2026-11-14 12:00 · SETUP · **Así organizo mi espacio de trabajo** · Foto · Idea · Contexto: OBJETIVO: Presentar el espacio real de trabajo con producción ligera.
-QUÉ MOSTRAR: Escritorio tal como está.
-CÓMO PRODUCIR: Una fotografía sencilla con el móvil. Añadir una frase sobre una decisión real de organización. Los tres señalamientos son opcionales. Hoy Peter tiene poco tiempo: no requiere video ni edición elaborada.
-MENSAJE / TEXTO: Explicar brevemente por qué una disposición del escritorio te facilita trabajar.
-PENDIENTE: Tomar foto y elegir una decisión real.
-- `st-ptr-vocacion` #12 · 2026-11-15 11:00 · PTR · **Yo adulto y yo de pequeño: mi vocación** · Foto · Idea · Contexto: OBJETIVO: Conectar la historia personal de Peter con su vocación de diseñador.
-QUÉ MOSTRAR: Foto actual con fotografía infantil superpuesta como foto pegada.
-CÓMO PRODUCIR: Seleccionar las dos fotos y escribir desde un recuerdo real de infancia que conecte con querer ser diseñador. No inventar anécdotas.
-MENSAJE / TEXTO: Contar qué recuerdo sostiene la idea de que querías diseñar desde pequeño.
-PENDIENTE: Elegir fotos y pedir a Peter el recuerdo concreto.
-- `st-tools-recurso` #13 · 2026-11-15 17:00 · TOOLS · **Un recurso que recomiendo** · Foto · Idea · Contexto: OBJETIVO: Compartir una herramienta o recurso útil y accesible.
-QUÉ MOSTRAR: Captura del recurso en uso y un ejemplo de su utilidad.
-CÓMO PRODUCIR: Elegir un recurso que Peter conozca; explicar qué problema resuelve y añadir enlace. Comprobar acceso y condiciones antes de recomendar.
-MENSAJE / TEXTO: Para qué lo usas y cuándo puede ayudar a otro diseñador.
-PENDIENTE: Elegir recurso, ejemplo y enlace.
-- `st-tools-referente` #14 · 2026-11-16 12:00 · TOOLS · **Un referente internacional y qué aprender de su proyecto** · Foto · Idea · Contexto: OBJETIVO: Enseñar a mirar una decisión de diseño con criterio.
-QUÉ MOSTRAR: Un proyecto acreditado de otro diseñador.
-CÓMO PRODUCIR: Seleccionar un proyecto y destacar una decisión concreta de composición, identidad o narrativa. Incluir autor, fuente y enlace cuando esté disponible. Trasladado del 12 al 16 para dejar producción ligera el 12.
-MENSAJE / TEXTO: Qué decisión destacarías y qué aprendizaje te deja; evitar elogios genéricos.
-PENDIENTE: Elegir referente, proyecto y fuente.
-- `st-portfolio-teaser` #15 · 2026-11-17 18:30 · PORTFOLIO · **Pronto, con criterio todo toma forma** · Video · Idea · Contexto: OBJETIVO: Generar expectativa por el lanzamiento.
-QUÉ MOSTRAR: Peter sentado frente al computador trabajando en programas de diseño, grabado desde detrás del hombro.
-CÓMO PRODUCIR: Toma continua de unos 15 segundos, escena desenfocada y movimiento sutil. Textos nítidos: 0–5 s escena; 5–10 s frase; 10–15 s fecha.
-MENSAJE / TEXTO: «Pronto, con criterio todo toma forma.» Después: «20 de noviembre».
-PENDIENTE: Grabar toma y elegir audio.
-- `st-contact-behance` #16 · 2026-11-18 10:00 · CONTACT · **Behance: explora mis proyectos completos** · Foto · Idea · Contexto: OBJETIVO: Presentar un canal de contacto atemporal.
-QUÉ MOSTRAR: Captura o composición del perfil de Behance, usuario y sticker de enlace.
-CÓMO PRODUCIR: Publicar las cuatro pantallas juntas y en este orden el 18, antes del lanzamiento. Mantener diseño coherente, una función por canal y SIN fechas ni anuncios del portafolio.
-MENSAJE / TEXTO: Explicar que allí pueden explorar tus proyectos completos y las decisiones que los sostienen.
-PENDIENTE: Confirmar usuario y enlace del perfil.
-- `st-contact-linkedin` #17 · 2026-11-18 10:01 · CONTACT · **LinkedIn: conectemos profesionalmente** · Foto · Idea · Contexto: OBJETIVO: Presentar un canal de contacto atemporal.
-QUÉ MOSTRAR: Perfil de LinkedIn, nombre y sticker de enlace.
-CÓMO PRODUCIR: Publicar las cuatro pantallas juntas y en este orden el 18, antes del lanzamiento. Mantener diseño coherente, una función por canal y SIN fechas ni anuncios del portafolio.
-MENSAJE / TEXTO: Invitar a conectar y conocer tu perfil para oportunidades profesionales.
-PENDIENTE: Confirmar URL del perfil.
-- `st-contact-correo` #18 · 2026-11-18 10:02 · CONTACT · **Correo: conversemos sobre tu proyecto** · Foto · Idea · Contexto: OBJETIVO: Presentar un canal de contacto atemporal.
-QUÉ MOSTRAR: Dirección de correo legible en una composición con tu identidad.
-CÓMO PRODUCIR: Publicar las cuatro pantallas juntas y en este orden el 18, antes del lanzamiento. Mantener diseño coherente, una función por canal y SIN fechas ni anuncios del portafolio.
-MENSAJE / TEXTO: Invitar a escribir sobre proyectos; facilitar copiar la dirección o abrir el correo.
-PENDIENTE: Confirmar correo público.
-- `st-contact-instagram` #19 · 2026-11-18 10:03 · CONTACT · **Instagram: podemos empezar por aquí** · Foto · Idea · Contexto: OBJETIVO: Presentar un canal de contacto atemporal.
-QUÉ MOSTRAR: Usuario de Instagram e invitación a enviar un mensaje.
-CÓMO PRODUCIR: Publicar las cuatro pantallas juntas y en este orden el 18, antes del lanzamiento. Mantener diseño coherente, una función por canal y SIN fechas ni anuncios del portafolio.
-MENSAJE / TEXTO: Invitar a iniciar una conversación por mensaje directo.
-PENDIENTE: Confirmar usuario y preparar pieza.
-- `st-26` #20 · 2026-11-19 09:00 · PORTFOLIO · **Mañana abro mi portafolio** · Sticker · Idea · Contexto: OBJETIVO: Recordar el lanzamiento e invitar a activar el recordatorio.
-QUÉ MOSTRAR: Detalle de la portada real del portafolio.
-CÓMO PRODUCIR: Recortar un detalle de identidad, reservar espacio para texto y sticker. Configurar cuenta regresiva al 20 de noviembre a las 12:00 America/Bogota.
-MENSAJE / TEXTO: «Mañana abro mi portafolio.» Debajo: «20 de noviembre · Behance».
-PENDIENTE: Elegir recorte y configurar sticker.
-- `st-28` #21 · 2026-11-19 20:00 · PTR · **Antes de compartir mi portafolio** · Foto · Idea · Contexto: OBJETIVO: Expresar el significado personal del lanzamiento del 20.
-QUÉ MOSTRAR: Foto de Peter revisando el portafolio o preparando su publicación.
-CÓMO PRODUCIR: Antes de redactar, responder: ¿qué sientes al mostrarlo?, ¿qué aprendizaje reconoces en los proyectos?, ¿qué esperas de esta nueva etapa? Elegir una respuesta concreta y escribir con la voz de Peter. No trata del evento del auditorio.
-MENSAJE / TEXTO: Reflexión breve propia sobre compartir el trabajo al día siguiente.
-PENDIENTE: Obtener respuesta personal y foto; redactar desde esa respuesta.
-- `st-ptr-gran-dia` #22 · 2026-11-20 08:00 · PTR · **Hoy es un gran día** · Foto · Idea · Contexto: OBJETIVO: Compartir expectativa personal la mañana del lanzamiento.
-QUÉ MOSTRAR: Foto o clip sencillo de Peter al comenzar el día.
-CÓMO PRODUCIR: Una pantalla temprana con mensaje breve de ilusión por lo que se compartirá. Mantener la revelación y el enlace para el anuncio de las 12:20.
-MENSAJE / TEXTO: Frase personal que anticipe que hoy sucede algo esperado.
-PENDIENTE: Elegir imagen y frase.
-- `st-30` #23 · 2026-11-20 12:20 · PORTFOLIO · **Mi portafolio ya está en Behance** · Sticker · Idea · Contexto: OBJETIVO: Dar acceso inmediato al portafolio publicado.
-QUÉ MOSTRAR: Vista del portafolio real en Behance.
-CÓMO PRODUCIR: Verificar que el enlace esté activo; usar una captura o composición formal y añadir sticker de enlace directo. Publicar después del lanzamiento y del post de Instagram.
-MENSAJE / TEXTO: Anunciar que ya está disponible e invitar a explorarlo.
-PENDIENTE: URL definitiva y captura de la publicación.
-- `st-1794202219509-869` #24 · 2026-11-21 11:00 · CONTACT · **Qué necesito saber para cotizar tu proyecto de diseño** · Foto · Idea · Contexto: OBJETIVO: Ayudar a iniciar una consulta de diseño con información útil.
-QUÉ MOSTRAR: Composición atemporal con tres preguntas.
-CÓMO PRODUCIR: Una sola pantalla legible con identidad de Peter. Preguntas: ¿qué necesitas comunicar o resolver?, ¿qué piezas o entregables necesitas?, ¿para cuándo lo necesitas? Aplica a proyectos de diseño en general, no solo branding.
-MENSAJE / TEXTO: «Cuéntame estos detalles por mensaje directo y conversemos sobre tu proyecto.»
-PENDIENTE: Diseñar pantalla y revisar legibilidad.
-- `st-tools-brandboard` #25 · 2026-11-21 12:30 · TOOLS · **Descarga mi BrandBoard: Illustrator + PDF** · Foto · Idea · Contexto: OBJETIVO: Dar acceso al recurso que complementa el reel de BrandBoard.
-QUÉ MOSTRAR: Vista clara de la plantilla y formatos disponibles.
-CÓMO PRODUCIR: Mostrar una previsualización legible, indicar Illustrator editable (.ai) y PDF, añadir sticker con el enlace de Drive. Publicar después del reel; comprobar permisos de descarga.
-MENSAJE / TEXTO: «BrandBoard editable · Illustrator + PDF». Invitación clara a descargar.
-PENDIENTE: Preparar plantilla, archivos y enlace de Drive.
-- `st-1794299136346-207` #26 · 2026-11-22 21:30 · PTR · **La tranquilidad de crear de noche** · Foto · Idea · Contexto: OBJETIVO: Mostrar por qué Peter a veces busca las horas nocturnas para crear.
-QUÉ MOSTRAR: Foto real de escritorio durante una sesión nocturna.
-CÓMO PRODUCIR: Fotografiar la escena cotidiana con pantalla, luces y objetos reales. El texto debe hablar de silencio y tranquilidad para concentrarse, no limitarse a describir el equipo.
-MENSAJE / TEXTO: Reflexión personal sobre cómo la tranquilidad nocturna abre espacio a la creatividad.
-PENDIENTE: Tomar foto durante una sesión real y redactar desde tu experiencia.
-- `st-tools-noticia-ia` #27 · 2026-11-23 12:00 · TOOLS · **Noticia de IA y diseño: qué cambia para nosotros** · Foto · Idea · Contexto: OBJETIVO: Compartir una novedad relevante con interpretación propia.
-QUÉ MOSTRAR: Titular o captura acreditada de una noticia verificada.
-CÓMO PRODUCIR: Elegir noticia cerca del 23; verificar anuncio, fecha y fuente primaria. Resumir el cambio y añadir una consecuencia concreta para el diseño. No dar por confirmado el ejemplo anterior de MCP de Adobe sin verificarlo.
-MENSAJE / TEXTO: Qué se anunció, por qué importa y qué lectura hace Peter.
-PENDIENTE: Elegir noticia vigente, verificar fuente y redactar reflexión.
-- `st-ptr-creacion-ia` #28 · 2026-11-23 18:00 · PTR · **Mi creación y la IA: una opinión personal** · Video · Idea · Contexto: OBJETIVO: Expresar la postura de Peter sobre las partes de su trabajo que quiere hacer personalmente.
-QUÉ MOSTRAR: Peter hablando a cámara, sin edición.
-CÓMO PRODUCIR: Definir primero qué significa conservar tu creación y edición, qué tareas deseas hacer tú y qué usos de IA sí aceptas. Grabar una opinión concreta desde esa distinción; no atribuirle una postura absoluta incompatible con las imágenes de IA previstas.
-MENSAJE / TEXTO: Opinión personal con un argumento claro y un ejemplo real.
-PENDIENTE: Conversar la postura con Peter y preparar una guía breve antes de grabar.
-- `st-27` #29 · 2026-11-24 12:00 · PTR · **Los cuatro tomos: ver el trabajo terminado** · Foto · Idea · Contexto: OBJETIVO: Compartir el significado personal de cerrar una etapa.
-QUÉ MOSTRAR: Foto de los cuatro tomos encuadernados sobre la mesa.
-CÓMO PRODUCIR: Mostrar el conjunto real, con una reflexión sobre lo que sientes al verlo terminado y un esfuerzo concreto que representa. No inventar dificultades ni presentar como registro del evento.
-MENSAJE / TEXTO: Qué significa para ti ver materializado este trabajo.
-PENDIENTE: Foto de los tomos y respuesta personal que sostenga el texto.
-- `st-1794202219515-974` #30 · 2026-11-25 11:00 · CONTACT · **¿Construimos tu próximo proyecto?** · Foto · Idea · Contexto: OBJETIVO: Invitar a proyectos y colaboraciones al cierre de la estrategia.
-QUÉ MOSTRAR: Foto de Peter trabajando con su identidad y mensaje protagonista.
-CÓMO PRODUCIR: Crear pieza atemporal sin fechas ni promesas de disponibilidad no confirmadas. Publicar después del lanzamiento, entre el 20 y el 25; fecha acordada 25.
-MENSAJE / TEXTO: «¿Construimos tu próximo proyecto?» Apoyo: «Diseño con criterio para marcas, negocios y personas. Escríbeme y conversemos sobre lo que necesitas».
-PENDIENTE: Elegir foto y preparar composición.
+- `st-ptr-staff-encuentro-diseno-11` #3 · 2026-11-11 19:00 · PTR · **Seré staff del Encuentro Nacional de Diseño 11** · Otro · Publicado · Contexto: REGISTRO DE PUBLICACIÓN: Peter confirmó que publicó esta historia el 11 de noviembre de 2026 a las 19:00, hora de Colombia (America/Bogota). CONTENIDO: Anuncio de que será parte del staff del evento «Encuentro Nacional de Diseño 11». CLASIFICACIÓN: PTR, por tratarse de una participación personal y profesional de Peter. CONTEO: Historia adicional a las 30 previstas; no sustituir ni eliminar ninguna entrada existente. MATERIAL: La fotografía, el video, el texto exacto y el enlace de la historia no fueron proporcionados; no reconstruirlos ni inventarlos.
+- `st-setup-herramienta` #4 · 2026-11-12 12:00 · SETUP · **Una herramienta que uso de verdad** · Foto · Idea · Contexto: OBJETIVO: Mostrar una herramienta real y su utilidad cotidiana. QUÉ MOSTRAR: Foto de una herramienta física o digital a mano. CÓMO PRODUCIR: Una fotografía sencilla, sin grabar video. Escribir nombre y una línea sobre la tarea que facilita. La elección debe corresponder al uso real de Peter. MENSAJE / TEXTO: Qué haces con esta herramienta y por qué la utilizas. PENDIENTE: Elegir herramienta y tomar foto.
+- `st-1794299136343-260` #5 · 2026-11-12 18:30 · DAILY · **_v1 _v2 _v3 _final_final** · Captura · Idea · Contexto: OBJETIVO: Compartir humor sobre las revisiones del oficio. QUÉ MOSTRAR: Captura de versiones reales del mismo archivo. CÓMO PRODUCIR: Usar una captura disponible, recortar y ocultar información privada; añadir una sola frase de humor. Producción sencilla para el 11. MENSAJE / TEXTO: Humor de reconocimiento sobre las revisiones y cuándo una versión se vuelve definitiva. PENDIENTE: Elegir captura real y frase.
+- `st-17` #6 · 2026-11-12 18:30 · DAILY · **Mi diseño en la calle: una foto desde el carro** · Foto · Idea · Contexto: OBJETIVO: Compartir casualmente el encuentro con un trabajo instalado. QUÉ MOSTRAR: Foto existente de una valla diseñada por Peter, tomada desde un carro. CÓMO PRODUCIR: Usar la fotografía que Peter ya tiene. Mantener el registro espontáneo con un texto breve; no convertirlo en presentación formal. La presentación cuidada del proyecto pertenece al carrusel. MENSAJE / TEXTO: Mensaje personal sobre encontrarte con tu trabajo en la calle. PENDIENTE: Elegir foto y redactar mensaje breve.
+- `st-setup-archivo` #7 · 2026-11-13 10:00 · SETUP · **Mi archivo por dentro: capas y organización** · Captura · Idea · Contexto: OBJETIVO: Mostrar la organización del entorno digital de trabajo. QUÉ MOSTRAR: Panel de capas de un proyecto real con nombres y grupos legibles. CÓMO PRODUCIR: Abrir un proyecto y mostrar conjunto y acercamiento al panel. Explicar cómo localizas o ajustas elementos gracias a su orden; evitar capturas diminutas. MENSAJE / TEXTO: Una decisión concreta de organización que te facilita trabajar. PENDIENTE: Elegir archivo y elemento que explicar.
+- `st-13` #8 · 2026-11-13 13:00 · TOOLS · **El espaciado también diseña: antes y después del kerning** · Captura · Idea · Contexto: OBJETIVO: Enseñar el efecto de un ajuste de espaciado. QUÉ MOSTRAR: El mismo texto antes y después, con el espacio intervenido señalado. CÓMO PRODUCIR: Preparar comparación en una sola pantalla manteniendo el resto igual. Ampliar lo suficiente para ver el cambio y explicar qué problema resuelve. MENSAJE / TEXTO: Explicar el ajuste con un ejemplo concreto, sin convertirlo en una regla universal. PENDIENTE: Seleccionar ejemplo y preparar comparación.
+- `st-12` #9 · 2026-11-14 11:00 · TOOLS · **Combinaciones tipográficas 1/3: ejemplo y encuesta** · Encuesta · Idea · Contexto: OBJETIVO: Mostrar cómo una elección tipográfica afecta el tono e invitar a comparar. QUÉ MOSTRAR: Dos opciones comparables para el mismo texto; una combinación protagonista de la primera entrega. CÓMO PRODUCIR: Primera pantalla de una secuencia de tres. Definir intención comunicativa, mostrar titular y apoyo, explicar qué aporta cada fuente e integrar aquí la encuesta serif/sans. La encuesta y el ejemplo cuentan como UNA historia. MENSAJE / TEXTO: Preguntar qué opción comunica mejor la intención elegida y explicar brevemente el criterio. PENDIENTE: Elegir fuentes, texto, intención y opciones de encuesta.
+- `st-tools-tipografia-2` #10 · 2026-11-14 11:01 · TOOLS · **Combinaciones tipográficas 2/3** · Foto · Idea · Contexto: OBJETIVO: Mostrar una segunda intención visual mediante tipografía. QUÉ MOSTRAR: Mismo texto y estructura del ejemplo 1, otra pareja tipográfica. CÓMO PRODUCIR: Publicar inmediatamente después de la primera. Mantener comparación y legibilidad; explicar qué aporta cada fuente al tono. MENSAJE / TEXTO: Nombrar el tono buscado y una razón concreta de la elección. PENDIENTE: Elegir pareja y tono diferentes del primero.
+- `st-tools-tipografia-3` #11 · 2026-11-14 11:02 · TOOLS · **Combinaciones tipográficas 3/3** · Foto · Idea · Contexto: OBJETIVO: Completar la comparación con un tercer tono. QUÉ MOSTRAR: Mismo texto, tercera combinación de titular y apoyo. CÓMO PRODUCIR: Publicar inmediatamente después de la segunda. Explicar la relación de fuentes, pesos y composición, evitando afirmar que una familia comunica siempre lo mismo. MENSAJE / TEXTO: Una explicación breve de la intención y del efecto de esta combinación. PENDIENTE: Elegir pareja y preparar tercera pantalla.
+- `st-setup-espacio` #12 · 2026-11-14 12:00 · SETUP · **Así organizo mi espacio de trabajo** · Foto · Idea · Contexto: OBJETIVO: Presentar el espacio real de trabajo con producción ligera. QUÉ MOSTRAR: Escritorio tal como está. CÓMO PRODUCIR: Una fotografía sencilla con el móvil. Añadir una frase sobre una decisión real de organización. Los tres señalamientos son opcionales. Hoy Peter tiene poco tiempo: no requiere video ni edición elaborada. MENSAJE / TEXTO: Explicar brevemente por qué una disposición del escritorio te facilita trabajar. PENDIENTE: Tomar foto y elegir una decisión real.
+- `st-ptr-vocacion` #13 · 2026-11-15 11:00 · PTR · **Yo adulto y yo de pequeño: mi vocación** · Foto · Idea · Contexto: OBJETIVO: Conectar la historia personal de Peter con su vocación de diseñador. QUÉ MOSTRAR: Foto actual con fotografía infantil superpuesta como foto pegada. CÓMO PRODUCIR: Seleccionar las dos fotos y escribir desde un recuerdo real de infancia que conecte con querer ser diseñador. No inventar anécdotas. MENSAJE / TEXTO: Contar qué recuerdo sostiene la idea de que querías diseñar desde pequeño. PENDIENTE: Elegir fotos y pedir a Peter el recuerdo concreto.
+- `st-tools-recurso` #14 · 2026-11-15 17:00 · TOOLS · **Un recurso que recomiendo** · Foto · Idea · Contexto: OBJETIVO: Compartir una herramienta o recurso útil y accesible. QUÉ MOSTRAR: Captura del recurso en uso y un ejemplo de su utilidad. CÓMO PRODUCIR: Elegir un recurso que Peter conozca; explicar qué problema resuelve y añadir enlace. Comprobar acceso y condiciones antes de recomendar. MENSAJE / TEXTO: Para qué lo usas y cuándo puede ayudar a otro diseñador. PENDIENTE: Elegir recurso, ejemplo y enlace.
+- `st-tools-referente` #15 · 2026-11-16 12:00 · TOOLS · **Un referente internacional y qué aprender de su proyecto** · Foto · Idea · Contexto: OBJETIVO: Enseñar a mirar una decisión de diseño con criterio. QUÉ MOSTRAR: Un proyecto acreditado de otro diseñador. CÓMO PRODUCIR: Seleccionar un proyecto y destacar una decisión concreta de composición, identidad o narrativa. Incluir autor, fuente y enlace cuando esté disponible. Trasladado del 12 al 16 para dejar producción ligera el 12. MENSAJE / TEXTO: Qué decisión destacarías y qué aprendizaje te deja; evitar elogios genéricos. PENDIENTE: Elegir referente, proyecto y fuente.
+- `st-portfolio-teaser` #16 · 2026-11-17 18:30 · PORTFOLIO · **Pronto, con criterio todo toma forma** · Video · Idea · Contexto: OBJETIVO: Generar expectativa por el lanzamiento. QUÉ MOSTRAR: Peter sentado frente al computador trabajando en programas de diseño, grabado desde detrás del hombro. CÓMO PRODUCIR: Toma continua de unos 15 segundos, escena desenfocada y movimiento sutil. Textos nítidos: 0–5 s escena; 5–10 s frase; 10–15 s fecha. MENSAJE / TEXTO: «Pronto, con criterio todo toma forma.» Después: «20 de noviembre». PENDIENTE: Grabar toma y elegir audio.
+- `st-contact-behance` #17 · 2026-11-18 10:00 · CONTACT · **Behance: explora mis proyectos completos** · Foto · Idea · Contexto: OBJETIVO: Presentar un canal de contacto atemporal. QUÉ MOSTRAR: Captura o composición del perfil de Behance, usuario y sticker de enlace. CÓMO PRODUCIR: Publicar las cuatro pantallas juntas y en este orden el 18, antes del lanzamiento. Mantener diseño coherente, una función por canal y SIN fechas ni anuncios del portafolio. MENSAJE / TEXTO: Explicar que allí pueden explorar tus proyectos completos y las decisiones que los sostienen. PENDIENTE: Confirmar usuario y enlace del perfil.
+- `st-contact-linkedin` #18 · 2026-11-18 10:01 · CONTACT · **LinkedIn: conectemos profesionalmente** · Foto · Idea · Contexto: OBJETIVO: Presentar un canal de contacto atemporal. QUÉ MOSTRAR: Perfil de LinkedIn, nombre y sticker de enlace. CÓMO PRODUCIR: Publicar las cuatro pantallas juntas y en este orden el 18, antes del lanzamiento. Mantener diseño coherente, una función por canal y SIN fechas ni anuncios del portafolio. MENSAJE / TEXTO: Invitar a conectar y conocer tu perfil para oportunidades profesionales. PENDIENTE: Confirmar URL del perfil.
+- `st-contact-correo` #19 · 2026-11-18 10:02 · CONTACT · **Correo: conversemos sobre tu proyecto** · Foto · Idea · Contexto: OBJETIVO: Presentar un canal de contacto atemporal. QUÉ MOSTRAR: Dirección de correo legible en una composición con tu identidad. CÓMO PRODUCIR: Publicar las cuatro pantallas juntas y en este orden el 18, antes del lanzamiento. Mantener diseño coherente, una función por canal y SIN fechas ni anuncios del portafolio. MENSAJE / TEXTO: Invitar a escribir sobre proyectos; facilitar copiar la dirección o abrir el correo. PENDIENTE: Confirmar correo público.
+- `st-contact-instagram` #20 · 2026-11-18 10:03 · CONTACT · **Instagram: podemos empezar por aquí** · Foto · Idea · Contexto: OBJETIVO: Presentar un canal de contacto atemporal. QUÉ MOSTRAR: Usuario de Instagram e invitación a enviar un mensaje. CÓMO PRODUCIR: Publicar las cuatro pantallas juntas y en este orden el 18, antes del lanzamiento. Mantener diseño coherente, una función por canal y SIN fechas ni anuncios del portafolio. MENSAJE / TEXTO: Invitar a iniciar una conversación por mensaje directo. PENDIENTE: Confirmar usuario y preparar pieza.
+- `st-26` #21 · 2026-11-19 09:00 · PORTFOLIO · **Mañana abro mi portafolio** · Sticker · Idea · Contexto: OBJETIVO: Recordar el lanzamiento e invitar a activar el recordatorio. QUÉ MOSTRAR: Detalle de la portada real del portafolio. CÓMO PRODUCIR: Recortar un detalle de identidad, reservar espacio para texto y sticker. Configurar cuenta regresiva al 20 de noviembre a las 12:00 America/Bogota. MENSAJE / TEXTO: «Mañana abro mi portafolio.» Debajo: «20 de noviembre · Behance». PENDIENTE: Elegir recorte y configurar sticker.
+- `st-28` #22 · 2026-11-19 20:00 · PTR · **Antes de compartir mi portafolio** · Foto · Idea · Contexto: OBJETIVO: Expresar el significado personal del lanzamiento del 20. QUÉ MOSTRAR: Foto de Peter revisando el portafolio o preparando su publicación. CÓMO PRODUCIR: Antes de redactar, responder: ¿qué sientes al mostrarlo?, ¿qué aprendizaje reconoces en los proyectos?, ¿qué esperas de esta nueva etapa? Elegir una respuesta concreta y escribir con la voz de Peter. No trata del evento del auditorio. MENSAJE / TEXTO: Reflexión breve propia sobre compartir el trabajo al día siguiente. PENDIENTE: Obtener respuesta personal y foto; redactar desde esa respuesta.
+- `st-ptr-gran-dia` #23 · 2026-11-20 08:00 · PTR · **Hoy es un gran día** · Foto · Idea · Contexto: OBJETIVO: Compartir expectativa personal la mañana del lanzamiento. QUÉ MOSTRAR: Foto o clip sencillo de Peter al comenzar el día. CÓMO PRODUCIR: Una pantalla temprana con mensaje breve de ilusión por lo que se compartirá. Mantener la revelación y el enlace para el anuncio de las 12:20. MENSAJE / TEXTO: Frase personal que anticipe que hoy sucede algo esperado. PENDIENTE: Elegir imagen y frase.
+- `st-30` #24 · 2026-11-20 12:20 · PORTFOLIO · **Mi portafolio ya está en Behance** · Sticker · Idea · Contexto: OBJETIVO: Dar acceso inmediato al portafolio publicado. QUÉ MOSTRAR: Vista del portafolio real en Behance. CÓMO PRODUCIR: Verificar que el enlace esté activo; usar una captura o composición formal y añadir sticker de enlace directo. Publicar después del lanzamiento y del post de Instagram. MENSAJE / TEXTO: Anunciar que ya está disponible e invitar a explorarlo. PENDIENTE: URL definitiva y captura de la publicación.
+- `st-1794202219509-869` #25 · 2026-11-21 11:00 · CONTACT · **Qué necesito saber para cotizar tu proyecto de diseño** · Foto · Idea · Contexto: OBJETIVO: Ayudar a iniciar una consulta de diseño con información útil. QUÉ MOSTRAR: Composición atemporal con tres preguntas. CÓMO PRODUCIR: Una sola pantalla legible con identidad de Peter. Preguntas: ¿qué necesitas comunicar o resolver?, ¿qué piezas o entregables necesitas?, ¿para cuándo lo necesitas? Aplica a proyectos de diseño en general, no solo branding. MENSAJE / TEXTO: «Cuéntame estos detalles por mensaje directo y conversemos sobre tu proyecto.» PENDIENTE: Diseñar pantalla y revisar legibilidad.
+- `st-tools-brandboard` #26 · 2026-11-21 12:30 · TOOLS · **Descarga mi BrandBoard: Illustrator + PDF** · Foto · Idea · Contexto: OBJETIVO: Dar acceso al recurso que complementa el reel de BrandBoard. QUÉ MOSTRAR: Vista clara de la plantilla y formatos disponibles. CÓMO PRODUCIR: Mostrar una previsualización legible, indicar Illustrator editable (.ai) y PDF, añadir sticker con el enlace de Drive. Publicar después del reel; comprobar permisos de descarga. MENSAJE / TEXTO: «BrandBoard editable · Illustrator + PDF». Invitación clara a descargar. PENDIENTE: Preparar plantilla, archivos y enlace de Drive.
+- `st-1794299136346-207` #27 · 2026-11-22 21:30 · PTR · **La tranquilidad de crear de noche** · Foto · Idea · Contexto: OBJETIVO: Mostrar por qué Peter a veces busca las horas nocturnas para crear. QUÉ MOSTRAR: Foto real de escritorio durante una sesión nocturna. CÓMO PRODUCIR: Fotografiar la escena cotidiana con pantalla, luces y objetos reales. El texto debe hablar de silencio y tranquilidad para concentrarse, no limitarse a describir el equipo. MENSAJE / TEXTO: Reflexión personal sobre cómo la tranquilidad nocturna abre espacio a la creatividad. PENDIENTE: Tomar foto durante una sesión real y redactar desde tu experiencia.
+- `st-tools-noticia-ia` #28 · 2026-11-23 12:00 · TOOLS · **Noticia de IA y diseño: qué cambia para nosotros** · Foto · Idea · Contexto: OBJETIVO: Compartir una novedad relevante con interpretación propia. QUÉ MOSTRAR: Titular o captura acreditada de una noticia verificada. CÓMO PRODUCIR: Elegir noticia cerca del 23; verificar anuncio, fecha y fuente primaria. Resumir el cambio y añadir una consecuencia concreta para el diseño. No dar por confirmado el ejemplo anterior de MCP de Adobe sin verificarlo. MENSAJE / TEXTO: Qué se anunció, por qué importa y qué lectura hace Peter. PENDIENTE: Elegir noticia vigente, verificar fuente y redactar reflexión.
+- `st-ptr-creacion-ia` #29 · 2026-11-23 18:00 · PTR · **Mi creación y la IA: una opinión personal** · Video · Idea · Contexto: OBJETIVO: Expresar la postura de Peter sobre las partes de su trabajo que quiere hacer personalmente. QUÉ MOSTRAR: Peter hablando a cámara, sin edición. CÓMO PRODUCIR: Definir primero qué significa conservar tu creación y edición, qué tareas deseas hacer tú y qué usos de IA sí aceptas. Grabar una opinión concreta desde esa distinción; no atribuirle una postura absoluta incompatible con las imágenes de IA previstas. MENSAJE / TEXTO: Opinión personal con un argumento claro y un ejemplo real. PENDIENTE: Conversar la postura con Peter y preparar una guía breve antes de grabar.
+- `st-27` #30 · 2026-11-24 12:00 · PTR · **Los cuatro tomos: ver el trabajo terminado** · Foto · Idea · Contexto: OBJETIVO: Compartir el significado personal de cerrar una etapa. QUÉ MOSTRAR: Foto de los cuatro tomos encuadernados sobre la mesa. CÓMO PRODUCIR: Mostrar el conjunto real, con una reflexión sobre lo que sientes al verlo terminado y un esfuerzo concreto que representa. No inventar dificultades ni presentar como registro del evento. MENSAJE / TEXTO: Qué significa para ti ver materializado este trabajo. PENDIENTE: Foto de los tomos y respuesta personal que sostenga el texto.
+- `st-1794202219515-974` #31 · 2026-11-25 11:00 · CONTACT · **¿Construimos tu próximo proyecto?** · Foto · Idea · Contexto: OBJETIVO: Invitar a proyectos y colaboraciones al cierre de la estrategia. QUÉ MOSTRAR: Foto de Peter trabajando con su identidad y mensaje protagonista. CÓMO PRODUCIR: Crear pieza atemporal sin fechas ni promesas de disponibilidad no confirmadas. Publicar después del lanzamiento, entre el 20 y el 25; fecha acordada 25. MENSAJE / TEXTO: «¿Construimos tu próximo proyecto?» Apoyo: «Diseño con criterio para marcas, negocios y personas. Escríbeme y conversemos sobre lo que necesitas». PENDIENTE: Elegir foto y preparar composición.
 
 ---
 
@@ -546,6 +435,8 @@ Reserva fuera del calendario activo: papelería personal con IA, proceso de logo
 No se han publicado automáticamente contenidos en redes: las fechas son planificación editorial.
 
 ACTUALIZACIÓN APROBADA — 12 de noviembre de 2026: la entrada post-li-1 sustituye «El valor de construir en silencio» por la presentación profesional de Peter, centrada en quién es hoy. Utilizar el texto definitivo del caption y el retrato elegido; no anunciar el portafolio ni su fecha en esta presentación. Se conservan fecha, hora y estado existentes.
+
+REGISTRO ADICIONAL APROBADO — 12 de noviembre de 2026: Peter publicó el 11 de noviembre a las 19:00 (America/Bogota) una historia anunciando que será staff de «Encuentro Nacional de Diseño 11». Se registra como Publicado en PTR y se suma al conteo SIN reemplazar ninguna de las 30 historias previstas. Total actual del calendario: 31 historias (30 previstas + esta adicional). No confundirla con la historia descartada del auditorio.
 
 ---
 
