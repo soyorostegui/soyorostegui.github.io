@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 12/11/2026, 1:26:22 a. m.
+**Última actualización:** 12/11/2026, 1:26:34 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
@@ -384,51 +384,51 @@
 ### Historias (30)
 - `st-1794204588972-274` #1 · 2026-11-09 08:10 · DAILY · **Café en la universidad: la manía de medir todo** · Foto · Publicado · Contexto: Foto casual en la universidad: taza de café, mesa y cuaderno, con una sola frase corta de diseño en cuerpo pequeño (por ejemplo 'La manía de medir todo'). Va a las 08:00, antes de la primera story del taller, para abrir el día con tono humano y sin spoilers del portafolio; el formato espontáneo busca comentarios, no alcance.
 - `st-1794210093097-811` #2 · 2026-11-10 12:30 · DAILY · **¿Quién más aleja el zoom para probar legibilidad?** · Sticker · Publicado · Contexto: Clip de 6 segundos grabando la pantalla mientras el zoom del lienzo se aleja hasta que la pieza queda pequeña. Sobre el último fotograma va el sticker de pregunta con la frase del título. Funciona porque convierte un hábito privado del oficio en una pregunta de reconocimiento: la gente responde 'yo' sin sentirse examinada. Además mide interés real en legibilidad antes de producir el carrusel del 16.
-- `st-setup-espacio` #3 · 2026-11-11 12:00 · SETUP · **Así organizo mi espacio de trabajo** · Foto · Idea · Contexto: OBJETIVO: Presentar el espacio real de trabajo con producción ligera.
-QUÉ MOSTRAR: Escritorio tal como está.
-CÓMO PRODUCIR: Una fotografía sencilla con el móvil. Añadir una frase sobre una decisión real de organización. Los tres señalamientos son opcionales. Hoy Peter tiene poco tiempo: no requiere video ni edición elaborada.
-MENSAJE / TEXTO: Explicar brevemente por qué una disposición del escritorio te facilita trabajar.
-PENDIENTE: Tomar foto y elegir una decisión real.
-- `st-setup-herramienta` #4 · 2026-11-12 12:00 · SETUP · **Una herramienta que uso de verdad** · Foto · Idea · Contexto: OBJETIVO: Mostrar una herramienta real y su utilidad cotidiana.
+- `st-setup-herramienta` #3 · 2026-11-12 12:00 · SETUP · **Una herramienta que uso de verdad** · Foto · Idea · Contexto: OBJETIVO: Mostrar una herramienta real y su utilidad cotidiana.
 QUÉ MOSTRAR: Foto de una herramienta física o digital a mano.
 CÓMO PRODUCIR: Una fotografía sencilla, sin grabar video. Escribir nombre y una línea sobre la tarea que facilita. La elección debe corresponder al uso real de Peter.
 MENSAJE / TEXTO: Qué haces con esta herramienta y por qué la utilizas.
 PENDIENTE: Elegir herramienta y tomar foto.
-- `st-1794299136343-260` #5 · 2026-11-12 18:30 · DAILY · **_v1 _v2 _v3 _final_final** · Captura · Idea · Contexto: OBJETIVO: Compartir humor sobre las revisiones del oficio.
+- `st-1794299136343-260` #4 · 2026-11-12 18:30 · DAILY · **_v1 _v2 _v3 _final_final** · Captura · Idea · Contexto: OBJETIVO: Compartir humor sobre las revisiones del oficio.
 QUÉ MOSTRAR: Captura de versiones reales del mismo archivo.
 CÓMO PRODUCIR: Usar una captura disponible, recortar y ocultar información privada; añadir una sola frase de humor. Producción sencilla para el 11.
 MENSAJE / TEXTO: Humor de reconocimiento sobre las revisiones y cuándo una versión se vuelve definitiva.
 PENDIENTE: Elegir captura real y frase.
-- `st-17` #6 · 2026-11-12 18:30 · DAILY · **Mi diseño en la calle: una foto desde el carro** · Foto · Idea · Contexto: OBJETIVO: Compartir casualmente el encuentro con un trabajo instalado.
+- `st-17` #5 · 2026-11-12 18:30 · DAILY · **Mi diseño en la calle: una foto desde el carro** · Foto · Idea · Contexto: OBJETIVO: Compartir casualmente el encuentro con un trabajo instalado.
 QUÉ MOSTRAR: Foto existente de una valla diseñada por Peter, tomada desde un carro.
 CÓMO PRODUCIR: Usar la fotografía que Peter ya tiene. Mantener el registro espontáneo con un texto breve; no convertirlo en presentación formal. La presentación cuidada del proyecto pertenece al carrusel.
 MENSAJE / TEXTO: Mensaje personal sobre encontrarte con tu trabajo en la calle.
 PENDIENTE: Elegir foto y redactar mensaje breve.
-- `st-setup-archivo` #7 · 2026-11-13 10:00 · SETUP · **Mi archivo por dentro: capas y organización** · Captura · Idea · Contexto: OBJETIVO: Mostrar la organización del entorno digital de trabajo.
+- `st-setup-archivo` #6 · 2026-11-13 10:00 · SETUP · **Mi archivo por dentro: capas y organización** · Captura · Idea · Contexto: OBJETIVO: Mostrar la organización del entorno digital de trabajo.
 QUÉ MOSTRAR: Panel de capas de un proyecto real con nombres y grupos legibles.
 CÓMO PRODUCIR: Abrir un proyecto y mostrar conjunto y acercamiento al panel. Explicar cómo localizas o ajustas elementos gracias a su orden; evitar capturas diminutas.
 MENSAJE / TEXTO: Una decisión concreta de organización que te facilita trabajar.
 PENDIENTE: Elegir archivo y elemento que explicar.
-- `st-13` #8 · 2026-11-13 13:00 · TOOLS · **El espaciado también diseña: antes y después del kerning** · Captura · Idea · Contexto: OBJETIVO: Enseñar el efecto de un ajuste de espaciado.
+- `st-13` #7 · 2026-11-13 13:00 · TOOLS · **El espaciado también diseña: antes y después del kerning** · Captura · Idea · Contexto: OBJETIVO: Enseñar el efecto de un ajuste de espaciado.
 QUÉ MOSTRAR: El mismo texto antes y después, con el espacio intervenido señalado.
 CÓMO PRODUCIR: Preparar comparación en una sola pantalla manteniendo el resto igual. Ampliar lo suficiente para ver el cambio y explicar qué problema resuelve.
 MENSAJE / TEXTO: Explicar el ajuste con un ejemplo concreto, sin convertirlo en una regla universal.
 PENDIENTE: Seleccionar ejemplo y preparar comparación.
-- `st-12` #9 · 2026-11-14 11:00 · TOOLS · **Combinaciones tipográficas 1/3: ejemplo y encuesta** · Encuesta · Idea · Contexto: OBJETIVO: Mostrar cómo una elección tipográfica afecta el tono e invitar a comparar.
+- `st-12` #8 · 2026-11-14 11:00 · TOOLS · **Combinaciones tipográficas 1/3: ejemplo y encuesta** · Encuesta · Idea · Contexto: OBJETIVO: Mostrar cómo una elección tipográfica afecta el tono e invitar a comparar.
 QUÉ MOSTRAR: Dos opciones comparables para el mismo texto; una combinación protagonista de la primera entrega.
 CÓMO PRODUCIR: Primera pantalla de una secuencia de tres. Definir intención comunicativa, mostrar titular y apoyo, explicar qué aporta cada fuente e integrar aquí la encuesta serif/sans. La encuesta y el ejemplo cuentan como UNA historia.
 MENSAJE / TEXTO: Preguntar qué opción comunica mejor la intención elegida y explicar brevemente el criterio.
 PENDIENTE: Elegir fuentes, texto, intención y opciones de encuesta.
-- `st-tools-tipografia-2` #10 · 2026-11-14 11:01 · TOOLS · **Combinaciones tipográficas 2/3** · Foto · Idea · Contexto: OBJETIVO: Mostrar una segunda intención visual mediante tipografía.
+- `st-tools-tipografia-2` #9 · 2026-11-14 11:01 · TOOLS · **Combinaciones tipográficas 2/3** · Foto · Idea · Contexto: OBJETIVO: Mostrar una segunda intención visual mediante tipografía.
 QUÉ MOSTRAR: Mismo texto y estructura del ejemplo 1, otra pareja tipográfica.
 CÓMO PRODUCIR: Publicar inmediatamente después de la primera. Mantener comparación y legibilidad; explicar qué aporta cada fuente al tono.
 MENSAJE / TEXTO: Nombrar el tono buscado y una razón concreta de la elección.
 PENDIENTE: Elegir pareja y tono diferentes del primero.
-- `st-tools-tipografia-3` #11 · 2026-11-14 11:02 · TOOLS · **Combinaciones tipográficas 3/3** · Foto · Idea · Contexto: OBJETIVO: Completar la comparación con un tercer tono.
+- `st-tools-tipografia-3` #10 · 2026-11-14 11:02 · TOOLS · **Combinaciones tipográficas 3/3** · Foto · Idea · Contexto: OBJETIVO: Completar la comparación con un tercer tono.
 QUÉ MOSTRAR: Mismo texto, tercera combinación de titular y apoyo.
 CÓMO PRODUCIR: Publicar inmediatamente después de la segunda. Explicar la relación de fuentes, pesos y composición, evitando afirmar que una familia comunica siempre lo mismo.
 MENSAJE / TEXTO: Una explicación breve de la intención y del efecto de esta combinación.
 PENDIENTE: Elegir pareja y preparar tercera pantalla.
+- `st-setup-espacio` #11 · 2026-11-14 12:00 · SETUP · **Así organizo mi espacio de trabajo** · Foto · Idea · Contexto: OBJETIVO: Presentar el espacio real de trabajo con producción ligera.
+QUÉ MOSTRAR: Escritorio tal como está.
+CÓMO PRODUCIR: Una fotografía sencilla con el móvil. Añadir una frase sobre una decisión real de organización. Los tres señalamientos son opcionales. Hoy Peter tiene poco tiempo: no requiere video ni edición elaborada.
+MENSAJE / TEXTO: Explicar brevemente por qué una disposición del escritorio te facilita trabajar.
+PENDIENTE: Tomar foto y elegir una decisión real.
 - `st-ptr-vocacion` #12 · 2026-11-15 11:00 · PTR · **Yo adulto y yo de pequeño: mi vocación** · Foto · Idea · Contexto: OBJETIVO: Conectar la historia personal de Peter con su vocación de diseñador.
 QUÉ MOSTRAR: Foto actual con fotografía infantil superpuesta como foto pegada.
 CÓMO PRODUCIR: Seleccionar las dos fotos y escribir desde un recuerdo real de infancia que conecte con querer ser diseñador. No inventar anécdotas.
