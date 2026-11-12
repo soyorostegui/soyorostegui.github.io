@@ -146,7 +146,7 @@
       "channel": "LinkedIn",
       "title": "Hola, soy Peter Orostegui — presentación profesional",
       "date": "2026-11-12",
-      "status": "Idea",
+      "status": "Publicado",
       "phase": "Fase 1: Señal",
       "format": "Post",
       "structure": "OBJETIVO: Presentar a Peter a las personas con quienes empieza a conectar en LinkedIn, centrado en quién es hoy como diseñador.\nQUÉ MOSTRAR: Retrato sencillo y profesional de Peter, acompañado del texto definitivo de presentación.\nCÓMO PRODUCIR: Utilizar el retrato elegido y mantener los cinco párrafos del texto, con espacios para facilitar la lectura. Introducir nombre, ubicación, branding y comunicación visual, filosofía de diseño y motivo para conectar.\nMENSAJE / TEXTO: Usar íntegramente el texto aprobado del campo caption. Slogan exacto: «Criterio antes que forma». Sin anunciar aún el portafolio ni mencionar la fecha del 20.\nPENDIENTE: Verificar que el texto y el retrato coincidan con la versión elegida. El estado y la fecha del calendario se conservan; esta actualización no publica en LinkedIn.",
@@ -459,21 +459,6 @@
       "order": 0
     },
     {
-      "time": "12:00",
-      "context": "OBJETIVO: Mostrar una herramienta real y su utilidad cotidiana.\nQUÉ MOSTRAR: Foto de una herramienta física o digital a mano.\nCÓMO PRODUCIR: Una fotografía sencilla, sin grabar video. Escribir nombre y una línea sobre la tarea que facilita. La elección debe corresponder al uso real de Peter.\nMENSAJE / TEXTO: Qué haces con esta herramienta y por qué la utilizas.\nPENDIENTE: Elegir herramienta y tomar foto.",
-      "formatDetail": "Fotografía vertical sencilla",
-      "id": "st-setup-herramienta",
-      "name": "Una herramienta que uso de verdad",
-      "date": "2026-11-17",
-      "highlightId": "hl-proceso",
-      "format": "Foto",
-      "status": "Idea",
-      "order": 0,
-      "channel": "Instagram",
-      "projectId": "project-portafolio-2026",
-      "phase": "Fase 2: Archivo"
-    },
-    {
       "time": "18:30",
       "context": "OBJETIVO: Compartir humor sobre las revisiones del oficio.\nQUÉ MOSTRAR: Captura de versiones reales del mismo archivo.\nCÓMO PRODUCIR: Usar una captura disponible, recortar y ocultar información privada; añadir una sola frase de humor. Producción sencilla para el 11.\nMENSAJE / TEXTO: Humor de reconocimiento sobre las revisiones y cuándo una versión se vuelve definitiva.\nPENDIENTE: Elegir captura real y frase.",
       "formatDetail": "Composición vertical",
@@ -631,6 +616,21 @@
       "name": "Un referente internacional y qué aprender de su proyecto",
       "date": "2026-11-16",
       "highlightId": "hl-tools",
+      "format": "Foto",
+      "status": "Idea",
+      "order": 0,
+      "channel": "Instagram",
+      "projectId": "project-portafolio-2026",
+      "phase": "Fase 2: Archivo"
+    },
+    {
+      "time": "12:00",
+      "context": "OBJETIVO: Mostrar una herramienta real y su utilidad cotidiana.\nQUÉ MOSTRAR: Foto de una herramienta física o digital a mano.\nCÓMO PRODUCIR: Una fotografía sencilla, sin grabar video. Escribir nombre y una línea sobre la tarea que facilita. La elección debe corresponder al uso real de Peter.\nMENSAJE / TEXTO: Qué haces con esta herramienta y por qué la utilizas.\nPENDIENTE: Elegir herramienta y tomar foto.",
+      "formatDetail": "Fotografía vertical sencilla",
+      "id": "st-setup-herramienta",
+      "name": "Una herramienta que uso de verdad",
+      "date": "2026-11-17",
+      "highlightId": "hl-proceso",
       "format": "Foto",
       "status": "Idea",
       "order": 0,
@@ -2432,6 +2432,6 @@
     }
   ],
   "importedCustomContextNotes": "PLAN APROBADO Y SINCRONIZADO — 11 noviembre 2026\nZona horaria: America/Bogota. Campaña del 9 al 25 de noviembre; lanzamiento oficial en Behance el 20 a las 12:00. El evento del auditorio del 25 es independiente; su historia quedó excluida.\nMetas totales, incluidos publicados: Instagram 30 historias, 3 reels, 5 posts y 4 carruseles; LinkedIn 6 publicaciones; Behance 1 portafolio con 6 proyectos.\nConservar exactamente el carrusel «Mientras tanto…» del 9 y las historias de café del 9 y alejar el zoom del 10 con sus estados publicados.\nEl 11 y 12 Peter está muy ocupado: solo fotos/capturas sencillas en historias, dos por día; sin reels. Reel de creadores movido al 21. Historias de contacto juntas el 18 y atemporales.\nReels elegidos: tres creadores (Marco Creativo, Đức Thắng Ds, CJ Cawley), BrandBoard con AI editable y PDF solicitado con BRAND y entregado por Drive, consejo humorístico.\nPosts: Criterio vs Forma; logofolio con retrato; «Métele más diseño»; retrato intervenido; anuncio de lanzamiento con foto IA.\nCarruseles: publicado «Mientras tanto…», Cemedicar, Karen Lizarazo, alejamiento progresivo en tres slides. La Banda del 5 no tendrá carrusel individual en Instagram; sí aparece junto a Karen en LinkedIn y en Behance.\nLinkedIn: presentación profesional de Peter, lanzamiento, ARCOmadrid, ambas vallas, filosofía de diseño, valor del diseño.\nBehance: branding Cemedicar, Kivado, Gyal y Carboneo; transmedia Karen Lizarazo y La Banda del 5. Orden y desarrollo se decidirán después.\nSlogan exacto: «Criterio antes que forma». Teaser exacto: «Pronto, con criterio todo toma forma.»\nDestacadas: DAILY registros espontáneos y práctica diaria; SETUP espacio de trabajo y herramientas; PORTFOLIO presentaciones formales; CONTACT canales y contratación atemporales; PTR historia y reflexiones personales; TOOLS consejos, recursos, referentes, noticias y actualizaciones.\nLa encuesta serif/sans está integrada en el primer ejemplo de combinaciones tipográficas: una sola pantalla. Son tres historias tipográficas, no cuatro. La foto casual de valla va en DAILY.\nCada entrada debe explicar objetivo, qué mostrar, cómo producir, mensaje y pendientes. Si depende de una vivencia o material no disponible, preguntar o elegirlo en producción; no inventar.\nReserva fuera del calendario activo: papelería personal con IA, proceso de logo, otras propuestas no seleccionadas. ARCOmadrid queda en LinkedIn.\nNo se han publicado automáticamente contenidos en redes: las fechas son planificación editorial.\n\nACTUALIZACIÓN APROBADA — 12 de noviembre de 2026: la entrada post-li-1 sustituye «El valor de construir en silencio» por la presentación profesional de Peter, centrada en quién es hoy. Utilizar el texto definitivo del caption y el retrato elegido; no anunciar el portafolio ni su fecha en esta presentación. Se conservan fecha, hora y estado existentes.\n\nREGISTRO ADICIONAL APROBADO — 12 de noviembre de 2026: Peter publicó el 11 de noviembre a las 19:00 (America/Bogota) una historia anunciando que será staff de «Encuentro Nacional de Diseño 11». Se registra como Publicado en PTR y se suma al conteo SIN reemplazar ninguna de las 30 historias previstas. Total actual del calendario: 31 historias (30 previstas + esta adicional). No confundirla con la historia descartada del auditorio.",
-  "updatedAt": 1794470779239,
-  "updatedAtISO": "2026-11-12T08:06:19.239Z"
+  "updatedAt": 1794471082759,
+  "updatedAtISO": "2026-11-12T08:11:22.759Z"
 }

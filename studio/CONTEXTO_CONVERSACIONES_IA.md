@@ -1,23 +1,23 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 12/11/2026, 3:06:19 a. m.
+**Última actualización:** 12/11/2026, 3:11:22 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
 ---
 
 ## 1. Estado Actual de la Agenda (19 piezas)
-- **💡 Idea / Planificado:** 18 piezas
+- **💡 Idea / Planificado:** 17 piezas
 - **🎨 En Diseño / Proceso:** 0 piezas
 - **✅ Listo para publicar:** 0 piezas
-- **🚀 Publicado:** 1 piezas
+- **🚀 Publicado:** 2 piezas
 
 | ID | Fecha | Red | Estado | Título | Copy (Extracto) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `post-ig-1` | 2026-11-09 | Instagram | **Publicado** | Lanzamiento Expectativa: «Mientras tanto...» | No todo lo que se construye se publica de inmediato. 🗂️ Hay archivos ... |
 | `post-ig-metele-diseno` | 2026-11-12 18:00 | Instagram | **Idea** | Métele más diseño | ... |
-| `post-li-1` | 2026-11-12 09:00 | LinkedIn | **Idea** | Hola, soy Peter Orostegui — presentación profesional | Hola, soy Peter Orostegui, diseñador gráfico de Valledupar, Colombia. ... |
+| `post-li-1` | 2026-11-12 09:00 | LinkedIn | **Publicado** | Hola, soy Peter Orostegui — presentación profesional | Hola, soy Peter Orostegui, diseñador gráfico de Valledupar, Colombia. ... |
 | `post-ig-criterio-forma` | 2026-11-13 18:00 | Instagram | **Idea** | Criterio vs Forma | ... |
 | `post-li-arcomadrid` | 2026-11-13 09:00 | LinkedIn | **Idea** | ARCOmadrid: concepto, decisiones y reconocimiento | ... |
 | `post-ig-cemedicar` | 2026-11-14 18:00 | Instagram | **Idea** | Cemedicar: adelanto del proyecto | ... |
@@ -99,7 +99,7 @@
     "time": "09:00",
     "endTime": "",
     "channel": "LinkedIn",
-    "status": "Idea",
+    "status": "Publicado",
     "phase": "Fase 1: Señal",
     "format": "Post",
     "structure": "OBJETIVO: Presentar a Peter a las personas con quienes empieza a conectar en LinkedIn, centrado en quién es hoy como diseñador.\nQUÉ MOSTRAR: Retrato sencillo y profesional de Peter, acompañado del texto definitivo de presentación.\nCÓMO PRODUCIR: Utilizar el retrato elegido y mantener los cinco párrafos del texto, con espacios para facilitar la lectura. Introducir nombre, ubicación, branding y comunicación visual, filosofía de diseño y motivo para conectar.\nMENSAJE / TEXTO: Usar íntegramente el texto aprobado del campo caption. Slogan exacto: «Criterio antes que forma». Sin anunciar aún el portafolio ni mencionar la fecha del 20.\nPENDIENTE: Verificar que el texto y el retrato coincidan con la versión elegida. El estado y la fecha del calendario se conservan; esta actualización no publica en LinkedIn.",
