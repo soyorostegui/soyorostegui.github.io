@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 12/11/2026, 1:26:41 a. m.
+**Última actualización:** 12/11/2026, 3:01:32 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
@@ -16,8 +16,8 @@
 | ID | Fecha | Red | Estado | Título | Copy (Extracto) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `post-ig-1` | 2026-11-09 | Instagram | **Publicado** | Lanzamiento Expectativa: «Mientras tanto...» | No todo lo que se construye se publica de inmediato. 🗂️ Hay archivos ... |
+| `post-li-1` | 2026-11-12 09:00 | LinkedIn | **Idea** | Hola, soy Peter Orostegui — presentación profesional | Hola, soy Peter Orostegui, diseñador gráfico de Valledupar, Colombia. ... |
 | `post-ig-metele-diseno` | 2026-11-12 18:00 | Instagram | **Idea** | Métele más diseño | ... |
-| `post-li-1` | 2026-11-11 09:00 | LinkedIn | **Idea** | Hola, soy Peter Orostegui — presentación profesional | Hola, soy Peter Orostegui, diseñador gráfico de Valledupar, Colombia. ... |
 | `post-ig-criterio-forma` | 2026-11-13 18:00 | Instagram | **Idea** | Criterio vs Forma | ... |
 | `post-li-arcomadrid` | 2026-11-13 09:00 | LinkedIn | **Idea** | ARCOmadrid: concepto, decisiones y reconocimiento | ... |
 | `post-ig-cemedicar` | 2026-11-14 18:00 | Instagram | **Idea** | Cemedicar: adelanto del proyecto | ... |
@@ -75,6 +75,26 @@
     "caption": "No todo lo que se construye se publica de inmediato. 🗂️\nHay archivos que llevan meses abiertos y nadie ha visto.\nMientras tanto, esto es todo lo que voy a decir. 👀\n\n#DiseñoGráfico #DirecciónDeArte #ProcesoCreativo"
   },
   {
+    "id": "post-li-1",
+    "type": "post",
+    "projectId": "project-portafolio-2026",
+    "title": "Hola, soy Peter Orostegui — presentación profesional",
+    "date": "2026-11-12",
+    "time": "09:00",
+    "endTime": "",
+    "channel": "LinkedIn",
+    "status": "Idea",
+    "phase": "Fase 1: Señal",
+    "format": "Post",
+    "structure": "OBJETIVO: Presentar a Peter a las personas con quienes empieza a conectar en LinkedIn, centrado en quién es hoy como diseñador.\nQUÉ MOSTRAR: Retrato sencillo y profesional de Peter, acompañado del texto definitivo de presentación.\nCÓMO PRODUCIR: Utilizar el retrato elegido y mantener los cinco párrafos del texto, con espacios para facilitar la lectura. Introducir nombre, ubicación, branding y comunicación visual, filosofía de diseño y motivo para conectar.\nMENSAJE / TEXTO: Usar íntegramente el texto aprobado del campo caption. Slogan exacto: «Criterio antes que forma». Sin anunciar aún el portafolio ni mencionar la fecha del 20.\nPENDIENTE: Verificar que el texto y el retrato coincidan con la versión elegida. El estado y la fecha del calendario se conservan; esta actualización no publica en LinkedIn.",
+    "caption": "Hola, soy Peter Orostegui, diseñador gráfico de Valledupar, Colombia.\n\nMi trabajo se centra en el branding y la comunicación visual: crear identidades y llevarlas a piezas que funcionan en distintos medios, desde una aplicación de marca hasta una valla publicitaria.\n\n«Criterio antes que forma» resume mi manera de entender el diseño. Antes de decidir cómo debe verse algo, busco comprender qué necesita comunicar, a quién se dirige y dónde va a encontrarse con las personas.\n\nEstoy empezando a construir mi presencia en LinkedIn para compartir proyectos, conversar sobre decisiones de diseño y conectar con otros profesionales.\n\nSi también trabajas en diseño, comunicación o construcción de marcas, será un gusto conectar contigo.",
+    "description": "",
+    "location": "",
+    "participants": "",
+    "subject": "",
+    "priority": ""
+  },
+  {
     "id": "post-ig-metele-diseno",
     "type": "post",
     "projectId": "project-portafolio-2026",
@@ -89,26 +109,6 @@
     "structure": "OBJETIVO: Publicar una frase con personalidad y abrir una conversación sobre el oficio.\nQUÉ MOSTRAR: Composición tipográfica de «Métele más diseño» con la identidad de Peter.\nCÓMO PRODUCIR: Una sola imagen. Resolver con tipografía y recursos de marca disponibles; mantener producción ligera el 11. Definir si el tono será humorístico o reflexivo antes de redactar el pie.\nMENSAJE / TEXTO: Frase protagonista exacta: «Métele más diseño». El pie debe aclarar su intención con una situación concreta, sin inventar experiencias.\nPENDIENTE: Definir el sentido de la frase y cerrar composición y pie.",
     "caption": "",
     "description": ""
-  },
-  {
-    "id": "post-li-1",
-    "type": "post",
-    "projectId": "project-portafolio-2026",
-    "title": "Hola, soy Peter Orostegui — presentación profesional",
-    "date": "2026-11-11",
-    "time": "09:00",
-    "endTime": "",
-    "channel": "LinkedIn",
-    "status": "Idea",
-    "phase": "Fase 1: Señal",
-    "format": "Post",
-    "structure": "OBJETIVO: Presentar a Peter a las personas con quienes empieza a conectar en LinkedIn, centrado en quién es hoy como diseñador.\nQUÉ MOSTRAR: Retrato sencillo y profesional de Peter, acompañado del texto definitivo de presentación.\nCÓMO PRODUCIR: Utilizar el retrato elegido y mantener los cinco párrafos del texto, con espacios para facilitar la lectura. Introducir nombre, ubicación, branding y comunicación visual, filosofía de diseño y motivo para conectar.\nMENSAJE / TEXTO: Usar íntegramente el texto aprobado del campo caption. Slogan exacto: «Criterio antes que forma». Sin anunciar aún el portafolio ni mencionar la fecha del 20.\nPENDIENTE: Verificar que el texto y el retrato coincidan con la versión elegida. El estado y la fecha del calendario se conservan; esta actualización no publica en LinkedIn.",
-    "caption": "Hola, soy Peter Orostegui, diseñador gráfico de Valledupar, Colombia.\n\nMi trabajo se centra en el branding y la comunicación visual: crear identidades y llevarlas a piezas que funcionan en distintos medios, desde una aplicación de marca hasta una valla publicitaria.\n\n«Criterio antes que forma» resume mi manera de entender el diseño. Antes de decidir cómo debe verse algo, busco comprender qué necesita comunicar, a quién se dirige y dónde va a encontrarse con las personas.\n\nEstoy empezando a construir mi presencia en LinkedIn para compartir proyectos, conversar sobre decisiones de diseño y conectar con otros profesionales.\n\nSi también trabajas en diseño, comunicación o construcción de marcas, será un gusto conectar contigo.",
-    "description": "",
-    "location": "",
-    "participants": "",
-    "subject": "",
-    "priority": ""
   },
   {
     "id": "post-ig-criterio-forma",
