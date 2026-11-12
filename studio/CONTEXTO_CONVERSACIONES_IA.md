@@ -16,7 +16,7 @@
 | ID | Fecha | Red | Estado | Título | Copy (Extracto) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `post-ig-1` | 2026-11-09 | Instagram | **Publicado** | Lanzamiento Expectativa: «Mientras tanto...» | No todo lo que se construye se publica de inmediato. 🗂️ Hay archivos ... |
-| `post-ig-metele-diseno` | 2026-11-12 18:00 | Instagram | **Listo** | Métele más diseño | ... |
+| `post-ig-metele-diseno` | 2026-11-12 18:00 | Instagram | **Listo** | Métele más diseño | «Está bien, pero métele más diseño». 🫠 Una frase breve que puede abri... |
 | `post-li-1` | 2026-11-12 09:00 | LinkedIn | **Publicado** | Hola, soy Peter Orostegui — presentación profesional | Hola, soy Peter Orostegui, diseñador gráfico de Valledupar, Colombia. ... |
 | `post-ig-criterio-forma` | 2026-11-13 18:00 | Instagram | **En Diseño** | Criterio vs Forma | ... |
 | `post-li-arcomadrid` | 2026-11-13 09:00 | LinkedIn | **En Diseño** | ARCOmadrid: concepto, decisiones y reconocimiento | ... |
@@ -86,8 +86,8 @@
     "status": "Listo",
     "phase": "Fase 1: Señal",
     "format": "Post",
-    "structure": "OBJETIVO: Publicar una frase con personalidad y abrir una conversación sobre el oficio.\nQUÉ MOSTRAR: Composición tipográfica de «Métele más diseño» con la identidad de Peter.\nCÓMO PRODUCIR: Una sola imagen. Resolver con tipografía y recursos de marca disponibles; mantener producción ligera el 11. Definir si el tono será humorístico o reflexivo antes de redactar el pie.\nMENSAJE / TEXTO: Frase protagonista exacta: «Métele más diseño». El pie debe aclarar su intención con una situación concreta, sin inventar experiencias.\nPENDIENTE: Definir el sentido de la frase y cerrar composición y pie.",
-    "caption": "",
+    "structure": "OBJETIVO: Publicar una frase con personalidad y abrir una conversación sobre el oficio.\nQUÉ MOSTRAR: Composición tipográfica de «Métele más diseño» con la identidad de Peter.\nCÓMO PRODUCIR: Una sola imagen. Resolver con tipografía y recursos de marca disponibles; mantener producción ligera el 11. Tono aprobado: profesional y natural, con humor sutil; sin explicación didáctica ni cercanía excesiva.\nMENSAJE / TEXTO: Usar íntegramente el copy aprobado del campo caption, con sus dos emojis y hashtags. Titular de la imagen: «Métele más diseño».\nPENDIENTE: Comprobar que la pieza final y el copy aprobado estén listos para publicar. El texto ya está definido.",
+    "caption": "«Está bien, pero métele más diseño». 🫠\n\nUna frase breve que puede abrir una larga ronda de ajustes.\n\nA veces, lo que más tiempo toma es entender qué se espera cambiar.\n\n¿También la has escuchado? 💬\n\n#DiseñoGráfico #ProcesoCreativo #CriterioAntesQueForma",
     "description": ""
   },
   {
