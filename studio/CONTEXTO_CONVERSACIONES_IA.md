@@ -1,22 +1,22 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 12/11/2026, 3:11:26 a. m.
+**Última actualización:** 12/11/2026, 3:45:01 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
 ---
 
 ## 1. Estado Actual de la Agenda (19 piezas)
-- **💡 Idea / Planificado:** 17 piezas
+- **💡 Idea / Planificado:** 16 piezas
 - **🎨 En Diseño / Proceso:** 0 piezas
-- **✅ Listo para publicar:** 0 piezas
+- **✅ Listo para publicar:** 1 piezas
 - **🚀 Publicado:** 2 piezas
 
 | ID | Fecha | Red | Estado | Título | Copy (Extracto) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `post-ig-1` | 2026-11-09 | Instagram | **Publicado** | Lanzamiento Expectativa: «Mientras tanto...» | No todo lo que se construye se publica de inmediato. 🗂️ Hay archivos ... |
-| `post-ig-metele-diseno` | 2026-11-12 18:00 | Instagram | **Idea** | Métele más diseño | ... |
+| `post-ig-metele-diseno` | 2026-11-12 18:00 | Instagram | **Listo** | Métele más diseño | ... |
 | `post-li-1` | 2026-11-12 09:00 | LinkedIn | **Publicado** | Hola, soy Peter Orostegui — presentación profesional | Hola, soy Peter Orostegui, diseñador gráfico de Valledupar, Colombia. ... |
 | `post-ig-criterio-forma` | 2026-11-13 18:00 | Instagram | **Idea** | Criterio vs Forma | ... |
 | `post-li-arcomadrid` | 2026-11-13 09:00 | LinkedIn | **Idea** | ARCOmadrid: concepto, decisiones y reconocimiento | ... |
@@ -83,7 +83,7 @@
     "time": "18:00",
     "endTime": "",
     "channel": "Instagram",
-    "status": "Idea",
+    "status": "Listo",
     "phase": "Fase 1: Señal",
     "format": "Post",
     "structure": "OBJETIVO: Publicar una frase con personalidad y abrir una conversación sobre el oficio.\nQUÉ MOSTRAR: Composición tipográfica de «Métele más diseño» con la identidad de Peter.\nCÓMO PRODUCIR: Una sola imagen. Resolver con tipografía y recursos de marca disponibles; mantener producción ligera el 11. Definir si el tono será humorístico o reflexivo antes de redactar el pie.\nMENSAJE / TEXTO: Frase protagonista exacta: «Métele más diseño». El pie debe aclarar su intención con una situación concreta, sin inventar experiencias.\nPENDIENTE: Definir el sentido de la frase y cerrar composición y pie.",
@@ -394,7 +394,7 @@ QUÉ MOSTRAR: Captura de versiones reales del mismo archivo.
 CÓMO PRODUCIR: Usar una captura disponible, recortar y ocultar información privada; añadir una sola frase de humor. Producción sencilla para el 11.
 MENSAJE / TEXTO: Humor de reconocimiento sobre las revisiones y cuándo una versión se vuelve definitiva.
 PENDIENTE: Elegir captura real y frase.
-- `st-17` #5 · 2026-11-12 18:30 · DAILY · **Mi diseño en la calle: una foto desde el carro** · Foto · Idea · Contexto: OBJETIVO: Compartir casualmente el encuentro con un trabajo instalado.
+- `st-17` #5 · 2026-11-12 18:30 · DAILY · **Mi diseño en la calle: una foto desde el carro** · Foto · Listo · Contexto: OBJETIVO: Compartir casualmente el encuentro con un trabajo instalado.
 QUÉ MOSTRAR: Foto existente de una valla diseñada por Peter, tomada desde un carro.
 CÓMO PRODUCIR: Usar la fotografía que Peter ya tiene. Mantener el registro espontáneo con un texto breve; no convertirlo en presentación formal. La presentación cuidada del proyecto pertenece al carrusel.
 MENSAJE / TEXTO: Mensaje personal sobre encontrarte con tu trabajo en la calle.
