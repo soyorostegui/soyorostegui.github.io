@@ -132,7 +132,7 @@
       "channel": "Instagram",
       "format": "Post",
       "title": "Métele más diseño",
-      "date": "2026-11-11",
+      "date": "2026-11-12",
       "time": "18:00",
       "status": "Idea",
       "phase": "Fase 1: Señal",
@@ -145,7 +145,7 @@
       "id": "post-li-1",
       "channel": "LinkedIn",
       "title": "El valor de construir en silencio",
-      "date": "2026-11-11",
+      "date": "2026-11-12",
       "status": "Idea",
       "phase": "Fase 1: Señal",
       "format": "Post",
@@ -714,21 +714,6 @@
       "phase": "Fase 3: Convocatoria"
     },
     {
-      "time": "12:30",
-      "context": "OBJETIVO: Dar acceso al recurso que complementa el reel de BrandBoard.\nQUÉ MOSTRAR: Vista clara de la plantilla y formatos disponibles.\nCÓMO PRODUCIR: Mostrar una previsualización legible, indicar Illustrator editable (.ai) y PDF, añadir sticker con el enlace de Drive. Publicar después del reel; comprobar permisos de descarga.\nMENSAJE / TEXTO: «BrandBoard editable · Illustrator + PDF». Invitación clara a descargar.\nPENDIENTE: Preparar plantilla, archivos y enlace de Drive.",
-      "formatDetail": "Fotografía vertical sencilla",
-      "id": "st-tools-brandboard",
-      "name": "Descarga mi BrandBoard: Illustrator + PDF",
-      "date": "2026-11-21",
-      "highlightId": "hl-tools",
-      "format": "Foto",
-      "status": "Idea",
-      "order": 1,
-      "channel": "Instagram",
-      "projectId": "project-portafolio-2026",
-      "phase": "Fase 3: Convocatoria"
-    },
-    {
       "time": "20:00",
       "context": "OBJETIVO: Expresar el significado personal del lanzamiento del 20.\nQUÉ MOSTRAR: Foto de Peter revisando el portafolio o preparando su publicación.\nCÓMO PRODUCIR: Antes de redactar, responder: ¿qué sientes al mostrarlo?, ¿qué aprendizaje reconoces en los proyectos?, ¿qué esperas de esta nueva etapa? Elegir una respuesta concreta y escribir con la voz de Peter. No trata del evento del auditorio.\nMENSAJE / TEXTO: Reflexión breve propia sobre compartir el trabajo al día siguiente.\nPENDIENTE: Obtener respuesta personal y foto; redactar desde esa respuesta.",
       "formatDetail": "Fotografía vertical sencilla",
@@ -787,6 +772,21 @@
       "channel": "Instagram",
       "projectId": "project-portafolio-2026",
       "phase": "Fase 4: Continuidad"
+    },
+    {
+      "time": "12:30",
+      "context": "OBJETIVO: Dar acceso al recurso que complementa el reel de BrandBoard.\nQUÉ MOSTRAR: Vista clara de la plantilla y formatos disponibles.\nCÓMO PRODUCIR: Mostrar una previsualización legible, indicar Illustrator editable (.ai) y PDF, añadir sticker con el enlace de Drive. Publicar después del reel; comprobar permisos de descarga.\nMENSAJE / TEXTO: «BrandBoard editable · Illustrator + PDF». Invitación clara a descargar.\nPENDIENTE: Preparar plantilla, archivos y enlace de Drive.",
+      "formatDetail": "Fotografía vertical sencilla",
+      "id": "st-tools-brandboard",
+      "name": "Descarga mi BrandBoard: Illustrator + PDF",
+      "date": "2026-11-21",
+      "highlightId": "hl-tools",
+      "format": "Foto",
+      "status": "Idea",
+      "order": 1,
+      "channel": "Instagram",
+      "projectId": "project-portafolio-2026",
+      "phase": "Fase 3: Convocatoria"
     },
     {
       "time": "21:30",
@@ -2417,6 +2417,6 @@
     }
   ],
   "importedCustomContextNotes": "PLAN APROBADO Y SINCRONIZADO — 11 noviembre 2026\nZona horaria: America/Bogota. Campaña del 9 al 25 de noviembre; lanzamiento oficial en Behance el 20 a las 12:00. El evento del auditorio del 25 es independiente; su historia quedó excluida.\nMetas totales, incluidos publicados: Instagram 30 historias, 3 reels, 5 posts y 4 carruseles; LinkedIn 6 publicaciones; Behance 1 portafolio con 6 proyectos.\nConservar exactamente el carrusel «Mientras tanto…» del 9 y las historias de café del 9 y alejar el zoom del 10 con sus estados publicados.\nEl 11 y 12 Peter está muy ocupado: solo fotos/capturas sencillas en historias, dos por día; sin reels. Reel de creadores movido al 21. Historias de contacto juntas el 18 y atemporales.\nReels elegidos: tres creadores (Marco Creativo, Đức Thắng Ds, CJ Cawley), BrandBoard con AI editable y PDF solicitado con BRAND y entregado por Drive, consejo humorístico.\nPosts: Criterio vs Forma; logofolio con retrato; «Métele más diseño»; retrato intervenido; anuncio de lanzamiento con foto IA.\nCarruseles: publicado «Mientras tanto…», Cemedicar, Karen Lizarazo, alejamiento progresivo en tres slides. La Banda del 5 no tendrá carrusel individual en Instagram; sí aparece junto a Karen en LinkedIn y en Behance.\nLinkedIn: construir en silencio, lanzamiento, ARCOmadrid, ambas vallas, filosofía de diseño, valor del diseño.\nBehance: branding Cemedicar, Kivado, Gyal y Carboneo; transmedia Karen Lizarazo y La Banda del 5. Orden y desarrollo se decidirán después.\nSlogan exacto: «Criterio antes que forma». Teaser exacto: «Pronto, con criterio todo toma forma.»\nDestacadas: DAILY registros espontáneos y práctica diaria; SETUP espacio de trabajo y herramientas; PORTFOLIO presentaciones formales; CONTACT canales y contratación atemporales; PTR historia y reflexiones personales; TOOLS consejos, recursos, referentes, noticias y actualizaciones.\nLa encuesta serif/sans está integrada en el primer ejemplo de combinaciones tipográficas: una sola pantalla. Son tres historias tipográficas, no cuatro. La foto casual de valla va en DAILY.\nCada entrada debe explicar objetivo, qué mostrar, cómo producir, mensaje y pendientes. Si depende de una vivencia o material no disponible, preguntar o elegirlo en producción; no inventar.\nReserva fuera del calendario activo: papelería personal con IA, proceso de logo, otras propuestas no seleccionadas. ARCOmadrid queda en LinkedIn.\nNo se han publicado automáticamente contenidos en redes: las fechas son planificación editorial.",
-  "updatedAt": 1794385815768,
-  "updatedAtISO": "2026-11-11T08:30:15.768Z"
+  "updatedAt": 1794459700147,
+  "updatedAtISO": "2026-11-12T05:01:40.147Z"
 }
