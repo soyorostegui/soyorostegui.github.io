@@ -17,7 +17,7 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `post-ig-1` | 2026-11-09 | Instagram | **Publicado** | Lanzamiento Expectativa: «Mientras tanto...» | No todo lo que se construye se publica de inmediato. 🗂️ Hay archivos ... |
 | `post-ig-metele-diseno` | 2026-11-12 18:00 | Instagram | **Idea** | Métele más diseño | ... |
-| `post-li-1` | 2026-11-11 09:00 | LinkedIn | **Idea** | El valor de construir en silencio | ... |
+| `post-li-1` | 2026-11-11 09:00 | LinkedIn | **Idea** | Hola, soy Peter Orostegui — presentación profesional | Hola, soy Peter Orostegui, diseñador gráfico de Valledupar, Colombia. ... |
 | `post-ig-criterio-forma` | 2026-11-13 18:00 | Instagram | **Idea** | Criterio vs Forma | ... |
 | `post-li-arcomadrid` | 2026-11-13 09:00 | LinkedIn | **Idea** | ARCOmadrid: concepto, decisiones y reconocimiento | ... |
 | `post-ig-cemedicar` | 2026-11-14 18:00 | Instagram | **Idea** | Cemedicar: adelanto del proyecto | ... |
@@ -94,7 +94,7 @@
     "id": "post-li-1",
     "type": "post",
     "projectId": "project-portafolio-2026",
-    "title": "El valor de construir en silencio",
+    "title": "Hola, soy Peter Orostegui — presentación profesional",
     "date": "2026-11-11",
     "time": "09:00",
     "endTime": "",
@@ -102,8 +102,8 @@
     "status": "Idea",
     "phase": "Fase 1: Señal",
     "format": "Post",
-    "structure": "OBJETIVO: Abrir la narrativa profesional del lanzamiento.\nQUÉ MOSTRAR: Publicación escrita sobre el trabajo realizado antes de hacerlo público.\nCÓMO PRODUCIR: Redactar a partir de la preparación real del portafolio: qué has estado ajustando y por qué decidiste compartirlo ahora. Evitar atribuir materiales o experiencias no confirmados.\nMENSAJE / TEXTO: Reflexión sobre preparar y terminar proyectos antes de compartirlos, conectada con el lanzamiento del 20.\nPENDIENTE: Redactar y revisar el texto final.",
-    "caption": "",
+    "structure": "OBJETIVO: Presentar a Peter a las personas con quienes empieza a conectar en LinkedIn, centrado en quién es hoy como diseñador.\nQUÉ MOSTRAR: Retrato sencillo y profesional de Peter, acompañado del texto definitivo de presentación.\nCÓMO PRODUCIR: Utilizar el retrato elegido y mantener los cinco párrafos del texto, con espacios para facilitar la lectura. Introducir nombre, ubicación, branding y comunicación visual, filosofía de diseño y motivo para conectar.\nMENSAJE / TEXTO: Usar íntegramente el texto aprobado del campo caption. Slogan exacto: «Criterio antes que forma». Sin anunciar aún el portafolio ni mencionar la fecha del 20.\nPENDIENTE: Verificar que el texto y el retrato coincidan con la versión elegida. El estado y la fecha del calendario se conservan; esta actualización no publica en LinkedIn.",
+    "caption": "Hola, soy Peter Orostegui, diseñador gráfico de Valledupar, Colombia.\n\nMi trabajo se centra en el branding y la comunicación visual: crear identidades y llevarlas a piezas que funcionan en distintos medios, desde una aplicación de marca hasta una valla publicitaria.\n\n«Criterio antes que forma» resume mi manera de entender el diseño. Antes de decidir cómo debe verse algo, busco comprender qué necesita comunicar, a quién se dirige y dónde va a encontrarse con las personas.\n\nEstoy empezando a construir mi presencia en LinkedIn para compartir proyectos, conversar sobre decisiones de diseño y conectar con otros profesionales.\n\nSi también trabajas en diseño, comunicación o construcción de marcas, será un gusto conectar contigo.",
     "description": "",
     "location": "",
     "participants": "",
@@ -536,7 +536,7 @@ El 11 y 12 Peter está muy ocupado: solo fotos/capturas sencillas en historias, 
 Reels elegidos: tres creadores (Marco Creativo, Đức Thắng Ds, CJ Cawley), BrandBoard con AI editable y PDF solicitado con BRAND y entregado por Drive, consejo humorístico.
 Posts: Criterio vs Forma; logofolio con retrato; «Métele más diseño»; retrato intervenido; anuncio de lanzamiento con foto IA.
 Carruseles: publicado «Mientras tanto…», Cemedicar, Karen Lizarazo, alejamiento progresivo en tres slides. La Banda del 5 no tendrá carrusel individual en Instagram; sí aparece junto a Karen en LinkedIn y en Behance.
-LinkedIn: construir en silencio, lanzamiento, ARCOmadrid, ambas vallas, filosofía de diseño, valor del diseño.
+LinkedIn: presentación profesional de Peter, lanzamiento, ARCOmadrid, ambas vallas, filosofía de diseño, valor del diseño.
 Behance: branding Cemedicar, Kivado, Gyal y Carboneo; transmedia Karen Lizarazo y La Banda del 5. Orden y desarrollo se decidirán después.
 Slogan exacto: «Criterio antes que forma». Teaser exacto: «Pronto, con criterio todo toma forma.»
 Destacadas: DAILY registros espontáneos y práctica diaria; SETUP espacio de trabajo y herramientas; PORTFOLIO presentaciones formales; CONTACT canales y contratación atemporales; PTR historia y reflexiones personales; TOOLS consejos, recursos, referentes, noticias y actualizaciones.
@@ -544,6 +544,8 @@ La encuesta serif/sans está integrada en el primer ejemplo de combinaciones tip
 Cada entrada debe explicar objetivo, qué mostrar, cómo producir, mensaje y pendientes. Si depende de una vivencia o material no disponible, preguntar o elegirlo en producción; no inventar.
 Reserva fuera del calendario activo: papelería personal con IA, proceso de logo, otras propuestas no seleccionadas. ARCOmadrid queda en LinkedIn.
 No se han publicado automáticamente contenidos en redes: las fechas son planificación editorial.
+
+ACTUALIZACIÓN APROBADA — 12 de noviembre de 2026: la entrada post-li-1 sustituye «El valor de construir en silencio» por la presentación profesional de Peter, centrada en quién es hoy. Utilizar el texto definitivo del caption y el retrato elegido; no anunciar el portafolio ni su fecha en esta presentación. Se conservan fecha, hora y estado existentes.
 
 ---
 
