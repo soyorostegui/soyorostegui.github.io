@@ -1,15 +1,15 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 12/11/2026, 3:45:01 a. m.
+**Última actualización:** 12/11/2026, 3:45:11 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
 ---
 
 ## 1. Estado Actual de la Agenda (19 piezas)
-- **💡 Idea / Planificado:** 16 piezas
-- **🎨 En Diseño / Proceso:** 0 piezas
+- **💡 Idea / Planificado:** 15 piezas
+- **🎨 En Diseño / Proceso:** 1 piezas
 - **✅ Listo para publicar:** 1 piezas
 - **🚀 Publicado:** 2 piezas
 
@@ -19,7 +19,7 @@
 | `post-ig-metele-diseno` | 2026-11-12 18:00 | Instagram | **Listo** | Métele más diseño | ... |
 | `post-li-1` | 2026-11-12 09:00 | LinkedIn | **Publicado** | Hola, soy Peter Orostegui — presentación profesional | Hola, soy Peter Orostegui, diseñador gráfico de Valledupar, Colombia. ... |
 | `post-ig-criterio-forma` | 2026-11-13 18:00 | Instagram | **Idea** | Criterio vs Forma | ... |
-| `post-li-arcomadrid` | 2026-11-13 09:00 | LinkedIn | **Idea** | ARCOmadrid: concepto, decisiones y reconocimiento | ... |
+| `post-li-arcomadrid` | 2026-11-13 09:00 | LinkedIn | **En Diseño** | ARCOmadrid: concepto, decisiones y reconocimiento | ... |
 | `post-ig-cemedicar` | 2026-11-14 18:00 | Instagram | **Idea** | Cemedicar: adelanto del proyecto | ... |
 | `post-ig-consejo-humor` | 2026-11-15 18:00 | Instagram | **Idea** | El consejo chino que me hizo más eficiente como diseñador | ... |
 | `post-ig-karen-valla` | 2026-11-16 18:00 | Instagram | **Idea** | Karen Lizarazo: diseño de valla | ... |
@@ -135,7 +135,7 @@
     "time": "09:00",
     "endTime": "",
     "channel": "LinkedIn",
-    "status": "Idea",
+    "status": "En Diseño",
     "phase": "Fase 2: Archivo",
     "format": "Carrusel",
     "structure": "OBJETIVO: Presentar un caso académico con razonamiento de diseño y reconocimiento.\nQUÉ MOSTRAR: Proyecto ARCOmadrid, reto académico, decisiones y reconocimiento obtenido.\nCÓMO PRODUCIR: Adaptar al lenguaje de LinkedIn. Secuencia: resultado, encargo/reto, decisiones de composición y concepto, reconocimiento. Utilizar pruebas reales y explicar el papel de Peter.\nMENSAJE / TEXTO: Contar cómo se abordó el reto y qué decisiones sostienen el resultado; describir el reconocimiento con precisión.\nPENDIENTE: Reunir afiche, brief académico, datos del reconocimiento y redactar slides.",
@@ -399,12 +399,12 @@ QUÉ MOSTRAR: Foto existente de una valla diseñada por Peter, tomada desde un c
 CÓMO PRODUCIR: Usar la fotografía que Peter ya tiene. Mantener el registro espontáneo con un texto breve; no convertirlo en presentación formal. La presentación cuidada del proyecto pertenece al carrusel.
 MENSAJE / TEXTO: Mensaje personal sobre encontrarte con tu trabajo en la calle.
 PENDIENTE: Elegir foto y redactar mensaje breve.
-- `st-setup-archivo` #6 · 2026-11-13 10:00 · SETUP · **Mi archivo por dentro: capas y organización** · Captura · Idea · Contexto: OBJETIVO: Mostrar la organización del entorno digital de trabajo.
+- `st-setup-archivo` #6 · 2026-11-13 10:00 · SETUP · **Mi archivo por dentro: capas y organización** · Captura · En Diseño · Contexto: OBJETIVO: Mostrar la organización del entorno digital de trabajo.
 QUÉ MOSTRAR: Panel de capas de un proyecto real con nombres y grupos legibles.
 CÓMO PRODUCIR: Abrir un proyecto y mostrar conjunto y acercamiento al panel. Explicar cómo localizas o ajustas elementos gracias a su orden; evitar capturas diminutas.
 MENSAJE / TEXTO: Una decisión concreta de organización que te facilita trabajar.
 PENDIENTE: Elegir archivo y elemento que explicar.
-- `st-13` #7 · 2026-11-13 13:00 · TOOLS · **El espaciado también diseña: antes y después del kerning** · Captura · Idea · Contexto: OBJETIVO: Enseñar el efecto de un ajuste de espaciado.
+- `st-13` #7 · 2026-11-13 13:00 · TOOLS · **El espaciado también diseña: antes y después del kerning** · Captura · En Diseño · Contexto: OBJETIVO: Enseñar el efecto de un ajuste de espaciado.
 QUÉ MOSTRAR: El mismo texto antes y después, con el espacio intervenido señalado.
 CÓMO PRODUCIR: Preparar comparación en una sola pantalla manteniendo el resto igual. Ampliar lo suficiente para ver el cambio y explicar qué problema resuelve.
 MENSAJE / TEXTO: Explicar el ajuste con un ejemplo concreto, sin convertirlo en una regla universal.
