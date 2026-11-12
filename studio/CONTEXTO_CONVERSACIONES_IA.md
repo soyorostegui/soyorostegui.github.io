@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 12/11/2026, 1:26:34 a. m.
+**Última actualización:** 12/11/2026, 1:26:41 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
@@ -17,7 +17,7 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `post-ig-1` | 2026-11-09 | Instagram | **Publicado** | Lanzamiento Expectativa: «Mientras tanto...» | No todo lo que se construye se publica de inmediato. 🗂️ Hay archivos ... |
 | `post-ig-metele-diseno` | 2026-11-12 18:00 | Instagram | **Idea** | Métele más diseño | ... |
-| `post-li-1` | 2026-11-12 09:00 | LinkedIn | **Idea** | El valor de construir en silencio | ... |
+| `post-li-1` | 2026-11-11 09:00 | LinkedIn | **Idea** | El valor de construir en silencio | ... |
 | `post-ig-criterio-forma` | 2026-11-13 18:00 | Instagram | **Idea** | Criterio vs Forma | ... |
 | `post-li-arcomadrid` | 2026-11-13 09:00 | LinkedIn | **Idea** | ARCOmadrid: concepto, decisiones y reconocimiento | ... |
 | `post-ig-cemedicar` | 2026-11-14 18:00 | Instagram | **Idea** | Cemedicar: adelanto del proyecto | ... |
@@ -95,7 +95,7 @@
     "type": "post",
     "projectId": "project-portafolio-2026",
     "title": "El valor de construir en silencio",
-    "date": "2026-11-12",
+    "date": "2026-11-11",
     "time": "09:00",
     "endTime": "",
     "channel": "LinkedIn",

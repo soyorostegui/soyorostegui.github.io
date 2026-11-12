@@ -145,7 +145,7 @@
       "id": "post-li-1",
       "channel": "LinkedIn",
       "title": "El valor de construir en silencio",
-      "date": "2026-11-12",
+      "date": "2026-11-11",
       "status": "Idea",
       "phase": "Fase 1: Señal",
       "format": "Post",
@@ -445,21 +445,6 @@
     },
     {
       "time": "12:00",
-      "context": "OBJETIVO: Presentar el espacio real de trabajo con producción ligera.\nQUÉ MOSTRAR: Escritorio tal como está.\nCÓMO PRODUCIR: Una fotografía sencilla con el móvil. Añadir una frase sobre una decisión real de organización. Los tres señalamientos son opcionales. Hoy Peter tiene poco tiempo: no requiere video ni edición elaborada.\nMENSAJE / TEXTO: Explicar brevemente por qué una disposición del escritorio te facilita trabajar.\nPENDIENTE: Tomar foto y elegir una decisión real.",
-      "formatDetail": "Fotografía vertical sencilla",
-      "id": "st-setup-espacio",
-      "name": "Así organizo mi espacio de trabajo",
-      "date": "2026-11-14",
-      "highlightId": "hl-proceso",
-      "format": "Foto",
-      "status": "Idea",
-      "order": 3,
-      "channel": "Instagram",
-      "projectId": "project-portafolio-2026",
-      "phase": "Fase 1: Señal"
-    },
-    {
-      "time": "12:00",
       "context": "OBJETIVO: Mostrar una herramienta real y su utilidad cotidiana.\nQUÉ MOSTRAR: Foto de una herramienta física o digital a mano.\nCÓMO PRODUCIR: Una fotografía sencilla, sin grabar video. Escribir nombre y una línea sobre la tarea que facilita. La elección debe corresponder al uso real de Peter.\nMENSAJE / TEXTO: Qué haces con esta herramienta y por qué la utilizas.\nPENDIENTE: Elegir herramienta y tomar foto.",
       "formatDetail": "Fotografía vertical sencilla",
       "id": "st-setup-herramienta",
@@ -577,6 +562,21 @@
       "channel": "Instagram",
       "projectId": "project-portafolio-2026",
       "phase": "Fase 2: Archivo"
+    },
+    {
+      "time": "12:00",
+      "context": "OBJETIVO: Presentar el espacio real de trabajo con producción ligera.\nQUÉ MOSTRAR: Escritorio tal como está.\nCÓMO PRODUCIR: Una fotografía sencilla con el móvil. Añadir una frase sobre una decisión real de organización. Los tres señalamientos son opcionales. Hoy Peter tiene poco tiempo: no requiere video ni edición elaborada.\nMENSAJE / TEXTO: Explicar brevemente por qué una disposición del escritorio te facilita trabajar.\nPENDIENTE: Tomar foto y elegir una decisión real.",
+      "formatDetail": "Fotografía vertical sencilla",
+      "id": "st-setup-espacio",
+      "name": "Así organizo mi espacio de trabajo",
+      "date": "2026-11-14",
+      "highlightId": "hl-proceso",
+      "format": "Foto",
+      "status": "Idea",
+      "order": 3,
+      "channel": "Instagram",
+      "projectId": "project-portafolio-2026",
+      "phase": "Fase 1: Señal"
     },
     {
       "time": "11:00",
@@ -2417,6 +2417,6 @@
     }
   ],
   "importedCustomContextNotes": "PLAN APROBADO Y SINCRONIZADO — 11 noviembre 2026\nZona horaria: America/Bogota. Campaña del 9 al 25 de noviembre; lanzamiento oficial en Behance el 20 a las 12:00. El evento del auditorio del 25 es independiente; su historia quedó excluida.\nMetas totales, incluidos publicados: Instagram 30 historias, 3 reels, 5 posts y 4 carruseles; LinkedIn 6 publicaciones; Behance 1 portafolio con 6 proyectos.\nConservar exactamente el carrusel «Mientras tanto…» del 9 y las historias de café del 9 y alejar el zoom del 10 con sus estados publicados.\nEl 11 y 12 Peter está muy ocupado: solo fotos/capturas sencillas en historias, dos por día; sin reels. Reel de creadores movido al 21. Historias de contacto juntas el 18 y atemporales.\nReels elegidos: tres creadores (Marco Creativo, Đức Thắng Ds, CJ Cawley), BrandBoard con AI editable y PDF solicitado con BRAND y entregado por Drive, consejo humorístico.\nPosts: Criterio vs Forma; logofolio con retrato; «Métele más diseño»; retrato intervenido; anuncio de lanzamiento con foto IA.\nCarruseles: publicado «Mientras tanto…», Cemedicar, Karen Lizarazo, alejamiento progresivo en tres slides. La Banda del 5 no tendrá carrusel individual en Instagram; sí aparece junto a Karen en LinkedIn y en Behance.\nLinkedIn: construir en silencio, lanzamiento, ARCOmadrid, ambas vallas, filosofía de diseño, valor del diseño.\nBehance: branding Cemedicar, Kivado, Gyal y Carboneo; transmedia Karen Lizarazo y La Banda del 5. Orden y desarrollo se decidirán después.\nSlogan exacto: «Criterio antes que forma». Teaser exacto: «Pronto, con criterio todo toma forma.»\nDestacadas: DAILY registros espontáneos y práctica diaria; SETUP espacio de trabajo y herramientas; PORTFOLIO presentaciones formales; CONTACT canales y contratación atemporales; PTR historia y reflexiones personales; TOOLS consejos, recursos, referentes, noticias y actualizaciones.\nLa encuesta serif/sans está integrada en el primer ejemplo de combinaciones tipográficas: una sola pantalla. Son tres historias tipográficas, no cuatro. La foto casual de valla va en DAILY.\nCada entrada debe explicar objetivo, qué mostrar, cómo producir, mensaje y pendientes. Si depende de una vivencia o material no disponible, preguntar o elegirlo en producción; no inventar.\nReserva fuera del calendario activo: papelería personal con IA, proceso de logo, otras propuestas no seleccionadas. ARCOmadrid queda en LinkedIn.\nNo se han publicado automáticamente contenidos en redes: las fechas son planificación editorial.",
-  "updatedAt": 1794464794895,
-  "updatedAtISO": "2026-11-12T06:26:34.895Z"
+  "updatedAt": 1794464801648,
+  "updatedAtISO": "2026-11-12T06:26:41.648Z"
 }
