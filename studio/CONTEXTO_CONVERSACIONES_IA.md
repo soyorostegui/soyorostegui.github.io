@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 12/11/2026, 12:01:40 a. m.
+**Última actualización:** 12/11/2026, 1:26:22 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
@@ -389,16 +389,16 @@ QUÉ MOSTRAR: Escritorio tal como está.
 CÓMO PRODUCIR: Una fotografía sencilla con el móvil. Añadir una frase sobre una decisión real de organización. Los tres señalamientos son opcionales. Hoy Peter tiene poco tiempo: no requiere video ni edición elaborada.
 MENSAJE / TEXTO: Explicar brevemente por qué una disposición del escritorio te facilita trabajar.
 PENDIENTE: Tomar foto y elegir una decisión real.
-- `st-1794299136343-260` #4 · 2026-11-11 18:30 · DAILY · **_v1 _v2 _v3 _final_final** · Captura · Idea · Contexto: OBJETIVO: Compartir humor sobre las revisiones del oficio.
-QUÉ MOSTRAR: Captura de versiones reales del mismo archivo.
-CÓMO PRODUCIR: Usar una captura disponible, recortar y ocultar información privada; añadir una sola frase de humor. Producción sencilla para el 11.
-MENSAJE / TEXTO: Humor de reconocimiento sobre las revisiones y cuándo una versión se vuelve definitiva.
-PENDIENTE: Elegir captura real y frase.
-- `st-setup-herramienta` #5 · 2026-11-12 12:00 · SETUP · **Una herramienta que uso de verdad** · Foto · Idea · Contexto: OBJETIVO: Mostrar una herramienta real y su utilidad cotidiana.
+- `st-setup-herramienta` #4 · 2026-11-12 12:00 · SETUP · **Una herramienta que uso de verdad** · Foto · Idea · Contexto: OBJETIVO: Mostrar una herramienta real y su utilidad cotidiana.
 QUÉ MOSTRAR: Foto de una herramienta física o digital a mano.
 CÓMO PRODUCIR: Una fotografía sencilla, sin grabar video. Escribir nombre y una línea sobre la tarea que facilita. La elección debe corresponder al uso real de Peter.
 MENSAJE / TEXTO: Qué haces con esta herramienta y por qué la utilizas.
 PENDIENTE: Elegir herramienta y tomar foto.
+- `st-1794299136343-260` #5 · 2026-11-12 18:30 · DAILY · **_v1 _v2 _v3 _final_final** · Captura · Idea · Contexto: OBJETIVO: Compartir humor sobre las revisiones del oficio.
+QUÉ MOSTRAR: Captura de versiones reales del mismo archivo.
+CÓMO PRODUCIR: Usar una captura disponible, recortar y ocultar información privada; añadir una sola frase de humor. Producción sencilla para el 11.
+MENSAJE / TEXTO: Humor de reconocimiento sobre las revisiones y cuándo una versión se vuelve definitiva.
+PENDIENTE: Elegir captura real y frase.
 - `st-17` #6 · 2026-11-12 18:30 · DAILY · **Mi diseño en la calle: una foto desde el carro** · Foto · Idea · Contexto: OBJETIVO: Compartir casualmente el encuentro con un trabajo instalado.
 QUÉ MOSTRAR: Foto existente de una valla diseñada por Peter, tomada desde un carro.
 CÓMO PRODUCIR: Usar la fotografía que Peter ya tiene. Mantener el registro espontáneo con un texto breve; no convertirlo en presentación formal. La presentación cuidada del proyecto pertenece al carrusel.
