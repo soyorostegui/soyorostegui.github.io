@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 14/11/2026, 1:18:31 a. m.
+**Última actualización:** 14/11/2026, 2:25:50 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
@@ -9,8 +9,8 @@
 
 ## 1. Estado Actual de la Agenda (19 piezas)
 - **💡 Idea / Planificado:** 13 piezas
-- **🎨 En Diseño / Proceso:** 3 piezas
-- **✅ Listo para publicar:** 0 piezas
+- **🎨 En Diseño / Proceso:** 2 piezas
+- **✅ Listo para publicar:** 1 piezas
 - **🚀 Publicado:** 3 piezas
 
 | ID | Fecha | Red | Estado | Título | Copy (Extracto) |
@@ -18,7 +18,7 @@
 | `post-ig-1` | 2026-11-09 | Instagram | **Publicado** | Lanzamiento Expectativa: «Mientras tanto...» | No todo lo que se construye se publica de inmediato. 🗂️ Hay archivos ... |
 | `post-ig-metele-diseno` | 2026-11-12 18:00 | Instagram | **Publicado** | Métele más diseño | «Está bien, pero métele más diseño». 🫠 Una frase breve que puede abri... |
 | `post-li-1` | 2026-11-12 09:00 | LinkedIn | **Publicado** | Hola, soy Peter Orostegui — presentación profesional | Hola, soy Peter Orostegui, diseñador gráfico de Valledupar, Colombia. ... |
-| `post-ig-criterio-forma` | 2026-11-13 18:00 | Instagram | **En Diseño** | Criterio vs Forma | ... |
+| `post-ig-criterio-forma` | 2026-11-13 18:00 | Instagram | **Listo** | Criterio vs Forma | ... |
 | `post-ig-cemedicar` | 2026-11-14 18:00 | Instagram | **En Diseño** | Cemedicar: adelanto del proyecto | ... |
 | `post-ig-consejo-humor` | 2026-11-15 18:00 | Instagram | **Idea** | El consejo chino que me hizo más eficiente como diseñador | ... |
 | `post-li-arcomadrid` | 2026-11-15 09:00 | LinkedIn | **En Diseño** | ARCOmadrid: concepto, decisiones y reconocimiento | ... |
@@ -119,7 +119,7 @@
     "time": "18:00",
     "endTime": "",
     "channel": "Instagram",
-    "status": "En Diseño",
+    "status": "Listo",
     "phase": "Fase 2: Archivo",
     "format": "Post",
     "structure": "OBJETIVO: Expresar la filosofía de Peter y conectar el resultado visual con decisiones de diseño.\nQUÉ MOSTRAR: Una imagen que contraste criterio y forma, usando el slogan «Criterio antes que forma».\nCÓMO PRODUCIR: Construir una composición con dos conceptos legibles. Elegir una decisión concreta como respaldo del contraste; la dirección visual se resuelve en producción.\nMENSAJE / TEXTO: Slogan exacto: «Criterio antes que forma». Explicar por qué se toma una decisión antes de dibujar o decorar, usando un ejemplo propio.\nPENDIENTE: Definir contraste visual, ejemplo y pie de publicación.",
