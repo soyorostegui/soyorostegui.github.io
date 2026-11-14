@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 14/11/2026, 1:18:12 a. m.
+**Última actualización:** 14/11/2026, 1:18:22 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
@@ -409,17 +409,17 @@ QUÉ MOSTRAR: El mismo texto antes y después, con el espacio intervenido señal
 CÓMO PRODUCIR: Preparar comparación en una sola pantalla manteniendo el resto igual. Ampliar lo suficiente para ver el cambio y explicar qué problema resuelve.
 MENSAJE / TEXTO: Explicar el ajuste con un ejemplo concreto, sin convertirlo en una regla universal.
 PENDIENTE: Seleccionar ejemplo y preparar comparación.
-- `st-12` #8 · 2026-11-14 11:00 · TOOLS · **Combinaciones tipográficas 1/3: ejemplo y encuesta** · Encuesta · Idea · Contexto: OBJETIVO: Mostrar cómo una elección tipográfica afecta el tono e invitar a comparar.
+- `st-12` #8 · 2026-11-14 11:00 · TOOLS · **Combinaciones tipográficas 1/3: ejemplo y encuesta** · Encuesta · En Diseño · Contexto: OBJETIVO: Mostrar cómo una elección tipográfica afecta el tono e invitar a comparar.
 QUÉ MOSTRAR: Dos opciones comparables para el mismo texto; una combinación protagonista de la primera entrega.
 CÓMO PRODUCIR: Primera pantalla de una secuencia de tres. Definir intención comunicativa, mostrar titular y apoyo, explicar qué aporta cada fuente e integrar aquí la encuesta serif/sans. La encuesta y el ejemplo cuentan como UNA historia.
 MENSAJE / TEXTO: Preguntar qué opción comunica mejor la intención elegida y explicar brevemente el criterio.
 PENDIENTE: Elegir fuentes, texto, intención y opciones de encuesta.
-- `st-tools-tipografia-2` #9 · 2026-11-14 11:01 · TOOLS · **Combinaciones tipográficas 2/3** · Foto · Idea · Contexto: OBJETIVO: Mostrar una segunda intención visual mediante tipografía.
+- `st-tools-tipografia-2` #9 · 2026-11-14 11:01 · TOOLS · **Combinaciones tipográficas 2/3** · Foto · En Diseño · Contexto: OBJETIVO: Mostrar una segunda intención visual mediante tipografía.
 QUÉ MOSTRAR: Mismo texto y estructura del ejemplo 1, otra pareja tipográfica.
 CÓMO PRODUCIR: Publicar inmediatamente después de la primera. Mantener comparación y legibilidad; explicar qué aporta cada fuente al tono.
 MENSAJE / TEXTO: Nombrar el tono buscado y una razón concreta de la elección.
 PENDIENTE: Elegir pareja y tono diferentes del primero.
-- `st-tools-tipografia-3` #10 · 2026-11-14 11:02 · TOOLS · **Combinaciones tipográficas 3/3** · Foto · Idea · Contexto: OBJETIVO: Completar la comparación con un tercer tono.
+- `st-tools-tipografia-3` #10 · 2026-11-14 11:02 · TOOLS · **Combinaciones tipográficas 3/3** · Foto · En Diseño · Contexto: OBJETIVO: Completar la comparación con un tercer tono.
 QUÉ MOSTRAR: Mismo texto, tercera combinación de titular y apoyo.
 CÓMO PRODUCIR: Publicar inmediatamente después de la segunda. Explicar la relación de fuentes, pesos y composición, evitando afirmar que una familia comunica siempre lo mismo.
 MENSAJE / TEXTO: Una explicación breve de la intención y del efecto de esta combinación.
