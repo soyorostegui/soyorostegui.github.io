@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 14/11/2026, 1:18:22 a. m.
+**Última actualización:** 14/11/2026, 1:18:31 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
@@ -424,21 +424,21 @@ QUÉ MOSTRAR: Mismo texto, tercera combinación de titular y apoyo.
 CÓMO PRODUCIR: Publicar inmediatamente después de la segunda. Explicar la relación de fuentes, pesos y composición, evitando afirmar que una familia comunica siempre lo mismo.
 MENSAJE / TEXTO: Una explicación breve de la intención y del efecto de esta combinación.
 PENDIENTE: Elegir pareja y preparar tercera pantalla.
-- `st-setup-espacio` #11 · 2026-11-14 12:00 · SETUP · **Así organizo mi espacio de trabajo** · Foto · Idea · Contexto: OBJETIVO: Presentar el espacio real de trabajo con producción ligera.
-QUÉ MOSTRAR: Escritorio tal como está.
-CÓMO PRODUCIR: Una fotografía sencilla con el móvil. Añadir una frase sobre una decisión real de organización. Los tres señalamientos son opcionales. Hoy Peter tiene poco tiempo: no requiere video ni edición elaborada.
-MENSAJE / TEXTO: Explicar brevemente por qué una disposición del escritorio te facilita trabajar.
-PENDIENTE: Tomar foto y elegir una decisión real.
-- `st-ptr-vocacion` #12 · 2026-11-15 11:00 · PTR · **Yo adulto y yo de pequeño: mi vocación** · Foto · Idea · Contexto: OBJETIVO: Conectar la historia personal de Peter con su vocación de diseñador.
+- `st-ptr-vocacion` #11 · 2026-11-15 11:00 · PTR · **Yo adulto y yo de pequeño: mi vocación** · Foto · Idea · Contexto: OBJETIVO: Conectar la historia personal de Peter con su vocación de diseñador.
 QUÉ MOSTRAR: Foto actual con fotografía infantil superpuesta como foto pegada.
 CÓMO PRODUCIR: Seleccionar las dos fotos y escribir desde un recuerdo real de infancia que conecte con querer ser diseñador. No inventar anécdotas.
 MENSAJE / TEXTO: Contar qué recuerdo sostiene la idea de que querías diseñar desde pequeño.
 PENDIENTE: Elegir fotos y pedir a Peter el recuerdo concreto.
-- `st-tools-recurso` #13 · 2026-11-15 17:00 · TOOLS · **Un recurso que recomiendo** · Foto · Idea · Contexto: OBJETIVO: Compartir una herramienta o recurso útil y accesible.
+- `st-tools-recurso` #12 · 2026-11-15 17:00 · TOOLS · **Un recurso que recomiendo** · Foto · Idea · Contexto: OBJETIVO: Compartir una herramienta o recurso útil y accesible.
 QUÉ MOSTRAR: Captura del recurso en uso y un ejemplo de su utilidad.
 CÓMO PRODUCIR: Elegir un recurso que Peter conozca; explicar qué problema resuelve y añadir enlace. Comprobar acceso y condiciones antes de recomendar.
 MENSAJE / TEXTO: Para qué lo usas y cuándo puede ayudar a otro diseñador.
 PENDIENTE: Elegir recurso, ejemplo y enlace.
+- `st-setup-espacio` #13 · 2026-11-16 12:00 · SETUP · **Así organizo mi espacio de trabajo** · Foto · Idea · Contexto: OBJETIVO: Presentar el espacio real de trabajo con producción ligera.
+QUÉ MOSTRAR: Escritorio tal como está.
+CÓMO PRODUCIR: Una fotografía sencilla con el móvil. Añadir una frase sobre una decisión real de organización. Los tres señalamientos son opcionales. Hoy Peter tiene poco tiempo: no requiere video ni edición elaborada.
+MENSAJE / TEXTO: Explicar brevemente por qué una disposición del escritorio te facilita trabajar.
+PENDIENTE: Tomar foto y elegir una decisión real.
 - `st-tools-referente` #14 · 2026-11-16 12:00 · TOOLS · **Un referente internacional y qué aprender de su proyecto** · Foto · Idea · Contexto: OBJETIVO: Enseñar a mirar una decisión de diseño con criterio.
 QUÉ MOSTRAR: Un proyecto acreditado de otro diseñador.
 CÓMO PRODUCIR: Seleccionar un proyecto y destacar una decisión concreta de composición, identidad o narrativa. Incluir autor, fuente y enlace cuando esté disponible. Trasladado del 12 al 16 para dejar producción ligera el 12.
