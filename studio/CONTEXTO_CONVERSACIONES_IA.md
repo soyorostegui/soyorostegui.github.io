@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 13/11/2026, 9:18:32 p. m.
+**Última actualización:** 14/11/2026, 1:08:07 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
@@ -399,12 +399,12 @@ QUÉ MOSTRAR: Foto existente de una valla diseñada por Peter, tomada desde un c
 CÓMO PRODUCIR: Usar la fotografía que Peter ya tiene. Mantener el registro espontáneo con un texto breve; no convertirlo en presentación formal. La presentación cuidada del proyecto pertenece al carrusel.
 MENSAJE / TEXTO: Mensaje personal sobre encontrarte con tu trabajo en la calle.
 PENDIENTE: Elegir foto y redactar mensaje breve.
-- `st-setup-archivo` #6 · 2026-11-13 10:00 · SETUP · **Mi archivo por dentro: capas y organización** · Captura · En Diseño · Contexto: OBJETIVO: Mostrar la organización del entorno digital de trabajo.
+- `st-setup-archivo` #6 · 2026-11-13 10:00 · SETUP · **Mi archivo por dentro: capas y organización** · Captura · Listo · Contexto: OBJETIVO: Mostrar la organización del entorno digital de trabajo.
 QUÉ MOSTRAR: Panel de capas de un proyecto real con nombres y grupos legibles.
 CÓMO PRODUCIR: Abrir un proyecto y mostrar conjunto y acercamiento al panel. Explicar cómo localizas o ajustas elementos gracias a su orden; evitar capturas diminutas.
 MENSAJE / TEXTO: Una decisión concreta de organización que te facilita trabajar.
 PENDIENTE: Elegir archivo y elemento que explicar.
-- `st-13` #7 · 2026-11-13 13:00 · TOOLS · **El espaciado también diseña: antes y después del kerning** · Captura · En Diseño · Contexto: OBJETIVO: Enseñar el efecto de un ajuste de espaciado.
+- `st-13` #7 · 2026-11-13 13:00 · TOOLS · **El espaciado también diseña: antes y después del kerning** · Captura · Listo · Contexto: OBJETIVO: Enseñar el efecto de un ajuste de espaciado.
 QUÉ MOSTRAR: El mismo texto antes y después, con el espacio intervenido señalado.
 CÓMO PRODUCIR: Preparar comparación en una sola pantalla manteniendo el resto igual. Ampliar lo suficiente para ver el cambio y explicar qué problema resuelve.
 MENSAJE / TEXTO: Explicar el ajuste con un ejemplo concreto, sin convertirlo en una regla universal.
