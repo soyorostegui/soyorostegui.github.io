@@ -601,6 +601,7 @@
               <button type="button" class="ai-inline-btn" onclick="StudioCredentialVault.exportEncrypted()">Descargar copia cifrada</button>
               <button type="button" class="ai-inline-btn" onclick="exportRecoverySnapshot()">Descargar respaldo local</button>
               <button type="button" class="ai-inline-btn" onclick="StudioCredentialVault.refresh()">Recuperar claves de la bóveda</button>
+              <button type="button" class="ai-inline-btn" onclick="StudioCredentialVault.openRecoveryDialog()">Olvidé mi contraseña</button>
             </div>
           </details>
         </div>
@@ -709,6 +710,23 @@
       <p id="vaultChangeError" role="alert"></p>
       <button class="btn-primary" type="submit">Actualizar contraseña</button>
       <button type="button" onclick="document.getElementById('vaultPasswordDialog').close()">Cancelar</button>
+    </form>
+  </dialog>
+  <dialog id="vaultRecoveryDialog" oncancel="if(StudioCredentialVault.recovering)event.preventDefault()" style="max-width:480px;border:1px solid #ddd;border-radius:14px;padding:24px;">
+    <form onsubmit="StudioCredentialVault.recoverPassword(event)">
+      <h2>Recuperar contraseña</h2>
+      <p>Conserva esta sesión abierta. Verificaremos tu cuenta de GitHub antes de establecer otra contraseña y guardar una copia cifrada anterior. El calendario y las claves de IA se conservan.</p>
+      <p>Crea un <strong>token nuevo de permisos limitados</strong> desde la cuenta <strong>soyorostegui</strong>, solo para <strong>soyorostegui.github.io</strong>, con <strong>Contents: Read and write</strong>. Se usará como la nueva conexión de GitHub y se guardará cifrado.</p>
+      <p><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">Crear el token en GitHub</a>. Escríbelo aquí; no lo compartas por chat.</p>
+      <label for="vaultRecoveryToken">Token nuevo de GitHub</label>
+      <input class="form-input" type="password" id="vaultRecoveryToken" autocomplete="off" spellcheck="false" required>
+      <label for="vaultRecoveryPassword">Nueva contraseña (mínimo 12 caracteres)</label>
+      <input class="form-input" type="password" id="vaultRecoveryPassword" autocomplete="new-password" minlength="12" maxlength="1024" required>
+      <label for="vaultRecoveryConfirm">Repite la nueva contraseña</label>
+      <input class="form-input" type="password" id="vaultRecoveryConfirm" autocomplete="new-password" minlength="12" maxlength="1024" required>
+      <p id="vaultRecoveryError" role="alert"></p>
+      <button id="vaultRecoverySubmit" class="btn-primary" type="submit">Verificar GitHub y establecer contraseña</button>
+      <button id="vaultRecoveryCancel" type="button" onclick="document.getElementById('vaultRecoveryDialog').close()">Cancelar</button>
     </form>
   </dialog>
   <script src="./vault-crypto.js"></script>

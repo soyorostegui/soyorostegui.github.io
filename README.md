@@ -20,7 +20,11 @@ La opción de bloquear Studio elimina la clave de desbloqueo recordada en ese pe
 
 «Cambiar contraseña» verifica la actual, genera una sal nueva, vuelve a cifrar y actualiza GitHub antes de sustituir la copia local. Otros dispositivos pedirán la contraseña nueva al recuperar la versión actual. Una modificación remota distinta detiene el envío: no se sobrescriben cambios de otro dispositivo. Para resolverlo, usa «Traer bóveda»: si hay cambios pendientes pide confirmación y guarda una copia cifrada anterior. El enlace «Copia cifrada anterior» de la pantalla de acceso permite descargarla.
 
-No existe recuperación de la contraseña. Si se pierde, las credenciales se deberán recuperar o regenerar desde las cuentas de sus proveedores y configurar una bóveda nueva. Cambiar la contraseña no revoca tokens ni elimina versiones anteriores del historial de GitHub: si una credencial se expuso, revócala en su proveedor.
+La contraseña original no se puede recuperar. Si aún hay una sesión desbloqueada en un dispositivo recordado, Ajustes → Recuperación → Olvidé mi contraseña permite establecer otra después de verificar un token de GitHub distinto del que ya guarda Studio. Debe ser un token nuevo de permisos limitados de la cuenta propietaria `soyorostegui`, para este repositorio y con Contents: Read and write. Se comprueban la identidad autenticada y la propiedad del repositorio; el guardado exige permiso de escritura y respeta el SHA de la bóveda para evitar sobrescribir cambios concurrentes.
+
+La recuperación conserva las claves de IA y el calendario. Guarda y descarga primero la bóveda anterior cifrada, comprueba el nuevo cifrado y sincroniza antes de activar la contraseña nueva. El token nuevo reemplaza la conexión anterior a GitHub dentro de la bóveda cifrada. Contraseña y token se escriben en el formulario del navegador y nunca se comparten por chat. Durante la operación se bloquean las ediciones de conexiones y el cierre del diálogo. Si se pierde también la sesión recordada, será necesario recuperar o regenerar las credenciales desde sus proveedores y configurar una bóveda nueva.
+
+Cambiar la contraseña no revoca tokens ni elimina versiones anteriores del historial de GitHub: si una credencial se expuso, revócala en su proveedor. Un error de red durante el guardado puede dejar un resultado remoto sin confirmar; conserva la sesión, la contraseña nueva y los respaldos hasta comprobar el acceso.
 
 ## Qué protege esta versión
 

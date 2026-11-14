@@ -23,7 +23,14 @@ function device(remoteStore, local=storage(), records=new Map()) {
     secretStorage:{getItem:k=>ctx.StudioCredentialVault?.managed?ctx.StudioCredentialVault.read(k):legacy.getItem(k)},
     fetch:async(url,options={})=>{
       if(remoteStore.fail)throw Error('offline');
+      if(url==='https://api.github.com/user') {
+        if(remoteStore.identityGate){remoteStore.identityReached?.();await remoteStore.identityGate;}
+        if(remoteStore.identityStatus)return {ok:false,status:remoteStore.identityStatus};
+        return {ok:true,json:async()=>remoteStore.identity||{id:214716364,login:'soyorostegui'}};
+      }
+      if(url==='https://api.github.com/repos/soyorostegui/soyorostegui.github.io')return {ok:true,json:async()=>({id:1450734848,owner:{id:214716364},permissions:{push:!remoteStore.noPush}})};
       if(options.method==='PUT'){
+        if(remoteStore.rejectWrites)return {ok:false,status:403};
         const body=JSON.parse(options.body);
         if((body.sha||null)!==(remoteStore.sha||null))return {ok:false,status:409};
         remoteStore.writes.push(options.body);
@@ -76,5 +83,65 @@ function device(remoteStore, local=storage(), records=new Map()) {
   await second.vault.lock();assert(!second.vault.active);assert.equal(second.vault.read('po_gh_repo_token'),null);assert.equal(second.records.size,0);
   await first.vault.lock();await remembered.vault.lock();
   const offline=device({fail:true,writes:[]});await offline.vault.init();assert.equal(offline.field('authSubmitBtn').disabled,true);
+  // Recovery requires independent account proof and never bypasses a locked vault.
+  const recoveryPassword='a fresh recovery password for tests',freshToken='github_pat_fresh_disposable_recovery';
+  const recoverySeed=await C.create(secret,password);
+  const recoveryRemote={envelope:recoverySeed.envelope,sha:'before-recovery',writes:[]};
+  const recovery=device(recoveryRemote);
+  await recovery.vault.init();
+  recovery.field('vaultRecoveryToken').value=freshToken;
+  recovery.field('vaultRecoveryPassword').value=recoveryPassword;recovery.field('vaultRecoveryConfirm').value=recoveryPassword;
+  await recovery.vault.recoverPassword({preventDefault(){}});
+  assert.equal(recoveryRemote.writes.length,0);assert(!recovery.vault.active);
+  recovery.field('authPasswordInput').value=password;await recovery.vault.login({preventDefault(){}});
+  recovery.local.setItem('po_posts_v6','untouched-calendar');
+  const enterRecovery=(token=freshToken,pass=recoveryPassword,confirmation=pass)=>{
+    recovery.vault.openRecoveryDialog();
+    recovery.field('vaultRecoveryToken').value=token;
+    recovery.field('vaultRecoveryPassword').value=pass;recovery.field('vaultRecoveryConfirm').value=confirmation;
+  };
+  enterRecovery(secret.githubToken);await recovery.vault.recoverPassword({preventDefault(){}});
+  assert.equal(recoveryRemote.writes.length,0);assert.match(recovery.field('vaultRecoveryError').textContent,/token nuevo/);
+  recoveryRemote.identity={id:123,login:'someone-else'};
+  enterRecovery();await recovery.vault.recoverPassword({preventDefault(){}});
+  assert.equal(recoveryRemote.writes.length,0);assert.match(recovery.field('vaultRecoveryError').textContent,/propietaria/);
+  delete recoveryRemote.identity;recoveryRemote.identityStatus=401;
+  enterRecovery();await recovery.vault.recoverPassword({preventDefault(){}});assert.equal(recoveryRemote.writes.length,0);
+  delete recoveryRemote.identityStatus;
+  enterRecovery(freshToken,'short');await recovery.vault.recoverPassword({preventDefault(){}});assert.equal(recoveryRemote.writes.length,0);
+  enterRecovery(freshToken,recoveryPassword,'different');await recovery.vault.recoverPassword({preventDefault(){}});assert.equal(recoveryRemote.writes.length,0);
+  recoveryRemote.rejectWrites=true;
+  enterRecovery();await recovery.vault.recoverPassword({preventDefault(){}});
+  assert.equal(recovery.vault.read('po_gh_repo_token'),secret.githubToken);assert(recovery.vault.active);
+  assert.deepEqual((await C.unlock(recoveryRemote.envelope,password)).payload,secret);
+  assert(recovery.local.getItem('po_credential_vault_recovery'));
+  assert(!recovery.local.getItem('po_credential_vault_pending_recovery').includes(freshToken));
+  assert.equal(recovery.local.getItem('po_posts_v6'),'untouched-calendar');
+  delete recoveryRemote.rejectWrites;
+  // A changed remote vault must be preserved, even with a valid owner token.
+  recoveryRemote.sha='concurrent-vault';
+  enterRecovery();await recovery.vault.recoverPassword({preventDefault(){}});assert.equal(recoveryRemote.writes.length,0);
+  recoveryRemote.sha='before-recovery';
+  let releaseIdentity,identityReached;
+  const reached=new Promise(resolve=>{identityReached=resolve;});
+  recoveryRemote.identityGate=new Promise(resolve=>{releaseIdentity=resolve;});recoveryRemote.identityReached=identityReached;
+  enterRecovery();const recovering=recovery.vault.recoverPassword({preventDefault(){}});
+  await reached;
+  assert(recovery.vault.recovering);assert(recovery.field('vaultRecoveryCancel').disabled);
+  assert.throws(()=>recovery.vault.write('po_gh_repo_token','concurrent-change'));
+  await assert.rejects(recovery.vault.save(true));await recovery.vault.lock();assert(recovery.vault.active);
+  releaseIdentity();await recovering;
+  delete recoveryRemote.identityGate;delete recoveryRemote.identityReached;
+  assert.equal(recovery.field('vaultRecoveryError').textContent,'');assert.equal(recoveryRemote.writes.length,1);
+  const recovered=(await C.unlock(recoveryRemote.envelope,recoveryPassword)).payload;
+  assert.deepEqual(recovered.providers,secret.providers);assert.equal(recovered.githubToken,freshToken);
+  await assert.rejects(C.unlock(recoveryRemote.envelope,password));
+  assert.equal(recovery.local.getItem('po_posts_v6'),'untouched-calendar');
+  for(const raw of recoveryRemote.writes)for(const value of [freshToken,recoveryPassword,secret.providers.deepseek.key])assert(!raw.includes(value));
+  for(const id of ['vaultRecoveryToken','vaultRecoveryPassword','vaultRecoveryConfirm'])assert.equal(recovery.field(id).value,'');
+  const recoveredDevice=device(recoveryRemote);await recoveredDevice.vault.init();
+  recoveredDevice.field('authPasswordInput').value=recoveryPassword;await recoveredDevice.vault.login({preventDefault(){}});assert(recoveredDevice.vault.active);
+  await recovery.vault.lock();await recoveredDevice.vault.lock();
+  console.log('PASS: owner-verified recovery rejects locked sessions, reused/invalid tokens, other accounts, weak/mismatched passwords and remote conflicts; failed upload preserves access, ciphertext backup retained, calendar and AI keys preserved, new password works on another device.');
   console.log('PASS: real AES-GCM/PBKDF2, non-extractable device keys, unique IVs, wrong password/tamper rejection, ciphertext-only upload, first setup, second-device recovery, remembered unlock, conflict protection, password rotation, logout and offline setup protection.');
 })().catch(error=>{console.error(error);process.exitCode=1;});

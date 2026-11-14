@@ -6,7 +6,7 @@ const StudioCredentialVault = (() => {
   const legacyKeys = ['po_api_vault','po_ai_key','po_gemini_key','po_gh_repo_token'];
   const memory = new Map();
   let managed = false, active = false, envelope = null, key = null, remoteSha = null;
-  let busy = false, timer = null, serial = Promise.resolve(), setup = false, generation = 0;
+  let busy = false, recovering = false, timer = null, serial = Promise.resolve(), setup = false, generation = 0;
   let dbPromise;
   const element = id => document.getElementById(id);
   const status = (message, error = false) => {
@@ -90,8 +90,7 @@ const StudioCredentialVault = (() => {
       return {sha:meta.sha,envelope:data};
     } finally { clearTimeout(timeout); }
   }
-  async function upload(candidate) {
-    const token = memory.get('po_gh_repo_token');
+  async function upload(candidate, token = memory.get('po_gh_repo_token')) {
     if (!token) { status('Bóveda cifrada en este navegador. Añade tu token de GitHub y pulsa Guardar para usarla en otros dispositivos.'); return false; }
     const latest = await remote(token);
     if ((latest?.sha || null) !== remoteSha) throw Error('La bóveda cambió en otro dispositivo. No se sobrescribió. Conserva tu respaldo y vuelve a abrir la versión actual.');
@@ -107,7 +106,8 @@ const StudioCredentialVault = (() => {
       return true;
     } finally { clearTimeout(timeout); }
   }
-  function save(sync = true) {
+  function save(sync = true, recoveryOperation = false) {
+    if (recovering && !recoveryOperation) return Promise.reject(Error('Espera a que termine la recuperación para guardar las conexiones.'));
     const operation = serial.catch(()=>{}).then(async () => {
       if (!active || !key) return;
       const revision = generation, candidate = await StudioVaultCrypto.seal(snapshot(),key,envelope);
@@ -196,6 +196,7 @@ const StudioCredentialVault = (() => {
     } catch (error) { authError(error.message+' Puedes volver a intentarlo con el botón Reintentar.'); }
   }
   async function lock() {
+    if (recovering) { status('Espera a que termine la recuperación antes de bloquear este dispositivo.', true); return; }
     clearTimeout(timer);
     try { await save(false); } catch (_) { status('No se pudo guardar la última copia cifrada local.',true); return; }
     await rememberDevice(false);
@@ -249,16 +250,88 @@ const StudioCredentialVault = (() => {
     } catch(error) { status(error.message,true); }
     finally {busy=false;}
   }
+  async function verifyRecoveryOwner(token) {
+    if (!/^github_pat_[A-Za-z0-9_]+$/.test(token) || token === memory.get('po_gh_repo_token')) {
+      throw Error('Crea un token nuevo de permisos limitados desde tu cuenta de GitHub. No uses el token que ya está guardado en Studio.');
+    }
+    const request = async url => {
+      const controller = new AbortController(), timeout = setTimeout(() => controller.abort(),15000);
+      try {
+        const response = await fetch(url, {headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json'},cache:'no-store',redirect:'error',signal:controller.signal});
+        if (!response.ok) throw Error('No se pudo verificar tu cuenta de GitHub (HTTP '+response.status+'). Revisa el token y sus permisos.');
+        return await response.json();
+      } finally { clearTimeout(timeout); }
+    };
+    const user = await request('https://api.github.com/user');
+    if (user.id !== 214716364 || String(user.login).toLowerCase() !== 'soyorostegui') throw Error('La recuperación requiere verificar la cuenta propietaria soyorostegui.');
+    const repository = await request('https://api.github.com/repos/soyorostegui/soyorostegui.github.io');
+    if (repository.id !== 1450734848 || repository.owner?.id !== user.id || repository.permissions?.push === false) throw Error('Esta cuenta no puede recuperar el acceso del repositorio de Studio.');
+  }
+  function openRecoveryDialog() {
+    if (!active || !key || !envelope) { authError('La recuperación necesita una sesión de Studio ya desbloqueada.'); return; }
+    if (busy) return;
+    for (const id of ['vaultRecoveryToken','vaultRecoveryPassword','vaultRecoveryConfirm']) element(id).value='';
+    element('vaultRecoveryError').textContent='';
+    element('vaultRecoverySubmit').disabled=false;
+    element('vaultRecoveryDialog').showModal();
+  }
+  async function recoverPassword(event) {
+    event?.preventDefault();
+    const errorBox=element('vaultRecoveryError');
+    if (busy) return;
+    if (!active || !key || !envelope) { errorBox.textContent='Abre Studio en el dispositivo recordado antes de recuperar el acceso.'; return; }
+    const dialog=element('vaultRecoveryDialog'), button=element('vaultRecoverySubmit');
+    let token=element('vaultRecoveryToken').value.trim(), password=element('vaultRecoveryPassword').value;
+    busy=true;recovering=true;button.disabled=true;element('vaultRecoveryCancel').disabled=true;errorBox.textContent='';clearTimeout(timer);
+    let uploadAttempted=false, uploaded=false;
+    try {
+      if (password !== element('vaultRecoveryConfirm').value) throw Error('Las contraseñas nuevas no coinciden.');
+      if (password.length < 12 || password.length > 1024) throw Error('Usa una contraseña nueva de al menos 12 caracteres.');
+      await serial.catch(()=>{});
+      // An already-open session alone never authorizes password recovery.
+      await verifyRecoveryOwner(token);
+      await StudioVaultCrypto.open(envelope,key);
+      await save(false, true);
+      const backup=JSON.stringify(envelope);
+      localStorage.setItem('po_credential_vault_recovery',backup);
+      await exportEncrypted(true);
+      const payload={...snapshot(),githubToken:token};
+      const created=await StudioVaultCrypto.create(payload,password);
+      const checked=await StudioVaultCrypto.open(created.envelope,created.key);
+      if (JSON.stringify(checked)!==JSON.stringify(payload)) throw Error('No se pudo comprobar la nueva bóveda.');
+      // Keep a ciphertext-only local candidate if the network outcome is uncertain.
+      localStorage.setItem('po_credential_vault_pending_recovery',JSON.stringify(created.envelope));
+      uploadAttempted=true;
+      uploaded=await upload(created.envelope,token);
+      if (!uploaded) throw Error('GitHub no confirmó la recuperación.');
+      key=created.key;envelope=created.envelope;
+      memory.set('po_gh_repo_token',token);
+      localStorage.setItem(CACHE,JSON.stringify(envelope));localStorage.removeItem(DIRTY);
+      await rememberDevice(localStorage.getItem('po_vault_remember')==='1');
+      localStorage.removeItem('po_credential_vault_pending_recovery');
+      dialog.close();updateGhCloudStatusUI();
+      status('Contraseña recuperada y sincronizada. Usa la nueva contraseña en otros dispositivos. Las claves de IA y el calendario se conservan.');
+      if (typeof alert === 'function') alert('La contraseña nueva ya está sincronizada. Guárdala en tu administrador de contraseñas. Se descargó una copia cifrada anterior.');
+    } catch (error) {
+      const safe=uploadAttempted ? (uploaded ? 'GitHub recibió la contraseña nueva, pero falta completar el guardado local. Conserva esta sesión y utiliza la nueva contraseña para volver a entrar.' : 'No se pudo confirmar el cambio en GitHub. Conserva esta sesión, el respaldo y la contraseña nueva; verifica el acceso antes de volver a intentarlo.') : 'No se cambió la contraseña.';
+      // Never render an upstream error that could contain a token or password.
+      const message=String(error.message||'Error de recuperación').split(token||'\u0000').join('[oculto]').split(password||'\u0000').join('[oculto]');
+      errorBox.textContent=message+' '+safe;
+    } finally {
+      token='';password='';for(const id of ['vaultRecoveryToken','vaultRecoveryPassword','vaultRecoveryConfirm']) element(id).value='';
+      busy=false;recovering=false;button.disabled=false;element('vaultRecoveryCancel').disabled=false;
+    }
+  }
   async function exportEncrypted(recovery = false) {
     if(active && !recovery) { try { await save(false); } catch(error) {status(error.message,true);return;} }
     const raw=localStorage.getItem(recovery ? 'po_credential_vault_recovery' : CACHE);if(!raw){if(active)status('No hay una copia cifrada disponible.',true);else authError('No hay una copia cifrada anterior disponible.');return;}
     const url=URL.createObjectURL(new Blob([raw],{type:'application/json'})),a=document.createElement('a');
     a.href=url;a.download='studio-boveda-cifrada.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
   }
-  return {get managed(){return managed;},get active(){return active;},init,login,lock,changed,save,refresh,exportEncrypted,changePassword,
+  return {get managed(){return managed;},get active(){return active;},get recovering(){return recovering;},init,login,lock,changed,save,refresh,exportEncrypted,changePassword,openRecoveryDialog,recoverPassword,
     read:name=>memory.get(name)||null,
-    write(name,value){if(memory.get(name)!==String(value)){memory.set(name,String(value));changed();}},
-    remove(name){if(memory.delete(name))changed();},
+    write(name,value){if(recovering)throw Error('Espera a que termine la recuperación para editar las conexiones.');if(memory.get(name)!==String(value)){memory.set(name,String(value));changed();}},
+    remove(name){if(recovering)throw Error('Espera a que termine la recuperación para editar las conexiones.');if(memory.delete(name))changed();},
     setRemember:rememberDevice,
     openPasswordDialog(){if(!active){authError('Primero abre tu bóveda con la contraseña actual.');return;}for(const id of ['vaultCurrentPassword','vaultNewPassword','vaultConfirmPassword'])element(id).value='';element('vaultChangeError').textContent='';element('vaultPasswordDialog').showModal();}
   };
