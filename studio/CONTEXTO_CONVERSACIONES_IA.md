@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 16/11/2026, 1:04:04 a. m.
+**Última actualización:** 16/11/2026, 3:47:50 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
@@ -9,8 +9,8 @@
 
 ## 1. Estado Actual de la Agenda (19 piezas)
 - **💡 Idea / Planificado:** 12 piezas
-- **🎨 En Diseño / Proceso:** 2 piezas
-- **✅ Listo para publicar:** 1 piezas
+- **🎨 En Diseño / Proceso:** 1 piezas
+- **✅ Listo para publicar:** 2 piezas
 - **🚀 Publicado:** 4 piezas
 
 | ID | Fecha | Red | Estado | Título | Copy (Extracto) |
@@ -21,7 +21,7 @@
 | `post-ig-criterio-forma` | 2026-11-13 18:00 | Instagram | **Publicado** | Criterio vs Forma | ... |
 | `post-ig-cemedicar` | 2026-11-14 18:00 | Instagram | **En Diseño** | Cemedicar: adelanto del proyecto | ... |
 | `post-ig-consejo-humor` | 2026-11-15 18:00 | Instagram | **Listo** | El consejo chino que me hizo más eficiente como diseñador | ... |
-| `post-li-arcomadrid` | 2026-11-15 09:00 | LinkedIn | **En Diseño** | ARCOmadrid: concepto, decisiones y reconocimiento | ... |
+| `post-li-arcomadrid` | 2026-11-15 09:00 | LinkedIn | **Listo** | ARCOmadrid: concepto, decisiones y reconocimiento | ... |
 | `post-ig-karen-valla` | 2026-11-16 18:00 | Instagram | **Idea** | Karen Lizarazo: diseño de valla | ... |
 | `post-li-vallas` | 2026-11-16 09:00 | LinkedIn | **Idea** | Dos vallas musicales: Karen Lizarazo y La Banda del 5 | ... |
 | `post-ig-retrato-intervenido` | 2026-11-17 12:00 | Instagram | **Idea** | Retrato intervenido: criterio, confianza y valor profesional | ... |
@@ -167,7 +167,7 @@
     "time": "09:00",
     "endTime": "",
     "channel": "LinkedIn",
-    "status": "En Diseño",
+    "status": "Listo",
     "phase": "Fase 2: Archivo",
     "format": "Carrusel",
     "structure": "OBJETIVO: Presentar un caso académico con razonamiento de diseño y reconocimiento.\nQUÉ MOSTRAR: Proyecto ARCOmadrid, reto académico, decisiones y reconocimiento obtenido.\nCÓMO PRODUCIR: Adaptar al lenguaje de LinkedIn. Secuencia: resultado, encargo/reto, decisiones de composición y concepto, reconocimiento. Utilizar pruebas reales y explicar el papel de Peter.\nMENSAJE / TEXTO: Contar cómo se abordó el reto y qué decisiones sostienen el resultado; describir el reconocimiento con precisión.\nPENDIENTE: Reunir afiche, brief académico, datos del reconocimiento y redactar slides.",
