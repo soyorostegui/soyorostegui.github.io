@@ -1,15 +1,15 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 16/11/2026, 12:34:08 a. m.
+**Última actualización:** 16/11/2026, 12:34:19 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
 ---
 
 ## 1. Estado Actual de la Agenda (19 piezas)
-- **💡 Idea / Planificado:** 13 piezas
-- **🎨 En Diseño / Proceso:** 2 piezas
+- **💡 Idea / Planificado:** 11 piezas
+- **🎨 En Diseño / Proceso:** 4 piezas
 - **✅ Listo para publicar:** 0 piezas
 - **🚀 Publicado:** 4 piezas
 
@@ -20,10 +20,10 @@
 | `post-li-1` | 2026-11-12 09:00 | LinkedIn | **Publicado** | Hola, soy Peter Orostegui — presentación profesional | Hola, soy Peter Orostegui, diseñador gráfico de Valledupar, Colombia. ... |
 | `post-ig-criterio-forma` | 2026-11-13 18:00 | Instagram | **Publicado** | Criterio vs Forma | ... |
 | `post-ig-cemedicar` | 2026-11-14 18:00 | Instagram | **En Diseño** | Cemedicar: adelanto del proyecto | ... |
-| `post-ig-consejo-humor` | 2026-11-15 18:00 | Instagram | **Idea** | El consejo chino que me hizo más eficiente como diseñador | ... |
+| `post-ig-consejo-humor` | 2026-11-15 18:00 | Instagram | **En Diseño** | El consejo chino que me hizo más eficiente como diseñador | ... |
 | `post-li-arcomadrid` | 2026-11-15 09:00 | LinkedIn | **En Diseño** | ARCOmadrid: concepto, decisiones y reconocimiento | ... |
 | `post-ig-karen-valla` | 2026-11-16 18:00 | Instagram | **Idea** | Karen Lizarazo: diseño de valla | ... |
-| `post-li-vallas` | 2026-11-16 09:00 | LinkedIn | **Idea** | Dos vallas musicales: Karen Lizarazo y La Banda del 5 | ... |
+| `post-li-vallas` | 2026-11-16 09:00 | LinkedIn | **En Diseño** | Dos vallas musicales: Karen Lizarazo y La Banda del 5 | ... |
 | `post-ig-retrato-intervenido` | 2026-11-17 12:00 | Instagram | **Idea** | Retrato intervenido: criterio, confianza y valor profesional | ... |
 | `post-ig-diseno-entorno` | 2026-11-18 18:00 | Instagram | **Idea** | Del diseño al entorno de trabajo | ... |
 | `post-li-filosofia` | 2026-11-18 09:00 | LinkedIn | **Idea** | Criterio antes que forma: mi filosofía de diseño | ... |
@@ -151,7 +151,7 @@
     "time": "18:00",
     "endTime": "",
     "channel": "Instagram",
-    "status": "Idea",
+    "status": "En Diseño",
     "phase": "Fase 2: Archivo",
     "format": "Reel",
     "structure": "OBJETIVO: Mostrar personalidad mediante un reel breve de humor sobre ponerse a trabajar.\nQUÉ MOSTRAR: Situación sencilla del diseñador con el audio «levántate, mañana tienes que tlabaja» mencionado por Peter.\nCÓMO PRODUCIR: Una acción fácil de grabar y pocos cortes. Usar el audio elegido; acordar un remate visual concreto antes de grabar. No programar producción ni publicación de reels para el 11 o 12.\nMENSAJE / TEXTO: Gancho: «El consejo chino que me ayudó a volverme más eficiente como diseñador». El remate conecta con el audio.\nPENDIENTE: Localizar el audio y definir acción, duración y remate.",
@@ -199,7 +199,7 @@
     "time": "09:00",
     "endTime": "",
     "channel": "LinkedIn",
-    "status": "Idea",
+    "status": "En Diseño",
     "phase": "Fase 2: Archivo",
     "format": "Carrusel",
     "structure": "OBJETIVO: Mostrar diseño aplicado y capacidad de trabajar con escala y legibilidad.\nQUÉ MOSTRAR: Ambas vallas: diseño digital e instalación real.\nCÓMO PRODUCIR: Un solo carrusel de LinkedIn para los dos proyectos. Para cada uno, mostrar archivo y resultado instalado; explicar una decisión real sobre escala, color o legibilidad. En Instagram se muestra solo Karen.\nMENSAJE / TEXTO: Identificar el encargo, la participación real de Peter y el resultado de cada proyecto. La valla de La Banda del 5 corresponde al álbum «Vallenato».\nPENDIENTE: Elegir materiales, cantidad de slides y decisiones documentadas.",
@@ -429,7 +429,7 @@ QUÉ MOSTRAR: Foto actual con fotografía infantil superpuesta como foto pegada.
 CÓMO PRODUCIR: Seleccionar las dos fotos y escribir desde un recuerdo real de infancia que conecte con querer ser diseñador. No inventar anécdotas.
 MENSAJE / TEXTO: Contar qué recuerdo sostiene la idea de que querías diseñar desde pequeño.
 PENDIENTE: Elegir fotos y pedir a Peter el recuerdo concreto.
-- `st-tools-recurso` #12 · 2026-11-15 17:00 · TOOLS · **Un recurso que recomiendo** · Foto · Idea · Contexto: OBJETIVO: Compartir una herramienta o recurso útil y accesible.
+- `st-tools-recurso` #12 · 2026-11-15 17:00 · TOOLS · **Un recurso que recomiendo** · Foto · En Diseño · Contexto: OBJETIVO: Compartir una herramienta o recurso útil y accesible.
 QUÉ MOSTRAR: Captura del recurso en uso y un ejemplo de su utilidad.
 CÓMO PRODUCIR: Elegir un recurso que Peter conozca; explicar qué problema resuelve y añadir enlace. Comprobar acceso y condiciones antes de recomendar.
 MENSAJE / TEXTO: Para qué lo usas y cuándo puede ayudar a otro diseñador.
