@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 16/11/2026, 12:35:54 a. m.
+**Última actualización:** 16/11/2026, 1:04:04 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
@@ -9,8 +9,8 @@
 
 ## 1. Estado Actual de la Agenda (19 piezas)
 - **💡 Idea / Planificado:** 12 piezas
-- **🎨 En Diseño / Proceso:** 3 piezas
-- **✅ Listo para publicar:** 0 piezas
+- **🎨 En Diseño / Proceso:** 2 piezas
+- **✅ Listo para publicar:** 1 piezas
 - **🚀 Publicado:** 4 piezas
 
 | ID | Fecha | Red | Estado | Título | Copy (Extracto) |
@@ -20,7 +20,7 @@
 | `post-li-1` | 2026-11-12 09:00 | LinkedIn | **Publicado** | Hola, soy Peter Orostegui — presentación profesional | Hola, soy Peter Orostegui, diseñador gráfico de Valledupar, Colombia. ... |
 | `post-ig-criterio-forma` | 2026-11-13 18:00 | Instagram | **Publicado** | Criterio vs Forma | ... |
 | `post-ig-cemedicar` | 2026-11-14 18:00 | Instagram | **En Diseño** | Cemedicar: adelanto del proyecto | ... |
-| `post-ig-consejo-humor` | 2026-11-15 18:00 | Instagram | **En Diseño** | El consejo chino que me hizo más eficiente como diseñador | ... |
+| `post-ig-consejo-humor` | 2026-11-15 18:00 | Instagram | **Listo** | El consejo chino que me hizo más eficiente como diseñador | ... |
 | `post-li-arcomadrid` | 2026-11-15 09:00 | LinkedIn | **En Diseño** | ARCOmadrid: concepto, decisiones y reconocimiento | ... |
 | `post-ig-karen-valla` | 2026-11-16 18:00 | Instagram | **Idea** | Karen Lizarazo: diseño de valla | ... |
 | `post-li-vallas` | 2026-11-16 09:00 | LinkedIn | **Idea** | Dos vallas musicales: Karen Lizarazo y La Banda del 5 | ... |
@@ -151,7 +151,7 @@
     "time": "18:00",
     "endTime": "",
     "channel": "Instagram",
-    "status": "En Diseño",
+    "status": "Listo",
     "phase": "Fase 2: Archivo",
     "format": "Reel",
     "structure": "OBJETIVO: Mostrar personalidad mediante un reel breve de humor sobre ponerse a trabajar.\nQUÉ MOSTRAR: Situación sencilla del diseñador con el audio «levántate, mañana tienes que tlabaja» mencionado por Peter.\nCÓMO PRODUCIR: Una acción fácil de grabar y pocos cortes. Usar el audio elegido; acordar un remate visual concreto antes de grabar. No programar producción ni publicación de reels para el 11 o 12.\nMENSAJE / TEXTO: Gancho: «El consejo chino que me ayudó a volverme más eficiente como diseñador». El remate conecta con el audio.\nPENDIENTE: Localizar el audio y definir acción, duración y remate.",
