@@ -1,15 +1,15 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 16/11/2026, 12:35:21 a. m.
+**Última actualización:** 16/11/2026, 12:35:54 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
 ---
 
 ## 1. Estado Actual de la Agenda (19 piezas)
-- **💡 Idea / Planificado:** 11 piezas
-- **🎨 En Diseño / Proceso:** 4 piezas
+- **💡 Idea / Planificado:** 12 piezas
+- **🎨 En Diseño / Proceso:** 3 piezas
 - **✅ Listo para publicar:** 0 piezas
 - **🚀 Publicado:** 4 piezas
 
@@ -23,7 +23,7 @@
 | `post-ig-consejo-humor` | 2026-11-15 18:00 | Instagram | **En Diseño** | El consejo chino que me hizo más eficiente como diseñador | ... |
 | `post-li-arcomadrid` | 2026-11-15 09:00 | LinkedIn | **En Diseño** | ARCOmadrid: concepto, decisiones y reconocimiento | ... |
 | `post-ig-karen-valla` | 2026-11-16 18:00 | Instagram | **Idea** | Karen Lizarazo: diseño de valla | ... |
-| `post-li-vallas` | 2026-11-16 09:00 | LinkedIn | **En Diseño** | Dos vallas musicales: Karen Lizarazo y La Banda del 5 | ... |
+| `post-li-vallas` | 2026-11-16 09:00 | LinkedIn | **Idea** | Dos vallas musicales: Karen Lizarazo y La Banda del 5 | ... |
 | `post-ig-retrato-intervenido` | 2026-11-17 12:00 | Instagram | **Idea** | Retrato intervenido: criterio, confianza y valor profesional | ... |
 | `post-ig-diseno-entorno` | 2026-11-18 18:00 | Instagram | **Idea** | Del diseño al entorno de trabajo | ... |
 | `post-li-filosofia` | 2026-11-18 09:00 | LinkedIn | **Idea** | Criterio antes que forma: mi filosofía de diseño | ... |
@@ -199,7 +199,7 @@
     "time": "09:00",
     "endTime": "",
     "channel": "LinkedIn",
-    "status": "En Diseño",
+    "status": "Idea",
     "phase": "Fase 2: Archivo",
     "format": "Carrusel",
     "structure": "OBJETIVO: Mostrar diseño aplicado y capacidad de trabajar con escala y legibilidad.\nQUÉ MOSTRAR: Ambas vallas: diseño digital e instalación real.\nCÓMO PRODUCIR: Un solo carrusel de LinkedIn para los dos proyectos. Para cada uno, mostrar archivo y resultado instalado; explicar una decisión real sobre escala, color o legibilidad. En Instagram se muestra solo Karen.\nMENSAJE / TEXTO: Identificar el encargo, la participación real de Peter y el resultado de cada proyecto. La valla de La Banda del 5 corresponde al álbum «Vallenato».\nPENDIENTE: Elegir materiales, cantidad de slides y decisiones documentadas.",
