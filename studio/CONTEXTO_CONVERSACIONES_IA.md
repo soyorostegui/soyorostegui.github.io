@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 15/11/2026, 9:26:10 p. m.
+**Última actualización:** 16/11/2026, 12:34:08 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
@@ -424,7 +424,7 @@ QUÉ MOSTRAR: Mismo texto, tercera combinación de titular y apoyo.
 CÓMO PRODUCIR: Publicar inmediatamente después de la segunda. Explicar la relación de fuentes, pesos y composición, evitando afirmar que una familia comunica siempre lo mismo.
 MENSAJE / TEXTO: Una explicación breve de la intención y del efecto de esta combinación.
 PENDIENTE: Elegir pareja y preparar tercera pantalla.
-- `st-ptr-vocacion` #11 · 2026-11-15 11:00 · PTR · **Yo adulto y yo de pequeño: mi vocación** · Foto · Idea · Contexto: OBJETIVO: Conectar la historia personal de Peter con su vocación de diseñador.
+- `st-ptr-vocacion` #11 · 2026-11-15 11:00 · PTR · **Yo adulto y yo de pequeño: mi vocación** · Foto · En Diseño · Contexto: OBJETIVO: Conectar la historia personal de Peter con su vocación de diseñador.
 QUÉ MOSTRAR: Foto actual con fotografía infantil superpuesta como foto pegada.
 CÓMO PRODUCIR: Seleccionar las dos fotos y escribir desde un recuerdo real de infancia que conecte con querer ser diseñador. No inventar anécdotas.
 MENSAJE / TEXTO: Contar qué recuerdo sostiene la idea de que querías diseñar desde pequeño.
