@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 16/11/2026, 7:52:45 p. m.
+**Última actualización:** 16/11/2026, 7:53:19 p. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
@@ -419,12 +419,12 @@ QUÉ MOSTRAR: Captura del recurso en uso y un ejemplo de su utilidad.
 CÓMO PRODUCIR: Elegir un recurso que Peter conozca; explicar qué problema resuelve y añadir enlace. Comprobar acceso y condiciones antes de recomendar.
 MENSAJE / TEXTO: Para qué lo usas y cuándo puede ayudar a otro diseñador.
 PENDIENTE: Elegir recurso, ejemplo y enlace.
-- `st-setup-herramienta` #10 · 2026-11-17 12:00 · SETUP · **Una herramienta que uso de verdad** · Foto · Idea · Contexto: OBJETIVO: Mostrar una herramienta real y su utilidad cotidiana.
+- `st-setup-herramienta` #10 · 2026-11-17 12:00 · SETUP · **Una herramienta que uso de verdad** · Foto · En Diseño · Contexto: OBJETIVO: Mostrar una herramienta real y su utilidad cotidiana.
 QUÉ MOSTRAR: Foto de una herramienta física o digital a mano.
 CÓMO PRODUCIR: Una fotografía sencilla, sin grabar video. Escribir nombre y una línea sobre la tarea que facilita. La elección debe corresponder al uso real de Peter.
 MENSAJE / TEXTO: Qué haces con esta herramienta y por qué la utilizas.
 PENDIENTE: Elegir herramienta y tomar foto.
-- `st-portfolio-teaser` #11 · 2026-11-17 18:30 · PORTFOLIO · **Pronto, con criterio todo toma forma** · Video · Idea · Contexto: OBJETIVO: Generar expectativa por el lanzamiento.
+- `st-portfolio-teaser` #11 · 2026-11-17 18:30 · PORTFOLIO · **Pronto, con criterio todo toma forma** · Video · En Diseño · Contexto: OBJETIVO: Generar expectativa por el lanzamiento.
 QUÉ MOSTRAR: Peter sentado frente al computador trabajando en programas de diseño, grabado desde detrás del hombro.
 CÓMO PRODUCIR: Toma continua de unos 15 segundos, escena desenfocada y movimiento sutil. Textos nítidos: 0–5 s escena; 5–10 s frase; 10–15 s fecha.
 MENSAJE / TEXTO: «Pronto, con criterio todo toma forma.» Después: «20 de noviembre».
