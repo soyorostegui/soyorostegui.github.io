@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 16/11/2026, 7:18:48 p. m.
+**Última actualización:** 16/11/2026, 7:23:39 p. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
@@ -19,7 +19,7 @@
 | `post-ig-metele-diseno` | 2026-11-12 18:00 | Instagram | **Publicado** | Métele más diseño | «Está bien, pero métele más diseño». 🫠 Una frase breve que puede abri... |
 | `post-li-1` | 2026-11-12 09:00 | LinkedIn | **Publicado** | Hola, soy Peter Orostegui — presentación profesional | Hola, soy Peter Orostegui, diseñador gráfico de Valledupar, Colombia. ... |
 | `post-ig-criterio-forma` | 2026-11-13 18:00 | Instagram | **Publicado** | Criterio vs Forma | ... |
-| `post-ig-cemedicar` | 2026-11-14 18:00 | Instagram | **En Diseño** | Cemedicar: adelanto del proyecto | ... |
+| `post-ig-cemedicar` | 2026-11-16 18:00 | Instagram | **En Diseño** | Cemedicar: adelanto del proyecto | ... |
 | `post-ig-consejo-humor` | 2026-11-15 18:00 | Instagram | **Publicado** | El consejo chino que me hizo más eficiente como diseñador | ... |
 | `post-li-arcomadrid` | 2026-11-15 09:00 | LinkedIn | **Publicado** | ARCOmadrid: concepto, decisiones y reconocimiento | ... |
 | `post-ig-karen-valla` | 2026-11-16 18:00 | Instagram | **Idea** | Karen Lizarazo: diseño de valla | ... |
@@ -131,7 +131,7 @@
     "type": "post",
     "projectId": "project-portafolio-2026",
     "title": "Cemedicar: adelanto del proyecto",
-    "date": "2026-11-14",
+    "date": "2026-11-16",
     "time": "18:00",
     "endTime": "",
     "channel": "Instagram",
