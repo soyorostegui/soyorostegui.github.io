@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 16/11/2026, 7:23:47 p. m.
+**Última actualización:** 16/11/2026, 7:24:32 p. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
@@ -19,11 +19,11 @@
 | `post-ig-metele-diseno` | 2026-11-12 18:00 | Instagram | **Publicado** | Métele más diseño | «Está bien, pero métele más diseño». 🫠 Una frase breve que puede abri... |
 | `post-li-1` | 2026-11-12 09:00 | LinkedIn | **Publicado** | Hola, soy Peter Orostegui — presentación profesional | Hola, soy Peter Orostegui, diseñador gráfico de Valledupar, Colombia. ... |
 | `post-ig-criterio-forma` | 2026-11-13 18:00 | Instagram | **Publicado** | Criterio vs Forma | ... |
-| `post-ig-consejo-humor` | 2026-11-15 18:00 | Instagram | **Publicado** | El consejo chino que me hizo más eficiente como diseñador | ... |
-| `post-li-arcomadrid` | 2026-11-15 09:00 | LinkedIn | **Publicado** | ARCOmadrid: concepto, decisiones y reconocimiento | ... |
-| `post-ig-cemedicar` | 2026-11-16 18:00 | Instagram | **En Diseño** | Cemedicar: adelanto del proyecto | ... |
-| `post-ig-karen-valla` | 2026-11-16 18:00 | Instagram | **Idea** | Karen Lizarazo: diseño de valla | ... |
-| `post-li-vallas` | 2026-11-16 09:00 | LinkedIn | **Idea** | Dos vallas musicales: Karen Lizarazo y La Banda del 5 | ... |
+| `post-ig-consejo-humor` | 2026-11-16 18:00 | Instagram | **Publicado** | El consejo chino que me hizo más eficiente como diseñador | ... |
+| `post-li-arcomadrid` | 2026-11-16 09:00 | LinkedIn | **Publicado** | ARCOmadrid: concepto, decisiones y reconocimiento | ... |
+| `post-ig-cemedicar` | 2026-11-17 18:00 | Instagram | **En Diseño** | Cemedicar: adelanto del proyecto | ... |
+| `post-ig-karen-valla` | 2026-11-17 18:00 | Instagram | **Idea** | Karen Lizarazo: diseño de valla | ... |
+| `post-li-vallas` | 2026-11-17 09:00 | LinkedIn | **Idea** | Dos vallas musicales: Karen Lizarazo y La Banda del 5 | ... |
 | `post-ig-retrato-intervenido` | 2026-11-17 12:00 | Instagram | **Idea** | Retrato intervenido: criterio, confianza y valor profesional | ... |
 | `post-ig-diseno-entorno` | 2026-11-18 18:00 | Instagram | **Idea** | Del diseño al entorno de trabajo | ... |
 | `post-li-filosofia` | 2026-11-18 09:00 | LinkedIn | **Idea** | Criterio antes que forma: mi filosofía de diseño | ... |
@@ -131,7 +131,7 @@
     "type": "post",
     "projectId": "project-portafolio-2026",
     "title": "El consejo chino que me hizo más eficiente como diseñador",
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "time": "18:00",
     "endTime": "",
     "channel": "Instagram",
@@ -147,7 +147,7 @@
     "type": "post",
     "projectId": "project-portafolio-2026",
     "title": "ARCOmadrid: concepto, decisiones y reconocimiento",
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "time": "09:00",
     "endTime": "",
     "channel": "LinkedIn",
@@ -163,7 +163,7 @@
     "type": "post",
     "projectId": "project-portafolio-2026",
     "title": "Cemedicar: adelanto del proyecto",
-    "date": "2026-11-16",
+    "date": "2026-11-17",
     "time": "18:00",
     "endTime": "",
     "channel": "Instagram",
@@ -179,7 +179,7 @@
     "type": "post",
     "projectId": "project-portafolio-2026",
     "title": "Karen Lizarazo: diseño de valla",
-    "date": "2026-11-16",
+    "date": "2026-11-17",
     "time": "18:00",
     "endTime": "",
     "channel": "Instagram",
@@ -195,7 +195,7 @@
     "type": "post",
     "projectId": "project-portafolio-2026",
     "title": "Dos vallas musicales: Karen Lizarazo y La Banda del 5",
-    "date": "2026-11-16",
+    "date": "2026-11-17",
     "time": "09:00",
     "endTime": "",
     "channel": "LinkedIn",
@@ -409,76 +409,76 @@ QUÉ MOSTRAR: El mismo texto antes y después, con el espacio intervenido señal
 CÓMO PRODUCIR: Preparar comparación en una sola pantalla manteniendo el resto igual. Ampliar lo suficiente para ver el cambio y explicar qué problema resuelve.
 MENSAJE / TEXTO: Explicar el ajuste con un ejemplo concreto, sin convertirlo en una regla universal.
 PENDIENTE: Seleccionar ejemplo y preparar comparación.
-- `st-ptr-vocacion` #8 · 2026-11-15 11:00 · PTR · **Yo adulto y yo de pequeño: mi vocación** · Foto · En Diseño · Contexto: OBJETIVO: Conectar la historia personal de Peter con su vocación de diseñador.
+- `st-ptr-vocacion` #8 · 2026-11-16 11:00 · PTR · **Yo adulto y yo de pequeño: mi vocación** · Foto · En Diseño · Contexto: OBJETIVO: Conectar la historia personal de Peter con su vocación de diseñador.
 QUÉ MOSTRAR: Foto actual con fotografía infantil superpuesta como foto pegada.
 CÓMO PRODUCIR: Seleccionar las dos fotos y escribir desde un recuerdo real de infancia que conecte con querer ser diseñador. No inventar anécdotas.
 MENSAJE / TEXTO: Contar qué recuerdo sostiene la idea de que querías diseñar desde pequeño.
 PENDIENTE: Elegir fotos y pedir a Peter el recuerdo concreto.
-- `st-tools-recurso` #9 · 2026-11-15 17:00 · TOOLS · **Un recurso que recomiendo** · Foto · En Diseño · Contexto: OBJETIVO: Compartir una herramienta o recurso útil y accesible.
+- `st-tools-recurso` #9 · 2026-11-16 17:00 · TOOLS · **Un recurso que recomiendo** · Foto · En Diseño · Contexto: OBJETIVO: Compartir una herramienta o recurso útil y accesible.
 QUÉ MOSTRAR: Captura del recurso en uso y un ejemplo de su utilidad.
 CÓMO PRODUCIR: Elegir un recurso que Peter conozca; explicar qué problema resuelve y añadir enlace. Comprobar acceso y condiciones antes de recomendar.
 MENSAJE / TEXTO: Para qué lo usas y cuándo puede ayudar a otro diseñador.
 PENDIENTE: Elegir recurso, ejemplo y enlace.
-- `st-12` #10 · 2026-11-16 11:00 · TOOLS · **Combinaciones tipográficas 1/3: ejemplo y encuesta** · Encuesta · En Diseño · Contexto: OBJETIVO: Mostrar cómo una elección tipográfica afecta el tono e invitar a comparar.
-QUÉ MOSTRAR: Dos opciones comparables para el mismo texto; una combinación protagonista de la primera entrega.
-CÓMO PRODUCIR: Primera pantalla de una secuencia de tres. Definir intención comunicativa, mostrar titular y apoyo, explicar qué aporta cada fuente e integrar aquí la encuesta serif/sans. La encuesta y el ejemplo cuentan como UNA historia.
-MENSAJE / TEXTO: Preguntar qué opción comunica mejor la intención elegida y explicar brevemente el criterio.
-PENDIENTE: Elegir fuentes, texto, intención y opciones de encuesta.
-- `st-tools-tipografia-2` #11 · 2026-11-16 11:01 · TOOLS · **Combinaciones tipográficas 2/3** · Foto · En Diseño · Contexto: OBJETIVO: Mostrar una segunda intención visual mediante tipografía.
-QUÉ MOSTRAR: Mismo texto y estructura del ejemplo 1, otra pareja tipográfica.
-CÓMO PRODUCIR: Publicar inmediatamente después de la primera. Mantener comparación y legibilidad; explicar qué aporta cada fuente al tono.
-MENSAJE / TEXTO: Nombrar el tono buscado y una razón concreta de la elección.
-PENDIENTE: Elegir pareja y tono diferentes del primero.
-- `st-tools-tipografia-3` #12 · 2026-11-16 11:02 · TOOLS · **Combinaciones tipográficas 3/3** · Foto · En Diseño · Contexto: OBJETIVO: Completar la comparación con un tercer tono.
-QUÉ MOSTRAR: Mismo texto, tercera combinación de titular y apoyo.
-CÓMO PRODUCIR: Publicar inmediatamente después de la segunda. Explicar la relación de fuentes, pesos y composición, evitando afirmar que una familia comunica siempre lo mismo.
-MENSAJE / TEXTO: Una explicación breve de la intención y del efecto de esta combinación.
-PENDIENTE: Elegir pareja y preparar tercera pantalla.
-- `st-setup-espacio` #13 · 2026-11-16 12:00 · SETUP · **Así organizo mi espacio de trabajo** · Foto · Idea · Contexto: OBJETIVO: Presentar el espacio real de trabajo con producción ligera.
-QUÉ MOSTRAR: Escritorio tal como está.
-CÓMO PRODUCIR: Una fotografía sencilla con el móvil. Añadir una frase sobre una decisión real de organización. Los tres señalamientos son opcionales. Hoy Peter tiene poco tiempo: no requiere video ni edición elaborada.
-MENSAJE / TEXTO: Explicar brevemente por qué una disposición del escritorio te facilita trabajar.
-PENDIENTE: Tomar foto y elegir una decisión real.
-- `st-tools-referente` #14 · 2026-11-16 12:00 · TOOLS · **Un referente internacional y qué aprender de su proyecto** · Foto · Idea · Contexto: OBJETIVO: Enseñar a mirar una decisión de diseño con criterio.
-QUÉ MOSTRAR: Un proyecto acreditado de otro diseñador.
-CÓMO PRODUCIR: Seleccionar un proyecto y destacar una decisión concreta de composición, identidad o narrativa. Incluir autor, fuente y enlace cuando esté disponible. Trasladado del 12 al 16 para dejar producción ligera el 12.
-MENSAJE / TEXTO: Qué decisión destacarías y qué aprendizaje te deja; evitar elogios genéricos.
-PENDIENTE: Elegir referente, proyecto y fuente.
-- `st-setup-herramienta` #15 · 2026-11-17 12:00 · SETUP · **Una herramienta que uso de verdad** · Foto · Idea · Contexto: OBJETIVO: Mostrar una herramienta real y su utilidad cotidiana.
+- `st-setup-herramienta` #10 · 2026-11-17 12:00 · SETUP · **Una herramienta que uso de verdad** · Foto · Idea · Contexto: OBJETIVO: Mostrar una herramienta real y su utilidad cotidiana.
 QUÉ MOSTRAR: Foto de una herramienta física o digital a mano.
 CÓMO PRODUCIR: Una fotografía sencilla, sin grabar video. Escribir nombre y una línea sobre la tarea que facilita. La elección debe corresponder al uso real de Peter.
 MENSAJE / TEXTO: Qué haces con esta herramienta y por qué la utilizas.
 PENDIENTE: Elegir herramienta y tomar foto.
-- `st-portfolio-teaser` #16 · 2026-11-17 18:30 · PORTFOLIO · **Pronto, con criterio todo toma forma** · Video · Idea · Contexto: OBJETIVO: Generar expectativa por el lanzamiento.
+- `st-portfolio-teaser` #11 · 2026-11-17 18:30 · PORTFOLIO · **Pronto, con criterio todo toma forma** · Video · Idea · Contexto: OBJETIVO: Generar expectativa por el lanzamiento.
 QUÉ MOSTRAR: Peter sentado frente al computador trabajando en programas de diseño, grabado desde detrás del hombro.
 CÓMO PRODUCIR: Toma continua de unos 15 segundos, escena desenfocada y movimiento sutil. Textos nítidos: 0–5 s escena; 5–10 s frase; 10–15 s fecha.
 MENSAJE / TEXTO: «Pronto, con criterio todo toma forma.» Después: «20 de noviembre».
 PENDIENTE: Grabar toma y elegir audio.
-- `st-contact-behance` #17 · 2026-11-18 10:00 · CONTACT · **Behance: explora mis proyectos completos** · Foto · Idea · Contexto: OBJETIVO: Presentar un canal de contacto atemporal.
+- `st-contact-behance` #12 · 2026-11-18 10:00 · CONTACT · **Behance: explora mis proyectos completos** · Foto · Idea · Contexto: OBJETIVO: Presentar un canal de contacto atemporal.
 QUÉ MOSTRAR: Captura o composición del perfil de Behance, usuario y sticker de enlace.
 CÓMO PRODUCIR: Publicar las cuatro pantallas juntas y en este orden el 18, antes del lanzamiento. Mantener diseño coherente, una función por canal y SIN fechas ni anuncios del portafolio.
 MENSAJE / TEXTO: Explicar que allí pueden explorar tus proyectos completos y las decisiones que los sostienen.
 PENDIENTE: Confirmar usuario y enlace del perfil.
-- `st-contact-linkedin` #18 · 2026-11-18 10:01 · CONTACT · **LinkedIn: conectemos profesionalmente** · Foto · Idea · Contexto: OBJETIVO: Presentar un canal de contacto atemporal.
+- `st-contact-linkedin` #13 · 2026-11-18 10:01 · CONTACT · **LinkedIn: conectemos profesionalmente** · Foto · Idea · Contexto: OBJETIVO: Presentar un canal de contacto atemporal.
 QUÉ MOSTRAR: Perfil de LinkedIn, nombre y sticker de enlace.
 CÓMO PRODUCIR: Publicar las cuatro pantallas juntas y en este orden el 18, antes del lanzamiento. Mantener diseño coherente, una función por canal y SIN fechas ni anuncios del portafolio.
 MENSAJE / TEXTO: Invitar a conectar y conocer tu perfil para oportunidades profesionales.
 PENDIENTE: Confirmar URL del perfil.
-- `st-contact-correo` #19 · 2026-11-18 10:02 · CONTACT · **Correo: conversemos sobre tu proyecto** · Foto · Idea · Contexto: OBJETIVO: Presentar un canal de contacto atemporal.
+- `st-contact-correo` #14 · 2026-11-18 10:02 · CONTACT · **Correo: conversemos sobre tu proyecto** · Foto · Idea · Contexto: OBJETIVO: Presentar un canal de contacto atemporal.
 QUÉ MOSTRAR: Dirección de correo legible en una composición con tu identidad.
 CÓMO PRODUCIR: Publicar las cuatro pantallas juntas y en este orden el 18, antes del lanzamiento. Mantener diseño coherente, una función por canal y SIN fechas ni anuncios del portafolio.
 MENSAJE / TEXTO: Invitar a escribir sobre proyectos; facilitar copiar la dirección o abrir el correo.
 PENDIENTE: Confirmar correo público.
-- `st-contact-instagram` #20 · 2026-11-18 10:03 · CONTACT · **Instagram: podemos empezar por aquí** · Foto · Idea · Contexto: OBJETIVO: Presentar un canal de contacto atemporal.
+- `st-contact-instagram` #15 · 2026-11-18 10:03 · CONTACT · **Instagram: podemos empezar por aquí** · Foto · Idea · Contexto: OBJETIVO: Presentar un canal de contacto atemporal.
 QUÉ MOSTRAR: Usuario de Instagram e invitación a enviar un mensaje.
 CÓMO PRODUCIR: Publicar las cuatro pantallas juntas y en este orden el 18, antes del lanzamiento. Mantener diseño coherente, una función por canal y SIN fechas ni anuncios del portafolio.
 MENSAJE / TEXTO: Invitar a iniciar una conversación por mensaje directo.
 PENDIENTE: Confirmar usuario y preparar pieza.
-- `st-26` #21 · 2026-11-19 09:00 · PORTFOLIO · **Mañana abro mi portafolio** · Sticker · Idea · Contexto: OBJETIVO: Recordar el lanzamiento e invitar a activar el recordatorio.
+- `st-26` #16 · 2026-11-19 09:00 · PORTFOLIO · **Mañana abro mi portafolio** · Sticker · Idea · Contexto: OBJETIVO: Recordar el lanzamiento e invitar a activar el recordatorio.
 QUÉ MOSTRAR: Detalle de la portada real del portafolio.
 CÓMO PRODUCIR: Recortar un detalle de identidad, reservar espacio para texto y sticker. Configurar cuenta regresiva al 20 de noviembre a las 12:00 America/Bogota.
 MENSAJE / TEXTO: «Mañana abro mi portafolio.» Debajo: «20 de noviembre · Behance».
 PENDIENTE: Elegir recorte y configurar sticker.
+- `st-12` #17 · 2026-11-19 11:00 · TOOLS · **Combinaciones tipográficas 1/3: ejemplo y encuesta** · Encuesta · En Diseño · Contexto: OBJETIVO: Mostrar cómo una elección tipográfica afecta el tono e invitar a comparar.
+QUÉ MOSTRAR: Dos opciones comparables para el mismo texto; una combinación protagonista de la primera entrega.
+CÓMO PRODUCIR: Primera pantalla de una secuencia de tres. Definir intención comunicativa, mostrar titular y apoyo, explicar qué aporta cada fuente e integrar aquí la encuesta serif/sans. La encuesta y el ejemplo cuentan como UNA historia.
+MENSAJE / TEXTO: Preguntar qué opción comunica mejor la intención elegida y explicar brevemente el criterio.
+PENDIENTE: Elegir fuentes, texto, intención y opciones de encuesta.
+- `st-tools-tipografia-2` #18 · 2026-11-19 11:01 · TOOLS · **Combinaciones tipográficas 2/3** · Foto · En Diseño · Contexto: OBJETIVO: Mostrar una segunda intención visual mediante tipografía.
+QUÉ MOSTRAR: Mismo texto y estructura del ejemplo 1, otra pareja tipográfica.
+CÓMO PRODUCIR: Publicar inmediatamente después de la primera. Mantener comparación y legibilidad; explicar qué aporta cada fuente al tono.
+MENSAJE / TEXTO: Nombrar el tono buscado y una razón concreta de la elección.
+PENDIENTE: Elegir pareja y tono diferentes del primero.
+- `st-tools-tipografia-3` #19 · 2026-11-19 11:02 · TOOLS · **Combinaciones tipográficas 3/3** · Foto · En Diseño · Contexto: OBJETIVO: Completar la comparación con un tercer tono.
+QUÉ MOSTRAR: Mismo texto, tercera combinación de titular y apoyo.
+CÓMO PRODUCIR: Publicar inmediatamente después de la segunda. Explicar la relación de fuentes, pesos y composición, evitando afirmar que una familia comunica siempre lo mismo.
+MENSAJE / TEXTO: Una explicación breve de la intención y del efecto de esta combinación.
+PENDIENTE: Elegir pareja y preparar tercera pantalla.
+- `st-setup-espacio` #20 · 2026-11-19 12:00 · SETUP · **Así organizo mi espacio de trabajo** · Foto · Idea · Contexto: OBJETIVO: Presentar el espacio real de trabajo con producción ligera.
+QUÉ MOSTRAR: Escritorio tal como está.
+CÓMO PRODUCIR: Una fotografía sencilla con el móvil. Añadir una frase sobre una decisión real de organización. Los tres señalamientos son opcionales. Hoy Peter tiene poco tiempo: no requiere video ni edición elaborada.
+MENSAJE / TEXTO: Explicar brevemente por qué una disposición del escritorio te facilita trabajar.
+PENDIENTE: Tomar foto y elegir una decisión real.
+- `st-tools-referente` #21 · 2026-11-19 12:00 · TOOLS · **Un referente internacional y qué aprender de su proyecto** · Foto · Idea · Contexto: OBJETIVO: Enseñar a mirar una decisión de diseño con criterio.
+QUÉ MOSTRAR: Un proyecto acreditado de otro diseñador.
+CÓMO PRODUCIR: Seleccionar un proyecto y destacar una decisión concreta de composición, identidad o narrativa. Incluir autor, fuente y enlace cuando esté disponible. Trasladado del 12 al 16 para dejar producción ligera el 12.
+MENSAJE / TEXTO: Qué decisión destacarías y qué aprendizaje te deja; evitar elogios genéricos.
+PENDIENTE: Elegir referente, proyecto y fuente.
 - `st-28` #22 · 2026-11-19 20:00 · PTR · **Antes de compartir mi portafolio** · Foto · Idea · Contexto: OBJETIVO: Expresar el significado personal del lanzamiento del 20.
 QUÉ MOSTRAR: Foto de Peter revisando el portafolio o preparando su publicación.
 CÓMO PRODUCIR: Antes de redactar, responder: ¿qué sientes al mostrarlo?, ¿qué aprendizaje reconoces en los proyectos?, ¿qué esperas de esta nueva etapa? Elegir una respuesta concreta y escribir con la voz de Peter. No trata del evento del auditorio.
