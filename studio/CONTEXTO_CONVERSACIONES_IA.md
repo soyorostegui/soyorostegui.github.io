@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 17/11/2026, 1:19:07 a. m.
+**Última actualización:** 17/11/2026, 3:40:15 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
@@ -21,9 +21,9 @@
 | `post-ig-criterio-forma` | 2026-11-13 18:00 | Instagram | **Publicado** | Criterio vs Forma | ... |
 | `post-ig-consejo-humor` | 2026-11-16 18:00 | Instagram | **Publicado** | El consejo chino que me hizo más eficiente como diseñador | ... |
 | `post-li-arcomadrid` | 2026-11-16 09:00 | LinkedIn | **Publicado** | ARCOmadrid: concepto, decisiones y reconocimiento | ... |
-| `post-ig-cemedicar` | 2026-11-17 18:00 | Instagram | **En Diseño** | Cemedicar: adelanto del proyecto | ... |
+| `post-ig-cemedicar` | 2026-11-18 18:00 | Instagram | **En Diseño** | Cemedicar: adelanto del proyecto | ... |
 | `post-ig-diseno-entorno` | 2026-11-17 18:00 | Instagram | **En Diseño** | Del diseño al entorno de trabajo | ... |
-| `post-ig-karen-valla` | 2026-11-18 18:00 | Instagram | **Idea** | Karen Lizarazo: diseño de valla | ... |
+| `post-ig-karen-valla` | 2026-11-19 18:00 | Instagram | **Idea** | Karen Lizarazo: diseño de valla | ... |
 | `post-li-filosofia` | 2026-11-18 09:00 | LinkedIn | **Idea** | Criterio antes que forma: mi filosofía de diseño | ... |
 | `post-behance-1` | 2026-11-20 12:00 | Behance | **Idea** | Portafolio Profesional 2026 — Peter Orostegui | ... |
 | `post-ig-11` | 2026-11-20 12:15 | Instagram | **Idea** | Mi portafolio ya está en Behance | ... |
@@ -163,7 +163,7 @@
     "type": "post",
     "projectId": "project-portafolio-2026",
     "title": "Cemedicar: adelanto del proyecto",
-    "date": "2026-11-17",
+    "date": "2026-11-18",
     "time": "18:00",
     "endTime": "",
     "channel": "Instagram",
@@ -195,7 +195,7 @@
     "type": "post",
     "projectId": "project-portafolio-2026",
     "title": "Karen Lizarazo: diseño de valla",
-    "date": "2026-11-18",
+    "date": "2026-11-19",
     "time": "18:00",
     "endTime": "",
     "channel": "Instagram",
