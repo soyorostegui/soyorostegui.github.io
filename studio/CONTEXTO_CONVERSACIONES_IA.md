@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 16/11/2026, 7:23:39 p. m.
+**Última actualización:** 16/11/2026, 7:23:47 p. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
@@ -19,9 +19,9 @@
 | `post-ig-metele-diseno` | 2026-11-12 18:00 | Instagram | **Publicado** | Métele más diseño | «Está bien, pero métele más diseño». 🫠 Una frase breve que puede abri... |
 | `post-li-1` | 2026-11-12 09:00 | LinkedIn | **Publicado** | Hola, soy Peter Orostegui — presentación profesional | Hola, soy Peter Orostegui, diseñador gráfico de Valledupar, Colombia. ... |
 | `post-ig-criterio-forma` | 2026-11-13 18:00 | Instagram | **Publicado** | Criterio vs Forma | ... |
-| `post-ig-cemedicar` | 2026-11-16 18:00 | Instagram | **En Diseño** | Cemedicar: adelanto del proyecto | ... |
 | `post-ig-consejo-humor` | 2026-11-15 18:00 | Instagram | **Publicado** | El consejo chino que me hizo más eficiente como diseñador | ... |
 | `post-li-arcomadrid` | 2026-11-15 09:00 | LinkedIn | **Publicado** | ARCOmadrid: concepto, decisiones y reconocimiento | ... |
+| `post-ig-cemedicar` | 2026-11-16 18:00 | Instagram | **En Diseño** | Cemedicar: adelanto del proyecto | ... |
 | `post-ig-karen-valla` | 2026-11-16 18:00 | Instagram | **Idea** | Karen Lizarazo: diseño de valla | ... |
 | `post-li-vallas` | 2026-11-16 09:00 | LinkedIn | **Idea** | Dos vallas musicales: Karen Lizarazo y La Banda del 5 | ... |
 | `post-ig-retrato-intervenido` | 2026-11-17 12:00 | Instagram | **Idea** | Retrato intervenido: criterio, confianza y valor profesional | ... |
@@ -127,22 +127,6 @@
     "description": ""
   },
   {
-    "id": "post-ig-cemedicar",
-    "type": "post",
-    "projectId": "project-portafolio-2026",
-    "title": "Cemedicar: adelanto del proyecto",
-    "date": "2026-11-16",
-    "time": "18:00",
-    "endTime": "",
-    "channel": "Instagram",
-    "status": "En Diseño",
-    "phase": "Fase 2: Archivo",
-    "format": "Carrusel",
-    "structure": "OBJETIVO: Mostrar una identidad de branding y anticipar el proyecto completo en Behance.\nQUÉ MOSTRAR: Carrusel contemplativo de 5 slides con aplicaciones de Cemedicar; uno incluye video generado con IA.\nCÓMO PRODUCIR: Seleccionar aplicaciones reales del proyecto y construir una secuencia visual coherente de cinco slides. Integrar un video de IA que conserve la identidad aprobada. Evitar convertirlo en explicación técnica extensa.\nMENSAJE / TEXTO: Cierre: «Proyecto completo en Behance · 20 de noviembre».\nPENDIENTE: Elegir aplicaciones, distribuir los cinco slides y producir el video.",
-    "caption": "",
-    "description": ""
-  },
-  {
     "id": "post-ig-consejo-humor",
     "type": "post",
     "projectId": "project-portafolio-2026",
@@ -171,6 +155,22 @@
     "phase": "Fase 2: Archivo",
     "format": "Carrusel",
     "structure": "OBJETIVO: Presentar un caso académico con razonamiento de diseño y reconocimiento.\nQUÉ MOSTRAR: Proyecto ARCOmadrid, reto académico, decisiones y reconocimiento obtenido.\nCÓMO PRODUCIR: Adaptar al lenguaje de LinkedIn. Secuencia: resultado, encargo/reto, decisiones de composición y concepto, reconocimiento. Utilizar pruebas reales y explicar el papel de Peter.\nMENSAJE / TEXTO: Contar cómo se abordó el reto y qué decisiones sostienen el resultado; describir el reconocimiento con precisión.\nPENDIENTE: Reunir afiche, brief académico, datos del reconocimiento y redactar slides.",
+    "caption": "",
+    "description": ""
+  },
+  {
+    "id": "post-ig-cemedicar",
+    "type": "post",
+    "projectId": "project-portafolio-2026",
+    "title": "Cemedicar: adelanto del proyecto",
+    "date": "2026-11-16",
+    "time": "18:00",
+    "endTime": "",
+    "channel": "Instagram",
+    "status": "En Diseño",
+    "phase": "Fase 2: Archivo",
+    "format": "Carrusel",
+    "structure": "OBJETIVO: Mostrar una identidad de branding y anticipar el proyecto completo en Behance.\nQUÉ MOSTRAR: Carrusel contemplativo de 5 slides con aplicaciones de Cemedicar; uno incluye video generado con IA.\nCÓMO PRODUCIR: Seleccionar aplicaciones reales del proyecto y construir una secuencia visual coherente de cinco slides. Integrar un video de IA que conserve la identidad aprobada. Evitar convertirlo en explicación técnica extensa.\nMENSAJE / TEXTO: Cierre: «Proyecto completo en Behance · 20 de noviembre».\nPENDIENTE: Elegir aplicaciones, distribuir los cinco slides y producir el video.",
     "caption": "",
     "description": ""
   },
@@ -409,31 +409,31 @@ QUÉ MOSTRAR: El mismo texto antes y después, con el espacio intervenido señal
 CÓMO PRODUCIR: Preparar comparación en una sola pantalla manteniendo el resto igual. Ampliar lo suficiente para ver el cambio y explicar qué problema resuelve.
 MENSAJE / TEXTO: Explicar el ajuste con un ejemplo concreto, sin convertirlo en una regla universal.
 PENDIENTE: Seleccionar ejemplo y preparar comparación.
-- `st-12` #8 · 2026-11-14 11:00 · TOOLS · **Combinaciones tipográficas 1/3: ejemplo y encuesta** · Encuesta · En Diseño · Contexto: OBJETIVO: Mostrar cómo una elección tipográfica afecta el tono e invitar a comparar.
-QUÉ MOSTRAR: Dos opciones comparables para el mismo texto; una combinación protagonista de la primera entrega.
-CÓMO PRODUCIR: Primera pantalla de una secuencia de tres. Definir intención comunicativa, mostrar titular y apoyo, explicar qué aporta cada fuente e integrar aquí la encuesta serif/sans. La encuesta y el ejemplo cuentan como UNA historia.
-MENSAJE / TEXTO: Preguntar qué opción comunica mejor la intención elegida y explicar brevemente el criterio.
-PENDIENTE: Elegir fuentes, texto, intención y opciones de encuesta.
-- `st-tools-tipografia-2` #9 · 2026-11-14 11:01 · TOOLS · **Combinaciones tipográficas 2/3** · Foto · En Diseño · Contexto: OBJETIVO: Mostrar una segunda intención visual mediante tipografía.
-QUÉ MOSTRAR: Mismo texto y estructura del ejemplo 1, otra pareja tipográfica.
-CÓMO PRODUCIR: Publicar inmediatamente después de la primera. Mantener comparación y legibilidad; explicar qué aporta cada fuente al tono.
-MENSAJE / TEXTO: Nombrar el tono buscado y una razón concreta de la elección.
-PENDIENTE: Elegir pareja y tono diferentes del primero.
-- `st-tools-tipografia-3` #10 · 2026-11-14 11:02 · TOOLS · **Combinaciones tipográficas 3/3** · Foto · En Diseño · Contexto: OBJETIVO: Completar la comparación con un tercer tono.
-QUÉ MOSTRAR: Mismo texto, tercera combinación de titular y apoyo.
-CÓMO PRODUCIR: Publicar inmediatamente después de la segunda. Explicar la relación de fuentes, pesos y composición, evitando afirmar que una familia comunica siempre lo mismo.
-MENSAJE / TEXTO: Una explicación breve de la intención y del efecto de esta combinación.
-PENDIENTE: Elegir pareja y preparar tercera pantalla.
-- `st-ptr-vocacion` #11 · 2026-11-15 11:00 · PTR · **Yo adulto y yo de pequeño: mi vocación** · Foto · En Diseño · Contexto: OBJETIVO: Conectar la historia personal de Peter con su vocación de diseñador.
+- `st-ptr-vocacion` #8 · 2026-11-15 11:00 · PTR · **Yo adulto y yo de pequeño: mi vocación** · Foto · En Diseño · Contexto: OBJETIVO: Conectar la historia personal de Peter con su vocación de diseñador.
 QUÉ MOSTRAR: Foto actual con fotografía infantil superpuesta como foto pegada.
 CÓMO PRODUCIR: Seleccionar las dos fotos y escribir desde un recuerdo real de infancia que conecte con querer ser diseñador. No inventar anécdotas.
 MENSAJE / TEXTO: Contar qué recuerdo sostiene la idea de que querías diseñar desde pequeño.
 PENDIENTE: Elegir fotos y pedir a Peter el recuerdo concreto.
-- `st-tools-recurso` #12 · 2026-11-15 17:00 · TOOLS · **Un recurso que recomiendo** · Foto · En Diseño · Contexto: OBJETIVO: Compartir una herramienta o recurso útil y accesible.
+- `st-tools-recurso` #9 · 2026-11-15 17:00 · TOOLS · **Un recurso que recomiendo** · Foto · En Diseño · Contexto: OBJETIVO: Compartir una herramienta o recurso útil y accesible.
 QUÉ MOSTRAR: Captura del recurso en uso y un ejemplo de su utilidad.
 CÓMO PRODUCIR: Elegir un recurso que Peter conozca; explicar qué problema resuelve y añadir enlace. Comprobar acceso y condiciones antes de recomendar.
 MENSAJE / TEXTO: Para qué lo usas y cuándo puede ayudar a otro diseñador.
 PENDIENTE: Elegir recurso, ejemplo y enlace.
+- `st-12` #10 · 2026-11-16 11:00 · TOOLS · **Combinaciones tipográficas 1/3: ejemplo y encuesta** · Encuesta · En Diseño · Contexto: OBJETIVO: Mostrar cómo una elección tipográfica afecta el tono e invitar a comparar.
+QUÉ MOSTRAR: Dos opciones comparables para el mismo texto; una combinación protagonista de la primera entrega.
+CÓMO PRODUCIR: Primera pantalla de una secuencia de tres. Definir intención comunicativa, mostrar titular y apoyo, explicar qué aporta cada fuente e integrar aquí la encuesta serif/sans. La encuesta y el ejemplo cuentan como UNA historia.
+MENSAJE / TEXTO: Preguntar qué opción comunica mejor la intención elegida y explicar brevemente el criterio.
+PENDIENTE: Elegir fuentes, texto, intención y opciones de encuesta.
+- `st-tools-tipografia-2` #11 · 2026-11-16 11:01 · TOOLS · **Combinaciones tipográficas 2/3** · Foto · En Diseño · Contexto: OBJETIVO: Mostrar una segunda intención visual mediante tipografía.
+QUÉ MOSTRAR: Mismo texto y estructura del ejemplo 1, otra pareja tipográfica.
+CÓMO PRODUCIR: Publicar inmediatamente después de la primera. Mantener comparación y legibilidad; explicar qué aporta cada fuente al tono.
+MENSAJE / TEXTO: Nombrar el tono buscado y una razón concreta de la elección.
+PENDIENTE: Elegir pareja y tono diferentes del primero.
+- `st-tools-tipografia-3` #12 · 2026-11-16 11:02 · TOOLS · **Combinaciones tipográficas 3/3** · Foto · En Diseño · Contexto: OBJETIVO: Completar la comparación con un tercer tono.
+QUÉ MOSTRAR: Mismo texto, tercera combinación de titular y apoyo.
+CÓMO PRODUCIR: Publicar inmediatamente después de la segunda. Explicar la relación de fuentes, pesos y composición, evitando afirmar que una familia comunica siempre lo mismo.
+MENSAJE / TEXTO: Una explicación breve de la intención y del efecto de esta combinación.
+PENDIENTE: Elegir pareja y preparar tercera pantalla.
 - `st-setup-espacio` #13 · 2026-11-16 12:00 · SETUP · **Así organizo mi espacio de trabajo** · Foto · Idea · Contexto: OBJETIVO: Presentar el espacio real de trabajo con producción ligera.
 QUÉ MOSTRAR: Escritorio tal como está.
 CÓMO PRODUCIR: Una fotografía sencilla con el móvil. Añadir una frase sobre una decisión real de organización. Los tres señalamientos son opcionales. Hoy Peter tiene poco tiempo: no requiere video ni edición elaborada.
