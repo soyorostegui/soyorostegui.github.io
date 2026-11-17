@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 16/11/2026, 7:53:42 p. m.
+**Última actualización:** 17/11/2026, 1:19:07 a. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
@@ -409,21 +409,21 @@ QUÉ MOSTRAR: El mismo texto antes y después, con el espacio intervenido señal
 CÓMO PRODUCIR: Preparar comparación en una sola pantalla manteniendo el resto igual. Ampliar lo suficiente para ver el cambio y explicar qué problema resuelve.
 MENSAJE / TEXTO: Explicar el ajuste con un ejemplo concreto, sin convertirlo en una regla universal.
 PENDIENTE: Seleccionar ejemplo y preparar comparación.
-- `st-ptr-vocacion` #8 · 2026-11-16 11:00 · PTR · **Yo adulto y yo de pequeño: mi vocación** · Foto · En Diseño · Contexto: OBJETIVO: Conectar la historia personal de Peter con su vocación de diseñador.
+- `st-ptr-vocacion` #8 · 2026-11-17 11:00 · PTR · **Yo adulto y yo de pequeño: mi vocación** · Foto · En Diseño · Contexto: OBJETIVO: Conectar la historia personal de Peter con su vocación de diseñador.
 QUÉ MOSTRAR: Foto actual con fotografía infantil superpuesta como foto pegada.
 CÓMO PRODUCIR: Seleccionar las dos fotos y escribir desde un recuerdo real de infancia que conecte con querer ser diseñador. No inventar anécdotas.
 MENSAJE / TEXTO: Contar qué recuerdo sostiene la idea de que querías diseñar desde pequeño.
 PENDIENTE: Elegir fotos y pedir a Peter el recuerdo concreto.
-- `st-tools-recurso` #9 · 2026-11-16 17:00 · TOOLS · **Un recurso que recomiendo** · Foto · En Diseño · Contexto: OBJETIVO: Compartir una herramienta o recurso útil y accesible.
-QUÉ MOSTRAR: Captura del recurso en uso y un ejemplo de su utilidad.
-CÓMO PRODUCIR: Elegir un recurso que Peter conozca; explicar qué problema resuelve y añadir enlace. Comprobar acceso y condiciones antes de recomendar.
-MENSAJE / TEXTO: Para qué lo usas y cuándo puede ayudar a otro diseñador.
-PENDIENTE: Elegir recurso, ejemplo y enlace.
-- `st-setup-herramienta` #10 · 2026-11-17 12:00 · SETUP · **Una herramienta que uso de verdad** · Foto · En Diseño · Contexto: OBJETIVO: Mostrar una herramienta real y su utilidad cotidiana.
+- `st-setup-herramienta` #9 · 2026-11-17 12:00 · SETUP · **Una herramienta que uso de verdad** · Foto · En Diseño · Contexto: OBJETIVO: Mostrar una herramienta real y su utilidad cotidiana.
 QUÉ MOSTRAR: Foto de una herramienta física o digital a mano.
 CÓMO PRODUCIR: Una fotografía sencilla, sin grabar video. Escribir nombre y una línea sobre la tarea que facilita. La elección debe corresponder al uso real de Peter.
 MENSAJE / TEXTO: Qué haces con esta herramienta y por qué la utilizas.
 PENDIENTE: Elegir herramienta y tomar foto.
+- `st-tools-recurso` #10 · 2026-11-17 17:00 · TOOLS · **Un recurso que recomiendo** · Foto · En Diseño · Contexto: OBJETIVO: Compartir una herramienta o recurso útil y accesible.
+QUÉ MOSTRAR: Captura del recurso en uso y un ejemplo de su utilidad.
+CÓMO PRODUCIR: Elegir un recurso que Peter conozca; explicar qué problema resuelve y añadir enlace. Comprobar acceso y condiciones antes de recomendar.
+MENSAJE / TEXTO: Para qué lo usas y cuándo puede ayudar a otro diseñador.
+PENDIENTE: Elegir recurso, ejemplo y enlace.
 - `st-portfolio-teaser` #11 · 2026-11-17 18:30 · PORTFOLIO · **Pronto, con criterio todo toma forma** · Video · En Diseño · Contexto: OBJETIVO: Generar expectativa por el lanzamiento.
 QUÉ MOSTRAR: Peter sentado frente al computador trabajando en programas de diseño, grabado desde detrás del hombro.
 CÓMO PRODUCIR: Toma continua de unos 15 segundos, escena desenfocada y movimiento sutil. Textos nítidos: 0–5 s escena; 5–10 s frase; 10–15 s fecha.
