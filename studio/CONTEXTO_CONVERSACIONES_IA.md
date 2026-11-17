@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 16/11/2026, 7:37:34 p. m.
+**Última actualización:** 16/11/2026, 7:52:45 p. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
@@ -22,13 +22,13 @@
 | `post-ig-consejo-humor` | 2026-11-16 18:00 | Instagram | **Publicado** | El consejo chino que me hizo más eficiente como diseñador | ... |
 | `post-li-arcomadrid` | 2026-11-16 09:00 | LinkedIn | **Publicado** | ARCOmadrid: concepto, decisiones y reconocimiento | ... |
 | `post-ig-cemedicar` | 2026-11-17 18:00 | Instagram | **En Diseño** | Cemedicar: adelanto del proyecto | ... |
+| `post-ig-diseno-entorno` | 2026-11-17 18:00 | Instagram | **Idea** | Del diseño al entorno de trabajo | ... |
 | `post-ig-karen-valla` | 2026-11-18 18:00 | Instagram | **Idea** | Karen Lizarazo: diseño de valla | ... |
 | `post-li-filosofia` | 2026-11-18 09:00 | LinkedIn | **Idea** | Criterio antes que forma: mi filosofía de diseño | ... |
 | `post-behance-1` | 2026-11-20 12:00 | Behance | **Idea** | Portafolio Profesional 2026 — Peter Orostegui | ... |
 | `post-ig-11` | 2026-11-20 12:15 | Instagram | **Idea** | Mi portafolio ya está en Behance | ... |
 | `post-li-6` | 2026-11-20 12:30 | LinkedIn | **Idea** | Presentación oficial de mi Portafolio Profesional 2026 | ... |
 | `post-ig-brandboard` | 2026-11-21 12:00 | Instagram | **Idea** | Qué es un BrandBoard + plantilla editable | ... |
-| `post-ig-diseno-entorno` | 2026-11-17 18:00 | Instagram | **Idea** | Del diseño al entorno de trabajo | ... |
 | `post-li-vallas` | 2026-11-22 09:00 | LinkedIn | **Idea** | Dos vallas musicales: Karen Lizarazo y La Banda del 5 | ... |
 | `post-ig-8` | 2026-11-23 18:00 | Instagram | **Idea** | Tres creadores de diseño que recomiendo | ... |
 | `post-ig-logofolio` | 2026-11-24 18:00 | Instagram | **Idea** | Logofolio con mi retrato | ... |
@@ -175,6 +175,22 @@
     "description": ""
   },
   {
+    "id": "post-ig-diseno-entorno",
+    "type": "post",
+    "projectId": "project-portafolio-2026",
+    "title": "Del diseño al entorno de trabajo",
+    "date": "2026-11-17",
+    "time": "18:00",
+    "endTime": "",
+    "channel": "Instagram",
+    "status": "Idea",
+    "phase": "Fase 3: Convocatoria",
+    "format": "Carrusel",
+    "structure": "OBJETIVO: Revelar progresivamente lo que rodea una creación.\nQUÉ MOSTRAR: 3 slides de la misma escena: diseño cerrado, mesa parcialmente visible y entorno completo.\nCÓMO PRODUCIR: Construir desde una única escena amplia y obtener tres encuadres que se alejen. Conservar posición y escala relativa de los objetos. En el segundo, algunos elementos quedan cortados; en el tercero, aparecen completos.\nMENSAJE / TEXTO: Una frase breve de una o dos líneas en un espacio libre del tercer slide, conectada con las herramientas, pruebas y decisiones del proyecto elegido.\nPENDIENTE: Elegir proyecto, preparar escena y redactar la frase de cierre.",
+    "caption": "",
+    "description": ""
+  },
+  {
     "id": "post-ig-karen-valla",
     "type": "post",
     "projectId": "project-portafolio-2026",
@@ -267,22 +283,6 @@
     "phase": "Fase 3: Convocatoria",
     "format": "Reel",
     "structure": "OBJETIVO: Explicar qué es un BrandBoard y ofrecer un recurso útil.\nQUÉ MOSTRAR: Plantilla completa y recorridos por logo, variantes, colores y tipografías.\nCÓMO PRODUCIR: Reel aproximado de 25–30 segundos: mostrar el conjunto, recorrer elementos, explicar su utilidad como referencia rápida y cerrar con el regalo. Preparar Illustrator (.ai) editable y PDF en Google Drive antes de publicar.\nMENSAJE / TEXTO: CTA: «Comenta BRAND y te envío el enlace». Entregar el enlace de Drive. Aclarar que un BrandBoard no reemplaza el manual de marca.\nPENDIENTE: Elegir BrandBoard de ejemplo, preparar AI/PDF, comprobar permisos del enlace y escribir guion.",
-    "caption": "",
-    "description": ""
-  },
-  {
-    "id": "post-ig-diseno-entorno",
-    "type": "post",
-    "projectId": "project-portafolio-2026",
-    "title": "Del diseño al entorno de trabajo",
-    "date": "2026-11-17",
-    "time": "18:00",
-    "endTime": "",
-    "channel": "Instagram",
-    "status": "Idea",
-    "phase": "Fase 3: Convocatoria",
-    "format": "Carrusel",
-    "structure": "OBJETIVO: Revelar progresivamente lo que rodea una creación.\nQUÉ MOSTRAR: 3 slides de la misma escena: diseño cerrado, mesa parcialmente visible y entorno completo.\nCÓMO PRODUCIR: Construir desde una única escena amplia y obtener tres encuadres que se alejen. Conservar posición y escala relativa de los objetos. En el segundo, algunos elementos quedan cortados; en el tercero, aparecen completos.\nMENSAJE / TEXTO: Una frase breve de una o dos líneas en un espacio libre del tercer slide, conectada con las herramientas, pruebas y decisiones del proyecto elegido.\nPENDIENTE: Elegir proyecto, preparar escena y redactar la frase de cierre.",
     "caption": "",
     "description": ""
   },
@@ -479,17 +479,17 @@ QUÉ MOSTRAR: Escritorio tal como está.
 CÓMO PRODUCIR: Una fotografía sencilla con el móvil. Añadir una frase sobre una decisión real de organización. Los tres señalamientos son opcionales. Hoy Peter tiene poco tiempo: no requiere video ni edición elaborada.
 MENSAJE / TEXTO: Explicar brevemente por qué una disposición del escritorio te facilita trabajar.
 PENDIENTE: Tomar foto y elegir una decisión real.
-- `st-12` #22 · 2026-11-22 11:00 · TOOLS · **Combinaciones tipográficas 1/3: ejemplo y encuesta** · Encuesta · En Diseño · Contexto: OBJETIVO: Mostrar cómo una elección tipográfica afecta el tono e invitar a comparar.
+- `st-12` #22 · 2026-11-22 11:00 · TOOLS · **Combinaciones tipográficas 1/3: ejemplo y encuesta** · Encuesta · Idea · Contexto: OBJETIVO: Mostrar cómo una elección tipográfica afecta el tono e invitar a comparar.
 QUÉ MOSTRAR: Dos opciones comparables para el mismo texto; una combinación protagonista de la primera entrega.
 CÓMO PRODUCIR: Primera pantalla de una secuencia de tres. Definir intención comunicativa, mostrar titular y apoyo, explicar qué aporta cada fuente e integrar aquí la encuesta serif/sans. La encuesta y el ejemplo cuentan como UNA historia.
 MENSAJE / TEXTO: Preguntar qué opción comunica mejor la intención elegida y explicar brevemente el criterio.
 PENDIENTE: Elegir fuentes, texto, intención y opciones de encuesta.
-- `st-tools-tipografia-2` #23 · 2026-11-22 11:01 · TOOLS · **Combinaciones tipográficas 2/3** · Foto · En Diseño · Contexto: OBJETIVO: Mostrar una segunda intención visual mediante tipografía.
+- `st-tools-tipografia-2` #23 · 2026-11-22 11:01 · TOOLS · **Combinaciones tipográficas 2/3** · Foto · Idea · Contexto: OBJETIVO: Mostrar una segunda intención visual mediante tipografía.
 QUÉ MOSTRAR: Mismo texto y estructura del ejemplo 1, otra pareja tipográfica.
 CÓMO PRODUCIR: Publicar inmediatamente después de la primera. Mantener comparación y legibilidad; explicar qué aporta cada fuente al tono.
 MENSAJE / TEXTO: Nombrar el tono buscado y una razón concreta de la elección.
 PENDIENTE: Elegir pareja y tono diferentes del primero.
-- `st-tools-tipografia-3` #24 · 2026-11-22 11:02 · TOOLS · **Combinaciones tipográficas 3/3** · Foto · En Diseño · Contexto: OBJETIVO: Completar la comparación con un tercer tono.
+- `st-tools-tipografia-3` #24 · 2026-11-22 11:02 · TOOLS · **Combinaciones tipográficas 3/3** · Foto · Idea · Contexto: OBJETIVO: Completar la comparación con un tercer tono.
 QUÉ MOSTRAR: Mismo texto, tercera combinación de titular y apoyo.
 CÓMO PRODUCIR: Publicar inmediatamente después de la segunda. Explicar la relación de fuentes, pesos y composición, evitando afirmar que una familia comunica siempre lo mismo.
 MENSAJE / TEXTO: Una explicación breve de la intención y del efecto de esta combinación.
