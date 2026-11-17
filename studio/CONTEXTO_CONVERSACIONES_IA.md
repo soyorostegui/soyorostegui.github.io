@@ -1,15 +1,15 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 16/11/2026, 7:53:19 p. m.
+**Última actualización:** 16/11/2026, 7:53:42 p. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
 ---
 
 ## 1. Estado Actual de la Agenda (19 piezas)
-- **💡 Idea / Planificado:** 12 piezas
-- **🎨 En Diseño / Proceso:** 1 piezas
+- **💡 Idea / Planificado:** 11 piezas
+- **🎨 En Diseño / Proceso:** 2 piezas
 - **✅ Listo para publicar:** 0 piezas
 - **🚀 Publicado:** 6 piezas
 
@@ -22,7 +22,7 @@
 | `post-ig-consejo-humor` | 2026-11-16 18:00 | Instagram | **Publicado** | El consejo chino que me hizo más eficiente como diseñador | ... |
 | `post-li-arcomadrid` | 2026-11-16 09:00 | LinkedIn | **Publicado** | ARCOmadrid: concepto, decisiones y reconocimiento | ... |
 | `post-ig-cemedicar` | 2026-11-17 18:00 | Instagram | **En Diseño** | Cemedicar: adelanto del proyecto | ... |
-| `post-ig-diseno-entorno` | 2026-11-17 18:00 | Instagram | **Idea** | Del diseño al entorno de trabajo | ... |
+| `post-ig-diseno-entorno` | 2026-11-17 18:00 | Instagram | **En Diseño** | Del diseño al entorno de trabajo | ... |
 | `post-ig-karen-valla` | 2026-11-18 18:00 | Instagram | **Idea** | Karen Lizarazo: diseño de valla | ... |
 | `post-li-filosofia` | 2026-11-18 09:00 | LinkedIn | **Idea** | Criterio antes que forma: mi filosofía de diseño | ... |
 | `post-behance-1` | 2026-11-20 12:00 | Behance | **Idea** | Portafolio Profesional 2026 — Peter Orostegui | ... |
@@ -183,7 +183,7 @@
     "time": "18:00",
     "endTime": "",
     "channel": "Instagram",
-    "status": "Idea",
+    "status": "En Diseño",
     "phase": "Fase 3: Convocatoria",
     "format": "Carrusel",
     "structure": "OBJETIVO: Revelar progresivamente lo que rodea una creación.\nQUÉ MOSTRAR: 3 slides de la misma escena: diseño cerrado, mesa parcialmente visible y entorno completo.\nCÓMO PRODUCIR: Construir desde una única escena amplia y obtener tres encuadres que se alejen. Conservar posición y escala relativa de los objetos. En el segundo, algunos elementos quedan cortados; en el tercero, aparecen completos.\nMENSAJE / TEXTO: Una frase breve de una o dos líneas en un espacio libre del tercer slide, conectada con las herramientas, pruebas y decisiones del proyecto elegido.\nPENDIENTE: Elegir proyecto, preparar escena y redactar la frase de cierre.",
