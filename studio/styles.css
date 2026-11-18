@@ -300,11 +300,25 @@
       display: flex;
       flex-wrap: wrap;
       gap: 4px;
-      justify-content: space-between;
       align-items: center;
       margin-bottom: 6px;
     }
+    .card-top .card-format {
+      gap: 5px;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 3px 8px;
+      max-width: 100%;
+      white-space: normal;
+      overflow-wrap: anywhere;
+    }
+    .card-channel {
+      color: var(--text-muted);
+      font-size: 11px;
+      overflow-wrap: anywhere;
+    }
     .card-date {
+      margin-bottom: 8px;
       font-size: 11px;
       color: var(--text-muted);
       font-weight: 500;

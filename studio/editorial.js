@@ -474,6 +474,15 @@
       if(label)label.textContent=`${entries.length} entradas visibles · ${count} de ${stories.length} historias`;
       const note=document.getElementById('kanbanHiddenStories');if(note)note.hidden=count>=stories.length;
     }
+    const KANBAN_FORMAT_STYLES = new Map([
+      ["historia", ["Historia", "tag-purple", "▯"]],
+      ["reel", ["Reel", "tag-pink", "▶"]],
+      ["carrusel", ["Carrusel", "tag-blue", "▧"]],
+      ["post", ["Imagen", "tag-green", "▣"]],
+      ["imagen", ["Imagen", "tag-green", "▣"]],
+      ["video", ["Video", "tag-orange", "▷"]],
+    ]);
+
     function renderKanban() {
       const listIdea = document.getElementById("cards-idea");
       const listDesign = document.getElementById("cards-design");
@@ -510,18 +519,26 @@
           openEditModal(post.id);
         };
 
-        const channelClass = getChannelTagClass(post.channel);
+        const isPublication = entryType(post) === "post";
+        const format = post.__story ? "Historia" : isPublication ? post.format?.trim() : entryLabel(post);
+        const [label, color, icon] = KANBAN_FORMAT_STYLES.get(format?.toLowerCase())
+          || [format || "Sin formato", "tag-gray", "◇"];
+        const channel = isPublication ? post.channel : "";
+        const detail = post.__story
+          ? [post.storyMedia, highlights.find(h => h.id === post.highlightId)?.name].filter(Boolean).join(" · ")
+          : isPublication ? "" : entryDetail(post);
         const phaseTagClass = getTagPhaseClass(post.phase);
 
         card.innerHTML = `
           <div class="card-top">
-            <span class="tag ${channelClass}">${post.__story ? "Historia · " : ""}${escapeHtmlForChat(entryLabel(post))}</span>
-            <span class="card-date">📅 ${escapeHtmlForChat(post.date.substring(5))}</span>
+            <span class="tag card-format ${color}"><span aria-hidden="true">${icon}</span>${escapeHtmlForChat(label)}</span>
+            ${channel ? `<span class="card-channel">${escapeHtmlForChat(channel)}</span>` : ""}
           </div>
           <div class="card-title">${escapeHtmlForChat(post.title)}</div>
+          <div class="card-date">📅 ${escapeHtmlForChat(post.date.substring(5))}</div>
           <div class="card-tags">
             <span class="tag ${phaseTagClass}">${escapeHtmlForChat(projectLabel(post) + (post.phase ? " · " + post.phase : ""))}</span>
-            <span class="tag tag-gray">${escapeHtmlForChat(entryDetail(post))}</span>
+            ${detail ? `<span class="tag tag-gray">${escapeHtmlForChat(detail)}</span>` : ""}
           </div>
           <div class="card-snippet">“${escapeHtmlForChat(entrySummary(post).replace(/\n/g, ' '))}”</div>
         `;
