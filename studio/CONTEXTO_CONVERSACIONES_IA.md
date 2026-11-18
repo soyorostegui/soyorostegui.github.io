@@ -1,15 +1,15 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 17/11/2026, 9:19:37 p. m.
+**Última actualización:** 17/11/2026, 9:20:11 p. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
 ---
 
 ## 1. Estado Actual de la Agenda (19 piezas)
-- **💡 Idea / Planificado:** 11 piezas
-- **🎨 En Diseño / Proceso:** 1 piezas
+- **💡 Idea / Planificado:** 10 piezas
+- **🎨 En Diseño / Proceso:** 2 piezas
 - **✅ Listo para publicar:** 0 piezas
 - **🚀 Publicado:** 7 piezas
 
@@ -23,7 +23,7 @@
 | `post-li-arcomadrid` | 2026-11-16 09:00 | LinkedIn | **Publicado** | ARCOmadrid: concepto, decisiones y reconocimiento | ... |
 | `post-ig-diseno-entorno` | 2026-11-17 18:00 | Instagram | **Publicado** | Del diseño al entorno de trabajo | ... |
 | `post-ig-cemedicar` | 2026-11-18 18:00 | Instagram | **En Diseño** | Cemedicar: adelanto del proyecto | ... |
-| `post-li-filosofia` | 2026-11-18 09:00 | LinkedIn | **Idea** | Criterio antes que forma: mi filosofía de diseño | ... |
+| `post-li-filosofia` | 2026-11-18 09:00 | LinkedIn | **En Diseño** | Criterio antes que forma: mi filosofía de diseño | ... |
 | `post-ig-karen-valla` | 2026-11-19 18:00 | Instagram | **Idea** | Karen Lizarazo: diseño de valla | ... |
 | `post-behance-1` | 2026-11-20 12:00 | Behance | **Idea** | Portafolio Profesional 2026 — Peter Orostegui | ... |
 | `post-ig-11` | 2026-11-20 12:15 | Instagram | **Idea** | Mi portafolio ya está en Behance | ... |
@@ -199,7 +199,7 @@
     "time": "09:00",
     "endTime": "",
     "channel": "LinkedIn",
-    "status": "Idea",
+    "status": "En Diseño",
     "phase": "Fase 3: Convocatoria",
     "format": "Post",
     "structure": "OBJETIVO: Explicar la metodología que guía el trabajo de Peter.\nQUÉ MOSTRAR: Reflexión profesional apoyada en una decisión real de uno de sus proyectos.\nCÓMO PRODUCIR: Elegir un ejemplo donde objetivo, público o medio determinaron una decisión visual. Desarrollar la secuencia problema, criterio, decisión y resultado.\nMENSAJE / TEXTO: Slogan exacto: «Criterio antes que forma». No limitarse a una declaración abstracta.\nPENDIENTE: Elegir caso y redactar reflexión.",
