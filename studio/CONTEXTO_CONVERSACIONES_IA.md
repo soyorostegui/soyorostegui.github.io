@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 17/11/2026, 3:40:15 a. m.
+**Última actualización:** 17/11/2026, 9:19:17 p. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
@@ -21,10 +21,10 @@
 | `post-ig-criterio-forma` | 2026-11-13 18:00 | Instagram | **Publicado** | Criterio vs Forma | ... |
 | `post-ig-consejo-humor` | 2026-11-16 18:00 | Instagram | **Publicado** | El consejo chino que me hizo más eficiente como diseñador | ... |
 | `post-li-arcomadrid` | 2026-11-16 09:00 | LinkedIn | **Publicado** | ARCOmadrid: concepto, decisiones y reconocimiento | ... |
-| `post-ig-cemedicar` | 2026-11-18 18:00 | Instagram | **En Diseño** | Cemedicar: adelanto del proyecto | ... |
 | `post-ig-diseno-entorno` | 2026-11-17 18:00 | Instagram | **En Diseño** | Del diseño al entorno de trabajo | ... |
-| `post-ig-karen-valla` | 2026-11-19 18:00 | Instagram | **Idea** | Karen Lizarazo: diseño de valla | ... |
+| `post-ig-cemedicar` | 2026-11-18 18:00 | Instagram | **En Diseño** | Cemedicar: adelanto del proyecto | ... |
 | `post-li-filosofia` | 2026-11-18 09:00 | LinkedIn | **Idea** | Criterio antes que forma: mi filosofía de diseño | ... |
+| `post-ig-karen-valla` | 2026-11-19 18:00 | Instagram | **Idea** | Karen Lizarazo: diseño de valla | ... |
 | `post-behance-1` | 2026-11-20 12:00 | Behance | **Idea** | Portafolio Profesional 2026 — Peter Orostegui | ... |
 | `post-ig-11` | 2026-11-20 12:15 | Instagram | **Idea** | Mi portafolio ya está en Behance | ... |
 | `post-li-6` | 2026-11-20 12:30 | LinkedIn | **Idea** | Presentación oficial de mi Portafolio Profesional 2026 | ... |
@@ -159,22 +159,6 @@
     "description": ""
   },
   {
-    "id": "post-ig-cemedicar",
-    "type": "post",
-    "projectId": "project-portafolio-2026",
-    "title": "Cemedicar: adelanto del proyecto",
-    "date": "2026-11-18",
-    "time": "18:00",
-    "endTime": "",
-    "channel": "Instagram",
-    "status": "En Diseño",
-    "phase": "Fase 2: Archivo",
-    "format": "Carrusel",
-    "structure": "OBJETIVO: Mostrar una identidad de branding y anticipar el proyecto completo en Behance.\nQUÉ MOSTRAR: Carrusel contemplativo de 5 slides con aplicaciones de Cemedicar; uno incluye video generado con IA.\nCÓMO PRODUCIR: Seleccionar aplicaciones reales del proyecto y construir una secuencia visual coherente de cinco slides. Integrar un video de IA que conserve la identidad aprobada. Evitar convertirlo en explicación técnica extensa.\nMENSAJE / TEXTO: Cierre: «Proyecto completo en Behance · 20 de noviembre».\nPENDIENTE: Elegir aplicaciones, distribuir los cinco slides y producir el video.",
-    "caption": "",
-    "description": ""
-  },
-  {
     "id": "post-ig-diseno-entorno",
     "type": "post",
     "projectId": "project-portafolio-2026",
@@ -191,18 +175,18 @@
     "description": ""
   },
   {
-    "id": "post-ig-karen-valla",
+    "id": "post-ig-cemedicar",
     "type": "post",
     "projectId": "project-portafolio-2026",
-    "title": "Karen Lizarazo: diseño de valla",
-    "date": "2026-11-19",
+    "title": "Cemedicar: adelanto del proyecto",
+    "date": "2026-11-18",
     "time": "18:00",
     "endTime": "",
     "channel": "Instagram",
-    "status": "Idea",
+    "status": "En Diseño",
     "phase": "Fase 2: Archivo",
     "format": "Carrusel",
-    "structure": "OBJETIVO: Presentar formalmente el diseño de la valla y el resultado instalado.\nQUÉ MOSTRAR: 5 slides: portada, dos mitades de la fotografía real, POV del archivo y mockup.\nCÓMO PRODUCIR: Slide 1: foto real desenfocada, título del proyecto y firma de Peter; logo del artista secundario si se utiliza. Slides 2–3: mitad izquierda y derecha de la misma foto, idéntica escala y alineación. Slide 4: diseño abierto en el programa. Slide 5: mockup limpio.\nMENSAJE / TEXTO: Cierre: «Proyecto completo en Behance · 20 de noviembre». Mantener poco texto; explicar el encargo y la participación real en el pie.\nPENDIENTE: Seleccionar fotografía, título exacto, POV y mockup.",
+    "structure": "OBJETIVO: Mostrar una identidad de branding y anticipar el proyecto completo en Behance.\nQUÉ MOSTRAR: Carrusel contemplativo de 5 slides con aplicaciones de Cemedicar; uno incluye video generado con IA.\nCÓMO PRODUCIR: Seleccionar aplicaciones reales del proyecto y construir una secuencia visual coherente de cinco slides. Integrar un video de IA que conserve la identidad aprobada. Evitar convertirlo en explicación técnica extensa.\nMENSAJE / TEXTO: Cierre: «Proyecto completo en Behance · 20 de noviembre».\nPENDIENTE: Elegir aplicaciones, distribuir los cinco slides y producir el video.",
     "caption": "",
     "description": ""
   },
@@ -219,6 +203,22 @@
     "phase": "Fase 3: Convocatoria",
     "format": "Post",
     "structure": "OBJETIVO: Explicar la metodología que guía el trabajo de Peter.\nQUÉ MOSTRAR: Reflexión profesional apoyada en una decisión real de uno de sus proyectos.\nCÓMO PRODUCIR: Elegir un ejemplo donde objetivo, público o medio determinaron una decisión visual. Desarrollar la secuencia problema, criterio, decisión y resultado.\nMENSAJE / TEXTO: Slogan exacto: «Criterio antes que forma». No limitarse a una declaración abstracta.\nPENDIENTE: Elegir caso y redactar reflexión.",
+    "caption": "",
+    "description": ""
+  },
+  {
+    "id": "post-ig-karen-valla",
+    "type": "post",
+    "projectId": "project-portafolio-2026",
+    "title": "Karen Lizarazo: diseño de valla",
+    "date": "2026-11-19",
+    "time": "18:00",
+    "endTime": "",
+    "channel": "Instagram",
+    "status": "Idea",
+    "phase": "Fase 2: Archivo",
+    "format": "Carrusel",
+    "structure": "OBJETIVO: Presentar formalmente el diseño de la valla y el resultado instalado.\nQUÉ MOSTRAR: 5 slides: portada, dos mitades de la fotografía real, POV del archivo y mockup.\nCÓMO PRODUCIR: Slide 1: foto real desenfocada, título del proyecto y firma de Peter; logo del artista secundario si se utiliza. Slides 2–3: mitad izquierda y derecha de la misma foto, idéntica escala y alineación. Slide 4: diseño abierto en el programa. Slide 5: mockup limpio.\nMENSAJE / TEXTO: Cierre: «Proyecto completo en Behance · 20 de noviembre». Mantener poco texto; explicar el encargo y la participación real en el pie.\nPENDIENTE: Seleccionar fotografía, título exacto, POV y mockup.",
     "caption": "",
     "description": ""
   },
@@ -409,7 +409,7 @@ QUÉ MOSTRAR: El mismo texto antes y después, con el espacio intervenido señal
 CÓMO PRODUCIR: Preparar comparación en una sola pantalla manteniendo el resto igual. Ampliar lo suficiente para ver el cambio y explicar qué problema resuelve.
 MENSAJE / TEXTO: Explicar el ajuste con un ejemplo concreto, sin convertirlo en una regla universal.
 PENDIENTE: Seleccionar ejemplo y preparar comparación.
-- `st-ptr-vocacion` #8 · 2026-11-17 11:00 · PTR · **Yo adulto y yo de pequeño: mi vocación** · Foto · En Diseño · Contexto: OBJETIVO: Conectar la historia personal de Peter con su vocación de diseñador.
+- `st-ptr-vocacion` #8 · 2026-11-17 11:00 · PTR · **Yo adulto y yo de pequeño: mi vocación** · Foto · Publicado · Contexto: OBJETIVO: Conectar la historia personal de Peter con su vocación de diseñador.
 QUÉ MOSTRAR: Foto actual con fotografía infantil superpuesta como foto pegada.
 CÓMO PRODUCIR: Seleccionar las dos fotos y escribir desde un recuerdo real de infancia que conecte con querer ser diseñador. No inventar anécdotas.
 MENSAJE / TEXTO: Contar qué recuerdo sostiene la idea de que querías diseñar desde pequeño.
