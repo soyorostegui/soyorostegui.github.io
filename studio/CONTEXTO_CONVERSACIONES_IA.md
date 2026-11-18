@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 17/11/2026, 9:20:11 p. m.
+**Última actualización:** 17/11/2026, 9:23:49 p. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
@@ -429,22 +429,22 @@ QUÉ MOSTRAR: Peter sentado frente al computador trabajando en programas de dise
 CÓMO PRODUCIR: Toma continua de unos 15 segundos, escena desenfocada y movimiento sutil. Textos nítidos: 0–5 s escena; 5–10 s frase; 10–15 s fecha.
 MENSAJE / TEXTO: «Pronto, con criterio todo toma forma.» Después: «20 de noviembre».
 PENDIENTE: Grabar toma y elegir audio.
-- `st-contact-behance` #12 · 2026-11-18 10:00 · CONTACT · **Behance: explora mis proyectos completos** · Foto · Idea · Contexto: OBJETIVO: Presentar un canal de contacto atemporal.
+- `st-contact-behance` #12 · 2026-11-18 10:00 · CONTACT · **Behance: explora mis proyectos completos** · Foto · En Diseño · Contexto: OBJETIVO: Presentar un canal de contacto atemporal.
 QUÉ MOSTRAR: Captura o composición del perfil de Behance, usuario y sticker de enlace.
 CÓMO PRODUCIR: Publicar las cuatro pantallas juntas y en este orden el 18, antes del lanzamiento. Mantener diseño coherente, una función por canal y SIN fechas ni anuncios del portafolio.
 MENSAJE / TEXTO: Explicar que allí pueden explorar tus proyectos completos y las decisiones que los sostienen.
 PENDIENTE: Confirmar usuario y enlace del perfil.
-- `st-contact-linkedin` #13 · 2026-11-18 10:01 · CONTACT · **LinkedIn: conectemos profesionalmente** · Foto · Idea · Contexto: OBJETIVO: Presentar un canal de contacto atemporal.
+- `st-contact-linkedin` #13 · 2026-11-18 10:01 · CONTACT · **LinkedIn: conectemos profesionalmente** · Foto · En Diseño · Contexto: OBJETIVO: Presentar un canal de contacto atemporal.
 QUÉ MOSTRAR: Perfil de LinkedIn, nombre y sticker de enlace.
 CÓMO PRODUCIR: Publicar las cuatro pantallas juntas y en este orden el 18, antes del lanzamiento. Mantener diseño coherente, una función por canal y SIN fechas ni anuncios del portafolio.
 MENSAJE / TEXTO: Invitar a conectar y conocer tu perfil para oportunidades profesionales.
 PENDIENTE: Confirmar URL del perfil.
-- `st-contact-correo` #14 · 2026-11-18 10:02 · CONTACT · **Correo: conversemos sobre tu proyecto** · Foto · Idea · Contexto: OBJETIVO: Presentar un canal de contacto atemporal.
+- `st-contact-correo` #14 · 2026-11-18 10:02 · CONTACT · **Correo: conversemos sobre tu proyecto** · Foto · En Diseño · Contexto: OBJETIVO: Presentar un canal de contacto atemporal.
 QUÉ MOSTRAR: Dirección de correo legible en una composición con tu identidad.
 CÓMO PRODUCIR: Publicar las cuatro pantallas juntas y en este orden el 18, antes del lanzamiento. Mantener diseño coherente, una función por canal y SIN fechas ni anuncios del portafolio.
 MENSAJE / TEXTO: Invitar a escribir sobre proyectos; facilitar copiar la dirección o abrir el correo.
 PENDIENTE: Confirmar correo público.
-- `st-contact-instagram` #15 · 2026-11-18 10:03 · CONTACT · **Instagram: podemos empezar por aquí** · Foto · Idea · Contexto: OBJETIVO: Presentar un canal de contacto atemporal.
+- `st-contact-instagram` #15 · 2026-11-18 10:03 · CONTACT · **Instagram: podemos empezar por aquí** · Foto · En Diseño · Contexto: OBJETIVO: Presentar un canal de contacto atemporal.
 QUÉ MOSTRAR: Usuario de Instagram e invitación a enviar un mensaje.
 CÓMO PRODUCIR: Publicar las cuatro pantallas juntas y en este orden el 18, antes del lanzamiento. Mantener diseño coherente, una función por canal y SIN fechas ni anuncios del portafolio.
 MENSAJE / TEXTO: Invitar a iniciar una conversación por mensaje directo.
