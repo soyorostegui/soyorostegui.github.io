@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 17/11/2026, 9:19:17 p. m.
+**Última actualización:** 17/11/2026, 9:19:27 p. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
@@ -419,7 +419,7 @@ QUÉ MOSTRAR: Foto de una herramienta física o digital a mano.
 CÓMO PRODUCIR: Una fotografía sencilla, sin grabar video. Escribir nombre y una línea sobre la tarea que facilita. La elección debe corresponder al uso real de Peter.
 MENSAJE / TEXTO: Qué haces con esta herramienta y por qué la utilizas.
 PENDIENTE: Elegir herramienta y tomar foto.
-- `st-tools-recurso` #10 · 2026-11-17 17:00 · TOOLS · **Un recurso que recomiendo** · Foto · En Diseño · Contexto: OBJETIVO: Compartir una herramienta o recurso útil y accesible.
+- `st-tools-recurso` #10 · 2026-11-17 17:00 · TOOLS · **Un recurso que recomiendo** · Foto · Publicado · Contexto: OBJETIVO: Compartir una herramienta o recurso útil y accesible.
 QUÉ MOSTRAR: Captura del recurso en uso y un ejemplo de su utilidad.
 CÓMO PRODUCIR: Elegir un recurso que Peter conozca; explicar qué problema resuelve y añadir enlace. Comprobar acceso y condiciones antes de recomendar.
 MENSAJE / TEXTO: Para qué lo usas y cuándo puede ayudar a otro diseñador.
