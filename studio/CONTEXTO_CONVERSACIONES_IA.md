@@ -1,7 +1,7 @@
 # 🧠 Archivo de Contexto y Memoria de Conversaciones IA
 **Proyecto:** Portafolio Profesional 2026 — Peter Orostegui (`@soyorostegui`)
 **Concepto Rector:** *«Mientras tanto»* (Campaña: 9 al 25 de Noviembre de 2026 · Hito Día D: 20 de Noviembre)
-**Última actualización:** 17/11/2026, 9:23:49 p. m.
+**Última actualización:** 17/11/2026, 10:31:39 p. m.
 **Motor IA Activo:** DeepSeek (`deepseek-flash`)
 **Gasto Acumulado en Sesión:** $0.20002 USD (1125315 tokens)
 
@@ -414,7 +414,7 @@ QUÉ MOSTRAR: Foto actual con fotografía infantil superpuesta como foto pegada.
 CÓMO PRODUCIR: Seleccionar las dos fotos y escribir desde un recuerdo real de infancia que conecte con querer ser diseñador. No inventar anécdotas.
 MENSAJE / TEXTO: Contar qué recuerdo sostiene la idea de que querías diseñar desde pequeño.
 PENDIENTE: Elegir fotos y pedir a Peter el recuerdo concreto.
-- `st-setup-herramienta` #9 · 2026-11-17 12:00 · SETUP · **Una herramienta que uso de verdad** · Foto · Listo · Contexto: OBJETIVO: Mostrar una herramienta real y su utilidad cotidiana.
+- `st-setup-herramienta` #9 · 2026-11-17 12:00 · SETUP · **Una herramienta que uso de verdad** · Foto · Publicado · Contexto: OBJETIVO: Mostrar una herramienta real y su utilidad cotidiana.
 QUÉ MOSTRAR: Foto de una herramienta física o digital a mano.
 CÓMO PRODUCIR: Una fotografía sencilla, sin grabar video. Escribir nombre y una línea sobre la tarea que facilita. La elección debe corresponder al uso real de Peter.
 MENSAJE / TEXTO: Qué haces con esta herramienta y por qué la utilizas.
